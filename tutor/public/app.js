@@ -157,6 +157,14 @@ async function ask(question) {
   setBusy(false);
 }
 
+// Whoever received the app from someone else can still find its author and the project.
+const CREDIT = {
+  es: 'Creada por Alex Smith, con QVAC. ¿Te la compartieron? Conectemos:',
+  en: 'Created by Alex Smith, with QVAC. Did someone share it with you? Let\'s connect:',
+  pt: 'Criada por Alex Smith, com QVAC. Alguém compartilhou com você? Vamos nos conectar:',
+};
+$('creditText').textContent = CREDIT[navigator.language.slice(0, 2)] || CREDIT.en;
+
 async function refreshStatus() {
   try {
     const s = await (await fetch('/api/status')).json();

@@ -1,5 +1,5 @@
 // Amara desktop app. It shows a setup screen, gets the models if they are missing, then opens the tutor.
-import { app, BrowserWindow, dialog, ipcMain, session } from 'electron';
+import { app, BrowserWindow, dialog, ipcMain, session, shell } from 'electron';
 import fs from 'node:fs';
 import net from 'node:net';
 import os from 'node:os';
@@ -10,6 +10,7 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 const NEEDED_FREE_BYTES = 4e9;
 // A download with no progress for this long has lost the connection, even if nothing reported an error.
 const STALL_MS = 60_000;
+const EXTERNAL_LINKS = ['https://www.linkedin.com/in/alexinteractive', 'https://amaratutor.org'];
 let win = null;
 let tutorStarted = false;
 let models = [];
@@ -124,7 +125,11 @@ function createWindow() {
   win.once('ready-to-show', () => win.show());
   // The window only ever shows the setup screen and the local tutor.
   win.webContents.on('will-navigate', (event, url) => { if (url !== `${tutorUrl}/`) event.preventDefault(); });
-  win.webContents.setWindowOpenHandler(() => ({ action: 'deny' }));
+  // The credit's two links open in the computer's browser; nothing else leaves the window.
+  win.webContents.setWindowOpenHandler(({ url }) => {
+    if (EXTERNAL_LINKS.includes(url.replace(/\/$/, ''))) shell.openExternal(url);
+    return { action: 'deny' };
+  });
   win.loadFile(path.join(here, 'setup.html'));
 }
 
@@ -142,6 +147,12 @@ else {
     ipcMain.handle('setup:download', () => download());
     ipcMain.handle('setup:locale', () => app.getLocale());
     ipcMain.handle('setup:quit', () => app.quit());
+    app.setAboutPanelOptions({
+      applicationName: 'Amara',
+      applicationVersion: app.getVersion(),
+      credits: 'Created by Alex Smith, with QVAC.\nlinkedin.com/in/alexinteractive\namaratutor.org',
+      copyright: '© 2026 Alex Smith',
+    });
     offerMove();
     createWindow();
   });
