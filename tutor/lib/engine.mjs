@@ -10,6 +10,8 @@ const EMBED_BATCH = 16;
 
 export const LLM_NAME = process.env.TUTOR_LLM || 'Qwen3-4B-Q4_K_M';
 const EMBED_NAME = 'embeddinggemma-300M-Q8_0';
+// Unset, the SDK picks the GPU. Set to cpu or gpu to compare them on a given machine.
+const DEVICE = process.env.TUTOR_DEVICE ? { device: process.env.TUTOR_DEVICE } : {};
 
 export function findModel(name) {
   const file = fs.existsSync(MODEL_DIR) && fs.readdirSync(MODEL_DIR).find(f => f.includes(name) && f.endsWith('.gguf'));
@@ -18,8 +20,8 @@ export function findModel(name) {
 }
 
 export async function createEngine(documents) {
-  const embedId = await loadModel({ modelSrc: findModel(EMBED_NAME), modelType: 'llamacpp-embedding' });
-  const llmId = await loadModel({ modelSrc: findModel(LLM_NAME), modelType: 'llamacpp-completion', modelConfig: { ctx_size: 4096 } });
+  const embedId = await loadModel({ modelSrc: findModel(EMBED_NAME), modelType: 'llamacpp-embedding', modelConfig: { ...DEVICE } });
+  const llmId = await loadModel({ modelSrc: findModel(LLM_NAME), modelType: 'llamacpp-completion', modelConfig: { ctx_size: 4096, ...DEVICE } });
   // Embedded on each start so that edits to the pack apply and old passages cannot be cited.
   const vectors = [];
   for (let i = 0; i < documents.length; i += EMBED_BATCH) {

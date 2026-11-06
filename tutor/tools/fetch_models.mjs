@@ -2,7 +2,7 @@
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { close, downloadAsset, EMBEDDINGGEMMA_300M_Q8_0, QWEN3_4B_INST_Q4_K_M } from '@qvac/sdk';
+import { close, downloadAsset, EMBEDDINGGEMMA_300M_Q8_0, QWEN3_1_7B_INST_Q4, QWEN3_4B_INST_Q4_K_M } from '@qvac/sdk';
 
 const dir = path.join(os.homedir(), '.qvac/models'); // Where the SDK stores downloads and the tutor looks by default.
 
@@ -13,7 +13,9 @@ function present(model) {
 
 const gb = bytes => (bytes / 1e9).toFixed(1);
 let failed = false;
-for (const model of [QWEN3_4B_INST_Q4_K_M, EMBEDDINGGEMMA_300M_Q8_0]) {
+// --small adds the lighter model that is being evaluated for slower machines.
+const models = [QWEN3_4B_INST_Q4_K_M, EMBEDDINGGEMMA_300M_Q8_0, ...(process.argv.includes('--small') ? [QWEN3_1_7B_INST_Q4] : [])];
+for (const model of models) {
   if (present(model)) { console.log(`${model.modelId}: already in ${dir}`); continue; }
   console.log(`${model.modelId}: downloading ${gb(model.expectedSize)} GB…`);
   let last = -10;
