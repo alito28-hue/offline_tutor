@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amara — an AI tutor that works without internet</title>
+<meta name="description" content="Amara is a working prototype of an AI tutor that runs entirely on a laptop: no Wi-Fi, no cloud, and no student data leaving the room. Built on Tether's QVAC.">
+<meta property="og:title" content="Amara — an AI tutor that works without internet">
+<meta property="og:description" content="A working prototype that runs entirely on a laptop. No Wi-Fi, no cloud, no data leaving the room.">
+<meta property="og:image" content="assets/e1-classroom.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --board:#1E3B34;      /* chalkboard green */
+  --board-deep:#152B26;
+  --chalk:#E6ECE7;      /* cool chalk white */
+  --chalk-dim:#AFC2BA;
+  --sun:#F3B83A;        /* Amara's hair band */
+  --uniform:#3B63B0;    /* Amara's uniform */
+  --paper:#F6F8F5;
+  --ink:#1A2420;
+  --ink-soft:#4A5A54;
+  --measure:62ch;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;font-family:"Andika",system-ui,sans-serif;color:var(--ink);background:var(--paper);font-size:1.125rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-weight:700;line-height:1.1;margin:0}
+h2{font-size:clamp(2rem,4.2vw,3rem);letter-spacing:-.01em}
+h3{font-size:1.25rem;line-height:1.3}
+p{margin:0 0 1em;max-width:var(--measure)}
+
+/* ---------- Hero: the real clip, with a live "offline" status ---------- */
+.hero{position:relative;min-height:100svh;display:grid;align-items:end;color:#fff;overflow:hidden;background:#2a1a0c}
+.hero video,.hero .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 15%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,12,4,0) 45%,rgba(20,12,4,.85) 100%)}
+.status{position:absolute;z-index:2;top:20px;right:20px;display:flex;align-items:center;gap:10px;padding:10px 16px 10px 12px;border-radius:999px;background:rgba(21,43,38,.82);backdrop-filter:blur(6px);font-size:1rem;color:var(--chalk)}
+.status svg{flex:none}
+.status b{color:var(--sun);font-weight:700}
+.hero .copy{position:relative;z-index:2;padding:0 24px 7vh;max-width:1120px;margin:0 auto;width:100%}
+.hero h1{font-size:clamp(2.3rem,4.6vw,4.2rem);max-width:16ch;letter-spacing:-.015em;text-shadow:0 2px 24px rgba(0,0,0,.35)}
+.hero .lede{font-size:clamp(1.15rem,1.6vw,1.4rem);max-width:44ch;margin:20px 0 32px;color:#F6EFE2}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:12px;font-weight:700;text-decoration:none;font-size:1.05rem;border:2px solid transparent}
+.btn.primary{background:var(--sun);color:var(--ink)}
+.btn.ghost{border-color:rgba(255,255,255,.7);color:#fff}
+.btn:hover{filter:brightness(1.05)}
+
+/* ---------- Board: proof, written like a lesson on a chalkboard ---------- */
+.board{background:var(--board);color:var(--chalk);padding:110px 0 120px;position:relative}
+.board::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.35;
+  background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1px);background-size:3px 3px}
+.board .wrap{position:relative}
+.board h2{max-width:20ch}
+.board .intro{color:var(--chalk-dim);margin-top:18px}
+.film{margin:48px 0 64px;border-radius:14px;overflow:hidden;background:var(--board-deep);aspect-ratio:16/9;position:relative;box-shadow:0 0 0 6px #2C4D44}
+.film img{width:100%;height:100%;object-fit:cover;opacity:.55}
+.film .soon{position:absolute;inset:0;margin:0;max-width:none;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:24px;font-size:1.3rem}
+.film .soon span{display:block;color:var(--chalk-dim);font-size:1rem;margin-top:6px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:48px}
+.fact .figure{font-size:clamp(2.4rem,4.4vw,3.4rem);font-weight:700;color:var(--sun);line-height:1;margin-bottom:14px;display:block}
+.fact p{color:var(--chalk);margin:0}
+.fact small{display:block;color:var(--chalk-dim);font-size:.95rem;margin-top:10px}
+
+/* ---------- How it works: a real sequence ---------- */
+.how{padding:110px 0}
+.how-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center;margin-top:40px}
+.how-grid img{border-radius:14px}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid #DCE3DF}
+.steps li:last-child{border-bottom:0}
+.steps li::before{content:counter(s);width:36px;height:36px;border-radius:50%;background:var(--uniform);color:#fff;display:grid;place-items:center;font-weight:700}
+.steps p{margin:6px 0 0;color:var(--ink-soft)}
+
+/* ---------- Places ---------- */
+.places{padding:0 0 110px}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:32px}
+.strip figure{margin:0}
+.strip img{border-radius:12px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.strip figcaption{font-size:.95rem;color:var(--ink-soft);margin-top:8px}
+
+/* ---------- Limits: plain and honest ---------- */
+.limits{background:#EAF0EC;padding:100px 0}
+.limits-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+.limits ul{margin:0;padding:0;list-style:none}
+.limits li{padding:16px 0 16px 34px;position:relative;border-bottom:1px solid #D2DCD6}
+.limits li::before{content:"";position:absolute;left:4px;top:26px;width:14px;height:3px;background:var(--uniform);border-radius:2px}
+
+/* ---------- Built with + maker ---------- */
+.built{padding:100px 0}
+.built-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.stack{margin:0;display:grid;grid-template-columns:auto 1fr;gap:12px 24px}
+.stack dt{font-weight:700}
+.stack dd{margin:0;color:var(--ink-soft)}
+.maker p{color:var(--ink-soft)}
+
+/* ---------- Closing ---------- */
+.closing{position:relative;color:#fff;min-height:70vh;display:grid;align-items:center;overflow:hidden}
+.closing img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.closing::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,16,8,.72) 0%,rgba(30,16,8,.25) 55%,rgba(30,16,8,0) 100%)}
+.closing .wrap{position:relative;z-index:1;width:100%}
+.closing h2{max-width:15ch}
+.closing p{color:#F6EFE2;margin:18px 0 28px}
+footer{background:var(--board-deep);color:var(--chalk-dim);font-size:.95rem;padding:40px 0}
+footer p{max-width:none;margin:0 0 6px}
+
+@media (max-width:860px){
+  .facts,.how-grid,.limits-grid,.built-grid{grid-template-columns:1fr;gap:36px}
+  .strip{grid-template-columns:1fr}
+  .board,.how,.limits,.built{padding:72px 0}
+  .places{padding-bottom:72px}
+  .status{top:14px;right:14px;font-size:.9rem}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" aria-label="Amara">
+  <video id="heroVideo" muted loop playsinline preload="metadata" poster="assets/e1-classroom.jpg" aria-hidden="true">
+    <source src="assets/hero.mp4" type="video/mp4">
+  </video>
+  <div class="status" role="note" aria-label="Status: running offline">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M2 8.8a15 15 0 0 1 20 0"/><path d="M5 12.6a10 10 0 0 1 14 0"/><path d="M8.5 16.4a5 5 0 0 1 7 0"/><circle cx="12" cy="20" r="1"/><path d="M3 3l18 18" stroke="#F3B83A"/></svg>
+    <span>No internet. <b>Still answering.</b></span>
+  </div>
+  <div class="copy">
+    <h1>A tutor for schools the internet hasn't reached.</h1>
+    <p class="lede">Amara is an AI tutor that runs entirely on a laptop. No Wi-Fi, no cloud, and no student data leaving the room.</p>
+    <div class="actions">
+      <a class="btn primary" href="#film">Watch the 60-second film</a>
+      <a class="btn ghost" href="https://github.com/alito28-hue/offline_tutor">See the code on GitHub</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="board" id="film" aria-labelledby="proof-title">
+    <div class="wrap">
+      <h2 id="proof-title">Recorded with the Wi-Fi switched off.</h2>
+      <p class="intro">The film is illustrated, but the tutor in it is real. Halfway through, the illustration cuts to a screen recording of the working prototype answering a student's question on a laptop with no connection.</p>
+
+      <div class="film">
+        <!-- Replace with the final film: <video controls poster="assets/e3-question.jpg" src="assets/amara-film.mp4"></video> -->
+        <img src="assets/e3-question.jpg" alt="">
+        <p class="soon">The film is in production.<span>It will play here.</span></p>
+      </div>
+
+      <div class="facts">
+        <div class="fact">
+          <span class="figure">1.5–2.0 s</span>
+          <p>until the first words of an answer appear, with the model running on the laptop itself.</p>
+          <small>Measured on a MacBook Pro with M1 Pro and 16 GB of memory.</small>
+        </div>
+        <div class="fact">
+          <span class="figure">0</span>
+          <p>network connections while it answers. Every route out is blocked and monitored during the tests.</p>
+          <small>IPv4, IPv6, UDP and DNS.</small>
+        </div>
+        <div class="fact">
+          <span class="figure">Cited</span>
+          <p>Every answer shows the article it came from. When its materials don't cover a question, it says "I don't know" instead of guessing.</p>
+          <small>Sources are attached by the app, not written by the model.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <h2 id="how-title">What happens when a student asks a question</h2>
+      <div class="how-grid">
+        <img src="assets/e2-laptop.jpg" alt="Illustration: Amara opens an old laptop on her school desk while two classmates lean in.">
+        <ol class="steps">
+          <li><div><h3>The question is checked</h3><p>A filter screens it first, so off-topic or unsafe questions get a gentle redirect.</p></div></li>
+          <li><div><h3>The laptop searches its own library</h3><p>A pack of openly licensed science and maths articles is stored on the device and searched locally.</p></div></li>
+          <li><div><h3>A small model writes the explanation</h3><p>Qwen3 4B runs on the laptop through Tether's QVAC and explains step by step, in simple words.</p></div></li>
+          <li><div><h3>The student gets a source and a question back</h3><p>The answer shows where it came from and ends with a question to check understanding.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="places" aria-labelledby="places-title">
+    <div class="wrap">
+      <h2 id="places-title">Built for classrooms where the cloud isn't an option</h2>
+      <div class="strip">
+        <figure><img src="assets/e5a-andes.jpg" alt="Illustration: children in a mountain school in the Andes gathered around a laptop."><figcaption>A mountain school in the Andes</figcaption></figure>
+        <figure><img src="assets/e5b-africa.jpg" alt="Illustration: children in school uniforms sharing a laptop under an acacia tree."><figcaption>A rural school in East Africa</figcaption></figure>
+        <figure><img src="assets/e5c-india.jpg" alt="Illustration: children on woven mats around a laptop in a colourful village school."><figcaption>A village school in rural India</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="limits" aria-labelledby="limits-title">
+    <div class="wrap limits-grid">
+      <div>
+        <h2 id="limits-title">What it isn't yet</h2>
+        <p style="margin-top:18px;color:var(--ink-soft)">Amara is a working prototype. It has not been tested in a school, and these are the limits we know about.</p>
+      </div>
+      <ul>
+        <li>It speaks Spanish and English. Swahili answers weren't good enough, so it shows a notice instead of responding.</li>
+        <li>It can't tell a student whether their answer is right. It thanks them and shows how to check.</li>
+        <li>Its safety filters look for words and can be worked around, so children should use it with an adult nearby.</li>
+        <li>It's a small model on a laptop: far less capable than cloud assistants, and only as broad as its library.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="built" aria-labelledby="built-title">
+    <div class="wrap built-grid">
+      <div>
+        <h2 id="built-title">Built with</h2>
+        <dl class="stack" style="margin-top:28px">
+          <dt>On-device AI</dt><dd>Tether's QVAC SDK</dd>
+          <dt>Language model</dt><dd>Qwen3 4B, quantized to run on a laptop</dd>
+          <dt>Search</dt><dd>EmbeddingGemma, running locally</dd>
+          <dt>Library</dt><dd>Wikipedia articles under CC BY-SA 4.0</dd>
+          <dt>Illustrations</dt><dd>Generated with AI image and video tools</dd>
+        </dl>
+      </div>
+      <div class="maker">
+        <h2>Who made it</h2>
+        <p style="margin-top:28px">I'm Alex Smith. Years ago I built Urli OS, an operating system deployed across 17 states in India and 54 public schools in Argentina. Now I'm building Amara: AI that works where the network doesn't.</p>
+        <div class="actions" style="margin-top:8px">
+          <a class="btn primary" href="https://www.linkedin.com/in/alexinteractive">Contact me on LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing" aria-labelledby="closing-title">
+    <img src="assets/e6-sunset.jpg" alt="">
+    <div class="wrap">
+      <h2 id="closing-title">No internet. No cloud. Just a laptop.</h2>
+      <p>The code is open. If you run schools, programs or devices where connectivity is the problem, I'd like to hear from you.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://github.com/alito28-hue/offline_tutor">See the code on GitHub</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/alexinteractive">Contact me on LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Amara is an independent prototype by Alex Smith. It is not affiliated with Tether or any school.</p>
+    <p>Learning materials: Wikipedia contributors, CC BY-SA 4.0. Illustrations generated with AI.</p>
+  </div>
+</footer>
+
+<script>
+  // Play the hero clip only when motion is welcome.
+  const v = document.getElementById('heroVideo');
+  const calm = window.matchMedia('(prefers-reduced-motion: reduce)');
+  function sync(){ if(calm.matches){ v.pause(); } else { v.play().catch(()=>{}); } }
+  sync(); calm.addEventListener?.('change', sync);
+</script>
+</body>
+</html>
