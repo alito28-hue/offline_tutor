@@ -52,7 +52,7 @@ body {
 .chip:hover, .chip:focus-visible { border-color: var(--green); outline: none; }
 
 .lesson { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 2rem; }
-.credit { margin: 0; font-size: 1.5rem; color: #5A6470; text-align: center; }
+.credit { margin: 0; font-size: 2.5rem; color: #5A6470; text-align: center; }
 .credit a { color: inherit; font-weight: 700; }
 .lesson[hidden], .welcome[hidden] { display: none; }
 .asked { margin: 0; flex: none; font-size: 5rem; line-height: 1.15; letter-spacing: -0.02em; }
