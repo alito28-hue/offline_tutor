@@ -1,0 +1,88 @@
+/* The stage is always 16:9. 1rem is 10px at 1920x1080 and scales with the window. */
+:root {
+  --paper: #fbf6ea;
+  --ink: #1d2b3a;
+  --muted: #5f6b76;
+  --card: #ffffff;
+  --line: #e7dfcd;
+  --green: #17795a;
+  --green-soft: #dcf3e8;
+  --blue: #2b5c9e;
+  --blue-soft: #e1ebf8;
+  --amber: #ffe7ad;
+  --amber-ink: #6a4700;
+  --red: #b3261e;
+  --red-soft: #fbe2df;
+  --answer-size: 4rem;
+  font-size: min(calc(100vw / 192), calc(100vh / 108));
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; background: var(--paper); overflow: hidden; }
+body {
+  display: grid;
+  place-items: center;
+  color: var(--ink);
+  font-family: ui-rounded, "SF Pro Rounded", -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+.stage {
+  width: 192rem;
+  height: 108rem;
+  padding: 3.6rem 7rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  overflow: hidden;
+}
+.top { display: flex; align-items: center; justify-content: space-between; flex: none; }
+.brand { display: flex; align-items: center; gap: 1.4rem; font-size: 3.6rem; font-weight: 700; letter-spacing: -0.02em; }
+.mark { font-size: 3.4rem; }
+.pill { padding: 1.2rem 2.6rem; border-radius: 99rem; font-size: 3rem; font-weight: 700; white-space: nowrap; }
+.pill-ok { background: var(--green); color: #fff; }
+.pill-info { background: var(--blue-soft); color: var(--blue); }
+.pill-wait { background: var(--line); color: var(--muted); }
+.pill-bad { background: var(--red); color: #fff; }
+
+.welcome { flex: 1; min-height: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5rem; }
+.welcome h1 { margin: 0; font-size: 8rem; letter-spacing: -0.03em; text-align: center; }
+.chips { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; width: 150rem; }
+.chip {
+  padding: 2.6rem 3rem; border: 0.2rem solid var(--line); border-radius: 2.4rem;
+  background: var(--card); color: var(--ink); font: inherit; font-size: 3.2rem; font-weight: 600; text-align: left; cursor: pointer;
+}
+.chip:hover, .chip:focus-visible { border-color: var(--green); outline: none; }
+
+.lesson { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 2rem; }
+.lesson[hidden], .welcome[hidden] { display: none; }
+.asked { margin: 0; flex: none; font-size: 5rem; line-height: 1.15; letter-spacing: -0.02em; }
+.answer { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 1.5rem; font-size: var(--answer-size); line-height: 1.32; }
+.intro { margin: 0; }
+.step { display: flex; gap: 2rem; padding: 1.5rem 2.4rem; background: var(--card); border: 0.2rem solid var(--line); border-radius: 2rem; }
+.step-n {
+  flex: none; width: 1.6em; height: 1.6em; display: grid; place-items: center; border-radius: 50%;
+  background: var(--green); color: #fff; font-weight: 700; line-height: 1;
+}
+.step-t { align-self: center; }
+.check { display: flex; gap: 1.6rem; margin-top: auto; padding: 1.6rem 2.6rem; background: var(--amber); color: var(--amber-ink); border-radius: 2rem; font-weight: 700; }
+.note { margin: 0; padding: 2.4rem 3rem; background: var(--blue-soft); border-radius: 2rem; }
+.care { background: var(--green-soft); }
+.caret { display: inline-block; width: 0.5em; height: 1em; margin-left: 0.1em; background: var(--green); vertical-align: -0.12em; animation: blink 0.9s steps(2) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .caret { animation: none; } }
+
+.meta { flex: none; min-height: 3.6rem; display: flex; justify-content: space-between; align-items: center; gap: 3rem; font-size: 2.4rem; color: var(--muted); }
+.sources { display: flex; flex-wrap: wrap; gap: 0.6rem 1.2rem; align-items: center; }
+.src-label { font-weight: 700; color: var(--ink); }
+.src { padding: 0.4rem 1.4rem; border-radius: 99rem; background: var(--green-soft); color: var(--green); font-weight: 600; }
+.speed { white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+.ask { flex: none; display: flex; gap: 1.6rem; }
+.ask input {
+  flex: 1; min-width: 0; height: 8.4rem; padding: 0 3rem; border: 0.3rem solid var(--line); border-radius: 2.4rem;
+  background: var(--card); color: var(--ink); font: inherit; font-size: 3.4rem;
+}
+.ask input:focus { border-color: var(--green); outline: none; }
+.ask button {
+  height: 8.4rem; padding: 0 4rem; border: 0; border-radius: 2.4rem;
+  background: var(--green); color: #fff; font: inherit; font-size: 3.4rem; font-weight: 700; cursor: pointer;
+}
+.ask button:disabled { opacity: 0.45; cursor: default; }

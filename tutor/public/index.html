@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tutor Offline</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="stage">
+  <header class="top">
+    <div class="brand"><span class="mark" aria-hidden="true">✏️</span>Tutor Offline</div>
+    <div id="net" class="pill pill-wait" role="status">Verificando red…</div>
+  </header>
+
+  <section id="welcome" class="welcome">
+    <h1>¿Qué quieres aprender hoy?</h1>
+    <div id="chips" class="chips">
+      <button type="button" class="chip">¿Cómo entra en erupción un volcán?</button>
+      <button type="button" class="chip">¿Cómo sumo fracciones?</button>
+      <button type="button" class="chip">¿Cómo hacen su comida las plantas?</button>
+      <button type="button" class="chip">How do magnets work?</button>
+    </div>
+  </section>
+
+  <section id="lesson" class="lesson" hidden>
+    <h2 id="asked" class="asked"></h2>
+    <div id="answer" class="answer" aria-live="polite"></div>
+    <footer class="meta">
+      <div id="sources" class="sources"></div>
+      <div id="speed" class="speed"></div>
+    </footer>
+  </section>
+
+  <form id="form" class="ask" autocomplete="off">
+    <input id="question" type="text" maxlength="500" placeholder="Escribe tu pregunta…" aria-label="Tu pregunta" autofocus>
+    <button id="send" type="submit" aria-label="Preguntar">Preguntar</button>
+  </form>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

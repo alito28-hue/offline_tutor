@@ -1,0 +1,11 @@
+(version 1)
+; Kernel-level network block for the tutor and its children. Only loopback is allowed, so the browser
+; can reach the local UI, plus the one Unix socket the QVAC SDK uses to talk to its worker.
+; Other Unix sockets stay denied, which also rules out DNS through mDNSResponder.
+(allow default)
+(deny network*)
+(allow network-bind (local ip "localhost:*"))
+(allow network-inbound (local ip "localhost:*"))
+(allow network-outbound (remote ip "localhost:*"))
+(allow network* (local unix-socket (regex #"/qvac-worker-[^/]*\.sock$")))
+(allow network* (remote unix-socket (regex #"/qvac-worker-[^/]*\.sock$")))
