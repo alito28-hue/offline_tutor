@@ -30,6 +30,17 @@ Then, with or without internet:
 
 Keep the folder on a local disk, not in Dropbox or iCloud: those services can leave files in the cloud only, and the tutor would not start offline.
 
+## The Mac app
+
+`desktop/` wraps the tutor in an Electron app for Apple Silicon Macs. Run it from source with `npm run app`. There are two disk images:
+
+```bash
+npm run mac:full     # about 3 GB, models included: for a pendrive and schools with no internet
+npm run mac:online   # about 200 MB: downloads 2.8 GB when first opened, then works offline
+```
+
+Both land in `out/<kit>/make/`. To sign them, set `AMARA_SIGN_IDENTITY` to a Developer ID Application certificate. To notarize, also set `AMARA_NOTARY_PROFILE` to a `notarytool` keychain profile. The network block and monitor described below belong to `tutor/run.sh`, not to the app.
+
 ## How it works
 
 1. **Safety check.** A word filter screens the question. Inappropriate topics are redirected, and questions about self-harm or abuse point to a trusted adult. The model never sees them.

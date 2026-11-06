@@ -11,6 +11,7 @@ const LABELS = {
 };
 const NET = {
   offline: ['Sin conexión ✓', 'pill-ok'],
+  'not-needed': ['Funciona sin internet', 'pill-info'],
   'no-calls': ['Sin llamadas de red ✓', 'pill-info'],
   unverified: ['Verificando red…', 'pill-wait'],
   external: ['Conexión detectada', 'pill-bad'],
@@ -160,7 +161,8 @@ async function refreshStatus() {
   try {
     const s = await (await fetch('/api/status')).json();
     ready = s.ready;
-    const [label, cls] = NET[s.net.state] || NET.unverified;
+    const state = s.net.state === 'desktop' ? (navigator.onLine ? 'not-needed' : 'offline') : s.net.state;
+    const [label, cls] = NET[state] || NET.unverified;
     els.net.textContent = label;
     els.net.className = `pill ${cls}`;
     if (!asking) els.send.disabled = !ready;

@@ -1,0 +1,11 @@
+Amara includes third-party components.
+
+Learning materials: adapted from Wikipedia, by Wikipedia contributors, under CC BY-SA 4.0.
+Each article's source and revision are listed in tutor/content/LICENSES.md.
+
+QVAC SDK and Electron: see the licence files in node_modules.
+
+Qwen3 4B Q4_K_M: Apache-2.0.
+
+EmbeddingGemma 300M Q8_0:
+Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms

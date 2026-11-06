@@ -1,12 +1,28 @@
 {
   "name": "offline-tutor",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "description": "Amara: an AI tutor prototype that runs entirely on a laptop, without internet.",
   "license": "Apache-2.0",
   "type": "module",
-  "engines": { "node": "^22.21.0 || >=24.9.0" },
+  "engines": {
+    "node": "^22.21.0 || >=24.9.0"
+  },
   "dependencies": {
     "@qvac/sdk": "^0.21.0"
+  },
+  "main": "desktop/main.mjs",
+  "productName": "Amara",
+  "author": "Alex Smith",
+  "scripts": {
+    "app": "electron .",
+    "mac:online": "AMARA_KIT=online electron-forge make --platform=darwin --arch=arm64",
+    "mac:full": "AMARA_KIT=full electron-forge make --platform=darwin --arch=arm64"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.11.2",
+    "@electron-forge/maker-dmg": "^7.11.2",
+    "@electron-forge/plugin-base": "^7.11.2",
+    "electron": "^45.2.3"
   }
 }

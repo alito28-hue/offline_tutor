@@ -32,6 +32,8 @@ if (sandboxed && !(await sandboxBlocksNetwork())) {
 }
 
 function netState() {
+  // The desktop app shows only what the window itself can see: whether the computer is connected.
+  if (process.env.TUTOR_DESKTOP === '1') return { state: 'desktop' };
   let watch = null;
   try { watch = JSON.parse(fs.readFileSync(STATUS_FILE, 'utf8')); } catch { /* the monitor is not running */ }
   if (!watch || !(watch.samples > 0) || Date.now() - watch.at > STALE_MS) return { state: 'unverified', sandboxed };

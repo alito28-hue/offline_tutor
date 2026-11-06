@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'">
+<title>Amara</title>
+<link rel="stylesheet" href="setup.css">
+</head>
+<body>
+<main>
+  <img src="assets/icon-256.png" alt="" width="96" height="96">
+  <h1>Amara</h1>
+  <p id="message" role="status" aria-live="polite"></p>
+  <div id="bar" class="bar" hidden><div id="fill"></div></div>
+  <p id="percent" class="percent" hidden></p>
+  <div class="actions"><button id="action" hidden></button></div>
+</main>
+<script src="setup.js"></script>
+</body>
+</html>
