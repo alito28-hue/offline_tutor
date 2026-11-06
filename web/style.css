@@ -1,0 +1,179 @@
+@font-face{font-family:"Andika";font-weight:400;font-display:swap;src:url("/assets/fonts/andika-400.woff2") format("woff2")}
+@font-face{font-family:"Andika";font-weight:700;font-display:swap;src:url("/assets/fonts/andika-700.woff2") format("woff2")}
+:root{
+  --board:#1E3B34;      /* chalkboard green */
+  --board-deep:#152B26;
+  --chalk:#E6ECE7;      /* cool chalk white */
+  --chalk-dim:#AFC2BA;
+  --sun:#F3B83A;        /* Amara's hair band */
+  --uniform:#3B63B0;    /* Amara's uniform */
+  --paper:#F6F8F5;
+  --ink:#1A2420;
+  --ink-soft:#4A5A54;
+  --measure:62ch;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;font-family:"Andika",system-ui,sans-serif;color:var(--ink);background:var(--paper);font-size:1.125rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-weight:700;line-height:1.1;margin:0}
+h2{font-size:clamp(2rem,4.2vw,3rem);letter-spacing:-.01em}
+h3{font-size:1.25rem;line-height:1.3}
+p{margin:0 0 1em;max-width:var(--measure)}
+
+/* ---------- Hero: the real clip, with a live "offline" status ---------- */
+.hero{position:relative;min-height:100svh;display:grid;align-items:end;color:#fff;overflow:hidden;background:#2a1a0c}
+.hero video,.hero .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 15%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,12,4,0) 45%,rgba(20,12,4,.85) 100%)}
+.status{position:absolute;z-index:2;top:20px;right:20px;display:flex;align-items:center;gap:10px;padding:10px 16px 10px 12px;border-radius:999px;background:rgba(21,43,38,.82);backdrop-filter:blur(6px);font-size:1rem;color:var(--chalk)}
+.status svg{flex:none}
+.status b{color:var(--sun);font-weight:700}
+.hero .copy{position:relative;z-index:2;padding:0 24px 7vh;max-width:1120px;margin:0 auto;width:100%}
+.hero h1{font-size:clamp(2.3rem,4.6vw,4.2rem);max-width:16ch;letter-spacing:-.015em;text-shadow:0 2px 24px rgba(0,0,0,.35)}
+.hero .lede{font-size:clamp(1.15rem,1.6vw,1.4rem);max-width:44ch;margin:20px 0 32px;color:#F6EFE2}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:12px;font-weight:700;text-decoration:none;font-size:1.05rem;border:2px solid transparent}
+.btn.primary{background:var(--sun);color:var(--ink)}
+.btn.ghost{border-color:rgba(255,255,255,.7);color:#fff}
+.btn:hover{filter:brightness(1.05)}
+
+/* ---------- Board: proof, written like a lesson on a chalkboard ---------- */
+.board{background:var(--board);color:var(--chalk);padding:110px 0 120px;position:relative}
+.board::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.35;
+  background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1px);background-size:3px 3px}
+.board .wrap{position:relative}
+.board h2{max-width:20ch}
+.board .intro{color:var(--chalk-dim);margin-top:18px}
+.film{margin:48px 0 64px;border-radius:14px;overflow:hidden;background:var(--board-deep);aspect-ratio:16/9;position:relative;box-shadow:0 0 0 6px #2C4D44}
+.film img{width:100%;height:100%;object-fit:cover;opacity:.55}
+.film .soon{position:absolute;inset:0;margin:0;max-width:none;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:24px;font-size:1.3rem}
+.film .soon span{display:block;color:var(--chalk-dim);font-size:1rem;margin-top:6px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:48px}
+.fact .figure{font-size:clamp(2.4rem,4.4vw,3.4rem);font-weight:700;color:var(--sun);line-height:1;margin-bottom:14px;display:block}
+.fact p{color:var(--chalk);margin:0}
+.fact small{display:block;color:var(--chalk-dim);font-size:.95rem;margin-top:10px}
+
+/* ---------- How it works: a real sequence ---------- */
+.how{padding:110px 0}
+.how-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center;margin-top:40px}
+.how-grid img{border-radius:14px}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid #DCE3DF}
+.steps li:last-child{border-bottom:0}
+.steps li::before{content:counter(s);width:36px;height:36px;border-radius:50%;background:var(--uniform);color:#fff;display:grid;place-items:center;font-weight:700}
+.steps p{margin:6px 0 0;color:var(--ink-soft)}
+
+/* ---------- Places ---------- */
+.places{padding:0 0 110px}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:32px}
+.strip figure{margin:0}
+.strip img{border-radius:12px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.strip figcaption{font-size:.95rem;color:var(--ink-soft);margin-top:8px}
+
+/* ---------- Limits: plain and honest ---------- */
+.limits{background:#EAF0EC;padding:100px 0}
+.limits-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+.limits ul{margin:0;padding:0;list-style:none}
+.limits li{padding:16px 0 16px 34px;position:relative;border-bottom:1px solid #D2DCD6}
+.limits li::before{content:"";position:absolute;left:4px;top:26px;width:14px;height:3px;background:var(--uniform);border-radius:2px}
+
+/* ---------- Built with + maker ---------- */
+.built{padding:100px 0}
+.built-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.stack{margin:0;display:grid;grid-template-columns:auto 1fr;gap:12px 24px}
+.stack dt{font-weight:700}
+.stack dd{margin:0;color:var(--ink-soft)}
+.maker p{color:var(--ink-soft)}
+
+/* ---------- Closing ---------- */
+.closing{position:relative;color:#fff;min-height:70vh;display:grid;align-items:center;overflow:hidden}
+.closing img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.closing::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,16,8,.72) 0%,rgba(30,16,8,.25) 55%,rgba(30,16,8,0) 100%)}
+.closing .wrap{position:relative;z-index:1;width:100%}
+.closing h2{max-width:15ch}
+.closing p{color:#F6EFE2;margin:18px 0 28px}
+footer{background:var(--board-deep);color:var(--chalk-dim);font-size:.95rem;padding:40px 0}
+footer p{max-width:none;margin:0 0 6px}
+
+@media (max-width:860px){
+  .facts,.how-grid,.limits-grid,.built-grid{grid-template-columns:1fr;gap:36px}
+  .strip{grid-template-columns:1fr}
+  .board,.how,.limits,.built{padding:72px 0}
+  .places{padding-bottom:72px}
+  .status{top:14px;right:14px;font-size:.9rem}
+}
+
+/* ---------- Language selector ---------- */
+.lang{display:flex;gap:4px;padding:6px;border-radius:999px;background:rgba(21,43,38,.82);backdrop-filter:blur(6px);font-size:1rem}
+.lang a{padding:4px 12px;border-radius:999px;color:var(--chalk);text-decoration:none}
+.lang a:hover{text-decoration:underline}
+.lang a[aria-current]{background:var(--sun);color:var(--ink);font-weight:700}
+.hero .lang{position:absolute;z-index:2;top:20px;left:20px}
+
+/* ---------- Note for pages whose tutor doesn't speak the language ---------- */
+.notice{background:var(--sun);color:var(--ink);padding:14px 0}
+.notice p{margin:0;max-width:none}
+
+/* ---------- Pilot form ---------- */
+.pilot{padding:100px 0;background:var(--paper)}
+.pilot-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:64px;align-items:start}
+.pilot .intro{color:var(--ink-soft);margin-top:18px}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:20px 24px}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0;border:0;margin:0;padding:0}
+.field.full{grid-column:1/-1}
+.field label,.field legend{font-weight:700;padding:0}
+.field .hint{font-weight:400;color:var(--ink-soft)}
+.form input[type=text],.form input[type=email],.form input[type=number],.form textarea{width:100%;font:inherit;color:var(--ink);background:#fff;border:2px solid #C4D0CA;border-radius:10px;padding:10px 12px}
+.form input:focus,.form textarea:focus{border-color:var(--uniform);outline:none}
+.choices{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:6px}
+.choices label{display:inline-flex;align-items:center;gap:8px;font-weight:400;min-height:32px}
+.choices input{width:20px;height:20px;accent-color:var(--uniform)}
+.trap{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.terms{grid-column:1/-1;margin:0;padding:16px 18px;max-width:none;background:#EAF0EC;border-radius:10px;font-size:1rem}
+.submit{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:16px}
+.submit button{cursor:pointer;font-family:inherit}
+.submit button[disabled]{opacity:.6;cursor:wait}
+.result{grid-column:1/-1;margin:0;max-width:none;font-weight:700}
+.result:empty{display:none}
+.result.ok{padding:16px 18px;background:#DDEFE3;border-radius:10px}
+.result.error{padding:16px 18px;background:#F8E3DC;border-radius:10px}
+
+/* ---------- Contact ---------- */
+.contact{padding:0 0 100px}
+.contact p{margin:18px 0 24px;color:var(--ink-soft)}
+
+/* ---------- Footer links ---------- */
+footer a{color:var(--chalk)}
+
+/* ---------- Privacy page ---------- */
+.page-top{background:var(--board);padding:20px 0}
+.page-top .wrap{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+.page-top .home{color:var(--chalk);font-weight:700;text-decoration:none;font-size:1.25rem}
+.legal{padding:64px 0 90px}
+.legal h1{font-size:clamp(2rem,4.2vw,3rem);margin-bottom:12px}
+.legal h2{font-size:1.4rem;margin:36px 0 10px}
+.legal .updated{color:var(--ink-soft)}
+.legal ul{max-width:var(--measure);padding-left:22px;margin:0 0 1em}
+@media (max-width:860px){
+  .pilot-grid{grid-template-columns:1fr;gap:36px}
+  .pilot{padding:72px 0}
+  .contact{padding-bottom:72px}
+}
+@media (max-width:560px){
+  .form{grid-template-columns:1fr}
+  .hero .lang{top:14px;left:14px;font-size:.9rem}
+  .lang a{padding:3px 9px}
+  .status{top:62px;left:14px;right:auto}
+}
+
+/* ---------- Spacing that used to be inline (the CSP blocks inline styles) ---------- */
+.limits .lead{margin-top:18px;color:var(--ink-soft)}
+.stack{margin-top:28px}
+.maker p{margin-top:28px}
+
+/* A label that wraps shouldn't push its input out of line with the next column. */
+.form>.field:not(fieldset){justify-content:flex-end}
