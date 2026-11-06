@@ -1,0 +1,10 @@
+{
+  "origin": "https://offlinetutor-web.vercel.app",
+  "github": "https://github.com/alito28-hue/offline_tutor",
+  "linkedin": "https://www.linkedin.com/in/alexinteractive",
+  "locales": {
+    "en": { "name": "English", "home": "/", "privacy": "/privacy/", "ogLocale": "en_US" },
+    "es": { "name": "Español", "home": "/es/", "privacy": "/es/privacy/", "ogLocale": "es_419" },
+    "pt": { "name": "Português", "home": "/pt/", "privacy": "/pt/privacy/", "ogLocale": "pt_BR" }
+  }
+}

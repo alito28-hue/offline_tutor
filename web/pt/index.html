@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css">
+<title>Amara: um tutor de IA que funciona sem internet</title>
+<meta name="description" content="Amara é um protótipo funcional de tutor de IA que roda inteiramente em um notebook: sem Wi-Fi, sem nuvem e sem que os dados dos alunos saiam da sala de aula. Feito com o QVAC, da Tether.">
+<link rel="canonical" href="https://offlinetutor-web.vercel.app/pt/">
+<link rel="alternate" hreflang="en" href="https://offlinetutor-web.vercel.app/">
+<link rel="alternate" hreflang="es" href="https://offlinetutor-web.vercel.app/es/">
+<link rel="alternate" hreflang="pt" href="https://offlinetutor-web.vercel.app/pt/">
+<link rel="alternate" hreflang="x-default" href="https://offlinetutor-web.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://offlinetutor-web.vercel.app/pt/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Amara: um tutor de IA que funciona sem internet">
+<meta property="og:description" content="Um protótipo funcional que roda inteiramente em um notebook. Sem Wi-Fi, sem nuvem e sem que os dados saiam da sala.">
+<meta property="og:image" content="https://offlinetutor-web.vercel.app/assets/e1-classroom.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script src="/site.js" defer></script>
+</head>
+<body>
+
+<div class="notice"><div class="wrap"><p>Esta página está traduzida, mas o tutor ainda não responde em português: por enquanto, só em espanhol e inglês.</p></div></div>
+<header class="hero" aria-label="Amara">
+  <video id="heroVideo" muted loop playsinline preload="metadata" poster="/assets/e1-classroom.jpg" aria-hidden="true">
+    <source src="/assets/hero.mp4" type="video/mp4">
+  </video>
+  <nav class="lang" aria-label="Idioma"><a href="/" lang="en" hreflang="en">English</a><a href="/es/" lang="es" hreflang="es">Español</a><a href="/pt/" lang="pt" hreflang="pt" aria-current="page">Português</a></nav>
+  <div class="status" role="note" aria-label="Status: funcionando sem conexão">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M2 8.8a15 15 0 0 1 20 0"/><path d="M5 12.6a10 10 0 0 1 14 0"/><path d="M8.5 16.4a5 5 0 0 1 7 0"/><circle cx="12" cy="20" r="1"/><path d="M3 3l18 18" stroke="#F3B83A"/></svg>
+    <span>Sem internet. <b>E continua respondendo.</b></span>
+  </div>
+  <div class="copy">
+    <h1>Um tutor para as escolas onde a internet não chegou.</h1>
+    <p class="lede">Amara é um tutor de IA que roda inteiramente em um notebook. Sem Wi-Fi, sem nuvem e sem que os dados dos alunos saiam da sala de aula.</p>
+    <div class="actions">
+      <a class="btn primary" href="#pilot">Solicitar um piloto</a>
+      <a class="btn ghost" href="#film">Sobre o filme</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="board" id="film" aria-labelledby="proof-title">
+    <div class="wrap">
+      <h2 id="proof-title">O tutor do filme é real.</h2>
+      <p class="intro">O filme é ilustrado. Na metade, ele passa para uma gravação de tela do protótipo real respondendo à pergunta de uma aluna em um notebook.</p>
+
+      <div class="film">
+        <!-- Replace with the final film: <video controls poster="/assets/e3-question.jpg" src="/assets/amara-film.mp4"></video> -->
+        <img src="/assets/e3-question.jpg" alt="">
+        <p class="soon">O filme está em produção.<span>Ele vai passar aqui.</span></p>
+      </div>
+
+      <div class="facts">
+        <div class="fact">
+          <span class="figure">1,5–2,0 s</span>
+          <p>até aparecerem as primeiras palavras da resposta, com o modelo rodando no próprio notebook.</p>
+          <small>Medido em um MacBook Pro com M1 Pro e 16 GB de memória.</small>
+        </div>
+        <div class="fact">
+          <span class="figure">0</span>
+          <p>conexões de rede enquanto responde. Durante os testes, todas as saídas ficam bloqueadas e monitoradas.</p>
+          <small>IPv4, IPv6, UDP e DNS.</small>
+        </div>
+        <div class="fact">
+          <span class="figure">Com fonte</span>
+          <p>Cada resposta mostra o artigo de onde veio. Quando os materiais não cobrem a pergunta, ele diz "Não sei" em vez de chutar.</p>
+          <small>As fontes são adicionadas pelo aplicativo, não escritas pelo modelo.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <h2 id="how-title">O que acontece quando um aluno faz uma pergunta</h2>
+      <div class="how-grid">
+        <img src="/assets/e2-laptop.jpg" alt="Ilustração: Amara abre um notebook antigo na carteira da escola enquanto dois colegas se aproximam.">
+        <ol class="steps">
+          <li><div><h3>A pergunta é verificada</h3><p>Primeiro ela passa por um filtro: perguntas fora do tema ou inseguras são redirecionadas com cuidado.</p></div></li>
+          <li><div><h3>O notebook pesquisa na própria biblioteca</h3><p>Um conjunto de artigos de ciências e matemática com licença aberta fica guardado no aparelho, e a busca acontece ali mesmo.</p></div></li>
+          <li><div><h3>Um modelo pequeno escreve a explicação</h3><p>O Qwen3 4B roda no notebook com o QVAC, da Tether, e explica passo a passo, com palavras simples.</p></div></li>
+          <li><div><h3>O aluno recebe a fonte e uma pergunta</h3><p>A resposta mostra de onde veio e termina com uma pergunta para ver se o aluno entendeu.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="places" aria-labelledby="places-title">
+    <div class="wrap">
+      <h2 id="places-title">Feito para salas de aula onde a nuvem não é uma opção</h2>
+      <div class="strip">
+        <figure><img src="/assets/e5a-andes.jpg" alt="Ilustração: crianças de uma escola de montanha nos Andes reunidas em volta de um notebook."><figcaption>Uma escola de montanha nos Andes</figcaption></figure>
+        <figure><img src="/assets/e5b-africa.jpg" alt="Ilustração: crianças de uniforme escolar compartilham um notebook sob uma acácia."><figcaption>Uma escola rural na África Oriental</figcaption></figure>
+        <figure><img src="/assets/e5c-india.jpg" alt="Ilustração: crianças sobre esteiras trançadas em volta de um notebook, em uma colorida escola de vilarejo."><figcaption>Uma escola de vilarejo na Índia rural</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="limits" aria-labelledby="limits-title">
+    <div class="wrap limits-grid">
+      <div>
+        <h2 id="limits-title">O que ele ainda não é</h2>
+        <p class="lead">Amara é um protótipo funcional. Ainda não foi testado em nenhuma escola, e estes são os limites que conhecemos.</p>
+      </div>
+      <ul>
+        <li>Ele só responde em espanhol e inglês.</li>
+        <li>Ele não consegue dizer ao aluno se a resposta está certa. Agradece e mostra como conferir.</li>
+        <li>Os filtros de segurança procuram palavras e podem ser contornados, por isso as crianças devem usá-lo com um adulto por perto.</li>
+        <li>É um modelo pequeno em um notebook: bem menos capaz que os assistentes na nuvem, e só vai até onde vai a sua biblioteca.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="pilot" id="pilot" aria-labelledby="pilot-title">
+    <div class="wrap pilot-grid">
+      <div>
+        <h2 id="pilot-title">Solicitar um piloto</h2>
+        <p class="intro">Para escolas e organizações que atuam onde a conectividade é o problema. Conte sobre a sua realidade e eu respondo pessoalmente.</p>
+      </div>
+      <form class="form" id="pilotForm" data-sending="Enviando…" data-ok="Obrigado. Sua solicitação foi enviada, e vou responder por e-mail." data-error="Não foi possível enviar a solicitação. Tente de novo em alguns minutos ou me escreva no LinkedIn." data-devices="Escolha pelo menos uma opção.">
+        <div class="field full"><label for="organization">Escola ou organização</label><input id="organization" name="organization" type="text" maxlength="200" required autocomplete="organization"></div>
+        <div class="field"><label for="country">País</label><input id="country" name="country" type="text" maxlength="100" required autocomplete="country-name"></div>
+        <div class="field"><label for="name">Seu nome</label><input id="name" name="name" type="text" maxlength="120" required autocomplete="name"></div>
+        <div class="field"><label for="role">Sua função</label><input id="role" name="role" type="text" maxlength="120" required autocomplete="organization-title"></div>
+        <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" maxlength="254" required autocomplete="email"></div>
+        <div class="field"><label for="students">Número aproximado de alunos</label><input id="students" name="students" type="number" min="1" max="10000000" step="1" required inputmode="numeric"></div>
+        <div class="field"><label for="teachingLanguage">Idioma de ensino</label><input id="teachingLanguage" name="teachingLanguage" type="text" maxlength="100" required></div>
+        <fieldset class="field full"><legend>Conexão à internet na escola</legend>
+          <div class="choices">
+            <label><input type="radio" name="connectivity" value="none" required>Nenhuma</label>
+            <label><input type="radio" name="connectivity" value="poor">Ruim</label>
+            <label><input type="radio" name="connectivity" value="good">Boa</label>
+          </div>
+        </fieldset>
+        <fieldset class="field full"><legend>Equipamentos disponíveis</legend>
+          <div class="choices">
+            <label><input type="checkbox" name="devices" value="windows">Windows</label>
+            <label><input type="checkbox" name="devices" value="mac">Mac</label>
+            <label><input type="checkbox" name="devices" value="linux">Linux</label>
+            <label><input type="checkbox" name="devices" value="android">Android</label>
+            <label><input type="checkbox" name="devices" value="none">Nenhum</label>
+          </div>
+        </fieldset>
+        <div class="field full"><label for="message">Mensagem <span class="hint">(opcional)</span></label><textarea id="message" name="message" rows="4" maxlength="3000"></textarea></div>
+        <div class="trap" aria-hidden="true"><label for="website">Deixe este campo vazio</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+        <p class="terms">Amara é um protótipo que não foi testado em escolas, e qualquer piloto seria feito com a supervisão de um adulto. Seus dados são usados apenas para responder a você. Por favor, não inclua informações sobre alunos. <a href="/pt/privacy/">Privacidade</a></p>
+        <div class="submit"><button class="btn primary" type="submit">Enviar solicitação</button></div>
+        <p class="result" id="pilotResult" role="status" aria-live="polite"></p>
+        <noscript><p class="result error">Este formulário precisa de JavaScript. Você também pode me escrever no LinkedIn.</p></noscript>
+      </form>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 id="contact-title">Contato</h2>
+      <p>Para qualquer outro assunto, você pode me escrever no LinkedIn.</p>
+      <div class="actions"><a class="btn primary" href="https://www.linkedin.com/in/alexinteractive">Fale comigo no LinkedIn</a></div>
+    </div>
+  </section>
+
+  <section class="built" aria-labelledby="built-title">
+    <div class="wrap built-grid">
+      <div>
+        <h2 id="built-title">Feito com</h2>
+        <dl class="stack">
+          <dt>IA no aparelho</dt><dd>QVAC SDK, da Tether</dd>
+          <dt>Modelo de linguagem</dt><dd>Qwen3 4B, quantizado para rodar em um notebook</dd>
+          <dt>Busca</dt><dd>EmbeddingGemma, rodando localmente</dd>
+          <dt>Biblioteca</dt><dd>Artigos da Wikipédia sob CC BY-SA 4.0</dd>
+          <dt>Ilustrações</dt><dd>Geradas com ferramentas de IA de imagem e vídeo</dd>
+        </dl>
+      </div>
+      <div class="maker">
+        <h2>Quem fez</h2>
+        <p>Sou Alex Smith. Há anos criei o Urli OS, um sistema operacional implantado em escolas públicas e universidades da América Latina e da Índia. Agora estou criando a Amara: IA que funciona onde a rede não chega.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing" aria-labelledby="closing-title">
+    <img src="/assets/e6-sunset.jpg" alt="">
+    <div class="wrap">
+      <h2 id="closing-title">Sem internet. Sem nuvem. Só um notebook.</h2>
+      <p>O código é aberto. Se você trabalha com escolas, programas ou equipamentos onde a conectividade é o problema, gostaria de ouvir você.</p>
+      <div class="actions">
+        <a class="btn primary" href="#pilot">Solicitar um piloto</a>
+        <a class="btn ghost" href="https://github.com/alito28-hue/offline_tutor">Ver o código no GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Amara é um protótipo independente de Alex Smith. Não tem vínculo com a Tether nem com nenhuma escola.</p>
+    <p>Materiais de aprendizagem: colaboradores da Wikipédia, CC BY-SA 4.0. Ilustrações geradas com IA.</p>
+    <p><a href="/pt/privacy/">Privacidade</a></p>
+  </div>
+</footer>
+</body>
+</html>

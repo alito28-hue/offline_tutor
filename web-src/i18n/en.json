@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "language": "Language"
+  },
+  "notice": {
+    "text": ""
+  },
+  "meta": {
+    "title": "Amara — an AI tutor that works without internet",
+    "description": "Amara is a working prototype of an AI tutor that runs entirely on a laptop: no Wi-Fi, no cloud, and no student data leaving the room. Built on Tether's QVAC.",
+    "ogDescription": "A working prototype that runs entirely on a laptop. No Wi-Fi, no cloud, no data leaving the room."
+  },
+  "hero": {
+    "statusLabel": "Status: running offline",
+    "status": "No internet.",
+    "statusStrong": "Still answering.",
+    "title": "A tutor for schools the internet hasn't reached.",
+    "lede": "Amara is an AI tutor that runs entirely on a laptop. No Wi-Fi, no cloud, and no student data leaving the room."
+  },
+  "cta": {
+    "pilot": "Request a pilot",
+    "film": "About the film",
+    "code": "See the code on GitHub"
+  },
+  "film": {
+    "title": "The tutor in the film is real.",
+    "intro": "The film is illustrated. Halfway through, it cuts to a screen recording of the working prototype answering a student's question on a laptop.",
+    "soon": "The film is in production.",
+    "soonNote": "It will play here."
+  },
+  "facts": {
+    "speedFigure": "1.5–2.0 s",
+    "speed": "until the first words of an answer appear, with the model running on the laptop itself.",
+    "speedNote": "Measured on a MacBook Pro with M1 Pro and 16 GB of memory.",
+    "network": "network connections while it answers. Every route out is blocked and monitored during the tests.",
+    "networkNote": "IPv4, IPv6, UDP and DNS.",
+    "citedFigure": "Cited",
+    "cited": "Every answer shows the article it came from. When its materials don't cover a question, it says \"I don't know\" instead of guessing.",
+    "citedNote": "Sources are attached by the app, not written by the model."
+  },
+  "how": {
+    "title": "What happens when a student asks a question",
+    "imageAlt": "Illustration: Amara opens an old laptop on her school desk while two classmates lean in.",
+    "step1": "The question is checked",
+    "step1Text": "A filter screens it first, so off-topic or unsafe questions get a gentle redirect.",
+    "step2": "The laptop searches its own library",
+    "step2Text": "A pack of openly licensed science and maths articles is stored on the device and searched locally.",
+    "step3": "A small model writes the explanation",
+    "step3Text": "Qwen3 4B runs on the laptop through Tether's QVAC and explains step by step, in simple words.",
+    "step4": "The student gets a source and a question back",
+    "step4Text": "The answer shows where it came from and ends with a question to check understanding."
+  },
+  "places": {
+    "title": "Built for classrooms where the cloud isn't an option",
+    "andes": "A mountain school in the Andes",
+    "andesAlt": "Illustration: children in a mountain school in the Andes gathered around a laptop.",
+    "africa": "A rural school in East Africa",
+    "africaAlt": "Illustration: children in school uniforms sharing a laptop under an acacia tree.",
+    "india": "A village school in rural India",
+    "indiaAlt": "Illustration: children on woven mats around a laptop in a colourful village school."
+  },
+  "limits": {
+    "title": "What it isn't yet",
+    "lead": "Amara is a working prototype. It has not been tested in a school, and these are the limits we know about.",
+    "language": "It answers in Spanish and English only.",
+    "grading": "It can't tell a student whether their answer is right. It thanks them and shows how to check.",
+    "safety": "Its safety filters look for words and can be worked around, so children should use it with an adult nearby.",
+    "size": "It's a small model on a laptop: far less capable than cloud assistants, and only as broad as its library."
+  },
+  "pilot": {
+    "title": "Request a pilot",
+    "intro": "For schools and organizations working where connectivity is the problem. Tell me about your setting and I'll reply personally.",
+    "organization": "School or organization",
+    "country": "Country",
+    "name": "Your name",
+    "role": "Your role",
+    "email": "Email",
+    "students": "Approximate number of students",
+    "teachingLanguage": "Language of instruction",
+    "connectivity": "Internet connection at the school",
+    "connNone": "None",
+    "connPoor": "Poor",
+    "connGood": "Good",
+    "devices": "Devices available",
+    "devicesNone": "None",
+    "devicesRequired": "Please choose at least one option.",
+    "message": "Message",
+    "optional": "(optional)",
+    "trap": "Leave this field empty",
+    "terms": "Amara is a prototype that has not been tested in schools, and any pilot would run with an adult supervising. Your details are used only to reply to you. Please don't include any information about students.",
+    "privacyLink": "Privacy",
+    "submit": "Send request",
+    "sending": "Sending…",
+    "ok": "Thank you. Your request has been sent, and I'll reply by email.",
+    "error": "Your request couldn't be sent. Please try again in a few minutes, or write to me on LinkedIn.",
+    "noscript": "This form needs JavaScript. You can write to me on LinkedIn instead."
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "For anything other than a pilot, you can reach me on LinkedIn.",
+    "linkedin": "Contact me on LinkedIn"
+  },
+  "built": {
+    "title": "Built with",
+    "aiLabel": "On-device AI",
+    "ai": "Tether's QVAC SDK",
+    "modelLabel": "Language model",
+    "model": "Qwen3 4B, quantized to run on a laptop",
+    "searchLabel": "Search",
+    "search": "EmbeddingGemma, running locally",
+    "libraryLabel": "Library",
+    "library": "Wikipedia articles under CC BY-SA 4.0",
+    "artLabel": "Illustrations",
+    "art": "Generated with AI image and video tools",
+    "makerTitle": "Who made it",
+    "maker": "I'm Alex Smith. Years ago I built Urli OS, an operating system deployed across Latin America and India in public schools and universities. Now I'm building Amara: AI that works where the network doesn't."
+  },
+  "closing": {
+    "title": "No internet. No cloud. Just a laptop.",
+    "text": "The code is open. If you run schools, programs or devices where connectivity is the problem, I'd like to hear from you."
+  },
+  "footer": {
+    "independent": "Amara is an independent prototype by Alex Smith. It is not affiliated with Tether or any school.",
+    "credits": "Learning materials: Wikipedia contributors, CC BY-SA 4.0. Illustrations generated with AI.",
+    "privacy": "Privacy"
+  },
+  "privacy": {
+    "title": "Privacy",
+    "description": "How Amara handles the details sent through the pilot request form.",
+    "updated": "Last updated: 6 November 2026",
+    "intro": "This page explains what happens to the details you send through the \"Request a pilot\" form. Amara is an independent prototype run by Alex Smith, who is responsible for these details.",
+    "collectTitle": "What the form collects",
+    "collect": "The name of your school or organization, country, your name and role, your email, the approximate number of students, connectivity, available devices, language of instruction, and your message if you write one. The form never asks for information about students, so please don't include any.",
+    "useTitle": "What it's used for",
+    "use": "Only to reply to your request. It isn't used for marketing and isn't added to any mailing list.",
+    "whereTitle": "Where it goes and for how long",
+    "whereResend": "Resend delivers the form to me by email and keeps a copy for up to 30 days.",
+    "whereInbox": "The email arrives in my Gmail inbox, where I keep it for up to 12 months.",
+    "whereVercel": "Vercel hosts this site and may process technical data, such as your IP address, to serve the pages.",
+    "noTitle": "What this site doesn't do",
+    "no": "It uses no cookies, no analytics and no advertising, and I don't sell or share your details with anyone else.",
+    "tutorTitle": "The tutor itself",
+    "tutor": "This page is about the website. The tutor runs on the laptop, and the questions students ask it aren't sent anywhere.",
+    "rightsTitle": "Your choices",
+    "rights": "You can ask me to show, correct or delete your details at any time. Just write to me through the form or on",
+    "back": "Back to the form"
+  }
+}

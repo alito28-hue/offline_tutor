@@ -5,7 +5,8 @@ Amara is a prototype AI tutor for children aged 8 to 14. It runs entirely on a l
 It is a working prototype. **It has not been tested in a school, and children should use it with an adult nearby.**
 
 - `tutor/`: the tutor (Node.js, [QVAC SDK](https://www.npmjs.com/package/@qvac/sdk)). Technical details, in Spanish, are in [`tutor/README.md`](tutor/README.md).
-- `web/`: the project website (static HTML, no build step).
+- `web/`: the project website, in English, Spanish and Portuguese. Static pages plus one function for the pilot form.
+- `web-src/`: the templates and translations that generate those pages.
 
 ## Run it without internet
 
@@ -68,6 +69,17 @@ Measured on 2026-11-05 on one MacBook with an Apple M1 Pro and 16 GB of memory, 
 - **A small library.** It covers 30 topics in each language. Outside them, or when a valid question uses different words, it says "I don't know".
 - **macOS only,** because of `sandbox-exec`, which macOS lists as deprecated.
 
+## The website
+
+Vercel serves `web/` with no build step (Framework: Other, Root Directory: `web`). After changing a template or translation, regenerate the pages and commit the result:
+
+```bash
+node web-src/build.mjs
+node --test web-src/web.test.mjs
+```
+
+The domain lives in `web-src/site.json`. The pilot form calls `web/api/pilot.mjs`, which needs two environment variables in Vercel: `RESEND_API_KEY` and `PILOT_TO_EMAIL`. `PILOT_FROM_EMAIL` is optional, and is needed once the site sends from its own domain.
+
 ## Licences
 
 | What | Licence |
@@ -75,6 +87,7 @@ Measured on 2026-11-05 on one MacBook with an Apple M1 Pro and 16 GB of memory, 
 | Code | [Apache-2.0](LICENSE) |
 | Learning materials in `tutor/content/` | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), adapted from Wikipedia. Each file's source and revision are in [`tutor/content/LICENSES.md`](tutor/content/LICENSES.md) |
 | Illustrations and video in `web/assets/` | Generated with AI. Not covered by the Apache-2.0 licence |
+| Andika font in `web/assets/fonts/` | [SIL Open Font License](web/assets/fonts/OFL.txt) |
 | QVAC SDK | Apache-2.0, installed by npm |
 | Qwen3 4B Q4_K_M | Apache-2.0, not included in this repository |
 | EmbeddingGemma 300M Q8_0 | [Gemma Terms of Use](https://ai.google.dev/gemma/terms), not included in this repository |

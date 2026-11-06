@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+{{head}}
+<title>{{meta.title}}</title>
+<meta name="description" content="{{meta.description}}">
+<link rel="canonical" href="{{canonical}}">
+{{alternates}}
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:locale" content="{{ogLocale}}">
+<meta property="og:title" content="{{meta.title}}">
+<meta property="og:description" content="{{meta.ogDescription}}">
+<meta property="og:image" content="{{origin}}/assets/e1-classroom.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script src="/site.js" defer></script>
+</head>
+<body>
+
+{{notice}}
+<header class="hero" aria-label="Amara">
+  <video id="heroVideo" muted loop playsinline preload="metadata" poster="/assets/e1-classroom.jpg" aria-hidden="true">
+    <source src="/assets/hero.mp4" type="video/mp4">
+  </video>
+  {{langNav}}
+  <div class="status" role="note" aria-label="{{hero.statusLabel}}">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M2 8.8a15 15 0 0 1 20 0"/><path d="M5 12.6a10 10 0 0 1 14 0"/><path d="M8.5 16.4a5 5 0 0 1 7 0"/><circle cx="12" cy="20" r="1"/><path d="M3 3l18 18" stroke="#F3B83A"/></svg>
+    <span>{{hero.status}} <b>{{hero.statusStrong}}</b></span>
+  </div>
+  <div class="copy">
+    <h1>{{hero.title}}</h1>
+    <p class="lede">{{hero.lede}}</p>
+    <div class="actions">
+      <a class="btn primary" href="#pilot">{{cta.pilot}}</a>
+      <a class="btn ghost" href="#film">{{cta.film}}</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="board" id="film" aria-labelledby="proof-title">
+    <div class="wrap">
+      <h2 id="proof-title">{{film.title}}</h2>
+      <p class="intro">{{film.intro}}</p>
+
+      <div class="film">
+        <!-- Replace with the final film: <video controls poster="/assets/e3-question.jpg" src="/assets/amara-film.mp4"></video> -->
+        <img src="/assets/e3-question.jpg" alt="">
+        <p class="soon">{{film.soon}}<span>{{film.soonNote}}</span></p>
+      </div>
+
+      <div class="facts">
+        <div class="fact">
+          <span class="figure">{{facts.speedFigure}}</span>
+          <p>{{facts.speed}}</p>
+          <small>{{facts.speedNote}}</small>
+        </div>
+        <div class="fact">
+          <span class="figure">0</span>
+          <p>{{facts.network}}</p>
+          <small>{{facts.networkNote}}</small>
+        </div>
+        <div class="fact">
+          <span class="figure">{{facts.citedFigure}}</span>
+          <p>{{facts.cited}}</p>
+          <small>{{facts.citedNote}}</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <h2 id="how-title">{{how.title}}</h2>
+      <div class="how-grid">
+        <img src="/assets/e2-laptop.jpg" alt="{{how.imageAlt}}">
+        <ol class="steps">
+          <li><div><h3>{{how.step1}}</h3><p>{{how.step1Text}}</p></div></li>
+          <li><div><h3>{{how.step2}}</h3><p>{{how.step2Text}}</p></div></li>
+          <li><div><h3>{{how.step3}}</h3><p>{{how.step3Text}}</p></div></li>
+          <li><div><h3>{{how.step4}}</h3><p>{{how.step4Text}}</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="places" aria-labelledby="places-title">
+    <div class="wrap">
+      <h2 id="places-title">{{places.title}}</h2>
+      <div class="strip">
+        <figure><img src="/assets/e5a-andes.jpg" alt="{{places.andesAlt}}"><figcaption>{{places.andes}}</figcaption></figure>
+        <figure><img src="/assets/e5b-africa.jpg" alt="{{places.africaAlt}}"><figcaption>{{places.africa}}</figcaption></figure>
+        <figure><img src="/assets/e5c-india.jpg" alt="{{places.indiaAlt}}"><figcaption>{{places.india}}</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="limits" aria-labelledby="limits-title">
+    <div class="wrap limits-grid">
+      <div>
+        <h2 id="limits-title">{{limits.title}}</h2>
+        <p class="lead">{{limits.lead}}</p>
+      </div>
+      <ul>
+        <li>{{limits.language}}</li>
+        <li>{{limits.grading}}</li>
+        <li>{{limits.safety}}</li>
+        <li>{{limits.size}}</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="pilot" id="pilot" aria-labelledby="pilot-title">
+    <div class="wrap pilot-grid">
+      <div>
+        <h2 id="pilot-title">{{pilot.title}}</h2>
+        <p class="intro">{{pilot.intro}}</p>
+      </div>
+      <form class="form" id="pilotForm" data-sending="{{pilot.sending}}" data-ok="{{pilot.ok}}" data-error="{{pilot.error}}" data-devices="{{pilot.devicesRequired}}">
+        <div class="field full"><label for="organization">{{pilot.organization}}</label><input id="organization" name="organization" type="text" maxlength="200" required autocomplete="organization"></div>
+        <div class="field"><label for="country">{{pilot.country}}</label><input id="country" name="country" type="text" maxlength="100" required autocomplete="country-name"></div>
+        <div class="field"><label for="name">{{pilot.name}}</label><input id="name" name="name" type="text" maxlength="120" required autocomplete="name"></div>
+        <div class="field"><label for="role">{{pilot.role}}</label><input id="role" name="role" type="text" maxlength="120" required autocomplete="organization-title"></div>
+        <div class="field"><label for="email">{{pilot.email}}</label><input id="email" name="email" type="email" maxlength="254" required autocomplete="email"></div>
+        <div class="field"><label for="students">{{pilot.students}}</label><input id="students" name="students" type="number" min="1" max="10000000" step="1" required inputmode="numeric"></div>
+        <div class="field"><label for="teachingLanguage">{{pilot.teachingLanguage}}</label><input id="teachingLanguage" name="teachingLanguage" type="text" maxlength="100" required></div>
+        <fieldset class="field full"><legend>{{pilot.connectivity}}</legend>
+          <div class="choices">
+            <label><input type="radio" name="connectivity" value="none" required>{{pilot.connNone}}</label>
+            <label><input type="radio" name="connectivity" value="poor">{{pilot.connPoor}}</label>
+            <label><input type="radio" name="connectivity" value="good">{{pilot.connGood}}</label>
+          </div>
+        </fieldset>
+        <fieldset class="field full"><legend>{{pilot.devices}}</legend>
+          <div class="choices">
+            <label><input type="checkbox" name="devices" value="windows">Windows</label>
+            <label><input type="checkbox" name="devices" value="mac">Mac</label>
+            <label><input type="checkbox" name="devices" value="linux">Linux</label>
+            <label><input type="checkbox" name="devices" value="android">Android</label>
+            <label><input type="checkbox" name="devices" value="none">{{pilot.devicesNone}}</label>
+          </div>
+        </fieldset>
+        <div class="field full"><label for="message">{{pilot.message}} <span class="hint">{{pilot.optional}}</span></label><textarea id="message" name="message" rows="4" maxlength="3000"></textarea></div>
+        <div class="trap" aria-hidden="true"><label for="website">{{pilot.trap}}</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+        <p class="terms">{{pilot.terms}} <a href="{{privacyPath}}">{{pilot.privacyLink}}</a></p>
+        <div class="submit"><button class="btn primary" type="submit">{{pilot.submit}}</button></div>
+        <p class="result" id="pilotResult" role="status" aria-live="polite"></p>
+        <noscript><p class="result error">{{pilot.noscript}}</p></noscript>
+      </form>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 id="contact-title">{{contact.title}}</h2>
+      <p>{{contact.text}}</p>
+      <div class="actions"><a class="btn primary" href="{{linkedin}}">{{contact.linkedin}}</a></div>
+    </div>
+  </section>
+
+  <section class="built" aria-labelledby="built-title">
+    <div class="wrap built-grid">
+      <div>
+        <h2 id="built-title">{{built.title}}</h2>
+        <dl class="stack">
+          <dt>{{built.aiLabel}}</dt><dd>{{built.ai}}</dd>
+          <dt>{{built.modelLabel}}</dt><dd>{{built.model}}</dd>
+          <dt>{{built.searchLabel}}</dt><dd>{{built.search}}</dd>
+          <dt>{{built.libraryLabel}}</dt><dd>{{built.library}}</dd>
+          <dt>{{built.artLabel}}</dt><dd>{{built.art}}</dd>
+        </dl>
+      </div>
+      <div class="maker">
+        <h2>{{built.makerTitle}}</h2>
+        <p>{{built.maker}}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing" aria-labelledby="closing-title">
+    <img src="/assets/e6-sunset.jpg" alt="">
+    <div class="wrap">
+      <h2 id="closing-title">{{closing.title}}</h2>
+      <p>{{closing.text}}</p>
+      <div class="actions">
+        <a class="btn primary" href="#pilot">{{cta.pilot}}</a>
+        <a class="btn ghost" href="{{github}}">{{cta.code}}</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>{{footer.independent}}</p>
+    <p>{{footer.credits}}</p>
+    <p><a href="{{privacyPath}}">{{footer.privacy}}</a></p>
+  </div>
+</footer>
+</body>
+</html>

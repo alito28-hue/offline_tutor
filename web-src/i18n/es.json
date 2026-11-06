@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "language": "Idioma"
+  },
+  "notice": {
+    "text": ""
+  },
+  "meta": {
+    "title": "Amara: un tutor de IA que funciona sin internet",
+    "description": "Amara es un prototipo funcional de tutor de IA que corre por completo en una laptop: sin Wi-Fi, sin nube y sin que los datos de los alumnos salgan del aula. Hecho con QVAC, de Tether.",
+    "ogDescription": "Un prototipo funcional que corre por completo en una laptop. Sin Wi-Fi, sin nube y sin que los datos salgan del aula."
+  },
+  "hero": {
+    "statusLabel": "Estado: funcionando sin conexión",
+    "status": "Sin internet.",
+    "statusStrong": "Y sigue respondiendo.",
+    "title": "Un tutor para las escuelas a las que internet no llegó.",
+    "lede": "Amara es un tutor de IA que corre por completo en una laptop. Sin Wi-Fi, sin nube y sin que los datos de los alumnos salgan del aula."
+  },
+  "cta": {
+    "pilot": "Solicitar un piloto",
+    "film": "Sobre el film",
+    "code": "Ver el código en GitHub"
+  },
+  "film": {
+    "title": "El tutor del film es real.",
+    "intro": "El film es ilustrado. A la mitad, pasa a una grabación de pantalla del prototipo real respondiendo la pregunta de una alumna en una laptop.",
+    "soon": "El film está en producción.",
+    "soonNote": "Se va a ver acá."
+  },
+  "facts": {
+    "speedFigure": "1,5–2,0 s",
+    "speed": "hasta que aparecen las primeras palabras de la respuesta, con el modelo corriendo en la propia laptop.",
+    "speedNote": "Medido en una MacBook Pro con M1 Pro y 16 GB de memoria.",
+    "network": "conexiones de red mientras responde. Durante las pruebas, todas las salidas están bloqueadas y monitoreadas.",
+    "networkNote": "IPv4, IPv6, UDP y DNS.",
+    "citedFigure": "Con fuente",
+    "cited": "Cada respuesta muestra el artículo del que salió. Si sus materiales no cubren la pregunta, dice \"No lo sé\" en lugar de adivinar.",
+    "citedNote": "Las fuentes las agrega la aplicación, no las escribe el modelo."
+  },
+  "how": {
+    "title": "Qué pasa cuando un alumno hace una pregunta",
+    "imageAlt": "Ilustración: Amara abre una laptop vieja en su pupitre mientras dos compañeros se acercan a mirar.",
+    "step1": "Se revisa la pregunta",
+    "step1Text": "Primero pasa por un filtro: las preguntas fuera de tema o inseguras se redirigen con cuidado.",
+    "step2": "La laptop busca en su propia biblioteca",
+    "step2Text": "Un conjunto de artículos de ciencias y matemática con licencia abierta está guardado en el equipo, y la búsqueda se hace ahí mismo.",
+    "step3": "Un modelo chico escribe la explicación",
+    "step3Text": "Qwen3 4B corre en la laptop con QVAC, de Tether, y explica paso a paso, con palabras simples.",
+    "step4": "El alumno recibe la fuente y una pregunta",
+    "step4Text": "La respuesta muestra de dónde salió y termina con una pregunta para comprobar si se entendió."
+  },
+  "places": {
+    "title": "Pensado para aulas donde la nube no es una opción",
+    "andes": "Una escuela de montaña en los Andes",
+    "andesAlt": "Ilustración: chicos de una escuela de montaña en los Andes reunidos alrededor de una laptop.",
+    "africa": "Una escuela rural en África Oriental",
+    "africaAlt": "Ilustración: chicos con uniforme escolar comparten una laptop bajo una acacia.",
+    "india": "Una escuela de pueblo en la India rural",
+    "indiaAlt": "Ilustración: chicos sobre esteras tejidas alrededor de una laptop en una colorida escuela de pueblo."
+  },
+  "limits": {
+    "title": "Lo que todavía no es",
+    "lead": "Amara es un prototipo funcional. No se probó en ninguna escuela, y estos son los límites que conocemos.",
+    "language": "Solo responde en español e inglés.",
+    "grading": "No puede decirle a un alumno si su respuesta está bien. Le agradece y le muestra cómo comprobarla.",
+    "safety": "Sus filtros de seguridad buscan palabras y se pueden esquivar, así que los chicos deberían usarlo con un adulto cerca.",
+    "size": "Es un modelo chico en una laptop: mucho menos capaz que los asistentes en la nube, y solo llega hasta donde llega su biblioteca."
+  },
+  "pilot": {
+    "title": "Solicitar un piloto",
+    "intro": "Para escuelas y organizaciones que trabajan donde la conectividad es el problema. Contame sobre tu contexto y te respondo personalmente.",
+    "organization": "Escuela u organización",
+    "country": "País",
+    "name": "Tu nombre",
+    "role": "Tu rol",
+    "email": "Email",
+    "students": "Cantidad aproximada de alumnos",
+    "teachingLanguage": "Idioma de enseñanza",
+    "connectivity": "Conexión a internet en la escuela",
+    "connNone": "Ninguna",
+    "connPoor": "Mala",
+    "connGood": "Buena",
+    "devices": "Equipos disponibles",
+    "devicesNone": "Ninguno",
+    "devicesRequired": "Elegí al menos una opción.",
+    "message": "Mensaje",
+    "optional": "(opcional)",
+    "trap": "Dejá este campo vacío",
+    "terms": "Amara es un prototipo que no se probó en escuelas, y cualquier piloto se haría con la supervisión de un adulto. Tus datos se usan solo para responderte. Por favor, no incluyas información sobre alumnos.",
+    "privacyLink": "Privacidad",
+    "submit": "Enviar solicitud",
+    "sending": "Enviando…",
+    "ok": "Gracias. Tu solicitud se envió y te voy a responder por email.",
+    "error": "No se pudo enviar la solicitud. Probá de nuevo en unos minutos o escribime por LinkedIn.",
+    "noscript": "Este formulario necesita JavaScript. También podés escribirme por LinkedIn."
+  },
+  "contact": {
+    "title": "Contacto",
+    "text": "Para cualquier otro tema, podés escribirme por LinkedIn.",
+    "linkedin": "Escribime por LinkedIn"
+  },
+  "built": {
+    "title": "Hecho con",
+    "aiLabel": "IA en el equipo",
+    "ai": "QVAC SDK, de Tether",
+    "modelLabel": "Modelo de lenguaje",
+    "model": "Qwen3 4B, cuantizado para correr en una laptop",
+    "searchLabel": "Búsqueda",
+    "search": "EmbeddingGemma, corriendo de forma local",
+    "libraryLabel": "Biblioteca",
+    "library": "Artículos de Wikipedia bajo CC BY-SA 4.0",
+    "artLabel": "Ilustraciones",
+    "art": "Generadas con herramientas de IA de imagen y video",
+    "makerTitle": "Quién lo hizo",
+    "maker": "Soy Alex Smith. Hace años creé Urli OS, un sistema operativo implementado en escuelas públicas y universidades de América Latina y la India. Ahora estoy creando Amara: IA que funciona donde la red no llega."
+  },
+  "closing": {
+    "title": "Sin internet. Sin nube. Solo una laptop.",
+    "text": "El código es abierto. Si trabajás con escuelas, programas o equipos donde la conectividad es el problema, me gustaría saber de vos."
+  },
+  "footer": {
+    "independent": "Amara es un prototipo independiente de Alex Smith. No está afiliado a Tether ni a ninguna escuela.",
+    "credits": "Materiales de aprendizaje: colaboradores de Wikipedia, CC BY-SA 4.0. Ilustraciones generadas con IA.",
+    "privacy": "Privacidad"
+  },
+  "privacy": {
+    "title": "Privacidad",
+    "description": "Cómo trata Amara los datos enviados en el formulario para solicitar un piloto.",
+    "updated": "Última actualización: 6 de noviembre de 2026",
+    "intro": "Esta página explica qué pasa con los datos que enviás en el formulario \"Solicitar un piloto\". Amara es un prototipo independiente a cargo de Alex Smith, responsable de estos datos.",
+    "collectTitle": "Qué datos pide el formulario",
+    "collect": "El nombre de tu escuela u organización, el país, tu nombre y rol, tu email, la cantidad aproximada de alumnos, la conectividad, los equipos disponibles, el idioma de enseñanza y tu mensaje, si escribís uno. El formulario nunca pide información sobre alumnos, así que te pedimos no incluirla.",
+    "useTitle": "Para qué se usan",
+    "use": "Solo para responder tu solicitud. No se usan para marketing ni se agregan a ninguna lista de correo.",
+    "whereTitle": "Dónde quedan y por cuánto tiempo",
+    "whereResend": "Resend me entrega el formulario por email y guarda una copia hasta 30 días.",
+    "whereInbox": "El email llega a mi casilla de Gmail, donde lo conservo hasta 12 meses.",
+    "whereVercel": "Vercel aloja este sitio y puede procesar datos técnicos, como tu dirección IP, para mostrar las páginas.",
+    "noTitle": "Qué no hace este sitio",
+    "no": "No usa cookies, analítica ni publicidad, y no vendo ni comparto tus datos con nadie más.",
+    "tutorTitle": "El tutor",
+    "tutor": "Esta página habla del sitio web. El tutor corre en la laptop, y las preguntas que le hacen los alumnos no se envían a ningún lado.",
+    "rightsTitle": "Qué podés pedir",
+    "rights": "Podés pedirme que te muestre, corrija o borre tus datos en cualquier momento. Solo escribime por el formulario o por",
+    "back": "Volver al formulario"
+  }
+}
