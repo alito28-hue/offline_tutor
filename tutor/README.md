@@ -12,7 +12,11 @@ Hay que preparar una sola vez, con internet, desde la raíz del repo:
 npm ci
 ```
 
-Los modelos se buscan en `~/.qvac/models`. Si no están, basta con correr una vez el inbox del repo (`node server.js`) con internet: los descarga ahí.
+Los modelos (2,8 GB) se buscan en `~/.qvac/models`. Si no están, se bajan una sola vez, con internet:
+
+```bash
+node tutor/tools/fetch_models.mjs
+```
 
 Después, sin internet:
 

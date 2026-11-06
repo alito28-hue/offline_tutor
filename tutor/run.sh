@@ -29,8 +29,8 @@ case "${1:-}" in
   *) fail "unknown option: $1" ;;
 esac
 
-ls "$MODELS"/*Qwen3-4B-Q4_K_M*.gguf >/dev/null 2>&1 || fail "the Qwen3 4B model is missing in $MODELS."
-ls "$MODELS"/*embeddinggemma-300M-Q8_0*.gguf >/dev/null 2>&1 || fail "the EmbeddingGemma model is missing in $MODELS."
+ls "$MODELS"/*Qwen3-4B-Q4_K_M*.gguf >/dev/null 2>&1 || fail "the Qwen3 4B model is missing in $MODELS. Run node tutor/tools/fetch_models.mjs once, with internet."
+ls "$MODELS"/*embeddinggemma-300M-Q8_0*.gguf >/dev/null 2>&1 || fail "the EmbeddingGemma model is missing in $MODELS. Run node tutor/tools/fetch_models.mjs once, with internet."
 if lsof -nP -iTCP:"$PORT" -sTCP:LISTEN >/dev/null 2>&1; then fail "port $PORT is in use. Is the tutor already running?"; fi
 
 node "$HERE/supervisor.mjs" &
