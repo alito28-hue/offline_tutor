@@ -2,6 +2,7 @@
 // Builds two Mac disk images from the same app:
 //   AMARA_KIT=full    carries the models, for schools with no internet (pendrive)
 //   AMARA_KIT=online  downloads them the first time it opens
+const { execFileSync } = require('node:child_process');
 const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
@@ -75,6 +76,12 @@ module.exports = {
           if (!file.endsWith('.dmg')) return file;
           const named = path.join(path.dirname(file), `Amara-${version}-Mac-${label}.dmg`);
           fs.renameSync(file, named);
+          // The disk image gets its own signature and ticket, so that a downloaded copy opens without warnings.
+          if (process.env.AMARA_SIGN_IDENTITY) execFileSync('codesign', ['--force', '--sign', process.env.AMARA_SIGN_IDENTITY, '--timestamp', named], { stdio: 'inherit' });
+          if (process.env.AMARA_NOTARY_PROFILE) {
+            execFileSync('xcrun', ['notarytool', 'submit', named, '--keychain-profile', process.env.AMARA_NOTARY_PROFILE, '--wait'], { stdio: 'inherit' });
+            execFileSync('xcrun', ['stapler', 'staple', named], { stdio: 'inherit' });
+          }
           return named;
         });
       }
