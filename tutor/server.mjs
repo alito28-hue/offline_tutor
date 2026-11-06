@@ -1,4 +1,4 @@
-// Tutor Offline server. It only listens on loopback and serves the UI with a CSP that blocks outside requests.
+// Amara tutor server. It only listens on loopback and serves the UI with a CSP that blocks outside requests.
 import fs from 'node:fs';
 import http from 'node:http';
 import net from 'node:net';

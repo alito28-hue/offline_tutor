@@ -1,5 +1,5 @@
 #!/bin/bash
-# Tutor Offline. Usage:
+# Amara, the offline tutor. Usage:
 #   ./run.sh               start the tutor and open it full screen
 #   ./run.sh --no-browser  start the tutor only
 #   ./run.sh --test        fast tests: guardrails, citations, sandbox, network monitor

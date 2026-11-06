@@ -1,4 +1,4 @@
-# Tutor Offline
+# Amara: el tutor offline
 
 Un tutor de IA para chicos de 8 a 14 años que corre en una laptop, sin internet. Explica matemática y ciencias paso a paso, hace una pregunta de vuelta y muestra de dónde sale cada respuesta. Es un prototipo para un video demo.
 
