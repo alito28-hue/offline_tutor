@@ -46,7 +46,7 @@ async function startTutor() {
   import('../tutor/server.mjs').catch(err => {
     console.error(err);
     tutorStarted = false;
-    send('setup', { state: 'failed', detail: err.message });
+    send('setup', { state: 'failed', detail: err.message, windows: process.platform === 'win32' });
   });
   const waitReady = async () => {
     for (;;) {

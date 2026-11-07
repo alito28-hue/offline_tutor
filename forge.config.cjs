@@ -16,7 +16,7 @@ const packagerConfig = {
   appBundleId: 'org.amaratutor.app',
   appCategoryType: 'public.app-category.education',
   icon: path.join(assets, 'icon'),
-  ignore: [/^\/(web|web-src|out|build|README\.md|LICENSE\.md)($|\/)/, /^\/tutor\/(test|\.run|demo_script\.md|README\.md)($|\/)/, /^\/\.(git|vercel)($|\/)/],
+  ignore: [/^\/(web|web-src|video|out|build|dist|\.github|README\.md|LICENSE\.md)($|\/)/, /^\/desktop\/windows($|\/)/, /^\/tutor\/(test|\.run|demo_script\.md|README\.md)($|\/)/, /^\/\.(git|vercel)($|\/)/],
 };
 
 // With AMARA_SIGN_IDENTITY set, the app is signed; with AMARA_NOTARY_PROFILE too, it is notarized and stapled,

@@ -41,6 +41,10 @@ npm run mac:online   # about 200 MB: downloads 2.8 GB when first opened, then wo
 
 Both land in `out/<kit>/make/`. To sign them, set `AMARA_SIGN_IDENTITY` to a Developer ID Application certificate. To notarize, also set `AMARA_NOTARY_PROFILE` to a `notarytool` keychain profile. The network block and monitor described below belong to `tutor/run.sh`, not to the app.
 
+## The Windows installers
+
+`.github/workflows/windows.yml` builds two installers on a Windows machine, from `desktop/windows/amara.iss`. They are the same two kits as on the Mac, and they need no administrator password. They are not signed yet, so Windows SmartScreen warns on first run. Windows 10 or later (x64) and a video driver with Vulkan are required; the installer warns if Vulkan is missing.
+
 ## How it works
 
 1. **Safety check.** A word filter screens the question. Inappropriate topics are redirected, and questions about self-harm or abuse point to a trusted adult. The model never sees them.

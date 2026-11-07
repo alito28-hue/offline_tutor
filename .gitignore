@@ -7,3 +7,5 @@ build/
 qvac/
 *.cer
 *.certSigningRequest
+dist/
+spike-results/

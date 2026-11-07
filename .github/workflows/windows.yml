@@ -1,0 +1,73 @@
+name: Windows installers
+
+on:
+  push:
+    branches: [desktop-windows]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 120
+    env:
+      ELECTRON_RUN_AS_NODE: ''
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm ci
+      - name: Package the online kit
+        run: npx electron-forge package --platform=win32 --arch=x64
+        env:
+          AMARA_KIT: online
+      - name: Download the models
+        run: node tutor/tools/fetch_models.mjs
+      - name: Package the full kit
+        run: npx electron-forge package --platform=win32 --arch=x64
+        env:
+          AMARA_KIT: full
+      - name: Show what the native files need
+        shell: pwsh
+        continue-on-error: true
+        run: |
+          $dumpbin = Get-ChildItem 'C:\Program Files\Microsoft Visual Studio' -Recurse -Filter dumpbin.exe -ErrorAction SilentlyContinue | Where-Object { $_.FullName -match 'Hostx64\\x64' } | Select-Object -First 1
+          Get-ChildItem out/online/Amara-win32-x64/resources/app/node_modules -Recurse -Include bare.exe,*.bare | Where-Object { $_.FullName -match 'llm-llamacpp|fabric|bare-runtime' } | Select-Object -First 6 | ForEach-Object { $_.FullName; & $dumpbin.FullName /nologo /dependents $_.FullName | Select-String '\.dll' }
+          Test-Path C:\Windows\System32\vulkan-1.dll
+      - name: Build the installers
+        shell: pwsh
+        run: |
+          choco install innosetup --no-progress -y
+          $iscc = 'C:\Program Files (x86)\Inno Setup 6\ISCC.exe'
+          (Get-Item $iscc).VersionInfo.ProductVersion
+          $version = (Get-Content package.json | ConvertFrom-Json).version
+          & $iscc /DKit=online /DAppVersion=$version desktop/windows/amara.iss
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          & $iscc /DKit=full /DAppVersion=$version desktop/windows/amara.iss
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          Get-ChildItem dist | Select-Object Name, Length
+      - name: Measure the tutor on this machine, without a GPU
+        continue-on-error: true
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force spike-results | Out-Null
+          Set-Location spike-results
+          node ../tutor/tools/spike.mjs --device cpu
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Amara-Windows-Instalador-Online
+          path: dist/*Instalador-Online.exe
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Amara-Windows-Completo-Offline
+          path: dist/*Completo-Offline.exe
+          retention-days: 7
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: spike-results
+          path: spike-results
+          if-no-files-found: ignore
+          retention-days: 7
