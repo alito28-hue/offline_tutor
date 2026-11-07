@@ -122,7 +122,8 @@
   "footer": {
     "independent": "Amara is an independent prototype by Alex Smith. It is not affiliated with Tether or any school.",
     "credits": "Learning materials: Wikipedia contributors, CC BY-SA 4.0. Illustrations generated with AI.",
-    "privacy": "Privacy"
+    "privacy": "Privacy",
+    "feedback": "Give feedback or report a bug"
   },
   "privacy": {
     "title": "Privacy",
@@ -143,6 +144,24 @@
     "tutor": "This page is about the website. The tutor runs on the laptop, and the questions students ask it aren't sent anywhere.",
     "rightsTitle": "Your choices",
     "rights": "You can ask me to show, correct or delete your details at any time. Just write to me through the form or on",
-    "back": "Back to the form"
+    "back": "Back to the form",
+    "collectFeedback": "The feedback form asks for your message and the type of message. Your computer or phone and your email are optional. It is used only to read your message, improve Amara and reply if you asked."
+  },
+  "feedback": {
+    "title": "Give feedback or report a bug",
+    "description": "Tell the maker of Amara what worked, what failed or what you would change.",
+    "intro": "Tell me what worked, what failed or what you would change. I read everything.",
+    "kind": "What is it about?",
+    "kindBug": "Something failed",
+    "kindIdea": "An idea",
+    "kindOther": "Something else",
+    "message": "Your message",
+    "device": "Which computer or phone are you using?",
+    "email": "Your email, if you would like a reply",
+    "terms": "Please do not include any information about students or children. Your details are used only to read your message and reply.",
+    "submit": "Send",
+    "sending": "Sending…",
+    "ok": "Thank you. Your message has been sent.",
+    "error": "Your message couldn't be sent. Please try again in a few minutes, or write to me on LinkedIn."
   }
 }

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css">
+<title>Enviar feedback ou relatar um erro · Amara</title>
+<meta name="description" content="Conte ao autor da Amara o que funcionou, o que falhou ou o que você mudaria.">
+<link rel="canonical" href="https://amaratutor.org/pt/feedback/">
+<link rel="alternate" hreflang="en" href="https://amaratutor.org/feedback/">
+<link rel="alternate" hreflang="es" href="https://amaratutor.org/es/feedback/">
+<link rel="alternate" hreflang="pt" href="https://amaratutor.org/pt/feedback/">
+<link rel="alternate" hreflang="x-default" href="https://amaratutor.org/feedback/">
+<script src="/site.js" defer></script>
+</head>
+<body>
+<div class="page-top">
+  <div class="wrap">
+    <a class="home" href="/pt/">Amara</a>
+    <nav class="lang" aria-label="Idioma"><a href="/feedback/" lang="en" hreflang="en">English</a><a href="/es/feedback/" lang="es" hreflang="es">Español</a><a href="/pt/feedback/" lang="pt" hreflang="pt" aria-current="page">Português</a></nav>
+  </div>
+</div>
+<main class="legal">
+  <div class="wrap">
+    <h1>Enviar feedback ou relatar um erro</h1>
+    <p>Conte o que funcionou, o que falhou ou o que você mudaria. Eu leio tudo.</p>
+    <form class="form feedback-form" id="feedbackForm" data-sending="Enviando…" data-ok="Obrigado. Sua mensagem foi enviada." data-error="Não foi possível enviar a mensagem. Tente de novo em alguns minutos ou me escreva no LinkedIn.">
+      <fieldset class="field full"><legend>Sobre o que é?</legend>
+        <div class="choices">
+          <label><input type="radio" name="kind" value="bug" required>Algo falhou</label>
+          <label><input type="radio" name="kind" value="idea">Uma ideia</label>
+          <label><input type="radio" name="kind" value="other">Outra coisa</label>
+        </div>
+      </fieldset>
+      <div class="field full"><label for="message">Sua mensagem</label><textarea id="message" name="message" rows="6" maxlength="4000" required></textarea></div>
+      <div class="field full"><label for="device">Qual computador ou celular você está usando? <span class="hint">(opcional)</span></label><input id="device" name="device" type="text" maxlength="200"></div>
+      <div class="field full"><label for="email">Seu e-mail, se quiser resposta <span class="hint">(opcional)</span></label><input id="email" name="email" type="email" maxlength="254" autocomplete="email"></div>
+      <div class="trap" aria-hidden="true"><label for="website">Deixe este campo vazio</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <p class="terms">Por favor, não inclua informações sobre alunos ou crianças. Seus dados são usados apenas para ler sua mensagem e responder. <a href="/pt/privacy/">Privacidade</a></p>
+      <div class="submit"><button class="btn primary" type="submit">Enviar</button></div>
+      <p class="result" id="feedbackResult" role="status" aria-live="polite"></p>
+      <noscript><p class="result error">Este formulário precisa de JavaScript. Você também pode me escrever no LinkedIn.</p></noscript>
+    </form>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <p>Amara é um protótipo independente de Alex Smith. Não tem vínculo com a Tether nem com nenhuma escola.</p>
+  </div>
+</footer>
+</body>
+</html>

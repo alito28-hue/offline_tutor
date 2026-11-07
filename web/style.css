@@ -177,3 +177,6 @@ footer a{color:var(--chalk)}
 
 /* A label that wraps shouldn't push its input out of line with the next column. */
 .form>.field:not(fieldset){justify-content:flex-end}
+
+/* ---------- Feedback page ---------- */
+.feedback-form{margin-top:32px;max-width:720px}

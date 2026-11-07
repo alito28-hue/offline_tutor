@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { afterEach, test } from 'node:test';
 import { fileURLToPath } from 'node:url';
+import feedback, { validate as validateFeedback } from '../web/api/feedback.mjs';
 import pilot, { emailText, validate } from '../web/api/pilot.mjs';
 import { build } from './build.mjs';
 
@@ -48,7 +49,7 @@ test('pages keep the removed language and platform claims out', () => {
 
 test('the form asks nothing about individual students', () => {
   for (const [file, html] of Object.entries(pages)) {
-    if (!file.endsWith('privacy/index.html')) assert.deepEqual([...html.matchAll(/ name="(\w+)"/g)].map(m => m[1]).filter((n, i, a) => a.indexOf(n) === i && n !== 'description' && n !== 'viewport' && n !== 'twitter:card'),
+    if (!/(privacy|feedback)\/index\.html$/.test(file)) assert.deepEqual([...html.matchAll(/ name="(\w+)"/g)].map(m => m[1]).filter((n, i, a) => a.indexOf(n) === i && n !== 'description' && n !== 'viewport' && n !== 'twitter:card'),
       ['organization', 'country', 'name', 'role', 'email', 'students', 'teachingLanguage', 'connectivity', 'devices', 'message', 'website'], file);
   }
 });
@@ -105,3 +106,30 @@ test('failures are reported and never claimed as success', async () => {
 });
 
 test('emailText keeps the message', () => { assert.match(emailText(validate(good)), /Message:\nHola/); });
+
+const sendFeedback = body => feedback.fetch(new Request('http://x/api/feedback', { method: 'POST', body: JSON.stringify(body) }));
+
+test('feedback needs a type and a message; email and device are optional', () => {
+  assert.ok(validateFeedback({ kind: 'bug', message: 'It froze' }));
+  for (const bad of [{ kind: 'bug' }, { kind: 'spam', message: 'x' }, { kind: 'bug', message: 'x', email: 'nope' }, { kind: 'bug', message: 'x'.repeat(4001) }]) assert.equal(validateFeedback(bad), null);
+});
+
+test('feedback is emailed, with reply-to only when an email was given', async () => {
+  const calls = fakeResend();
+  assert.equal((await sendFeedback({ kind: 'idea', message: 'More topics' })).status, 200);
+  assert.equal(calls[0].body.reply_to, undefined);
+  assert.equal((await sendFeedback({ kind: 'bug', message: 'x', email: 'a@example.org' })).status, 200);
+  assert.equal(calls[1].body.reply_to, 'a@example.org');
+});
+
+test('a filled feedback honeypot sends nothing', async () => {
+  const calls = fakeResend();
+  assert.equal((await sendFeedback({ kind: 'bug', message: 'x', website: 'spam' })).status, 200);
+  assert.equal(calls.length, 0);
+});
+
+test('every home page links to its feedback page', () => {
+  assert.match(pages['/index.html'], /href="\/feedback\/"/);
+  assert.match(pages['/es/index.html'], /href="\/es\/feedback\/"/);
+  assert.match(pages['/pt/index.html'], /href="\/pt\/feedback\/"/);
+});

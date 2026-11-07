@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+{{head}}
+<title>{{feedback.title}} · Amara</title>
+<meta name="description" content="{{feedback.description}}">
+<link rel="canonical" href="{{canonical}}">
+{{alternates}}
+<script src="/site.js" defer></script>
+</head>
+<body>
+<div class="page-top">
+  <div class="wrap">
+    <a class="home" href="{{homePath}}">Amara</a>
+    {{langNav}}
+  </div>
+</div>
+<main class="legal">
+  <div class="wrap">
+    <h1>{{feedback.title}}</h1>
+    <p>{{feedback.intro}}</p>
+    <form class="form feedback-form" id="feedbackForm" data-sending="{{feedback.sending}}" data-ok="{{feedback.ok}}" data-error="{{feedback.error}}">
+      <fieldset class="field full"><legend>{{feedback.kind}}</legend>
+        <div class="choices">
+          <label><input type="radio" name="kind" value="bug" required>{{feedback.kindBug}}</label>
+          <label><input type="radio" name="kind" value="idea">{{feedback.kindIdea}}</label>
+          <label><input type="radio" name="kind" value="other">{{feedback.kindOther}}</label>
+        </div>
+      </fieldset>
+      <div class="field full"><label for="message">{{feedback.message}}</label><textarea id="message" name="message" rows="6" maxlength="4000" required></textarea></div>
+      <div class="field full"><label for="device">{{feedback.device}} <span class="hint">{{pilot.optional}}</span></label><input id="device" name="device" type="text" maxlength="200"></div>
+      <div class="field full"><label for="email">{{feedback.email}} <span class="hint">{{pilot.optional}}</span></label><input id="email" name="email" type="email" maxlength="254" autocomplete="email"></div>
+      <div class="trap" aria-hidden="true"><label for="website">{{pilot.trap}}</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <p class="terms">{{feedback.terms}} <a href="{{privacyPath}}">{{pilot.privacyLink}}</a></p>
+      <div class="submit"><button class="btn primary" type="submit">{{feedback.submit}}</button></div>
+      <p class="result" id="feedbackResult" role="status" aria-live="polite"></p>
+      <noscript><p class="result error">{{pilot.noscript}}</p></noscript>
+    </form>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <p>{{footer.independent}}</p>
+  </div>
+</footer>
+</body>
+</html>

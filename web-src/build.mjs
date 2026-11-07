@@ -48,6 +48,7 @@ function render(template, lang, kind) {
     langNav: nav(lang, kind),
     homePath: site.locales[lang].home,
     privacyPath: site.locales[lang].privacy,
+    feedbackPath: site.locales[lang].feedback,
     notice: flat[lang]['notice.text'] ? `<div class="notice"><div class="wrap"><p>${flat[lang]['notice.text']}</p></div></div>` : '',
   };
   return template.replace(/\{\{([\w.]+)\}\}/g, (_, key) => {
@@ -56,7 +57,7 @@ function render(template, lang, kind) {
   });
 }
 
-const pages = { home: read('home.html'), privacy: read('privacy.html') };
+const pages = { home: read('home.html'), privacy: read('privacy.html'), feedback: read('feedback.html') };
 export function build(write = true) {
   const result = {};
   for (const l of langs) {
