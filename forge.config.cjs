@@ -16,7 +16,12 @@ const packagerConfig = {
   appBundleId: 'org.amaratutor.app',
   appCategoryType: 'public.app-category.education',
   icon: path.join(assets, 'icon'),
-  ignore: [/^\/(web|web-src|out|build|README\.md|LICENSE\.md)($|\/)/, /^\/tutor\/(test|\.run|demo_script\.md|README\.md)($|\/)/, /^\/\.(git|vercel)($|\/)/],
+  // A list of what goes in, so that nothing else in the folder can end up in the app.
+  ignore: [
+    /^\/(?!(desktop|tutor|node_modules|qvac|package\.json|qvac\.config\.json|LICENSE|forge\.config\.cjs)($|\/))/,
+    /^\/tutor\/(test|\.run|demo_script\.md|README\.md)($|\/)/,
+    /^\/desktop\/windows($|\/)/,
+  ],
 };
 
 // With AMARA_SIGN_IDENTITY set, the app is signed; with AMARA_NOTARY_PROFILE too, it is notarized and stapled,
