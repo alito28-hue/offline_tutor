@@ -32,7 +32,7 @@ if (process.env.AMARA_SIGN_IDENTITY) {
 if (process.env.AMARA_NOTARY_PROFILE) packagerConfig.osxNotarize = { keychainProfile: process.env.AMARA_NOTARY_PROFILE };
 
 if (kit === 'full') {
-  // Hard links, so that staging the models takes no extra disk space or time.
+  // Hard links when possible, so that staging the models takes no extra disk space or time.
   const source = path.join(os.homedir(), '.qvac/models');
   const stage = path.join(__dirname, 'build/models');
   fs.rmSync(stage, { recursive: true, force: true });
@@ -40,7 +40,8 @@ if (kit === 'full') {
   for (const name of ['Qwen3-4B-Q4_K_M.gguf', 'embeddinggemma-300M-Q8_0.gguf']) {
     const file = fs.readdirSync(source).find(f => f.endsWith(name));
     if (!file) throw new Error(`${name} is missing in ${source}. Run: node tutor/tools/fetch_models.mjs`);
-    fs.linkSync(path.join(source, file), path.join(stage, file));
+    // Links fail across disks, as on some Windows machines; a copy works everywhere.
+    try { fs.linkSync(path.join(source, file), path.join(stage, file)); } catch { fs.copyFileSync(path.join(source, file), path.join(stage, file)); }
   }
   packagerConfig.extraResource = [stage];
 }
