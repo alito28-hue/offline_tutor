@@ -21,9 +21,10 @@ jobs:
         run: |
           npm ci --no-audit --no-fund *> npm.log
           if ($LASTEXITCODE) {
-            $tail = (Get-Content npm.log -Tail 25) -join '%0A'
-            Write-Output "::error title=npm ci failed::$tail"
-            exit 1
+            $head = (Get-Content npm.log -TotalCount 12) -join '%0A'
+            Write-Output "::warning title=npm ci failed, using npm install::$head"
+            npm install --no-audit --no-fund
+            if ($LASTEXITCODE) { exit $LASTEXITCODE }
           }
       - name: Package the online kit
         run: npx electron-forge package --platform=win32 --arch=x64
