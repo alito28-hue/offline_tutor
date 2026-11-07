@@ -10,7 +10,7 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 const NEEDED_FREE_BYTES = 4e9;
 // A download with no progress for this long has lost the connection, even if nothing reported an error.
 const STALL_MS = 60_000;
-const EXTERNAL_LINKS = ['https://www.linkedin.com/in/alexinteractive', 'https://amaratutor.org'];
+const EXTERNAL_LINKS = ['https://www.linkedin.com/in/alexinteractive', 'https://amaratutor.org', 'https://amaratutor.org/feedback', 'https://amaratutor.org/es/feedback', 'https://amaratutor.org/pt/feedback'];
 let win = null;
 let tutorStarted = false;
 let models = [];

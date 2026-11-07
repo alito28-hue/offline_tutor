@@ -9,3 +9,5 @@ Qwen3 4B Q4_K_M: Apache-2.0.
 
 EmbeddingGemma 300M Q8_0:
 Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms
+A full copy is in GEMMA_TERMS.txt, next to this file.
+By using Amara you agree to the use restrictions in Section 3.2 of those terms, including the Gemma Prohibited Use Policy.

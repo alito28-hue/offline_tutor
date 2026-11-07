@@ -52,6 +52,15 @@ body {
 .chip:hover, .chip:focus-visible { border-color: var(--green); outline: none; }
 
 .lesson { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 2rem; }
+.top-right { display: flex; align-items: center; gap: 2.4rem; }
+.credits-open { padding: 1.2rem 2.2rem; border: 0.2rem solid var(--line); border-radius: 99rem; background: #fff; color: inherit; font: inherit; font-size: 2.6rem; font-weight: 700; cursor: pointer; }
+.credits { width: 110rem; padding: 5rem 6rem; border: 0; border-radius: 3rem; color: var(--ink); font-size: 2.8rem; line-height: 1.4; }
+.credits::backdrop { background: rgba(26, 36, 32, 0.45); }
+.credits h2 { margin: 0 0 2.4rem; font-size: 5rem; }
+.credits p { margin: 0 0 1.8rem; }
+.credits-links { display: flex; flex-wrap: wrap; gap: 1.2rem 4rem; font-weight: 700; }
+.credits-links a { color: var(--blue); }
+.credits-close { margin-top: 1.6rem; padding: 1.4rem 3.6rem; border: 0; border-radius: 1.6rem; background: var(--green); color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
 .credit { margin: 0; font-size: 2.5rem; color: #5A6470; text-align: center; }
 .credit a { color: inherit; font-weight: 700; }
 .lesson[hidden], .welcome[hidden] { display: none; }

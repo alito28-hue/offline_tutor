@@ -159,11 +159,41 @@ async function ask(question) {
 
 // Whoever received the app from someone else can still find its author and the project.
 const CREDIT = {
-  es: 'Creada por Alex Smith, con QVAC. ¿Te la compartieron? Conectemos:',
-  en: 'Created by Alex Smith, with QVAC. Did someone share it with you? Let\'s connect:',
-  pt: 'Criada por Alex Smith, com QVAC. Alguém compartilhou com você? Vamos nos conectar:',
+  es: {
+    feedback: 'Dar feedback o reportar un error', feedbackUrl: 'https://amaratutor.org/es/feedback/',
+    line: 'Creada por Alex Smith, con QVAC. ¿Te la compartieron? Conectemos:', open: 'Créditos', close: 'Cerrar',
+    author: 'Creada por Alex Smith.',
+    tech: 'Funciona en este equipo, sin internet, con QVAC de Tether y los modelos Qwen3 4B y EmbeddingGemma.',
+    library: 'Materiales: artículos de Wikipedia, de sus colaboradores, bajo CC BY-SA 4.0.',
+    independent: 'Es un prototipo independiente, sin afiliación con Tether ni con ninguna escuela.',
+    connect: '¿Te la compartieron? Me encantaría saber de ti:',
+  },
+  en: {
+    feedback: 'Give feedback or report a bug', feedbackUrl: 'https://amaratutor.org/feedback/',
+    line: 'Created by Alex Smith, with QVAC. Did someone share it with you? Let\'s connect:', open: 'Credits', close: 'Close',
+    author: 'Created by Alex Smith.',
+    tech: 'It runs on this computer, without internet, using Tether\'s QVAC and the Qwen3 4B and EmbeddingGemma models.',
+    library: 'Learning materials: Wikipedia articles by Wikipedia contributors, under CC BY-SA 4.0.',
+    independent: 'It is an independent prototype, not affiliated with Tether or any school.',
+    connect: 'Did someone share it with you? I\'d love to hear from you:',
+  },
+  pt: {
+    feedback: 'Enviar feedback ou relatar um erro', feedbackUrl: 'https://amaratutor.org/pt/feedback/',
+    line: 'Criada por Alex Smith, com QVAC. Alguém compartilhou com você? Vamos nos conectar:', open: 'Créditos', close: 'Fechar',
+    author: 'Criada por Alex Smith.',
+    tech: 'Funciona neste equipamento, sem internet, com o QVAC da Tether e os modelos Qwen3 4B e EmbeddingGemma.',
+    library: 'Materiais: artigos da Wikipédia, de seus colaboradores, sob CC BY-SA 4.0.',
+    independent: 'É um protótipo independente, sem vínculo com a Tether nem com nenhuma escola.',
+    connect: 'Alguém compartilhou com você? Eu adoraria saber de você:',
+  },
 };
-$('creditText').textContent = CREDIT[navigator.language.slice(0, 2)] || CREDIT.en;
+const credit = CREDIT[navigator.language.slice(0, 2)] || CREDIT.en;
+$('creditText').textContent = credit.line;
+for (const id of ['creditFeedback', 'creditsFeedback']) { $(id).textContent = credit.feedback; $(id).href = credit.feedbackUrl; }
+$('creditsOpen').textContent = credit.open;
+$('creditsClose').textContent = credit.close;
+for (const [id, key] of [['creditsAuthor', 'author'], ['creditsTech', 'tech'], ['creditsLibrary', 'library'], ['creditsIndependent', 'independent'], ['creditsConnect', 'connect']]) $(id).textContent = credit[key];
+$('creditsOpen').addEventListener('click', () => $('credits').showModal());
 
 async function refreshStatus() {
   try {

@@ -10,7 +10,10 @@
 <main class="stage">
   <header class="top">
     <div class="brand"><span class="mark" aria-hidden="true">✏️</span>Amara</div>
-    <div id="net" class="pill pill-wait" role="status">Verificando red…</div>
+    <div class="top-right">
+      <button id="creditsOpen" type="button" class="credits-open">Créditos</button>
+      <div id="net" class="pill pill-wait" role="status">Verificando red…</div>
+    </div>
   </header>
 
   <section id="welcome" class="welcome">
@@ -24,7 +27,8 @@
     <p id="credit" class="credit">
       <span id="creditText"></span>
       <a href="https://www.linkedin.com/in/alexinteractive" target="_blank" rel="noopener">LinkedIn</a> ·
-      <a href="https://amaratutor.org" target="_blank" rel="noopener">amaratutor.org</a>
+      <a href="https://amaratutor.org" target="_blank" rel="noopener">amaratutor.org</a> ·
+      <a id="creditFeedback" target="_blank" rel="noopener"></a>
     </p>
   </section>
 
@@ -36,6 +40,21 @@
       <div id="speed" class="speed"></div>
     </footer>
   </section>
+
+  <dialog id="credits" class="credits" aria-labelledby="creditsTitle">
+    <h2 id="creditsTitle">Amara</h2>
+    <p id="creditsAuthor"></p>
+    <p id="creditsTech"></p>
+    <p id="creditsLibrary"></p>
+    <p id="creditsIndependent"></p>
+    <p id="creditsConnect"></p>
+    <p class="credits-links">
+      <a href="https://www.linkedin.com/in/alexinteractive" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://amaratutor.org" target="_blank" rel="noopener">amaratutor.org</a>
+      <a id="creditsFeedback" target="_blank" rel="noopener"></a>
+    </p>
+    <form method="dialog"><button id="creditsClose" class="credits-close"></button></form>
+  </dialog>
 
   <form id="form" class="ask" autocomplete="off">
     <input id="question" type="text" maxlength="500" placeholder="Escribe tu pregunta…" aria-label="Tu pregunta" autofocus>
