@@ -16,7 +16,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - run: npm ci
+      - name: Install dependencies
+        shell: pwsh
+        run: |
+          npm ci --no-audit --no-fund *> npm.log
+          if ($LASTEXITCODE) {
+            $tail = (Get-Content npm.log -Tail 25) -join '%0A'
+            Write-Output "::error title=npm ci failed::$tail"
+            exit 1
+          }
       - name: Package the online kit
         run: npx electron-forge package --platform=win32 --arch=x64
         env:
