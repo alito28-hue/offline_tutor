@@ -22,6 +22,10 @@
     "film": "About the film",
     "code": "See the code on GitHub"
   },
+  "thesis": {
+    "library": "A library waits for a child to know what to look for and to understand what they find.",
+    "amara": "Amara starts from what the child doesn't understand."
+  },
   "film": {
     "title": "The tutor in the film is real.",
     "intro": "The film is illustrated. Halfway through, it cuts to a screen recording of the working prototype answering a student's question on a laptop.",

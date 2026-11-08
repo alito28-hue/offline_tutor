@@ -22,6 +22,10 @@
     "film": "Sobre o filme",
     "code": "Ver o código no GitHub"
   },
+  "thesis": {
+    "library": "Uma biblioteca espera que a criança saiba o que procurar e consiga entender o que encontra.",
+    "amara": "A Amara parte do que a criança não entende."
+  },
   "film": {
     "title": "O tutor do filme é real.",
     "intro": "O filme é ilustrado. Na metade, ele passa para uma gravação de tela do protótipo real respondendo à pergunta de uma aluna em um notebook.",

@@ -22,6 +22,10 @@
     "film": "Sobre el film",
     "code": "Ver el código en GitHub"
   },
+  "thesis": {
+    "library": "Una biblioteca espera a que el chico sepa qué buscar y pueda entender lo que encuentra.",
+    "amara": "Amara parte de lo que el chico no entiende."
+  },
   "film": {
     "title": "El tutor del film es real.",
     "intro": "El film es ilustrado. A la mitad, pasa a una grabación de pantalla del prototipo real respondiendo la pregunta de una alumna en una laptop.",
