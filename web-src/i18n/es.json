@@ -15,7 +15,8 @@
     "status": "Sin internet.",
     "statusStrong": "Y sigue respondiendo.",
     "title": "Un tutor para las escuelas a las que internet no llegó.",
-    "lede": "Amara es un tutor de IA que corre por completo en una laptop. Sin Wi-Fi, sin nube y sin que los datos de los alumnos salgan del aula."
+    "lede": "Amara es un tutor de IA que corre por completo en una laptop. Sin Wi-Fi, sin nube y sin que los datos de los alumnos salgan del aula.",
+    "free": "Proyecto sin fines de lucro. La aplicación es completamente gratuita."
   },
   "cta": {
     "pilot": "Solicitar un piloto",
@@ -126,7 +127,8 @@
     "independent": "Amara es un prototipo independiente de Alex Smith. No está afiliado a Tether ni a ninguna escuela.",
     "credits": "Materiales de aprendizaje: colaboradores de Wikipedia, CC BY-SA 4.0. Ilustraciones generadas con IA.",
     "privacy": "Privacidad",
-    "feedback": "Dar feedback o reportar un error"
+    "feedback": "Dar feedback o reportar un error",
+    "free": "Proyecto sin fines de lucro. La aplicación es completamente gratuita."
   },
   "privacy": {
     "title": "Privacidad",
