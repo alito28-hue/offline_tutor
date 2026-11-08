@@ -29,8 +29,7 @@
   "film": {
     "title": "The tutor in the film is real.",
     "intro": "The film is illustrated. Halfway through, it cuts to a screen recording of the working prototype answering a student's question on a laptop.",
-    "soon": "The film is in production.",
-    "soonNote": "It will play here."
+    "videoLabel": "Amara film"
   },
   "facts": {
     "speedFigure": "1.5–2.0 s",

@@ -29,8 +29,7 @@
   "film": {
     "title": "El tutor del film es real.",
     "intro": "El film es ilustrado. A la mitad, pasa a una grabación de pantalla del prototipo real respondiendo la pregunta de una alumna en una laptop.",
-    "soon": "El film está en producción.",
-    "soonNote": "Se va a ver acá."
+    "videoLabel": "Film de Amara"
   },
   "facts": {
     "speedFigure": "1,5–2,0 s",

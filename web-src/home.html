@@ -50,9 +50,7 @@
       <p class="intro">{{film.intro}}</p>
 
       <div class="film">
-        <!-- Replace with the final film: <video controls poster="/assets/e3-question.jpg" src="/assets/amara-film.mp4"></video> -->
-        <img src="/assets/e3-question.jpg" alt="">
-        <p class="soon">{{film.soon}}<span>{{film.soonNote}}</span></p>
+        <video controls playsinline preload="metadata" poster="/assets/e3-question.jpg" src="/assets/amara-film.mp4" aria-label="{{film.videoLabel}}"></video>
       </div>
 
       <div class="facts">

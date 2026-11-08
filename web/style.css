@@ -49,9 +49,7 @@ p{margin:0 0 1em;max-width:var(--measure)}
 .board h2{max-width:20ch}
 .board .intro{color:var(--chalk-dim);margin-top:18px}
 .film{margin:48px 0 64px;border-radius:14px;overflow:hidden;background:var(--board-deep);aspect-ratio:16/9;position:relative;box-shadow:0 0 0 6px #2C4D44}
-.film img{width:100%;height:100%;object-fit:cover;opacity:.55}
-.film .soon{position:absolute;inset:0;margin:0;max-width:none;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:24px;font-size:1.3rem}
-.film .soon span{display:block;color:var(--chalk-dim);font-size:1rem;margin-top:6px}
+.film video{width:100%;height:100%;object-fit:contain}
 .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:48px}
 .fact .figure{font-size:clamp(2.4rem,4.4vw,3.4rem);font-weight:700;color:var(--sun);line-height:1;margin-bottom:14px;display:block}
 .fact p{color:var(--chalk);margin:0}
