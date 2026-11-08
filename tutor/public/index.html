@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,18 +11,18 @@
   <header class="top">
     <div class="brand"><span class="mark" aria-hidden="true">✏️</span>Amara</div>
     <div class="top-right">
-      <button id="creditsOpen" type="button" class="credits-open">Créditos</button>
-      <div id="net" class="pill pill-wait" role="status">Verificando red…</div>
+      <button id="creditsOpen" type="button" class="credits-open">Credits</button>
+      <div id="net" class="pill pill-wait" role="status">Checking network…</div>
     </div>
   </header>
 
   <section id="welcome" class="welcome">
-    <h1>¿Qué quieres aprender hoy?</h1>
+    <h1 id="welcomeTitle">What do you want to learn today?</h1>
     <div id="chips" class="chips">
-      <button type="button" class="chip">¿Cómo entra en erupción un volcán?</button>
-      <button type="button" class="chip">¿Cómo sumo fracciones?</button>
-      <button type="button" class="chip">¿Cómo hacen su comida las plantas?</button>
-      <button type="button" class="chip">How do magnets work?</button>
+      <button type="button" class="chip">How does a volcano erupt?</button>
+      <button type="button" class="chip">How do I add fractions?</button>
+      <button type="button" class="chip">How do plants make their food?</button>
+      <button type="button" class="chip">¿Cómo funcionan los imanes?</button>
     </div>
     <p id="credit" class="credit">
       <span id="creditText"></span>
@@ -57,8 +57,8 @@
   </dialog>
 
   <form id="form" class="ask" autocomplete="off">
-    <input id="question" type="text" maxlength="500" placeholder="Escribe tu pregunta…" aria-label="Tu pregunta" autofocus>
-    <button id="send" type="submit" aria-label="Preguntar">Preguntar</button>
+    <input id="question" type="text" maxlength="500" placeholder="Type your question…" aria-label="Your question" autofocus>
+    <button id="send" type="submit">Ask</button>
   </form>
 </main>
 <script src="app.js"></script>

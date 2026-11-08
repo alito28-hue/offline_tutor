@@ -9,13 +9,37 @@ const LABELS = {
   en: { source: 'Source:', sources: 'Sources:', speed: s => `Started answering in ${s} s` },
   sw: { source: 'Source:', sources: 'Sources:', speed: s => `Started answering in ${s} s` },
 };
+// The screen follows the computer's language: Spanish on a Spanish computer, English everywhere else.
+// Answers follow the language of each question, whatever the screen shows.
+const UI_LANG = navigator.language.slice(0, 2) === 'es' ? 'es' : 'en';
+const UI = {
+  en: {
+    welcome: 'What do you want to learn today?',
+    chips: ['How does a volcano erupt?', 'How do I add fractions?', 'How do plants make their food?', '¿Cómo funcionan los imanes?'],
+    placeholder: 'Type your question…', loading: 'Loading the tutor…', question: 'Your question', ask: 'Ask',
+    failed: 'Something went wrong. Please try again.',
+    net: { offline: 'Offline ✓', 'not-needed': 'Works without internet', 'no-calls': 'No network calls ✓', unverified: 'Checking network…', external: 'Connection detected' },
+  },
+  es: {
+    welcome: '¿Qué quieres aprender hoy?',
+    chips: ['¿Cómo entra en erupción un volcán?', '¿Cómo sumo fracciones?', '¿Cómo hacen su comida las plantas?', 'How do magnets work?'],
+    placeholder: 'Escribe tu pregunta…', loading: 'Cargando el tutor…', question: 'Tu pregunta', ask: 'Preguntar',
+    failed: 'Algo falló. Intenta de nuevo.',
+    net: { offline: 'Sin conexión ✓', 'not-needed': 'Funciona sin internet', 'no-calls': 'Sin llamadas de red ✓', unverified: 'Verificando red…', external: 'Conexión detectada' },
+  },
+}[UI_LANG];
 const NET = {
-  offline: ['Sin conexión ✓', 'pill-ok'],
-  'not-needed': ['Funciona sin internet', 'pill-info'],
-  'no-calls': ['Sin llamadas de red ✓', 'pill-info'],
-  unverified: ['Verificando red…', 'pill-wait'],
-  external: ['Conexión detectada', 'pill-bad'],
+  offline: [UI.net.offline, 'pill-ok'],
+  'not-needed': [UI.net['not-needed'], 'pill-info'],
+  'no-calls': [UI.net['no-calls'], 'pill-info'],
+  unverified: [UI.net.unverified, 'pill-wait'],
+  external: [UI.net.external, 'pill-bad'],
 };
+document.documentElement.lang = UI_LANG;
+$('welcomeTitle').textContent = UI.welcome;
+$('chips').querySelectorAll('.chip').forEach((chip, i) => { chip.textContent = UI.chips[i]; });
+els.question.setAttribute('aria-label', UI.question);
+els.send.textContent = UI.ask;
 const MIN_SIZE = 2.6;
 const MAX_SIZE = 4;
 let ready = false;
@@ -151,7 +175,7 @@ async function ask(question) {
     els.answer.replaceChildren();
     const p = document.createElement('p');
     p.className = 'note';
-    p.textContent = 'Algo falló. Intenta de nuevo.';
+    p.textContent = UI.failed;
     els.answer.append(p);
   }
   setBusy(false);
@@ -177,17 +201,8 @@ const CREDIT = {
     independent: 'It is an independent prototype, not affiliated with Tether or any school.',
     connect: 'Did someone share it with you? I\'d love to hear from you:',
   },
-  pt: {
-    feedback: 'Enviar feedback ou relatar um erro', feedbackUrl: 'https://amaratutor.org/pt/feedback/',
-    line: 'Criada por Alex Smith, com QVAC. Alguém compartilhou com você? Vamos nos conectar:', open: 'Créditos', close: 'Fechar',
-    author: 'Criada por Alex Smith.',
-    tech: 'Funciona neste equipamento, sem internet, com o QVAC da Tether e os modelos Qwen3 4B e EmbeddingGemma.',
-    library: 'Materiais: artigos da Wikipédia, de seus colaboradores, sob CC BY-SA 4.0.',
-    independent: 'É um protótipo independente, sem vínculo com a Tether nem com nenhuma escola.',
-    connect: 'Alguém compartilhou com você? Eu adoraria saber de você:',
-  },
 };
-const credit = CREDIT[navigator.language.slice(0, 2)] || CREDIT.en;
+const credit = CREDIT[UI_LANG];
 $('creditText').textContent = credit.line;
 for (const id of ['creditFeedback', 'creditsFeedback']) { $(id).textContent = credit.feedback; $(id).href = credit.feedbackUrl; }
 $('creditsOpen').textContent = credit.open;
@@ -204,9 +219,9 @@ async function refreshStatus() {
     els.net.textContent = label;
     els.net.className = `pill ${cls}`;
     if (!asking) els.send.disabled = !ready;
-    els.question.placeholder = ready ? 'Escribe tu pregunta…' : 'Cargando el tutor…';
+    els.question.placeholder = ready ? UI.placeholder : UI.loading;
   } catch {
-    els.net.textContent = 'Verificando red…';
+    els.net.textContent = UI.net.unverified;
     els.net.className = 'pill pill-wait';
   }
 }
