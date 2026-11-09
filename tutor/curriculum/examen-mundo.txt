@@ -1,0 +1,50 @@
+# Mismas reglas que examen.txt, para el temario del mundo.
+Francia|¿Cuál es la capital de Francia?
+Japón|¿Dónde queda Japón?
+Kenia|¿qué idioma se habla en Kenia?
+Nigeria|¿Cuál es el país más poblado de África?
+India|¿Cuántas personas viven en la India?
+Australia|¿Por qué Australia es un país y un continente?
+Canadá|cual es la capital de canada
+México|¿Qué idioma hablan en México?
+África|¿Cuántos países tiene África?
+El monte Everest|¿Cuál es la montaña más alta del mundo?
+El río Nilo|¿Por dónde pasa el río Nilo?
+El desierto del Sahara|¿Dónde está el desierto más grande de arena?
+El océano Pacífico|¿Cuál es el océano más grande?
+La selva amazónica|¿Por qué es importante el Amazonas?
+Tokio|¿Cuál es la capital de Japón?
+Los husos horarios|¿Por qué es de noche en Japón cuando acá es de día?
+Machu Picchu|¿Qué es Machu Picchu?
+La Gran Muralla China|¿Para qué se construyó la muralla china?
+La prehistoria|¿Qué es la prehistoria?
+Mesopotamia|¿Dónde se inventó la escritura?
+Alejandro Magno|¿Quién fue Alejandro Magno?
+Los vikingos|¿Quiénes eran los vikingos?
+El Imperio de Malí|¿Qué fue el Imperio de Malí?
+Mansa Musa|¿Quién fue Mansa Musa?
+El Imperio mongol|¿Quién fue Gengis Kan?
+Los samuráis|¿Qué era un samurái?
+La Ruta de la Seda|¿Qué era la Ruta de la Seda?
+El Renacimiento|¿Qué fue el Renacimiento?
+Galileo Galilei|¿Quién fue Galileo?
+La trata atlántica de esclavos|¿Por qué llevaron esclavos de África a América?
+La Revolución haitiana|¿Qué fue la Revolución de Haití?
+El colonialismo|¿Qué es una colonia?
+La Guerra Fría|¿Qué fue la Guerra Fría?
+El Muro de Berlín|¿Por qué se construyó el Muro de Berlín?
+El apartheid|¿Qué fue el apartheid?
+Nelson Mandela|¿Quién fue Nelson Mandela?
+Mahatma Gandhi|¿Quién fue Gandhi?
+Malala Yousafzai|¿Quién es Malala?
+Martin Luther King|¿Qué hizo Martin Luther King?
+El Holocausto|¿Qué fue el Holocausto?
+La monarquía|¿Qué es una monarquía?
+El parlamentarismo|¿Cuál es la diferencia entre un presidente y un primer ministro?
+El comunismo|¿Qué es el comunismo?
+Capitalismo|¿Qué es el capitalismo?
+La Unión Europea|¿Qué es la Unión Europea?
+UNICEF|¿Qué hace UNICEF?
+La Organización Mundial de la Salud|¿Qué hace la OMS?
+Los Objetivos de Desarrollo Sostenible|¿Qué son los objetivos de desarrollo sostenible?
+Los refugiados|¿Qué es un refugiado?

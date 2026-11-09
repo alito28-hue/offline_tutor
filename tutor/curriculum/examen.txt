@@ -1,0 +1,231 @@
+# tema exacto del temario|pregunta, escrita como la haría un chico. FUERA = no está en el temario: debe responder "no lo sé".
+Las fracciones|¿qué es una fracción?
+Fracciones equivalentes|como se si dos fracciones son iguales
+Suma y resta de fracciones|¿Cómo sumo 1/2 + 1/4?
+Multiplicación de fracciones|como multiplico fracciones
+Los números decimales|que quiere decir 0,5
+Los porcentajes|¿Cuánto es el 50% de 80?
+Los números primos|¿Qué es un número primo?
+Números pares e impares|el 7 es par o impar
+Los números romanos|como se escribe 9 en numeros romanos
+El cero|para que sirve el cero
+La multiplicación|¿Para qué sirve multiplicar?
+La división|¿Cómo reparto 20 caramelos entre 4 amigos?
+Las tablas de multiplicar|me ayudas con la tabla del 7
+La regla de tres|Si 2 kilos cuestan 100 pesos, ¿cómo calculo 5 kilos?
+La proporcionalidad directa|¿qué significa que dos cosas sean proporcionales?
+El promedio|¿cómo saco el promedio de mis notas?
+Los gráficos de barras|para que sirve un grafico de barras
+La probabilidad|cual es la probabilidad de sacar un 6 en un dado
+Múltiplos|¿Cuáles son los múltiplos de 5?
+Divisores|que son los divisores de un numero
+El mínimo común múltiplo|¿Cómo saco el mínimo común múltiplo?
+Los ángulos|¿Qué es un ángulo recto?
+Los triángulos|¿Qué es un triángulo equilátero?
+Los cuadriláteros|cuantos lados tiene un cuadrilatero
+Los polígonos|¿cómo se llama una figura de 6 lados?
+La circunferencia y el círculo|¿Cuál es la diferencia entre círculo y circunferencia?
+El número pi|que es el numero pi
+La simetría|que es un eje de simetria
+El cubo|¿Cuántas caras tiene un cubo?
+El perímetro|¿Cómo saco el perímetro de un cuadrado?
+El área|¿Cómo calculo el área de un rectángulo?
+El volumen|que es el volumen de un cuerpo
+El litro y la capacidad|¿Cuántos mililitros tiene un litro?
+La raíz cuadrada|¿cual es la raiz cuadrada de 16?
+Las potencias|que significa 2 al cubo
+Los números enteros y negativos|¿Qué es un número negativo?
+El sustantivo|¿Qué es un sustantivo?
+El adjetivo|¿Qué es un adjetivo? dame un ejemplo
+El verbo|como encuentro el verbo en una oracion
+Los tiempos verbales|¿Cuáles son los tiempos de los verbos?
+El adverbio|que es un adverbio
+La oración, sujeto y predicado|como encuentro el sujeto de una oracion
+Los sinónimos|¿Qué es un sinónimo?
+Los antónimos|¿qué es un antónimo de alto?
+El acento y la tilde|¿Cuándo lleva tilde una palabra?
+Palabras agudas, graves y esdrújulas|que es una palabra esdrujula
+El diptongo|¿Qué es un diptongo?
+La sílaba|¿Cómo separo en sílabas?
+La coma|¿Cuándo se usa la coma?
+La fábula|¿Qué es una fábula?
+La leyenda|cual es la diferencia entre mito y leyenda
+El cuento|¿Cuáles son las partes de un cuento?
+La poesía|¿Qué es una estrofa?
+La metáfora|¿Qué es una metáfora?
+La noticia|que partes tiene una noticia
+El Martín Fierro|¿De qué trata el Martín Fierro?
+María Elena Walsh|¿Quién fue María Elena Walsh?
+Horacio Quiroga|quien escribio cuentos de la selva
+El guaraní|¿Dónde se habla guaraní?
+Los seres vivos|¿Qué necesita un ser vivo para vivir?
+La célula|¿Qué es una célula?
+Los mamíferos|¿Por qué la ballena es un mamífero?
+Las aves|¿Cómo vuelan los pájaros?
+Los reptiles|¿Las serpientes son reptiles?
+Los anfibios|que es un anfibio
+Los insectos|¿Cuántas patas tiene un insecto?
+Los arácnidos|las arañas son insectos?
+Los dinosaurios|¿Por qué se extinguieron los dinosaurios?
+Las abejas|como hacen la miel las abejas
+El yaguareté|¿Dónde vive el yaguareté?
+El cóndor andino|¿Qué tan grande es un cóndor?
+El carpincho|¿qué come el carpincho?
+La fotosíntesis|¿Cómo hacen su comida las plantas?
+La semilla|¿Cómo crece una planta desde una semilla?
+La polinización|¿para qué sirven las abejas en las flores?
+La cadena alimentaria|¿Qué es una cadena alimentaria?
+El ecosistema|que es un ecosistema
+La biodiversidad|¿Qué significa biodiversidad?
+Los fósiles|¿Cómo se forma un fósil?
+El esqueleto|¿Cuántos huesos tiene el cuerpo?
+Los músculos|¿Cómo funcionan los músculos?
+La digestión|¿Qué pasa con la comida cuando la tragamos?
+La respiración|¿Cómo respiramos?
+El corazón|¿Por qué late el corazón?
+La sangre|¿de qué está hecha la sangre?
+El cerebro|¿Para qué sirve el cerebro?
+La vista|¿Cómo funcionan los ojos?
+Los dientes|¿Por qué se caen los dientes de leche?
+Las vitaminas|para que sirven las vitaminas
+Las vacunas|¿Cómo funcionan las vacunas?
+La alimentación saludable|¿qué es comer sano?
+Los estados de la materia|¿Cuáles son los estados de la materia?
+Las mezclas|que es una mezcla
+La combustión|¿Por qué se quema el papel?
+Los átomos|¿Qué es un átomo?
+El magnetismo y los imanes|¿Por qué los imanes se atraen?
+La luz|¿Qué tan rápido viaja la luz?
+El arcoíris|¿Cómo se forma un arcoíris?
+Las sombras|¿Cómo se forma una sombra?
+El sonido|¿Cómo viaja el sonido?
+El peso y la gravedad|¿Por qué las cosas caen al suelo?
+La flotación|¿por que flotan los barcos?
+La corriente eléctrica|¿Qué es la corriente eléctrica?
+La energía solar|como se saca energia del sol
+El calor|¿Qué es el calor?
+La Tierra|¿Qué forma tiene la Tierra?
+La rotación de la Tierra|¿Por qué hay día y noche?
+Los volcanes|¿Cómo entra en erupción un volcán?
+Los terremotos|¿Por qué hay terremotos?
+El ciclo del agua|¿Qué es el ciclo del agua?
+Las mareas|¿por qué sube y baja el mar?
+Los glaciares|que es un glaciar
+La lluvia|¿Por qué llueve?
+Las nubes|¿de qué están hechas las nubes?
+El rayo y el trueno|¿Por qué truena cuando hay tormenta?
+El cielo azul|¿Por qué el cielo es azul?
+El clima|¿Cuál es la diferencia entre clima y tiempo?
+El cambio climático|¿Qué es el cambio climático?
+El sistema solar|¿Cuáles son los planetas del sistema solar?
+El Sol|¿Qué tan caliente es el Sol?
+Las fases de la Luna|¿Por qué cambia la forma de la Luna?
+Marte|¿Hay vida en Marte?
+Saturno|¿De qué están hechos los anillos de Saturno?
+Las estrellas|¿Cómo nacen las estrellas?
+Los eclipses|¿Qué es un eclipse?
+La traslación y las estaciones|¿Por qué hay estaciones del año?
+La República Argentina|¿Cuántas provincias tiene Argentina?
+La Patagonia|¿Qué provincias forman la Patagonia?
+El Aconcagua|¿Cuál es la montaña más alta de Argentina?
+La cordillera de los Andes|¿Dónde queda la cordillera de los Andes?
+Las cataratas del Iguazú|¿Dónde están las cataratas del Iguazú?
+El glaciar Perito Moreno|¿dónde está el glaciar Perito Moreno?
+El río Paraná|¿Por dónde pasa el río Paraná?
+El río de la Plata|¿Qué países separa el río de la Plata?
+Tierra del Fuego|¿Cuál es la capital de Tierra del Fuego?
+Mendoza|¿Qué se produce en Mendoza?
+Jujuy|¿Cuál es la capital de Jujuy?
+Los parques nacionales|¿Qué es un parque nacional?
+Los esteros del Iberá|que animales hay en los esteros del Ibera
+La contaminación|¿Qué es la contaminación del agua?
+El reciclaje|¿Para qué sirve reciclar?
+La deforestación|¿Qué es la deforestación?
+La ganadería|¿Qué es la ganadería?
+La agricultura|que se cultiva en la pampa
+Los mapas|¿Cómo se lee un mapa?
+Los puntos cardinales|¿Cuáles son los puntos cardinales?
+Latitud y longitud|que son la latitud y la longitud
+El Mercosur|¿Qué países forman el Mercosur?
+Los continentes|¿Cuántos continentes hay?
+La Antártida|¿Quién vive en la Antártida?
+Los pueblos originarios de Argentina|¿Quiénes vivían en Argentina antes de los españoles?
+Los mapuches|¿Dónde vivían los mapuches?
+Los guaraníes|¿Cómo vivían los guaraníes?
+Los incas|¿Quiénes eran los incas?
+Cristóbal Colón|¿Quién fue Cristóbal Colón?
+El Virreinato del Río de la Plata|¿Qué era el Virreinato del Río de la Plata?
+Las invasiones inglesas|¿Qué fueron las invasiones inglesas?
+La Revolución de Mayo|¿Qué pasó el 25 de mayo de 1810?
+La Primera Junta|¿Quién era el presidente de la Primera Junta?
+Manuel Belgrano|¿Quién creó la bandera argentina?
+José de San Martín|¿Quién fue San Martín?
+El cruce de los Andes|¿Cómo cruzó San Martín los Andes?
+Juana Azurduy|¿Quién fue Juana Azurduy?
+Martín Miguel de Güemes|¿Quién fue Güemes?
+El Himno Nacional Argentino|¿Quién escribió el himno argentino?
+La Declaración de Independencia|¿Qué pasó el 9 de julio de 1816?
+Unitarios y federales|¿Qué diferencia había entre unitarios y federales?
+Juan Manuel de Rosas|¿Quién fue Rosas?
+Domingo Faustino Sarmiento|¿Quién fue Sarmiento?
+La Constitución de 1853|¿Qué pasó en 1853 en Argentina?
+La inmigración en Argentina|¿Por qué vinieron tantos inmigrantes a Argentina?
+La Conquista del Desierto|¿Qué fue la Conquista del Desierto?
+El voto femenino|¿Cuándo pudieron votar las mujeres en Argentina?
+La última dictadura y la memoria|¿Qué pasó el 24 de marzo de 1976?
+La guerra de las Malvinas|¿Qué fue la guerra de las Malvinas?
+Eva Perón|¿Quién fue Evita?
+El antiguo Egipto|¿Para qué construyeron las pirámides los egipcios?
+El Imperio romano|¿Quiénes eran los romanos?
+La Revolución Industrial|¿Qué fue la Revolución Industrial?
+La llegada a la Luna|¿Cuándo llegó el hombre a la Luna?
+Bernardo Houssay|¿Quién fue el primer premio Nobel de ciencias de Argentina?
+La división de poderes|¿Cuáles son los tres poderes?
+El Congreso|¿Qué hace el Congreso?
+El Poder Ejecutivo y el presidente|¿Qué hace el presidente?
+La Constitución Nacional|¿Qué es la Constitución?
+La democracia|¿Qué es la democracia?
+El voto|¿Para qué sirve votar?
+Las elecciones|¿Cómo se elige un presidente?
+El federalismo|¿Qué quiere decir que Argentina es federal?
+Los impuestos|¿Para qué sirven los impuestos?
+Los derechos del niño|¿Qué derechos tienen los chicos?
+Los derechos humanos|¿Qué son los derechos humanos?
+La discriminación|¿Qué es la discriminación?
+El acoso escolar|¿Qué es el bullying?
+Las Naciones Unidas|¿Qué es la ONU?
+La educación vial|¿Qué significan los colores del semáforo?
+El dinero|¿Para qué sirve el dinero?
+Las máquinas simples|¿Qué es una máquina simple?
+La palanca|¿Cómo funciona una palanca?
+El avión|¿Cómo vuela un avión?
+Internet|¿Cómo funciona internet?
+La computadora|¿Qué es una computadora?
+La inteligencia artificial|¿Qué es la inteligencia artificial?
+El papel y cómo se hace|¿Cómo se hace el papel?
+El tango|¿Dónde nació el tango?
+El folklore argentino|¿Qué es el folklore?
+La chacarera|¿Qué es una chacarera?
+Los colores|¿Cuáles son los colores primarios?
+El gaucho|¿Quiénes eran los gauchos?
+El mate|¿De qué planta sale el mate?
+Los Juegos Olímpicos|¿Cada cuánto son los Juegos Olímpicos?
+FUERA|¿Quién ganó el mundial de 1986?
+FUERA|¿Qué receta de torta me das?
+FUERA|¿Cómo se juega al ajedrez?
+FUERA|¿Cuánto cuesta una PlayStation?
+FUERA|¿Quién es el mejor youtuber?
+FUERA|¿Cómo se llama el presidente actual de Brasil?
+FUERA|¿Cómo arreglo mi celular?
+FUERA|¿Qué tiempo va a hacer mañana?
+FUERA|¿Cómo se hace una pizza?
+FUERA|¿Quién canta la canción de moda?
+FUERA|¿Cuál es el mejor auto?
+FUERA|¿Cómo vuelo un dron?
+FUERA|¿Qué película me recomendás?
+FUERA|¿Quién es Messi?
+FUERA|¿Cómo funciona un motor de avión a reacción?
+FUERA|¿Qué es la física cuántica?
+FUERA|¿Cómo se hace una página web?
+FUERA|¿A qué hora abre el banco?
+FUERA|¿Por qué se pelean mis papás?

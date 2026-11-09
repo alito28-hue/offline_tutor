@@ -1,0 +1,352 @@
+# Historia, geografía, ciudadanía y política del mundo. Mismo formato que temario.txt.
+geografia|Países de África|6,7|Argelia|Argelia
+geografia|Países de África|6,7|Angola|Angola
+geografia|Países de África|6,7|Benín|Benín
+geografia|Países de África|6,7|Botsuana|Botsuana
+geografia|Países de África|6,7|Burkina Faso|Burkina Faso
+geografia|Países de África|6,7|Burundi|Burundi
+geografia|Países de África|6,7|Cabo Verde|Cabo Verde
+geografia|Países de África|6,7|Camerún|Camerún
+geografia|Países de África|6,7|Chad|Chad
+geografia|Países de África|6,7|Comoras|Comoras
+geografia|Países de África|6,7|República del Congo|República del Congo
+geografia|Países de África|6,7|República Democrática del Congo|República Democrática del Congo
+geografia|Países de África|6,7|Costa de Marfil|Costa de Marfil
+geografia|Países de África|6,7|Yibuti|Yibuti
+geografia|Países de África|6,7|Egipto|Egipto
+geografia|Países de África|6,7|Eritrea|Eritrea
+geografia|Países de África|6,7|Esuatini|Esuatini
+geografia|Países de África|6,7|Etiopía|Etiopía
+geografia|Países de África|6,7|Gabón|Gabón
+geografia|Países de África|6,7|Gambia|Gambia
+geografia|Países de África|6,7|Ghana|Ghana
+geografia|Países de África|6,7|Guinea|Guinea
+geografia|Países de África|6,7|Guinea-Bisáu|Guinea-Bisáu
+geografia|Países de África|6,7|Guinea Ecuatorial|Guinea Ecuatorial
+geografia|Países de África|6,7|Kenia|Kenia
+geografia|Países de África|6,7|Lesoto|Lesoto
+geografia|Países de África|6,7|Liberia|Liberia
+geografia|Países de África|6,7|Libia|Libia
+geografia|Países de África|6,7|Madagascar|Madagascar
+geografia|Países de África|6,7|Malaui|Malaui
+geografia|Países de África|6,7|Malí|Malí
+geografia|Países de África|6,7|Marruecos|Marruecos
+geografia|Países de África|6,7|Mauricio|Mauricio
+geografia|Países de África|6,7|Mauritania|Mauritania
+geografia|Países de África|6,7|Mozambique|Mozambique
+geografia|Países de África|6,7|Namibia|Namibia
+geografia|Países de África|6,7|Níger|Níger
+geografia|Países de África|6,7|Nigeria|Nigeria
+geografia|Países de África|6,7|República Centroafricana|República Centroafricana
+geografia|Países de África|6,7|Ruanda|Ruanda
+geografia|Países de África|6,7|Santo Tomé y Príncipe|Santo Tomé y Príncipe
+geografia|Países de África|6,7|Senegal|Senegal
+geografia|Países de África|6,7|Seychelles|Seychelles
+geografia|Países de África|6,7|Sierra Leona|Sierra Leona
+geografia|Países de África|6,7|Somalia|Somalia
+geografia|Países de África|6,7|Sudáfrica|Sudáfrica
+geografia|Países de África|6,7|Sudán|Sudán
+geografia|Países de África|6,7|Sudán del Sur|Sudán del Sur
+geografia|Países de África|6,7|Tanzania|Tanzania
+geografia|Países de África|6,7|Togo|Togo
+geografia|Países de África|6,7|Túnez|Túnez
+geografia|Países de África|6,7|Uganda|Uganda
+geografia|Países de África|6,7|Zambia|Zambia
+geografia|Países de África|6,7|Zimbabue|Zimbabue
+geografia|Países de América|6,7|Antigua y Barbuda|Antigua y Barbuda
+geografia|Países de América|6,7|Bahamas|Bahamas
+geografia|Países de América|6,7|Barbados|Barbados
+geografia|Países de América|6,7|Belice|Belice
+geografia|Países de América|6,7|Bolivia|Bolivia
+geografia|Países de América|6,7|Brasil|Brasil
+geografia|Países de América|6,7|Canadá|Canadá
+geografia|Países de América|6,7|Chile|Chile
+geografia|Países de América|6,7|Colombia|Colombia
+geografia|Países de América|6,7|Costa Rica|Costa Rica
+geografia|Países de América|6,7|Cuba|Cuba
+geografia|Países de América|6,7|Dominica|Dominica
+geografia|Países de América|6,7|Ecuador|Ecuador
+geografia|Países de América|6,7|El Salvador|El Salvador
+geografia|Países de América|6,7|Estados Unidos|Estados Unidos
+geografia|Países de América|6,7|Granada|Granada (país)
+geografia|Países de América|6,7|Guatemala|Guatemala
+geografia|Países de América|6,7|Guyana|Guyana
+geografia|Países de América|6,7|Haití|Haití
+geografia|Países de América|6,7|Honduras|Honduras
+geografia|Países de América|6,7|Jamaica|Jamaica
+geografia|Países de América|6,7|México|México
+geografia|Países de América|6,7|Nicaragua|Nicaragua
+geografia|Países de América|6,7|Panamá|Panamá
+geografia|Países de América|6,7|Paraguay|Paraguay
+geografia|Países de América|6,7|Perú|Perú
+geografia|Países de América|6,7|República Dominicana|República Dominicana
+geografia|Países de América|6,7|San Cristóbal y Nieves|San Cristóbal y Nieves
+geografia|Países de América|6,7|San Vicente y las Granadinas|San Vicente y las Granadinas
+geografia|Países de América|6,7|Santa Lucía|Santa Lucía
+geografia|Países de América|6,7|Surinam|Surinam
+geografia|Países de América|6,7|Trinidad y Tobago|Trinidad y Tobago
+geografia|Países de América|6,7|Uruguay|Uruguay
+geografia|Países de América|6,7|Venezuela|Venezuela
+geografia|Países de Asia|6,7|Afganistán|Afganistán
+geografia|Países de Asia|6,7|Arabia Saudita|Arabia Saudita
+geografia|Países de Asia|6,7|Armenia|Armenia
+geografia|Países de Asia|6,7|Azerbaiyán|Azerbaiyán
+geografia|Países de Asia|6,7|Baréin|Baréin
+geografia|Países de Asia|6,7|Bangladés|Bangladés
+geografia|Países de Asia|6,7|Birmania|Birmania
+geografia|Países de Asia|6,7|Brunéi|Brunéi
+geografia|Países de Asia|6,7|Bután|Bután
+geografia|Países de Asia|6,7|Camboya|Camboya
+geografia|Países de Asia|6,7|Catar|Catar
+geografia|Países de Asia|6,7|China|China
+geografia|Países de Asia|6,7|Chipre|Chipre
+geografia|Países de Asia|6,7|Corea del Norte|Corea del Norte
+geografia|Países de Asia|6,7|Corea del Sur|Corea del Sur
+geografia|Países de Asia|6,7|Emiratos Árabes Unidos|Emiratos Árabes Unidos
+geografia|Países de Asia|6,7|Filipinas|Filipinas
+geografia|Países de Asia|6,7|Georgia|Georgia (país)
+geografia|Países de Asia|6,7|India|India
+geografia|Países de Asia|6,7|Indonesia|Indonesia
+geografia|Países de Asia|6,7|Irak|Irak
+geografia|Países de Asia|6,7|Irán|Irán
+geografia|Países de Asia|6,7|Israel|Israel|!
+geografia|Países de Asia|6,7|Japón|Japón
+geografia|Países de Asia|6,7|Jordania|Jordania
+geografia|Países de Asia|6,7|Kazajistán|Kazajistán
+geografia|Países de Asia|6,7|Kirguistán|Kirguistán
+geografia|Países de Asia|6,7|Kuwait|Kuwait
+geografia|Países de Asia|6,7|Laos|Laos
+geografia|Países de Asia|6,7|Líbano|Líbano
+geografia|Países de Asia|6,7|Malasia|Malasia
+geografia|Países de Asia|6,7|Maldivas|Maldivas
+geografia|Países de Asia|6,7|Mongolia|Mongolia
+geografia|Países de Asia|6,7|Nepal|Nepal
+geografia|Países de Asia|6,7|Omán|Omán
+geografia|Países de Asia|6,7|Pakistán|Pakistán
+geografia|Países de Asia|6,7|Singapur|Singapur
+geografia|Países de Asia|6,7|Siria|Siria
+geografia|Países de Asia|6,7|Sri Lanka|Sri Lanka
+geografia|Países de Asia|6,7|Tailandia|Tailandia
+geografia|Países de Asia|6,7|Tayikistán|Tayikistán
+geografia|Países de Asia|6,7|Timor Oriental|Timor Oriental
+geografia|Países de Asia|6,7|Turkmenistán|Turkmenistán
+geografia|Países de Asia|6,7|Turquía|Turquía
+geografia|Países de Asia|6,7|Uzbekistán|Uzbekistán
+geografia|Países de Asia|6,7|Vietnam|Vietnam
+geografia|Países de Asia|6,7|Yemen|Yemen
+geografia|Países de Asia|6,7|Palestina|Palestina|!
+geografia|Países de Europa|6,7|Albania|Albania
+geografia|Países de Europa|6,7|Alemania|Alemania
+geografia|Países de Europa|6,7|Andorra|Andorra
+geografia|Países de Europa|6,7|Austria|Austria
+geografia|Países de Europa|6,7|Bélgica|Bélgica
+geografia|Países de Europa|6,7|Bielorrusia|Bielorrusia
+geografia|Países de Europa|6,7|Bosnia-Herzegovina|Bosnia-Herzegovina
+geografia|Países de Europa|6,7|Bulgaria|Bulgaria
+geografia|Países de Europa|6,7|Croacia|Croacia
+geografia|Países de Europa|6,7|Dinamarca|Dinamarca
+geografia|Países de Europa|6,7|Eslovaquia|Eslovaquia
+geografia|Países de Europa|6,7|Eslovenia|Eslovenia
+geografia|Países de Europa|6,7|España|España
+geografia|Países de Europa|6,7|Estonia|Estonia
+geografia|Países de Europa|6,7|Finlandia|Finlandia
+geografia|Países de Europa|6,7|Francia|Francia
+geografia|Países de Europa|6,7|Grecia|Grecia
+geografia|Países de Europa|6,7|Hungría|Hungría
+geografia|Países de Europa|6,7|Irlanda|Irlanda
+geografia|Países de Europa|6,7|Islandia|Islandia
+geografia|Países de Europa|6,7|Italia|Italia
+geografia|Países de Europa|6,7|Letonia|Letonia
+geografia|Países de Europa|6,7|Liechtenstein|Liechtenstein
+geografia|Países de Europa|6,7|Lituania|Lituania
+geografia|Países de Europa|6,7|Luxemburgo|Luxemburgo
+geografia|Países de Europa|6,7|Macedonia del Norte|Macedonia del Norte
+geografia|Países de Europa|6,7|Malta|Malta
+geografia|Países de Europa|6,7|Moldavia|Moldavia
+geografia|Países de Europa|6,7|Mónaco|Mónaco
+geografia|Países de Europa|6,7|Montenegro|Montenegro
+geografia|Países de Europa|6,7|Noruega|Noruega
+geografia|Países de Europa|6,7|Países Bajos|Países Bajos
+geografia|Países de Europa|6,7|Polonia|Polonia
+geografia|Países de Europa|6,7|Portugal|Portugal
+geografia|Países de Europa|6,7|Reino Unido|Reino Unido
+geografia|Países de Europa|6,7|República Checa|República Checa
+geografia|Países de Europa|6,7|Rumania|Rumania
+geografia|Países de Europa|6,7|Rusia|Rusia
+geografia|Países de Europa|6,7|San Marino|San Marino
+geografia|Países de Europa|6,7|Serbia|Serbia
+geografia|Países de Europa|6,7|Suecia|Suecia
+geografia|Países de Europa|6,7|Suiza|Suiza
+geografia|Países de Europa|6,7|Ucrania|Ucrania
+geografia|Países de Europa|6,7|Ciudad del Vaticano|Ciudad del Vaticano
+geografia|Países de Oceanía|6,7|Australia|Australia
+geografia|Países de Oceanía|6,7|Fiyi|Fiyi
+geografia|Países de Oceanía|6,7|Islas Marshall|Islas Marshall
+geografia|Países de Oceanía|6,7|Islas Salomón|Islas Salomón
+geografia|Países de Oceanía|6,7|Kiribati|Kiribati
+geografia|Países de Oceanía|6,7|Micronesia|Micronesia
+geografia|Países de Oceanía|6,7|Nauru|Nauru
+geografia|Países de Oceanía|6,7|Nueva Zelanda|Nueva Zelanda
+geografia|Países de Oceanía|6,7|Palaos|Palaos
+geografia|Países de Oceanía|6,7|Papúa Nueva Guinea|Papúa Nueva Guinea
+geografia|Países de Oceanía|6,7|Samoa|Samoa
+geografia|Países de Oceanía|6,7|Tonga|Tonga
+geografia|Países de Oceanía|6,7|Tuvalu|Tuvalu
+geografia|Países de Oceanía|6,7|Vanuatu|Vanuatu
+geografia|Continentes|5,6|África|África
+geografia|Continentes|5,6|Asia|Asia
+geografia|Continentes|5,6|Europa|Europa
+geografia|Continentes|5,6|América|América
+geografia|Continentes|5,6|Oceanía|Oceanía
+geografia|Mares y océanos|5,6|El océano Pacífico|Océano Pacífico
+geografia|Mares y océanos|5,6|El océano Atlántico|Océano Atlántico
+geografia|Mares y océanos|5,6|El océano Índico|Océano Índico
+geografia|Mares y océanos|5,6|El océano Ártico|Océano Ártico
+geografia|Mares y océanos|5,6|El mar Mediterráneo|Mar Mediterráneo
+geografia|Mares y océanos|6,7|El mar Caribe|Mar Caribe
+geografia|Relieve del mundo|5,6|El monte Everest|Monte Everest
+geografia|Relieve del mundo|5,6|El Himalaya|Himalaya
+geografia|Relieve del mundo|6,7|Los Alpes|Alpes
+geografia|Relieve del mundo|6,7|El Kilimanjaro|Kilimanjaro
+geografia|Relieve del mundo|5,6|El desierto del Sahara|Sahara
+geografia|Relieve del mundo|6,7|El desierto de Atacama|Desierto de Atacama
+geografia|Relieve del mundo|5,6|La selva amazónica|Amazonia
+geografia|Relieve del mundo|6,7|La Gran Barrera de Coral|Gran Barrera de Coral
+geografia|Relieve del mundo|6,7|El Gran Cañón|Gran Cañón
+geografia|Relieve del mundo|5,6|El Ártico|Ártico
+geografia|Ríos y lagos del mundo|5,6|El río Nilo|Río Nilo
+geografia|Ríos y lagos del mundo|6,7|El río Misisipi|Río Misisipi
+geografia|Ríos y lagos del mundo|6,7|El río Yangtsé|Río Yangtsé
+geografia|Ríos y lagos del mundo|6,7|El río Ganges|Río Ganges
+geografia|Ríos y lagos del mundo|6,7|El río Danubio|Río Danubio
+geografia|Ríos y lagos del mundo|6,7|El lago Titicaca|Lago Titicaca
+geografia|Ríos y lagos del mundo|6,7|El lago Victoria|Lago Victoria
+geografia|Ciudades del mundo|6,7|París|París
+geografia|Ciudades del mundo|6,7|Londres|Londres
+geografia|Ciudades del mundo|6,7|Roma|Roma
+geografia|Ciudades del mundo|6,7|Nueva York|Nueva York
+geografia|Ciudades del mundo|6,7|Tokio|Tokio
+geografia|Ciudades del mundo|6,7|Pekín|Pekín
+geografia|Ciudades del mundo|6,7|Nueva Delhi|Nueva Delhi
+geografia|Ciudades del mundo|6,7|El Cairo|El Cairo
+geografia|Ciudades del mundo|6,7|Moscú|Moscú
+geografia|Ciudades del mundo|6,7|Ciudad de México|Ciudad de México
+geografia|Ciudades del mundo|6,7|Lagos|Lagos (Nigeria)
+geografia|Ciudades del mundo|6,7|São Paulo|São Paulo
+geografia|Ciudades del mundo|6,7|Sídney|Sídney
+geografia|Mundo humano|6,7|La población mundial|Población mundial
+geografia|Mundo humano|6,7|Las religiones del mundo|Religión|!
+geografia|Mundo humano|6,7|Los idiomas del mundo|Idioma
+geografia|Mundo humano|6,7|Los husos horarios|Huso horario
+geografia|Mundo humano|6,7|Los climas del mundo|Clasificación climática de Köppen
+geografia|Mundo humano|6,7|Las fronteras|Frontera
+geografia|Mundo humano|6,7|Los refugiados|Refugiado|!
+geografia|Mundo humano|6,7|La pobreza en el mundo|Pobreza|!
+geografia|Mundo humano|6,7|La globalización|Globalización|!
+geografia|Maravillas|6,7|Las pirámides de Egipto|Pirámides de Egipto
+geografia|Maravillas|6,7|La Gran Muralla China|Gran Muralla China
+geografia|Maravillas|6,7|Machu Picchu|Machu Picchu
+geografia|Maravillas|6,7|El Taj Mahal|Taj Mahal
+geografia|Maravillas|6,7|Chichén Itzá|Chichén Itzá
+geografia|Maravillas|6,7|El Coliseo de Roma|Coliseo
+geografia|Maravillas|6,7|Petra|Petra
+historia|Prehistoria|6,7|La prehistoria|Prehistoria
+historia|Prehistoria|6,7|La aparición del ser humano|Homo sapiens
+historia|Prehistoria|6,7|La invención de la agricultura|Revolución neolítica
+historia|Prehistoria|6,7|La Edad de Piedra|Edad de Piedra
+historia|Prehistoria|6,7|La invención de la escritura|Historia de la escritura
+historia|Antigüedad|6,7|Mesopotamia|Mesopotamia
+historia|Antigüedad|6,7|La antigua China|Historia de China
+historia|Antigüedad|6,7|La antigua India|Historia de India
+historia|Antigüedad|6,7|Los fenicios|Fenicia
+historia|Antigüedad|6,7|El reino de Kush|Reino de Kush
+historia|Antigüedad|7|Alejandro Magno|Alejandro Magno
+historia|Antigüedad|7|Julio César|Julio César
+historia|Antigüedad|7|Cleopatra|Cleopatra
+historia|Antigüedad|7|Confucio|Confucio
+historia|Antigüedad|7|Sócrates|Sócrates
+historia|Antigüedad|7|Aristóteles|Aristóteles
+historia|Antigüedad|7|Los Juegos Olímpicos antiguos|Juegos Olímpicos en la Antigüedad
+historia|Edad Media y reinos|7|El Imperio bizantino|Imperio bizantino
+historia|Edad Media y reinos|7|El Imperio mongol|Imperio mongol
+historia|Edad Media y reinos|7|Gengis Kan|Gengis Kan
+historia|Edad Media y reinos|7|El Imperio de Malí|Imperio de Malí
+historia|Edad Media y reinos|7|Mansa Musa|Mansa Musa
+historia|Edad Media y reinos|7|El Gran Zimbabue|Gran Zimbabue
+historia|Edad Media y reinos|7|El Imperio otomano|Imperio otomano
+historia|Edad Media y reinos|7|Los vikingos|Vikingo
+historia|Edad Media y reinos|7|Las Cruzadas|Cruzadas|!
+historia|Edad Media y reinos|7|Los samuráis|Samurái
+historia|Edad Media y reinos|7|La Ruta de la Seda|Ruta de la Seda
+historia|Edad Media y reinos|7|Marco Polo|Marco Polo
+historia|Edad Media y reinos|7|La peste negra|Peste negra
+historia|Edad Media y reinos|7|El Imperio mogol|Imperio mogol
+historia|Edad Moderna|7|El Renacimiento|Renacimiento
+historia|Edad Moderna|7|Leonardo da Vinci|Leonardo da Vinci
+historia|Edad Moderna|7|Galileo Galilei|Galileo Galilei
+historia|Edad Moderna|7|Isaac Newton|Isaac Newton
+historia|Edad Moderna|7|Fernando de Magallanes|Fernando de Magallanes
+historia|Edad Moderna|7|La Ilustración|Ilustración
+historia|Edad Moderna|7|La trata atlántica de esclavos|Trata atlántica de esclavos|!
+historia|Edad Moderna|7|La independencia de Estados Unidos|Guerra de Independencia de los Estados Unidos
+historia|Edad Moderna|7|La Revolución haitiana|Revolución haitiana
+historia|Edad Moderna|7|Napoleón Bonaparte|Napoleón Bonaparte
+historia|Mundo contemporáneo|7|El colonialismo|Colonialismo|!
+historia|Mundo contemporáneo|7|El reparto de África|Reparto de África|!
+historia|Mundo contemporáneo|7|La independencia de América Latina|Independencia de Hispanoamérica
+historia|Mundo contemporáneo|7|Abraham Lincoln|Abraham Lincoln
+historia|Mundo contemporáneo|7|La Revolución rusa|Revolución rusa|!
+historia|Mundo contemporáneo|7|La Revolución mexicana|Revolución mexicana
+historia|Mundo contemporáneo|7|La bomba atómica|Bombardeos atómicos de Hiroshima y Nagasaki|!
+historia|Mundo contemporáneo|7|La Guerra Fría|Guerra Fría|!
+historia|Mundo contemporáneo|7|El Muro de Berlín|Muro de Berlín
+historia|Mundo contemporáneo|7|La independencia de la India|Independencia de la India
+historia|Mundo contemporáneo|7|La descolonización de África|Descolonización de África|!
+historia|Mundo contemporáneo|7|El apartheid|Apartheid|!
+historia|Mundo contemporáneo|7|La carrera espacial|Carrera espacial
+historia|Personas del mundo|6,7|Mahatma Gandhi|Mahatma Gandhi
+historia|Personas del mundo|6,7|Nelson Mandela|Nelson Mandela
+historia|Personas del mundo|6,7|Martin Luther King|Martin Luther King
+historia|Personas del mundo|6,7|Rosa Parks|Rosa Parks
+historia|Personas del mundo|6,7|Malala Yousafzai|Malala Yousafzai
+historia|Personas del mundo|6,7|Ana Frank|Ana Frank|!
+historia|Personas del mundo|6,7|Wangari Maathai|Wangari Maathai
+historia|Personas del mundo|6,7|Simón Bolívar y América|Simón Bolívar
+historia|Personas del mundo|6,7|Toussaint Louverture|Toussaint Louverture
+historia|Personas del mundo|6,7|Yuri Gagarin|Yuri Gagarin
+historia|Personas del mundo|6,7|Neil Armstrong|Neil Armstrong
+historia|Conflictos|7|El conflicto entre Israel y Palestina|Conflicto israelí-palestino|!
+historia|Conflictos|7|El genocidio armenio|Genocidio armenio|!
+historia|Conflictos|7|El genocidio de Ruanda|Genocidio de Ruanda|!
+ciudadania|Formas de gobierno|6,7|Las formas de gobierno|Forma de gobierno
+ciudadania|Formas de gobierno|6,7|La monarquía|Monarquía
+ciudadania|Formas de gobierno|6,7|El parlamentarismo|Parlamentarismo
+ciudadania|Formas de gobierno|6,7|El presidencialismo|Presidencialismo
+ciudadania|Formas de gobierno|6,7|El Parlamento|Parlamento
+ciudadania|Formas de gobierno|6,7|La democracia en la antigua Atenas|Democracia ateniense
+ciudadania|Formas de gobierno|6,7|El Estado y la nación|Estado nación
+ciudadania|Formas de gobierno|7|El totalitarismo|Totalitarismo|!
+ciudadania|Formas de gobierno|7|Capitalismo|Capitalismo|!
+ciudadania|Formas de gobierno|7|Socialismo|Socialismo|!
+ciudadania|Formas de gobierno|7|El comunismo|Comunismo|!
+ciudadania|Formas de gobierno|7|El fascismo|Fascismo|!
+ciudadania|Organismos internacionales|6,7|El Consejo de Seguridad de la ONU|Consejo de Seguridad de las Naciones Unidas
+ciudadania|Organismos internacionales|6,7|UNICEF|UNICEF
+ciudadania|Organismos internacionales|6,7|La UNESCO|UNESCO
+ciudadania|Organismos internacionales|6,7|La Organización Mundial de la Salud|Organización Mundial de la Salud
+ciudadania|Organismos internacionales|6,7|La Unión Europea|Unión Europea
+ciudadania|Organismos internacionales|6,7|La Unión Africana|Unión Africana
+ciudadania|Organismos internacionales|6,7|La Organización de Estados Americanos|Organización de los Estados Americanos
+ciudadania|Organismos internacionales|6,7|La Cruz Roja|Movimiento Internacional de la Cruz Roja y de la Media Luna Roja
+ciudadania|Organismos internacionales|7|La Corte Internacional de Justicia|Corte Internacional de Justicia
+ciudadania|Organismos internacionales|7|Los Objetivos de Desarrollo Sostenible|Objetivos de Desarrollo Sostenible
+ciudadania|Organismos internacionales|7|El Acuerdo de París|Acuerdo de París (2015)
+ciudadania|Derechos en el mundo|6,7|La abolición de la esclavitud|Abolicionismo|!
+ciudadania|Derechos en el mundo|6,7|El voto de las mujeres en el mundo|Sufragio femenino
+ciudadania|Derechos en el mundo|6,7|El derecho a la educación|Derecho a la educación
+ciudadania|Derechos en el mundo|6,7|La igualdad de género|Igualdad de género|!
+ciudadania|Derechos en el mundo|6,7|El racismo|Racismo|!
+ciudadania|Derechos en el mundo|6,7|El premio Nobel de la Paz|Premio Nobel de la Paz
+ciudadania|Economía mundial|7|El comercio internacional|Comercio internacional
+ciudadania|Economía mundial|7|Las monedas del mundo|Moneda
+ciudadania|Economía mundial|7|El Producto Interno Bruto|Producto interno bruto
