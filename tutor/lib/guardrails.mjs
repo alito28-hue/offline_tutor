@@ -37,7 +37,7 @@ export const line = (lang, key) => LINES[lang]?.[key] ?? LINES.en[key];
 const SW = /\b(kwa nini|nini|vipi|jinsi|ninawezaje|mvua|sayari|hesabu|sehemu|tafadhali|habari|gani|inanyesha|mimea|kuongeza)\b/;
 const ES = /[¿¡ñ]|\b(por que|como|que|cual|cuantos?|cuantas?|donde|cuando|quien|el|la|los|las|un|una|de|del|y|es|son|sumo|sumar|llueve|plantas?|fracciones|hola|si|no|porque|para)\b/g;
 // Words Spanish does not use, so that a question shared by both languages, such as "como", stays Spanish.
-const PT = /[ãõç]|\b(o que|voce|nao|sao|uma|um|os|as|do|na|nas|em|qual|quais|quem|onde|quantos?|quantas?|chove|fracoes|isso|pelo|tem|foi|ao|fica|fazem|ossos|por que o|por que a|eu|ele|vem|chuva|ceu|cidades?|fico|dobro|mesmo|depois|tambem|muito|palavra|precisamos|mais|seguidores|rede)\b/g;
+const PT = /[ãõç]|\b(o que|voce|nao|uma|um|os|as|do|na|nas|em|qual|quais|quem|onde|quantos?|quantas?|chove|fracoes|isso|pelo|tem|foi|ao|fica|fazem|ossos|por que o|por que a|eu|ele|vem|chuva|ceu|cidades?|fico|dobro|mesmo|depois|tambem|muito|palavra|precisamos|mais|seguidores|rede)\b/g;
 const EN = /\b(why|how|what|which|where|when|who|the|a|an|of|and|is|are|do|does|i|plants?|rain|add|fractions?|hello|yes|because|to|in)\b/g;
 
 export function detectLanguage(text) {

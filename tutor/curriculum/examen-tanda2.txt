@@ -1,0 +1,115 @@
+# Tanda 2: preguntas nuevas, sin copiar las de los artículos. idioma|tema (o FUERA)|pregunta
+es|francia|en que pais esta paris
+es|alemania|donde queda berlin
+es|italia|sicilia es de que pais
+es|espana|que pais tiene a madrid
+es|reino-unido|londres es capital de que pais
+es|rusia|que pais tiene once zonas horarias
+es|china|donde esta pekin
+es|india|que pais tiene mas gente
+es|corea-del-sur|que paso entre las dos coreas en 1945
+es|indonesia|donde queda java
+es|egipto|el sinai es de que pais
+es|nigeria|cuantos habitantes hay en nigeria
+es|sudafrica|donde esta johannesburgo
+es|etiopia|que pais se llamaba abisinia
+es|estados-unidos|cuantos estados tiene eeuu
+es|canada|ottawa es capital de donde
+es|brasil|que pais tiene a sao paulo
+es|chile|que pais es tan largo y angosto
+es|uruguay|donde esta montevideo
+es|peru|donde vivia la civilizacion caral
+es|colombia|que pais tiene costa en dos oceanos
+es|australia|hace cuanto llegaron los aborigenes a australia
+es|africa|cuantos paises hay en africa
+es|asia|que continente tiene mas gente
+es|himalaya|que significa la palabra himalaya
+es|coliseo|que es el anfiteatro flavio
+es|piramides-egipto|quien fue keops
+es|gran-muralla|cuantos kilometros mide la muralla china
+es|machu-picchu|que pueblo construyo machu picchu
+es|mesopotamia|que hay entre el tigris y el eufrates
+es|alejandro-magno|quien fue el hijo de filipo
+es|cleopatra|ultima reina de egipto
+es|imperio-mongol|quien fue temuyin
+es|mansa-musa|quien fue el rey mas rico
+es|samurais|que eran los guerreros de japon
+es|edad-media|que periodo empezo en 476
+es|renacimiento|que paso en florencia en el siglo xv
+es|leonardo|quien pinto y fue inventor en el renacimiento
+es|galileo|quien mejoro el telescopio
+es|revolucion-francesa|que paso en francia en 1789
+es|bolivar|quien es el libertador de venezuela
+es|muro-berlin|que dividia a alemania
+es|apolo-11|quien fue neil armstrong
+es|luther-king|quien lucho por los derechos civiles en estados unidos
+es|malala|que nena gano el nobel de la paz
+es|marie-curie|quien estudio la radiactividad
+es|einstein|quien invento la relatividad
+es|colon|donde desembarco colon
+es|FUERA|como se hace una hamburguesa
+es|FUERA|quien gano el ultimo mundial
+es|FUERA|como aprendo a nadar
+es|FUERA|que es un bitcoin
+es|FUERA|cual es el mejor videojuego
+es|FUERA|como tengo mas likes
+en|francia|what country is Paris in
+en|alemania|where is Berlin
+en|espana|which country has Madrid
+en|rusia|what country has eleven time zones
+en|india|which country has the most people
+en|estados-unidos|how many states are in the USA
+en|brasil|which country has Sao Paulo
+en|chile|what country is so long and thin
+en|africa|how many countries are in Africa
+en|himalaya|what does the word Himalaya mean
+en|piramides-egipto|who was Khufu
+en|gran-muralla|how many kilometers long is the wall of China
+en|machu-picchu|who built Machu Picchu
+en|alejandro-magno|who was the son of Philip II
+en|cleopatra|last queen of Egypt
+en|imperio-mongol|who was Temujin
+en|renacimiento|what happened in Florence in the 15th century
+en|galileo|who improved the telescope
+en|revolucion-francesa|what happened in France in 1789
+en|muro-berlin|what divided Germany
+en|apolo-11|who was Neil Armstrong
+en|luther-king|who fought for civil rights in the United States
+en|marie-curie|who studied radioactivity
+en|einstein|who came up with relativity
+en|colon|where did Columbus come ashore
+en|FUERA|how do I make a burger
+en|FUERA|who won the last World Cup
+en|FUERA|how do I learn to swim
+en|FUERA|what is bitcoin
+en|FUERA|what is the best video game
+pt|francia|em que país fica Paris
+pt|alemania|onde fica Berlim
+pt|espana|que país tem Madri
+pt|rusia|que país tem onze fusos horários
+pt|india|que país tem mais gente
+pt|estados-unidos|quantos estados têm os EUA
+pt|brasil|qual é a capital do meu país Brasil
+pt|chile|que país é tão comprido e estreito
+pt|africa|quantos países existem na África
+pt|himalaya|o que quer dizer a palavra Himalaia
+pt|piramides-egipto|quem foi Quéops
+pt|gran-muralla|quantos quilômetros tem a muralha da China
+pt|machu-picchu|quem construiu Machu Picchu
+pt|alejandro-magno|quem foi o filho de Filipe II
+pt|cleopatra|última rainha do Egito
+pt|imperio-mongol|quem foi Temujin
+pt|renacimiento|o que aconteceu em Florença no século XV
+pt|galileo|quem aperfeiçoou o telescópio
+pt|revolucion-francesa|o que aconteceu na França em 1789
+pt|muro-berlin|o que dividia a Alemanha
+pt|apolo-11|quem foi Neil Armstrong
+pt|luther-king|quem lutou pelos direitos civis nos Estados Unidos
+pt|marie-curie|quem estudou a radioatividade
+pt|einstein|quem criou a relatividade
+pt|colon|onde Colombo desembarcou
+pt|FUERA|como se faz um hambúrguer
+pt|FUERA|quem ganhou a última Copa
+pt|FUERA|como aprendo a nadar
+pt|FUERA|o que é bitcoin
+pt|FUERA|qual é o melhor videogame

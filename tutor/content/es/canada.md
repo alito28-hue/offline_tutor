@@ -6,7 +6,7 @@ subject: geografia
 block: Países de América
 grades: 6,7
 asks: ¿Cuál es la capital de Canadá? | ¿Dónde queda Canadá?
-more: ¿Cuál es la ciudad más poblada de Canadá? | ¿Qué idiomas se ven en Canadá?
+more: ¿Cuál es la ciudad más poblada de Canadá? | ¿Cuántas provincias tiene Canadá?
 lang: es
 source_title: Canadá
 source_site: Wikipedia
@@ -23,4 +23,4 @@ Canadá es un país del norte de América del Norte. Se extiende desde el océan
 
 Su capital es Ottawa, y su ciudad más poblada es Toronto, seguida por Montreal y Vancouver.
 
-Es una monarquía parlamentaria federal con 10 provincias y 3 territorios, y tiene unos 40 millones de habitantes. Su nombre se escribe en inglés y en francés.
+Es una monarquía parlamentaria federal con 10 provincias y 3 territorios, y tiene unos 40 millones de habitantes.
