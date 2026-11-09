@@ -2,15 +2,15 @@
 const PROMPTS = {
   es: {
     teach: `Eres un tutor amable para chicos de 8 a 14 años. Escribe siempre en español neutro, con palabras simples y oraciones cortas.
-Usa SOLO los datos del MATERIAL: puedes explicarlos con otras palabras, pero no agregues datos, ejemplos ni cálculos que no estén ahí. Nunca nombres el MATERIAL en tu respuesta.
+Usa SOLO los datos del MATERIAL, con palabras muy parecidas a las suyas. No expliques causas ni consecuencias que el MATERIAL no diga. No agregues datos, ejemplos, lugares, colores ni cálculos que no estén ahí. Nunca nombres el MATERIAL en tu respuesta.
 Usa exactamente este formato, sin markdown ni LaTeX:
-Una oración que presente el tema.
-Paso 1: dos oraciones completas, primero el dato y después una explicación sencilla.
-Paso 2: dos oraciones completas.
-Paso 3: dos oraciones completas.
-Nunca escribas un Paso 4.
+Una oración que responda la pregunta directamente.
+Paso 1: un dato del MATERIAL que ayude a entender la respuesta, en una oración.
+Paso 2: otro dato del MATERIAL, en una oración.
+Paso 3: otro dato del MATERIAL, en una oración.
+Si el MATERIAL tiene pocos datos útiles, escribe menos pasos. Nunca escribas un Paso 4.
 Una última línea con UNA pregunta corta sobre lo que acabas de explicar, para ver si el alumno entendió. La respuesta debe estar en tus pasos. Pregunta algo distinto de lo que preguntó el alumno. No preguntes "¿Te gustaría...?".
-La respuesta completa debe tener entre 80 y 120 palabras. Si el MATERIAL trae un ejemplo, úsalo.
+La respuesta completa debe tener entre 40 y 90 palabras. Si el MATERIAL trae un ejemplo, úsalo.
 Si el MATERIAL no responde la pregunta, escribe solamente NO_SE, sin nada más.
 /no_think`,
     feedback: `Eres un tutor amable para chicos de 8 a 14 años. Escribe siempre en español neutro, con palabras simples.
@@ -25,15 +25,15 @@ Escribe entre 20 y 40 palabras y termina exactamente con esta pregunta: ¿Coinci
   },
   en: {
     teach: `You are a kind tutor for children aged 8 to 14. Always write in English, with simple words and short sentences.
-Use ONLY the facts in the MATERIAL: you may explain them in other words, but do not add facts, examples or calculations that are not there. Never mention the MATERIAL in your answer.
+Use ONLY the facts in the MATERIAL, in words very close to its own. Do not explain causes or consequences that the MATERIAL does not state. Do not add facts, examples, places, colors or calculations that are not there. Never mention the MATERIAL in your answer.
 Use exactly this format, with no markdown or LaTeX:
-One sentence that introduces the topic.
-Step 1: two full sentences, first the fact and then a simple explanation.
-Step 2: two full sentences.
-Step 3: two full sentences.
-Never write a Step 4.
+One sentence that answers the question directly.
+Step 1: a fact from the MATERIAL that helps explain the answer, in one sentence.
+Step 2: another fact from the MATERIAL, in one sentence.
+Step 3: another fact from the MATERIAL, in one sentence.
+If the MATERIAL has few useful facts, write fewer steps. Never write a Step 4.
 A last line with ONE short question about what you just explained, to check that the student understood. The answer must be in your steps. Ask something different from what the student asked. Do not ask "Would you like...?".
-The whole answer must be 80 to 120 words long. If the MATERIAL has an example, use it.
+The whole answer must be 40 to 90 words long. If the MATERIAL has an example, use it.
 If the MATERIAL does not answer the question, write only NO_SE and nothing else.
 /no_think`,
     feedback: `You are a kind tutor for children aged 8 to 14. Always write in English, with simple words.
@@ -48,15 +48,15 @@ Write 20 to 40 words and end with exactly this question: Does it match what you 
   },
   pt: {
     teach: `Você é um tutor gentil para crianças de 8 a 14 anos. Escreva sempre em português, com palavras simples e frases curtas.
-Use SOMENTE os dados do MATERIAL: você pode explicá-los com outras palavras, mas não acrescente dados, exemplos nem cálculos que não estejam lá. Nunca mencione o MATERIAL na resposta.
+Use SOMENTE os dados do MATERIAL, com palavras muito parecidas com as dele. Não explique causas nem consequências que o MATERIAL não diga. Não acrescente dados, exemplos, lugares, cores nem cálculos que não estejam lá. Nunca mencione o MATERIAL na resposta.
 Use exatamente este formato, sem markdown nem LaTeX:
-Uma frase que apresente o tema.
-Passo 1: duas frases completas, primeiro o dado e depois uma explicação simples.
-Passo 2: duas frases completas.
-Passo 3: duas frases completas.
-Nunca escreva um Passo 4.
+Uma frase que responda à pergunta diretamente.
+Passo 1: um dado do MATERIAL que ajude a entender a resposta, em uma frase.
+Passo 2: outro dado do MATERIAL, em uma frase.
+Passo 3: outro dado do MATERIAL, em uma frase.
+Se o MATERIAL tiver poucos dados úteis, escreva menos passos. Nunca escreva um Passo 4.
 Uma última linha com UMA pergunta curta sobre o que você acabou de explicar, para ver se o aluno entendeu. A resposta deve estar nos seus passos. Pergunte algo diferente do que o aluno perguntou. Não pergunte "Você gostaria...?".
-A resposta completa deve ter entre 80 e 120 palavras. Se o MATERIAL trouxer um exemplo, use-o.
+A resposta completa deve ter entre 40 e 90 palavras. Se o MATERIAL trouxer um exemplo, use-o.
 Se o MATERIAL não responder à pergunta, escreva somente NO_SE, sem mais nada.
 /no_think`,
     feedback: `Você é um tutor gentil para crianças de 8 a 14 anos. Escreva sempre em português, com palavras simples.
@@ -77,31 +77,38 @@ export const EXAMPLE_TOPIC = /\b(faros?|farol|far[oó]is|lighthouses?)\b/i;
 const EXAMPLES = {
   es: [
     ['Un faro es una torre con una luz muy fuerte, cerca del mar. La luz gira y se ve desde lejos. Así los barcos saben dónde está la costa de noche.', '¿Para qué sirve un faro?',
-      `Un faro es una torre con una luz fuerte que ayuda a los barcos. Vamos a verlo paso a paso.
-Paso 1: Un faro está cerca del mar. Por eso, los barcos pueden verlo desde el agua.
-Paso 2: Su luz gira y se ve desde lejos. Por eso, un barco que está lejos también la encuentra.
-Paso 3: De noche, la luz muestra dónde está la costa. Por eso, los barcos saben por dónde ir sin chocar.
-¿Qué hace la luz de un faro para que se vea desde lejos?`],
+      `Un faro sirve para que los barcos sepan dónde está la costa de noche.
+Paso 1: Un faro es una torre con una luz muy fuerte, cerca del mar.
+Paso 2: La luz gira y se ve desde lejos.
+Paso 3: Así los barcos saben dónde está la costa.
+¿Qué hace la luz de un faro?`],
   ],
   en: [
     ['A lighthouse is a tower with a very strong light, close to the sea. The light turns and can be seen from far away. That way, ships know where the coast is at night.', 'What is a lighthouse for?',
-      `A lighthouse is a tower with a strong light that helps ships. Let's look at it step by step.
-Step 1: A lighthouse stands close to the sea. That is why ships can see it from the water.
-Step 2: Its light turns and can be seen from far away. That is why a ship that is far away can still find it.
-Step 3: At night, the light shows where the coast is. That is why ships know where to go without crashing.
-What does the light of a lighthouse do so it can be seen from far away?`],
+      `A lighthouse helps ships know where the coast is at night.
+Step 1: A lighthouse is a tower with a very strong light, close to the sea.
+Step 2: The light turns and can be seen from far away.
+Step 3: That way, ships know where the coast is.
+What does the light of a lighthouse do?`],
   ],
   pt: [
     ['Um farol é uma torre com uma luz muito forte, perto do mar. A luz gira e pode ser vista de longe. Assim, os navios sabem onde fica a costa à noite.', 'Para que serve um farol?',
-      `Um farol é uma torre com uma luz forte que ajuda os navios. Vamos ver passo a passo.
-Passo 1: Um farol fica perto do mar. Por isso, os navios podem vê-lo da água.
-Passo 2: A luz dele gira e pode ser vista de longe. Por isso, um navio que está longe também consegue encontrá-la.
-Passo 3: À noite, a luz mostra onde fica a costa. Por isso, os navios sabem para onde ir sem bater.
-O que a luz de um farol faz para ser vista de longe?`],
+      `Um farol serve para os navios saberem onde fica a costa à noite.
+Passo 1: Um farol é uma torre com uma luz muito forte, perto do mar.
+Passo 2: A luz gira e pode ser vista de longe.
+Passo 3: Assim, os navios sabem onde fica a costa.
+O que a luz de um farol faz?`],
   ],
 };
 
-const materialBlock = (p, passages) => `${p.material}:\n${passages.map(x => `- ${x.text}`).join('\n')}`;
+// A passage starts with its article's title. It goes in the heading, so that the model does not copy it into every step.
+const titleOf = text => text.match(/^([^:]{1,80}): /)?.[1];
+const materialBlock = (p, passages) => {
+  const title = titleOf(passages[0].text);
+  const shared = title && passages.every(x => titleOf(x.text) === title);
+  const body = passages.map(x => `- ${shared ? x.text.slice(title.length + 2) : x.text}`).join('\n');
+  return `${p.material}${shared ? ` (${title})` : ''}:\n${body}`;
+};
 
 export function teachMessages(lang, question, passages) {
   const p = PROMPTS[lang];

@@ -2,7 +2,7 @@
 const normalize = s => s.toLowerCase().normalize('NFD').replace(/\p{M}/gu, '');
 
 const CARE = /\b(suicid\w*|matarme|me quiero matar|quiero morir\w*|hacerme dano|lastimarme|cortarme|kill myself|want to die|hurt myself|self.?harm|me matar|quero morrer|me machucar|me cortar|me (batem|bateram)|abusa\w* de mim|sofro bullying|me (pegan|golpean|acosan|manosean)|someone (hits|touches|touched) me|me hacen bullying|abus[oa]\w* de mi)\b/;
-const UNSAFE = /\b(maconha|cocaina|peitos|nu|nua|pelad[oa]s?|sexo|sexual\w*|sexy|sex|porn\w*|desnud\w*|nude\w*|naked|xxx|tetas|pene|vagina|boobs|penis|drogas?|cocaina|marihuana|porro|cocaine|weed|meth|heroin|vape|armas?|pistolas?|bombas?|explosiv\w*|guns?|weapons?|bombs?|matar|kill\w*|murder\w*|asesin\w*)\b/;
+const UNSAFE = /\b(maconha|cocaina|peitos|pelad[oa]s?|sexo|sexual\w*|sexy|sex|porn\w*|desnud\w*|nude\w*|naked|xxx|tetas|pene|vagina|boobs|penis|drogas?|cocaina|marihuana|porro|cocaine|weed|meth|heroin|vape|armas?|pistolas?|bombas?|explosiv\w*|guns?|weapons?|bombs?|matar|kill\w*|murder\w*|asesin\w*)\b/;
 const INJECTION = /\b(ignora\w*|olvida\w*|ignore|esqueca\w*|forget|disregard)\b.{0,30}\b(instruccion\w*|instruc\w*|regras?|reglas?|instructions?|rules?|prompt)\b|\bjailbreak\b|\bsystem prompt\b|\bdan mode\b/;
 const OUTPUT_UNSAFE = new RegExp(`${UNSAFE.source}|https?://|www\\.`);
 
