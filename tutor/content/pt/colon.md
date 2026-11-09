@@ -6,6 +6,7 @@ subject: historia
 block: Conquista e colônia
 grades: 4
 asks: Quem foi Cristóvão Colombo? | O que aconteceu em 1492? | quem chegou à América | quem descobriu a América | que navegador cruzou o Atlântico em 1492
+more: Onde Colombo chegou primeiro? | Em que ano Colombo chegou à América? | Colombo é considerado o descobridor da América?
 lang: pt
 source_title: Cristóbal Colón
 source_site: Wikipedia
@@ -23,3 +24,5 @@ Cristóvão Colombo foi um navegador a serviço da Coroa de Castela. Liderou a v
 Ele queria chegar à Ásia navegando para o oeste pelo Atlântico, porque a Terra é redonda. Acreditava que a Terra era menor do que é na realidade.
 
 Sua viagem abriu caminho para a exploração e a conquista do continente pelos europeus. Morreu em Valladolid em 1506.
+
+Seu primeiro desembarque na América foi em 12 de outubro de 1492, na ilha de Guanahani, nas atuais Bahamas.

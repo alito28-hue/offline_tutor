@@ -5,9 +5,9 @@ const els = {
   sources: $('sources'), speed: $('speed'), form: $('form'), question: $('question'), send: $('send'),
 };
 const LABELS = {
-  es: { source: 'Fuente:', sources: 'Fuentes:', speed: s => `Empezó a responder en ${s} s` },
-  en: { source: 'Source:', sources: 'Sources:', speed: s => `Started answering in ${s} s` },
-  pt: { source: 'Fonte:', sources: 'Fontes:', speed: s => `Começou a responder em ${s} s` },
+  es: { more: '¿Quieres saber más?', source: 'Fuente:', sources: 'Fuentes:', speed: s => `Empezó a responder en ${s} s` },
+  en: { more: 'Want to know more?', source: 'Source:', sources: 'Sources:', speed: s => `Started answering in ${s} s` },
+  pt: { more: 'Quer saber mais?', source: 'Fonte:', sources: 'Fontes:', speed: s => `Começou a responder em ${s} s` },
   sw: { source: 'Source:', sources: 'Sources:', speed: s => `Started answering in ${s} s` },
 };
 // The screen follows the computer's language, with English for everything else.
@@ -152,6 +152,25 @@ function showSuggestions(list) {
   els.answer.append(box);
 }
 
+function showMore(list, lang) {
+  if (!list?.length) return;
+  const box = document.createElement('div');
+  box.className = 'more';
+  const label = document.createElement('span');
+  label.className = 'more-label';
+  label.textContent = (LABELS[lang] || LABELS.en).more;
+  box.append(label);
+  for (const m of list) {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'more-item';
+    b.textContent = m.topic || m.ask;
+    b.addEventListener('click', () => ask(m.ask, m.file));
+    box.append(b);
+  }
+  els.answer.append(box);
+}
+
 function setBusy(on) {
   asking = on;
   els.send.disabled = on || !ready;
@@ -196,6 +215,7 @@ async function ask(question, file = null) {
         if (ev.type === 'done') {
           render(text, ev.route, false);
           showSuggestions(ev.suggestions);
+          showMore(ev.more, ev.lang);
           showSources(ev.sources, ev.lang);
           fit();
           if (['teach', 'feedback'].includes(ev.route)) {

@@ -6,6 +6,7 @@ subject: historia
 block: Conquest and colonial times
 grades: 4
 asks: Who was Christopher Columbus? | What happened in 1492? | who reached America | who discovered America | what navigator crossed the Atlantic in 1492
+more: Where did Columbus land first? | What year did Columbus reach the Americas? | Is Columbus considered the discoverer of the Americas?
 lang: en
 source_title: Cristóbal Colón
 source_site: Wikipedia
@@ -23,3 +24,5 @@ Christopher Columbus was a navigator serving the Crown of Castile. He led the 14
 He wanted to reach Asia by sailing west across the Atlantic, because the Earth is round. He believed the Earth was smaller than it really is.
 
 His voyage opened the way to the exploration and conquest of the continent by Europeans. He died in Valladolid in 1506.
+
+His first landing in the Americas was on October 12, 1492, on the island of Guanahani, in the present-day Bahamas.

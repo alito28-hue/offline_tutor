@@ -242,11 +242,14 @@ test('a passage that matches a word in an unrelated article is not enough', asyn
   const done = (await collect(createTutor({ engine: articleEngine(GOOD, () => 0.1, c => (c.startsWith('[es/lluvia.md]') ? 0.5 : 0.1)), files }).ask('¿Por qué llueve?'))).at(-1);
   assert.equal(done.route, 'unknown');
 });
-test('a topic chosen from the list opens that article without searching', async () => {
-  const engine = { async search() { throw new Error('should not search'); }, async *generate() { yield GOOD; } };
+test('a topic chosen from the list answers only from that article, and offers what to ask next', async () => {
+  const engine = { async search() { return docs.filter(c => c.startsWith('[es/')).map(content => ({ content, score: c2(content) })); }, async *generate() { yield GOOD; } };
+  const c2 = c => (c.startsWith('[es/volcanes.md]') ? 0.9 : 0.5);
   const done = (await collect(createTutor({ engine, files }).ask('¿Qué es la lluvia?', { file: 'es/lluvia.md' }))).at(-1);
   assert.equal(done.route, 'teach');
   assert.deepEqual(done.sources.map(s => s.file), ['es/lluvia.md']);
+  assert.ok(done.more.length > 0 && done.more.length <= 3);
+  for (const m of done.more) assert.notEqual(m.ask, '¿Qué es la lluvia?');
 });
 test('the search index is only used for the content it was built from', () => {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'amara-index-'));

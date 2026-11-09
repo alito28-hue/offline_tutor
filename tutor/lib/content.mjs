@@ -37,6 +37,8 @@ export const toCards = files =>
 
 export const asksOf = f => (f.meta.asks ? f.meta.asks.split('|').map(q => q.trim()).filter(Boolean) : []);
 
+export const moreOf = f => (f.meta.more ? f.meta.more.split('|').map(q => q.trim()).filter(Boolean) : []);
+
 // The curriculum as the app shows it: one entry per article in the requested language.
 export const listTopics = (files, lang) => files
   .filter(f => f.file.startsWith(`${lang}/`) && f.meta.topic)

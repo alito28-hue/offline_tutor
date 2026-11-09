@@ -1,7 +1,7 @@
 // The tutor's decision flow. The model engine is injected, so tests can run it with a fake one.
 // Citations come from the passages sent to the model, never from the model's own text.
 import { checkInput, detectLanguage, isAnswerToCheck, line, OutputGuard } from './guardrails.mjs';
-import { asksOf, parseHit, sourceFor } from './content.mjs';
+import { asksOf, moreOf, parseHit, sourceFor } from './content.mjs';
 import { groundPassages, wordIndex } from './grounding.mjs';
 import { EXAMPLE_TOPIC, feedbackMessages, teachMessages } from './prompts.mjs';
 
@@ -18,6 +18,7 @@ const WORDS_WEIGHT = Number(process.env.TUTOR_WORDS_WEIGHT || 0.15);
 // Below the threshold the tutor does not teach, but it can still point to the closest articles.
 const SUGGEST_THRESHOLD = 0.5;
 const MAX_SUGGESTIONS = 3;
+const MAX_FOLLOW_UPS = 3;
 const TEACH_PARAMS = { temp: 0.2, seed: 7, predict: 280 };
 const FEEDBACK_PARAMS = { temp: 0.2, seed: 7, predict: 120 };
 
@@ -55,11 +56,27 @@ export function createTutor({ engine, files, now = () => performance.now() }) {
     return { best, passages: hits.filter(h => h.file === ranked[0].file).slice(0, MAX_PASSAGES), suggestions };
   }
 
-  // A topic chosen from the list needs no search: the child already said which article.
-  function openArticle(file) {
+  // A topic or follow-up chosen on screen says which article it is about, so the search only picks the passages inside it.
+  async function openArticle(file, question) {
     const f = files.find(x => x.file === file);
     if (!f) return null;
+    const lang = file.slice(0, 2);
+    const hits = (await engine.search(question, TOP_K, lang)).map(parseHit).filter(h => h?.file === file).slice(0, MAX_PASSAGES);
+    if (hits.length) return { best: 1, passages: hits };
     return { best: 1, passages: f.paragraphs.slice(0, MAX_PASSAGES).map(p => ({ file, text: `${f.meta.title}: ${p}`, score: 1 })) };
+  }
+
+  // What to ask next. Only questions written for this article, so that a follow-up never leads to a dead end,
+  // then neighbouring topics from the same block.
+  function followUps(file, question) {
+    const f = files.find(x => x.file === file);
+    if (!f) return [];
+    const asked = question.trim().toLowerCase();
+    const same = [...moreOf(f), ...asksOf(f).filter(q => q.endsWith('?'))].filter(q => q.toLowerCase() !== asked);
+    const questions = [...new Set(same)].map(q => ({ ask: q, file }));
+    const neighbours = files.filter(x => x.file !== file && x.file.slice(0, 2) === file.slice(0, 2) && x.meta.block === f.meta.block && x.meta.subject === f.meta.subject)
+      .map(x => ({ ask: asksOf(x)[0] || x.meta.title, file: x.file, topic: x.meta.title }));
+    return [...questions.slice(0, MAX_FOLLOW_UPS - Math.min(1, neighbours.length)), ...neighbours].slice(0, MAX_FOLLOW_UPS);
   }
 
   async function* fixedReply(route, lang, text, t0, extra = {}) {
@@ -72,7 +89,7 @@ export function createTutor({ engine, files, now = () => performance.now() }) {
   async function* ask(input, { file = null } = {}) {
     const t0 = now();
     const question = String(input).slice(0, 500).trim();
-    const chosen = file && openArticle(file);
+    const chosen = file && await openArticle(file, question);
     let lang = chosen ? file.slice(0, 2) : detectLanguage(question);
     const safety = checkInput(question);
     const replyLang = lang === 'sw' ? 'en' : lang;
@@ -158,7 +175,7 @@ export function createTutor({ engine, files, now = () => performance.now() }) {
     }
     lastTurn = { lang, passages, askedBack: lastQuestion(answer) };
     const sources = [...new Set(passages.map(p => p.file))].map(f => sourceFor(files, f)).filter(Boolean);
-    yield { type: 'done', route, lang, sources, firstTokenMs: Math.round(first ?? now() - t0), totalMs: Math.round(now() - t0), words: countWords(answer), score: searchScore };
+    yield { type: 'done', route, lang, sources, firstTokenMs: Math.round(first ?? now() - t0), totalMs: Math.round(now() - t0), words: countWords(answer), score: searchScore, more: route === 'teach' && sources[0] ? followUps(sources[0].file, question) : [] };
   }
 
   return { ask, reset: () => { lastTurn = null; } };

@@ -61,7 +61,7 @@ body {
 .credits-links { display: flex; flex-wrap: wrap; gap: 1.2rem 4rem; font-weight: 700; }
 .credits-links a { color: var(--blue); }
 .credits-close { margin-top: 1.6rem; padding: 1.4rem 3.6rem; border: 0; border-radius: 1.6rem; background: var(--green); color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
-.credit { margin: 0; font-size: 2.5rem; color: #5A6470; text-align: center; }
+.credit { flex: none; margin: -1rem 0 0; font-size: 1.9rem; color: #5A6470; text-align: center; }
 .credit a { color: inherit; font-weight: 700; }
 .lesson[hidden], .welcome[hidden] { display: none; }
 .asked { margin: 0; flex: none; font-size: 5rem; line-height: 1.15; letter-spacing: -0.02em; }
@@ -121,3 +121,8 @@ body {
 .credits-open[hidden] { display: none; }
 
 .suggestions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
+
+.more { flex: none; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.2rem; font-size: 2.4rem; }
+.more-label { font-weight: 700; color: var(--muted); }
+.more-item { padding: 0.8rem 1.8rem; border: 0.2rem solid var(--green); border-radius: 99rem; background: #fff; color: var(--green); font: inherit; font-size: 2.4rem; font-weight: 600; cursor: pointer; }
+.more-item:hover, .more-item:focus-visible { background: var(--green-soft); outline: none; }
