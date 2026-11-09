@@ -128,7 +128,9 @@
     "credits": "Learning materials: Wikipedia contributors, CC BY-SA 4.0. Illustrations generated with AI.",
     "privacy": "Privacy",
     "feedback": "Give feedback or report a bug",
-    "free": "A non-profit project. The app is completely free."
+    "free": "A non-profit project. The app is completely free.",
+    "openSource": "Open source under the Apache 2.0 license: anyone can use, change and share it.",
+    "license": "See the license"
   },
   "privacy": {
     "title": "Privacy",
