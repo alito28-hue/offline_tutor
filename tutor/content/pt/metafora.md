@@ -1,10 +1,11 @@
 ---
 title: A metáfora
 topic: metafora
+order: 110
 subject: lengua
 block: Literatura
 grades: 5,6
-asks: O que é uma metáfora? | Me dê um exemplo de metáfora
+asks: O que é uma metáfora? | Me dê um exemplo de metáfora | por que dizem que os olhos são sóis | dizer uma coisa nomeando outra | figura de linguagem dos olhos como sóis
 lang: pt
 source_title: Metáfora
 source_site: Wikipedia

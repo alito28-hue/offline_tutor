@@ -1,10 +1,11 @@
 ---
 title: El sustantivo
 topic: sustantivo
+order: 67
 subject: lengua
 block: Gramática
 grades: 4,5
-asks: ¿Qué es un sustantivo? | ¿Qué palabras son sustantivos?
+asks: ¿Qué es un sustantivo? | ¿Qué palabras son sustantivos? | palabras que nombran cosas | qué es un sustantivo propio | qué es un nombre común
 lang: es
 source_title: Sustantivo
 source_site: Wikipedia

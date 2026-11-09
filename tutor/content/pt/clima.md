@@ -1,10 +1,11 @@
 ---
 title: O clima
 topic: clima
+order: 245
 subject: naturales
 block: Terra
 grades: 6
-asks: O que é o clima? | Qual é a diferença entre clima e tempo?
+asks: O que é o clima? | Qual é a diferença entre clima e tempo? | como é o tempo normalmente em um lugar | o que se estuda no clima
 lang: pt
 source_title: Clima
 source_site: Wikipedia

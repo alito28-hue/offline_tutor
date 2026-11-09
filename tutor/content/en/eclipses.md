@@ -1,10 +1,11 @@
 ---
 title: Eclipses
 topic: eclipses
+order: 268
 subject: naturales
 block: Universe
 grades: 6
-asks: What is an eclipse? | What is the difference between a solar and a lunar eclipse?
+asks: What is an eclipse? | What is the difference between a solar and a lunar eclipse? | why does the Sun get covered in the day | when the Moon covers the Sun | why does it get dark during the day | what is a lunar eclipse
 lang: en
 source_title: Eclipse
 source_site: Wikipedia

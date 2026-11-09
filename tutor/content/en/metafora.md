@@ -1,10 +1,11 @@
 ---
 title: Metaphors
 topic: metafora
+order: 110
 subject: lengua
 block: Literature
 grades: 5,6
-asks: What is a metaphor? | Give me an example of a metaphor
+asks: What is a metaphor? | Give me an example of a metaphor | why do people say eyes are suns | saying one thing by naming another | figure of speech about eyes as suns
 lang: en
 source_title: Metáfora
 source_site: Wikipedia

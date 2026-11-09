@@ -1,10 +1,11 @@
 ---
 title: Os direitos da criança
 topic: derechos-nino
+order: 457
 subject: ciudadania
 block: Direitos
 grades: 5
-asks: Quais direitos as crianças têm? | O que é a Convenção sobre os Direitos da Criança?
+asks: Quais direitos as crianças têm? | O que é a Convenção sobre os Direitos da Criança? | tratado que protege as crianças | o que a ONU assinou em 1989 | tenho direitos por ser criança
 lang: pt
 source_title: Convención sobre los Derechos del Niño
 source_site: Wikipedia

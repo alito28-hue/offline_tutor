@@ -1,10 +1,11 @@
 ---
 title: Prime numbers
 topic: numeros-primos
+order: 15
 subject: matematica
 block: Numbers
 grades: 5,6
-asks: What is a prime number? | Is 7 a prime number?
+asks: What is a prime number? | Is 7 a prime number? | numbers that divide only by one and themselves | how do I know if a number is prime | composite numbers
 lang: en
 source_title: Número primo
 source_site: Wikipedia

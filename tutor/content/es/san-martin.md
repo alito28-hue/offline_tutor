@@ -1,10 +1,11 @@
 ---
 title: José de San Martín
 topic: san-martin
+order: 380
 subject: historia
 block: Independencia
 grades: 5
-asks: ¿Quién fue San Martín? | ¿Qué países liberó San Martín?
+asks: ¿Quién fue San Martín? | ¿Qué países liberó San Martín? | libertador de Argentina y Chile | quién liberó a Chile | dónde nació San Martín
 lang: es
 source_title: José de San Martín
 source_site: Wikipedia

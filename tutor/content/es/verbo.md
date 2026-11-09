@@ -1,10 +1,11 @@
 ---
 title: El verbo
 topic: verbo
+order: 69
 subject: lengua
 block: Gramática
 grades: 4,5
-asks: ¿Qué es un verbo? | ¿Cómo encuentro el verbo en una oración?
+asks: ¿Qué es un verbo? | ¿Cómo encuentro el verbo en una oración? | palabras que indican acciones | qué tipo de palabra es correr | cantar y saltar son acciones | qué palabra dice lo que hace alguien
 lang: es
 source_title: Verbo
 source_site: Wikipedia

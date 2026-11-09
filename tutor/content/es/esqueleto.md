@@ -1,10 +1,11 @@
 ---
 title: El esqueleto y los huesos
 topic: esqueleto
+order: 178
 subject: naturales
 block: Cuerpo humano
 grades: 4
-asks: ¿Cuántos huesos tiene el cuerpo? | ¿Para qué sirve el esqueleto?
+asks: ¿Cuántos huesos tiene el cuerpo? | ¿Para qué sirve el esqueleto? | para qué sirven los huesos | qué es el cráneo
 lang: es
 source_title: Esqueleto humano
 source_site: Wikipedia

@@ -1,10 +1,11 @@
 ---
 title: Perimeter
 topic: perimetro
+order: 60
 subject: matematica
 block: Measurement
 grades: 4,5
-asks: How do I work out the perimeter of a rectangle? | What is a perimeter?
+asks: How do I work out the perimeter of a rectangle? | What is a perimeter? | measure around a shape | how much fence do I need
 lang: en
 source_title: Perimeter
 source_site: Wikipedia

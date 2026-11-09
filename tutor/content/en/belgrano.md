@@ -1,10 +1,11 @@
 ---
 title: Manuel Belgrano
 topic: belgrano
+order: 378
 subject: historia
 block: Independence
 grades: 5
-asks: Who created the Argentine flag? | Who was Manuel Belgrano? | What did Belgrano do?
+asks: Who created the Argentine flag? | Who was Manuel Belgrano? | What did Belgrano do? | who made the flag | who invented the Argentine flag | what did he do in the British invasions
 lang: en
 source_title: Manuel Belgrano
 source_site: Wikipedia

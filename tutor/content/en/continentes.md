@@ -1,10 +1,11 @@
 ---
 title: Continents
 topic: continentes
+order: 347
 subject: geografia
 block: World
 grades: 6
-asks: What is a continent? | How many continents are there?
+asks: What is a continent? | How many continents are there? | are Europe and Asia one continent | what does the word continent mean | what is Eurasia
 lang: en
 source_title: Continente
 source_site: Wikipedia

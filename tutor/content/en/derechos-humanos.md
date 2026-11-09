@@ -1,10 +1,11 @@
 ---
 title: Human rights
 topic: derechos-humanos
+order: 458
 subject: ciudadania
 block: Rights
 grades: 6
-asks: What are human rights? | Who has human rights?
+asks: What are human rights? | Who has human rights? | do all people have the same rights | rights without discrimination | what is our duty to the rights of others
 lang: en
 source_title: Derechos humanos
 source_site: Wikipedia

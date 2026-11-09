@@ -1,10 +1,11 @@
 ---
 title: The Rio de la Plata
 topic: rio-de-la-plata
+order: 310
 subject: geografia
 block: Land and water
 grades: 4,5
-asks: What is the Rio de la Plata? | Which countries does the Rio de la Plata separate?
+asks: What is the Rio de la Plata? | Which countries does the Rio de la Plata separate? | river between Argentina and Uruguay | how is the Rio de la Plata formed | which rivers form the Plata
 lang: en
 source_title: Río de la Plata
 source_site: Wikipedia

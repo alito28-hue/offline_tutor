@@ -1,10 +1,11 @@
 ---
 title: Nelson Mandela
 topic: mandela
+order: 825
 subject: historia
 block: Personas del mundo
 grades: 6,7
-asks: ¿Quién fue Nelson Mandela? | ¿Qué hizo Mandela contra el apartheid?
+asks: ¿Quién fue Nelson Mandela? | ¿Qué hizo Mandela contra el apartheid? | primer presidente negro de Sudáfrica | qué es el apartheid | quién luchó contra el apartheid
 lang: es
 source_title: Nelson Mandela
 source_site: Wikipedia

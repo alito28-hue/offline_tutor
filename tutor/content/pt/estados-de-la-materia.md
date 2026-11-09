@@ -1,10 +1,11 @@
 ---
 title: Os estados da matéria
 topic: estados-de-la-materia
+order: 204
 subject: naturales
 block: Materiais
 grades: 4
-asks: Quais são os estados da matéria?
+asks: Quais são os estados da matéria? | sólido líquido e gás | o que é um gás
 lang: pt
 source_title: Estado de agregación de la materia
 source_site: Wikipedia

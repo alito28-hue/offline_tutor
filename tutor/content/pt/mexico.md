@@ -1,10 +1,11 @@
 ---
 title: O México
 topic: mexico
+order: 594
 subject: geografia
 block: Países da América
 grades: 6,7
-asks: Onde fica o México? | Qual é a capital do México?
+asks: Onde fica o México? | Qual é a capital do México? | com quais países o México faz fronteira | quantos estados tem o México | o que fica ao sul dos Estados Unidos
 lang: pt
 source_title: México
 source_site: Wikipedia

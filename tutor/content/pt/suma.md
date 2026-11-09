@@ -1,10 +1,11 @@
 ---
 title: A adição
 topic: suma
+order: 21
 subject: matematica
 block: Operações
 grades: 4
-asks: Como somo números com transporte? | O que é somar?
+asks: Como somo números com transporte? | O que é somar? | o que é o vai um | quanto é 27 mais 15
 lang: pt
 source_title: Adición (matemática)
 source_site: Wikipedia

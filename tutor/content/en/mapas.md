@@ -1,10 +1,11 @@
 ---
 title: Maps
 topic: mapas
+order: 339
 subject: geografia
 block: Maps
 grades: 4,5
-asks: What is a map? | How do you read a map?
+asks: What is a map? | How do you read a map? | what is the scale of a map | what is a scale for | what is cartography
 lang: en
 source_title: Mapa
 source_site: Wikipedia

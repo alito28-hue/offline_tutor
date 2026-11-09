@@ -1,10 +1,11 @@
 ---
 title: O perímetro
 topic: perimetro
+order: 60
 subject: matematica
 block: Medidas
 grades: 4,5
-asks: Como calculo o perímetro de um retângulo? | O que é o perímetro?
+asks: Como calculo o perímetro de um retângulo? | O que é o perímetro? | medida da borda de uma figura | quanta cerca preciso
 lang: pt
 source_title: Perímetro
 source_site: Wikipedia

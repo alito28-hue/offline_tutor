@@ -1,10 +1,11 @@
 ---
 title: The May Revolution
 topic: revolucion-de-mayo
+order: 374
 subject: historia
 block: Independence
 grades: 5
-asks: What happened on May 25, 1810? | What was the May Revolution?
+asks: What happened on May 25, 1810? | What was the May Revolution? | what was May Week | what is remembered on May 25 | what was the First Junta
 lang: en
 source_title: Revolución de Mayo
 source_site: Wikipedia

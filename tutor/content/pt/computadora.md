@@ -1,10 +1,11 @@
 ---
 title: O computador
 topic: computadora
+order: 489
 subject: tecnologia
 block: Comunicação
 grades: 6,7
-asks: O que é um computador? | O que são hardware e software?
+asks: O que é um computador? | O que são hardware e software? | o que é a CPU | partes de um computador | para que serve o teclado
 lang: pt
 source_title: Computadora
 source_site: Wikipedia

@@ -1,10 +1,11 @@
 ---
 title: Direct proportion
 topic: proporcionalidad
+order: 32
 subject: matematica
 block: Proportion
 grades: 5,6
-asks: What does it mean for two things to be proportional? | What is direct proportion?
+asks: What does it mean for two things to be proportional? | What is direct proportion? | if one amount doubles the other doubles too | twice as many things cost twice as much | what is the constant of proportionality
 lang: en
 source_title: Proporcionalidad
 source_site: Wikipedia

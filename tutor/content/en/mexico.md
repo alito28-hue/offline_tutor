@@ -1,10 +1,11 @@
 ---
 title: Mexico
 topic: mexico
+order: 594
 subject: geografia
 block: Countries of the Americas
 grades: 6,7
-asks: Where is Mexico? | What is the capital of Mexico?
+asks: Where is Mexico? | What is the capital of Mexico? | which countries border Mexico | how many states does Mexico have | what is south of the United States
 lang: en
 source_title: México
 source_site: Wikipedia

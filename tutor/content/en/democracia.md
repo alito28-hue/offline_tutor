@@ -1,10 +1,11 @@
 ---
 title: Democracy
 topic: democracia
+order: 448
 subject: ciudadania
 block: Democracy
 grades: 5,6
-asks: What is democracy? | What is the difference between direct and indirect democracy?
+asks: What is democracy? | What is the difference between direct and indirect democracy? | what does it mean that the people have power | who is in charge in a democracy | where does the word democracy come from
 lang: en
 source_title: Democracia
 source_site: Wikipedia

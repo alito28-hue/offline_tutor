@@ -1,10 +1,11 @@
 ---
 title: Os dinossauros
 topic: dinosaurios
+order: 141
 subject: naturales
 block: Animais
 grades: 4,5
-asks: O que eram os dinossauros? | Por que os dinossauros foram extintos?
+asks: O que eram os dinossauros? | Por que os dinossauros foram extintos? | animais de milhões de anos atrás | quando viveram os dinossauros | as aves são dinossauros
 lang: pt
 source_title: Dinosauria
 source_site: Wikipedia

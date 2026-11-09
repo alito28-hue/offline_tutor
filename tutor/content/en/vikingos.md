@@ -1,10 +1,11 @@
 ---
 title: The Vikings
 topic: vikingos
+order: 794
 subject: historia
 block: Middle Ages and kingdoms
 grades: 7
-asks: Who were the Vikings? | Where did the Vikings come from?
+asks: Who were the Vikings? | Where did the Vikings come from? | who attacked Lindisfarne | what is Lindisfarne | warriors from Scandinavia | what language did the Vikings speak
 lang: en
 source_title: Vikingo
 source_site: Wikipedia

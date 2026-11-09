@@ -41,3 +41,22 @@ export function groundPassages(question, passages) {
   if (best < MIN_COVERAGE) return [];
   return passages.filter(p => scored.some(s => s.score === best && s.group.includes(p)));
 }
+
+// How much of a question an article covers, counting rare words for more. A name like Coubertin, which appears in only
+// one article, says far more about what is being asked than a word that is everywhere, and meaning alone tends to miss it.
+export function wordIndex(texts) {
+  const vocabularies = new Map([...texts].map(([key, text]) => [key, contentWords(text)]));
+  const appearsIn = new Map();
+  for (const words of vocabularies.values()) for (const w of words) appearsIn.set(w, (appearsIn.get(w) || 0) + 1);
+  const total = Math.max(vocabularies.size, 1);
+  const weight = w => Math.log(1 + total / (appearsIn.get(w) || 1));
+  return {
+    coverage(question, key) {
+      const asked = contentWords(question);
+      if (!asked.length) return 0;
+      const vocabulary = vocabularies.get(key) || [];
+      const found = asked.filter(w => matches(w, vocabulary));
+      return found.reduce((sum, w) => sum + weight(w), 0) / asked.reduce((sum, w) => sum + weight(w), 0);
+    },
+  };
+}

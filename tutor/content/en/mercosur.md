@@ -1,10 +1,11 @@
 ---
 title: Mercosur
 topic: mercosur
+order: 345
 subject: geografia
 block: World
 grades: 6
-asks: What is Mercosur? | Which countries are in Mercosur?
+asks: What is Mercosur? | Which countries are in Mercosur? | what is the Treaty of Asuncion | economic bloc of South America | which countries belong to Mercosur
 lang: en
 source_title: Mercosur
 source_site: Wikipedia

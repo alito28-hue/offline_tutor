@@ -1,10 +1,11 @@
 ---
 title: La digestión
 topic: digestion
+order: 182
 subject: naturales
 block: Cuerpo humano
 grades: 5
-asks: ¿Cómo se hace la digestión? | ¿Qué pasa con la comida cuando la tragamos?
+asks: ¿Cómo se hace la digestión? | ¿Qué pasa con la comida cuando la tragamos? | qué hace el estómago | adónde va la comida
 lang: es
 source_title: Aparato digestivo
 source_site: Wikipedia

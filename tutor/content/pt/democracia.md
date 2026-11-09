@@ -1,10 +1,11 @@
 ---
 title: A democracia
 topic: democracia
+order: 448
 subject: ciudadania
 block: Democracia
 grades: 5,6
-asks: O que é democracia? | Qual é a diferença entre democracia direta e indireta?
+asks: O que é democracia? | Qual é a diferença entre democracia direta e indireta? | o que significa o povo ter o poder | quem manda em uma democracia | de onde vem a palavra democracia
 lang: pt
 source_title: Democracia
 source_site: Wikipedia

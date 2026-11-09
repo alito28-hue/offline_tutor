@@ -1,10 +1,11 @@
 ---
 title: Japan
 topic: japon
+order: 630
 subject: geografia
 block: Countries of Asia
 grades: 6,7
-asks: Where is Japan? | What is the capital of Japan?
+asks: Where is Japan? | What is the capital of Japan? | which country has Tokyo | islands of Japan | how many people live in Japan
 lang: en
 source_title: Japón
 source_site: Wikipedia

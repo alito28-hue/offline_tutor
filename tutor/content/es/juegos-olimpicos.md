@@ -1,10 +1,11 @@
 ---
 title: Los Juegos Olímpicos
 topic: juegos-olimpicos
+order: 516
 subject: arte
 block: Deportes
 grades: 5,6
-asks: ¿Qué son los Juegos Olímpicos? | ¿Cada cuánto son los Juegos Olímpicos?
+asks: ¿Qué son los Juegos Olímpicos? | ¿Cada cuánto son los Juegos Olímpicos? | quién fue Coubertin | de dónde vienen las Olimpiadas | cuántos países participan
 lang: es
 source_title: Juegos Olímpicos
 source_site: Wikipedia

@@ -1,10 +1,11 @@
 ---
 title: Ancient Egypt
 topic: egipto-antiguo
+order: 416
 subject: historia
 block: World
 grades: 7
-asks: What was ancient Egypt? | Where did ancient Egypt develop?
+asks: What was ancient Egypt? | Where did ancient Egypt develop? | civilization by the Nile | what were Upper and Lower Egypt | how long did ancient Egypt last
 lang: en
 source_title: Antiguo Egipto
 source_site: Wikipedia

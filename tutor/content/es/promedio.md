@@ -1,10 +1,11 @@
 ---
 title: El promedio
 topic: promedio
+order: 36
 subject: matematica
 block: Estadística
 grades: 5,6
-asks: ¿Cómo saco el promedio de mis notas? | ¿Qué es el promedio?
+asks: ¿Cómo saco el promedio de mis notas? | ¿Qué es el promedio? | cómo calculo la media | cuál es mi promedio con estas notas | sumar y dividir para sacar la media
 lang: es
 source_title: Media aritmética
 source_site: Wikipedia

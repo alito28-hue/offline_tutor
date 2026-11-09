@@ -1,10 +1,11 @@
 ---
 title: Voting
 topic: voto
+order: 450
 subject: ciudadania
 block: Democracy
 grades: 5,6
-asks: What is voting for? | What is suffrage?
+asks: What is voting for? | What is suffrage? | how do we choose representatives | who could not vote before | why do people vote
 lang: en
 source_title: Sufragio
 source_site: Wikipedia

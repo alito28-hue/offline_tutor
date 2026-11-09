@@ -1,10 +1,11 @@
 ---
 title: La palanca
 topic: palanca
+order: 477
 subject: tecnologia
 block: Máquinas
 grades: 4,5
-asks: ¿Cómo funciona una palanca? | ¿Qué es una palanca?
+asks: ¿Cómo funciona una palanca? | ¿Qué es una palanca? | qué es un fulcro | máquina simple con una barra | para qué sirve una palanca
 lang: es
 source_title: Palanca
 source_site: Wikipedia

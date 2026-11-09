@@ -1,10 +1,11 @@
 ---
 title: The gaucho
 topic: gaucho
+order: 512
 subject: arte
 block: Traditions
 grades: 4,5
-asks: Who were the gauchos? | Where did the gauchos live?
+asks: Who were the gauchos? | Where did the gauchos live? | rider of the plains | what did gauchos do | country man on a horse
 lang: en
 source_title: Gaucho
 source_site: Wikipedia

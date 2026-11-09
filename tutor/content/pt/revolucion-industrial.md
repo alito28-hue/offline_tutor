@@ -1,10 +1,11 @@
 ---
 title: A Revolução Industrial
 topic: revolucion-industrial
+order: 422
 subject: historia
 block: Mundo
 grades: 7
-asks: O que foi a Revolução Industrial? | Quem aperfeiçoou a máquina a vapor?
+asks: O que foi a Revolução Industrial? | Quem aperfeiçoou a máquina a vapor? | quem foi James Watt | quando surgiram as fábricas | o que mudou com a máquina a vapor
 lang: pt
 source_title: Revolución Industrial
 source_site: Wikipedia

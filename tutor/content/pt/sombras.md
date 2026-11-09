@@ -1,10 +1,11 @@
 ---
 title: As sombras
 topic: sombras
+order: 219
 subject: naturales
 block: Física
 grades: 5
-asks: Como se forma uma sombra? | O que é uma sombra?
+asks: Como se forma uma sombra? | O que é uma sombra? | a parte escura atrás de um objeto | por que há uma forma escura no chão quando faz sol
 lang: pt
 source_title: Sombra
 source_site: Wikipedia

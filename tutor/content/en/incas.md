@@ -1,10 +1,11 @@
 ---
 title: The Incas
 topic: incas
+order: 362
 subject: historia
 block: Indigenous peoples
 grades: 4
-asks: Who were the Incas? | What does Tawantinsuyu mean?
+asks: Who were the Incas? | What does Tawantinsuyu mean? | who lived in Cusco | what empire was in the Andes | what is Tawantinsuyu | largest empire in the Americas before Columbus
 lang: en
 source_title: Imperio incaico
 source_site: Wikipedia

@@ -1,10 +1,11 @@
 ---
 title: The rights of the child
 topic: derechos-nino
+order: 457
 subject: ciudadania
 block: Rights
 grades: 5
-asks: What rights do children have? | What is the Convention on the Rights of the Child?
+asks: What rights do children have? | What is the Convention on the Rights of the Child? | treaty that protects children | what did the UN sign in 1989 | do I have rights as a child
 lang: en
 source_title: Convención sobre los Derechos del Niño
 source_site: Wikipedia

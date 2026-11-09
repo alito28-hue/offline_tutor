@@ -1,10 +1,11 @@
 ---
 title: O Mercosul
 topic: mercosur
+order: 345
 subject: geografia
 block: Mundo
 grades: 6
-asks: O que é o Mercosul? | Quais países formam o Mercosul?
+asks: O que é o Mercosul? | Quais países formam o Mercosul? | o que é o Tratado de Assunção | bloco econômico da América do Sul | quais países estão no Mercosul
 lang: pt
 source_title: Mercosur
 source_site: Wikipedia

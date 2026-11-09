@@ -1,10 +1,11 @@
 ---
 title: A célula
 topic: celula
+order: 125
 subject: naturales
 block: Seres vivos
 grades: 6
-asks: O que é uma célula?
+asks: O que é uma célula? | o que é o núcleo | de que são feitos os seres vivos
 lang: pt
 source_title: Célula
 source_site: Wikipedia

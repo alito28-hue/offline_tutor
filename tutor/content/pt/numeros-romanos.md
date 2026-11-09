@@ -1,10 +1,11 @@
 ---
 title: Números romanos
 topic: numeros-romanos
+order: 4
 subject: matematica
 block: Números
 grades: 5,6
-asks: Como se escrevem os números romanos? | Como se escreve 4 em números romanos?
+asks: Como se escrevem os números romanos? | Como se escreve 4 em números romanos? | letras que são números | quanto vale o X em romanos | números da Roma antiga | que número é XV
 lang: pt
 source_title: Numeración romana
 source_site: Wikipedia

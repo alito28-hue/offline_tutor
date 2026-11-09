@@ -1,10 +1,11 @@
 ---
 title: O sistema solar
 topic: sistema-solar
+order: 253
 subject: naturales
 block: Universo
 grades: 6
-asks: Quais são os planetas do sistema solar? | O que é o sistema solar?
+asks: Quais são os planetas do sistema solar? | O que é o sistema solar? | quantos planetas existem | qual é o maior planeta
 lang: pt
 source_title: Sistema solar
 source_site: Wikipedia

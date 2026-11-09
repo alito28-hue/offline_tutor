@@ -1,10 +1,11 @@
 ---
 title: A digestão
 topic: digestion
+order: 182
 subject: naturales
 block: Corpo humano
 grades: 5
-asks: Como funciona a digestão? | O que acontece com a comida quando a engolimos?
+asks: Como funciona a digestão? | O que acontece com a comida quando a engolimos? | o que o estômago faz | para onde vai a comida
 lang: pt
 source_title: Aparato digestivo
 source_site: Wikipedia

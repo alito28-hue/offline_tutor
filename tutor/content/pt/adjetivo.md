@@ -1,10 +1,11 @@
 ---
 title: O adjetivo
 topic: adjetivo
+order: 68
 subject: lengua
 block: Gramática
 grades: 4,5
-asks: O que é um adjetivo? | Me dê um exemplo de adjetivo
+asks: O que é um adjetivo? | Me dê um exemplo de adjetivo | palavras que dizem como algo é | que palavra descreve um substantivo | verde e grande são que tipo de palavra
 lang: pt
 source_title: Adjetivo
 source_site: Wikipedia

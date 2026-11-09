@@ -1,10 +1,11 @@
 ---
 title: A cadeia alimentar
 topic: cadena-alimentaria
+order: 163
 subject: naturales
 block: Ambientes
 grades: 6
-asks: O que é uma cadeia alimentar?
+asks: O que é uma cadeia alimentar? | quem come quem | produtores e consumidores
 lang: pt
 source_title: Cadena trófica
 source_site: Wikipedia

@@ -1,10 +1,11 @@
 ---
 title: Internet
 topic: internet
+order: 490
 subject: tecnologia
 block: Comunicación
 grades: 6,7
-asks: ¿Cómo funciona internet? | ¿Cuál es la diferencia entre internet y la web?
+asks: ¿Cómo funciona internet? | ¿Cuál es la diferencia entre internet y la web? | qué es ARPANET | cómo empezó internet | qué es la web
 lang: es
 source_title: Internet
 source_site: Wikipedia

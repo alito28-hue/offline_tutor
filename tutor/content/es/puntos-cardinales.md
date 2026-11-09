@@ -1,10 +1,11 @@
 ---
 title: Los puntos cardinales
 topic: puntos-cardinales
+order: 340
 subject: geografia
 block: Mapas
 grades: 4,5
-asks: ¿Cuáles son los puntos cardinales? | ¿Por dónde sale el Sol?
+asks: ¿Cuáles son los puntos cardinales? | ¿Por dónde sale el Sol? | norte sur este y oeste | por dónde se pone el Sol | qué es la rosa de los vientos
 lang: es
 source_title: Punto cardinal
 source_site: Wikipedia

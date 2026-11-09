@@ -1,10 +1,11 @@
 ---
 title: La respiración
 topic: respiracion
+order: 183
 subject: naturales
 block: Cuerpo humano
 grades: 5
-asks: ¿Cómo respiramos?
+asks: ¿Cómo respiramos? | para qué sirven los pulmones | qué es el diafragma
 lang: es
 source_title: Aparato respiratorio
 source_site: Wikipedia

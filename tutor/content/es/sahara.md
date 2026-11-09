@@ -1,10 +1,11 @@
 ---
 title: El desierto del Sahara
 topic: sahara
+order: 728
 subject: geografia
 block: Relieve del mundo
 grades: 5,6
-asks: ¿Cuál es el desierto cálido más grande del mundo? | ¿Dónde está el Sahara?
+asks: ¿Cuál es el desierto cálido más grande del mundo? | ¿Dónde está el Sahara? | desierto de África | qué tan grande es el Sahara | qué significa Sahara
 lang: es
 source_title: Sahara
 source_site: Wikipedia

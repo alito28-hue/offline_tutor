@@ -1,10 +1,11 @@
 ---
 title: La sílaba
 topic: silaba
+order: 87
 subject: lengua
 block: Ortografía
 grades: 4,5
-asks: ¿Qué es una sílaba? | ¿Cómo separo en sílabas?
+asks: ¿Qué es una sílaba? | ¿Cómo separo en sílabas? | separar una palabra en partes | golpes de voz de una palabra | cuántas sílabas tiene una palabra
 lang: es
 source_title: Sílaba
 source_site: Wikipedia

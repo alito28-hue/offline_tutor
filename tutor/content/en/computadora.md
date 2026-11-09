@@ -1,10 +1,11 @@
 ---
 title: The computer
 topic: computadora
+order: 489
 subject: tecnologia
 block: Communication
 grades: 6,7
-asks: What is a computer? | What are hardware and software?
+asks: What is a computer? | What are hardware and software? | what is a CPU | parts of a computer | what is a keyboard for
 lang: en
 source_title: Computadora
 source_site: Wikipedia

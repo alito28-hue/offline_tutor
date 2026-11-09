@@ -1,10 +1,11 @@
 ---
 title: Nelson Mandela
 topic: mandela
+order: 825
 subject: historia
 block: People of the world
 grades: 6,7
-asks: Who was Nelson Mandela? | What did Mandela do against apartheid?
+asks: Who was Nelson Mandela? | What did Mandela do against apartheid? | first Black president of South Africa | what is apartheid | who fought against apartheid
 lang: en
 source_title: Nelson Mandela
 source_site: Wikipedia

@@ -1,10 +1,11 @@
 ---
 title: El federalismo
 topic: federalismo
+order: 438
 subject: ciudadania
 block: Estado
 grades: 5
-asks: ¿Qué es el federalismo? | ¿Qué quiere decir que Argentina es federal?
+asks: ¿Qué es el federalismo? | ¿Qué quiere decir que Argentina es federal? | diferencia entre gobierno nacional y provincial | qué es un país federal | por qué las provincias tienen gobierno
 lang: es
 source_title: Federalismo
 source_site: Wikipedia

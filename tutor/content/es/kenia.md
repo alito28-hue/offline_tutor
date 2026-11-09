@@ -1,10 +1,11 @@
 ---
 title: Kenia
 topic: kenia
+order: 543
 subject: geografia
 block: Países de África
 grades: 6,7
-asks: ¿Dónde queda Kenia? | ¿Cuál es la capital de Kenia?
+asks: ¿Dónde queda Kenia? | ¿Cuál es la capital de Kenia? | dónde está Nairobi | qué país está en el este de África | de dónde viene el nombre Kenia
 lang: es
 source_title: Kenia
 source_site: Wikipedia

@@ -40,7 +40,7 @@ if (answersAt > 0) {
       if (ev.type === 'replace') text = ev.text;
       if (ev.type === 'done') done = ev;
     }
-    out.push({ lang: r.lang, tema: r.tema, q: r.q, route: done.route, answerLang: done.lang, first: done.firstTokenMs, total: done.totalMs, sources: done.sources.map(s => s.file), right: r.want ? done.route === 'teach' && done.sources.some(s => s.file === r.want) : done.route === 'unknown', text });
+    out.push({ lang: r.lang, tema: r.tema, q: r.q, route: done.route, answerLang: done.lang, first: done.firstTokenMs, total: done.totalMs, sources: done.sources.map(s => s.file), suggested: (done.suggestions || []).map(s => s.file), wantFile: r.want, right: r.want ? done.route === 'teach' && done.sources.some(s => s.file === r.want) : done.route === 'unknown', text });
     fs.writeFileSync(process.argv[answersAt + 1], JSON.stringify(out, null, 1));
   }
   for (const lang of ['es', 'en', 'pt']) {
@@ -48,7 +48,7 @@ if (answersAt > 0) {
     const inside = all.filter(o => o.tema !== 'FUERA');
     const outside = all.filter(o => o.tema === 'FUERA');
     const firsts = all.filter(o => o.route === 'teach').map(o => o.first).sort((a, b) => a - b);
-    console.log(JSON.stringify({ lang, right: inside.filter(o => o.right).length, of: inside.length, wrongSource: inside.filter(o => o.route === 'teach' && !o.right).length, declinedByMistake: inside.filter(o => o.route === 'unknown').length, blocked: inside.filter(o => !['teach', 'unknown'].includes(o.route)).length, outsideDeclined: outside.filter(o => o.right).length, outsideOf: outside.length, firstMedianMs: firsts[firsts.length >> 1] }));
+    console.log(JSON.stringify({ lang, right: inside.filter(o => o.right).length, of: inside.length, wrongSource: inside.filter(o => o.route === 'teach' && !o.right).length, declinedByMistake: inside.filter(o => o.route === 'unknown').length, declinedButSuggested: inside.filter(o => o.route === 'unknown' && o.suggested.includes(o.wantFile)).length, outsideWithSuggestions: outside.filter(o => o.route === 'unknown' && o.suggested.length).length, blocked: inside.filter(o => !['teach', 'unknown'].includes(o.route)).length, outsideDeclined: outside.filter(o => o.right).length, outsideOf: outside.length, firstMedianMs: firsts[firsts.length >> 1] }));
   }
 }
 await engine.close();

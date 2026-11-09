@@ -1,10 +1,11 @@
 ---
 title: Separation of powers
 topic: division-poderes
+order: 439
 subject: ciudadania
 block: The state
 grades: 5
-asks: What are the three powers? | What is the separation of powers for?
+asks: What are the three powers? | What is the separation of powers for? | who was Montesquieu | what did Montesquieu say | executive legislative and judicial power | why can no one have all the power
 lang: en
 source_title: Separación de poderes
 source_site: Wikipedia

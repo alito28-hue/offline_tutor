@@ -1,10 +1,11 @@
 ---
 title: Manuel Belgrano
 topic: belgrano
+order: 378
 subject: historia
 block: Independência
 grades: 5
-asks: Quem criou a bandeira argentina? | Quem foi Manuel Belgrano? | O que Belgrano fez?
+asks: Quem criou a bandeira argentina? | Quem foi Manuel Belgrano? | O que Belgrano fez? | quem fez a bandeira | quem inventou a bandeira argentina | o que ele fez nas invasões inglesas
 lang: pt
 source_title: Manuel Belgrano
 source_site: Wikipedia

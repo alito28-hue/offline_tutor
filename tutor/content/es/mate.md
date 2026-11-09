@@ -1,10 +1,11 @@
 ---
 title: El mate
 topic: mate
+order: 513
 subject: arte
 block: Tradiciones
 grades: 4,5
-asks: ¿De qué planta sale el mate? | ¿Qué es el mate?
+asks: ¿De qué planta sale el mate? | ¿Qué es el mate? | qué es la yerba mate | bebida con yerba | por qué el mate es amargo
 lang: es
 source_title: Mate (infusión)
 source_site: Wikipedia

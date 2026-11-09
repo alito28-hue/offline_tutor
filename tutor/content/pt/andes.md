@@ -1,10 +1,11 @@
 ---
 title: A cordilheira dos Andes
 topic: andes
+order: 306
 subject: geografia
 block: Relevo e água
 grades: 4,5
-asks: Onde fica a cordilheira dos Andes? | Qual é a montanha mais alta da América?
+asks: Onde fica a cordilheira dos Andes? | Qual é a montanha mais alta da América? | o que é o Aconcágua | montanhas do oeste da América do Sul | cordilheira mais longa do mundo
 lang: pt
 source_title: Cordillera de los Andes
 source_site: Wikipedia

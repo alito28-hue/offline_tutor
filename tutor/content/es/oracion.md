@@ -1,10 +1,11 @@
 ---
 title: La oración, sujeto y predicado
 topic: oracion
+order: 76
 subject: lengua
 block: Gramática
 grades: 4,5,6
-asks: ¿Qué es una oración? | ¿Cómo encuentro el sujeto de una oración?
+asks: ¿Qué es una oración? | ¿Cómo encuentro el sujeto de una oración? | partes de una oración | qué es el sujeto | qué es el predicado
 lang: es
 source_title: Oración (gramática)
 source_site: Wikipedia

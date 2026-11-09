@@ -1,10 +1,11 @@
 ---
 title: The Pacific Ocean
 topic: oceano-pacifico
+order: 718
 subject: geografia
 block: Seas and oceans
 grades: 5,6
-asks: What is the largest ocean? | How many islands does the Pacific Ocean have?
+asks: What is the largest ocean? | How many islands does the Pacific Ocean have? | deepest part of the sea | what is the Mariana Trench | ocean with the most islands
 lang: en
 source_title: Océano Pacífico
 source_site: Wikipedia

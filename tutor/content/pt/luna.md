@@ -1,10 +1,11 @@
 ---
 title: A Lua
 topic: luna
+order: 255
 subject: naturales
 block: Universo
 grades: 6
-asks: Por que a forma da Lua muda? | O que é a Lua?
+asks: Por que a forma da Lua muda? | O que é a Lua? | fases da Lua | por que há marés
 lang: pt
 source_title: Luna
 source_site: Wikipedia

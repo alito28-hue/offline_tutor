@@ -1,10 +1,11 @@
 ---
 title: Iguazu Falls
 topic: iguazu
+order: 314
 subject: geografia
 block: Land and water
 grades: 4,5
-asks: Where are Iguazu Falls? | What is the Devil's Throat?
+asks: Where are Iguazu Falls? | What is the Devil's Throat? | waterfalls in Misiones | how many waterfalls are there | waterfalls between Argentina and Brazil
 lang: en
 source_title: Cataratas del Iguazú
 source_site: Wikipedia

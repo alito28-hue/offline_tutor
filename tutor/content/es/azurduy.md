@@ -1,10 +1,11 @@
 ---
 title: Juana Azurduy
 topic: azurduy
+order: 382
 subject: historia
 block: Independencia
 grades: 5
-asks: ¿Quién fue Juana Azurduy? | ¿Dónde nació Juana Azurduy?
+asks: ¿Quién fue Juana Azurduy? | ¿Dónde nació Juana Azurduy? | mujer que luchó por la independencia | patriota de Bolivia | quién comandó las guerrillas de La Laguna
 lang: es
 source_title: Juana Azurduy
 source_site: Wikipedia

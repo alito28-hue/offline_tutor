@@ -1,10 +1,11 @@
 ---
 title: A lenda
 topic: leyenda
+order: 98
 subject: lengua
 block: Tipos de texto
 grades: 4,5
-asks: O que é uma lenda? | Como as lendas são transmitidas?
+asks: O que é uma lenda? | Como as lendas são transmitidas? | histórias que passam de avós para netos | relato contado de geração em geração | histórias com criaturas fantásticas
 lang: pt
 source_title: Leyenda
 source_site: Wikipedia

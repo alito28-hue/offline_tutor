@@ -1,10 +1,11 @@
 ---
 title: O esqueleto
 topic: esqueleto
+order: 178
 subject: naturales
 block: Corpo humano
 grades: 4
-asks: Quantos ossos tem o corpo? | Para que serve o esqueleto?
+asks: Quantos ossos tem o corpo? | Para que serve o esqueleto? | para que servem os ossos | o que é o crânio
 lang: pt
 source_title: Esqueleto humano
 source_site: Wikipedia

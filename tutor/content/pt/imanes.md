@@ -1,10 +1,11 @@
 ---
 title: O magnetismo e os ímãs
 topic: imanes
+order: 213
 subject: naturales
 block: Física
 grades: 4
-asks: Por que os ímãs se atraem? | Como funcionam os ímãs?
+asks: Por que os ímãs se atraem? | Como funcionam os ímãs? | o que é o polo norte de um ímã | que metais um ímã atrai
 lang: pt
 source_title: Imán
 source_site: Wikipedia

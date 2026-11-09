@@ -1,10 +1,11 @@
 ---
 title: Los vikingos
 topic: vikingos
+order: 794
 subject: historia
 block: Edad Media y reinos
 grades: 7
-asks: ¿Quiénes eran los vikingos? | ¿De dónde venían los vikingos?
+asks: ¿Quiénes eran los vikingos? | ¿De dónde venían los vikingos? | quiénes atacaron Lindisfarne | qué es Lindisfarne | guerreros de Escandinavia | qué idioma hablaban los vikingos
 lang: es
 source_title: Vikingo
 source_site: Wikipedia

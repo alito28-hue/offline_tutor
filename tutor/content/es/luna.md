@@ -1,10 +1,11 @@
 ---
 title: La Luna
 topic: luna
+order: 255
 subject: naturales
 block: Universo
 grades: 6
-asks: ¿Por qué cambia la forma de la Luna? | ¿Qué es la Luna?
+asks: ¿Por qué cambia la forma de la Luna? | ¿Qué es la Luna? | fases de la Luna | por qué hay mareas
 lang: es
 source_title: Luna
 source_site: Wikipedia

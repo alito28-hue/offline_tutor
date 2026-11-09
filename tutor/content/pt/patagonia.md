@@ -1,10 +1,11 @@
 ---
 title: A Patagônia
 topic: patagonia
+order: 299
 subject: geografia
 block: Regiões
 grades: 4,5
-asks: O que é a Patagônia? | Como é o clima da Patagônia?
+asks: O que é a Patagônia? | Como é o clima da Patagônia? | que região fica no sul da Argentina e do Chile | quem vivia na Patagônia | o que há no sul da Argentina
 lang: pt
 source_title: Patagonia
 source_site: Wikipedia

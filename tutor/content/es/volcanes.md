@@ -1,10 +1,11 @@
 ---
 title: Los volcanes
 topic: volcanes
+order: 234
 subject: naturales
 block: Tierra
 grades: 4
-asks: ¿Cómo entra en erupción un volcán? | ¿Qué es un volcán?
+asks: ¿Cómo entra en erupción un volcán? | ¿Qué es un volcán? | qué es la lava | qué es el magma
 lang: es
 source_title: Volcán
 source_site: Wikipedia

@@ -1,10 +1,11 @@
 ---
 title: Shadows
 topic: sombras
+order: 219
 subject: naturales
 block: Physics
 grades: 5
-asks: How does a shadow form? | What is a shadow?
+asks: How does a shadow form? | What is a shadow? | the dark area behind an object | why is there a dark shape on the ground when it is sunny
 lang: en
 source_title: Sombra
 source_site: Wikipedia

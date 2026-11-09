@@ -1,10 +1,11 @@
 ---
 title: A floresta amazônica
 topic: amazonia
+order: 730
 subject: geografia
 block: Relevo do mundo
 grades: 5,6
-asks: O que é a Amazônia? | Quais países têm floresta amazônica?
+asks: O que é a Amazônia? | Quais países têm floresta amazônica? | maior floresta do mundo | o que é o Amazonas | floresta tropical mais extensa
 lang: pt
 source_title: Amazonia
 source_site: Wikipedia

@@ -1,10 +1,11 @@
 ---
 title: A imigração na Argentina
 topic: inmigracion
+order: 404
 subject: historia
 block: Século XIX
 grades: 6
-asks: De onde vieram os imigrantes para a Argentina? | Quem vivia na Argentina quando os espanhóis chegaram?
+asks: De onde vieram os imigrantes para a Argentina? | Quem vivia na Argentina quando os espanhóis chegaram? | quem chegou à Argentina | quantas pessoas viviam antes dos espanhóis | de onde vieram os primeiros habitantes
 lang: pt
 source_title: Inmigración en Argentina
 source_site: Wikipedia

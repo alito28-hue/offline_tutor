@@ -1,10 +1,11 @@
 ---
 title: Syllables
 topic: silaba
+order: 87
 subject: lengua
 block: Spelling
 grades: 4,5
-asks: What is a syllable? | How do I split a word into syllables?
+asks: What is a syllable? | How do I split a word into syllables? | split a word into parts | beats of a word | how many syllables does a word have
 lang: en
 source_title: Sílaba
 source_site: Wikipedia

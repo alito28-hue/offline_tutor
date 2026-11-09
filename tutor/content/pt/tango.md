@@ -1,10 +1,11 @@
 ---
 title: O tango
 topic: tango
+order: 498
 subject: arte
 block: Música
 grades: 4,5
-asks: Onde nasceu o tango? | O que é o tango?
+asks: Onde nasceu o tango? | O que é o tango? | música de Buenos Aires | dança do Rio da Prata | de que cidades vem o tango
 lang: pt
 source_title: Tango
 source_site: Wikipedia

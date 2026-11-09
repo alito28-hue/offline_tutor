@@ -1,10 +1,11 @@
 ---
 title: O gaúcho
 topic: gaucho
+order: 512
 subject: arte
 block: Tradições
 grades: 4,5
-asks: Quem eram os gaúchos? | Onde viviam os gaúchos?
+asks: Quem eram os gaúchos? | Onde viviam os gaúchos? | cavaleiro das planícies | o que os gaúchos faziam | homem do campo a cavalo
 lang: pt
 source_title: Gaucho
 source_site: Wikipedia

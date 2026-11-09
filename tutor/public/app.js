@@ -69,7 +69,8 @@ function render(text, route, streaming) {
     els.answer.append(p);
     return;
   }
-  const lines = text.replace(/\*\*|^#+\s*/gm, '').split('\n').map(l => l.trim()).filter(Boolean);
+  // The model sometimes writes all the steps on one line.
+  const lines = text.replace(/\*\*|^#+\s*/gm, '').replace(/\s+((?:Paso|Passo|Step)\s*\d+\s*[:.)-])/g, '\n$1').split('\n').map(l => l.trim()).filter(Boolean);
   let last = null;
   lines.forEach((l, i) => {
     const step = l.match(/^(?:Paso|Passo|Step)\s*(\d+)\s*[:.)-]\s*(.*)$/i);
@@ -136,6 +137,21 @@ function showSources(list, lang) {
   }
 }
 
+function showSuggestions(list) {
+  if (!list?.length) return;
+  const box = document.createElement('div');
+  box.className = 'suggestions';
+  for (const s of list) {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'topic';
+    b.textContent = s.title;
+    b.addEventListener('click', () => ask(s.ask, s.file));
+    box.append(b);
+  }
+  els.answer.append(box);
+}
+
 function setBusy(on) {
   asking = on;
   els.send.disabled = on || !ready;
@@ -179,6 +195,7 @@ async function ask(question, file = null) {
         if (ev.type === 'error') throw new Error(ev.message);
         if (ev.type === 'done') {
           render(text, ev.route, false);
+          showSuggestions(ev.suggestions);
           showSources(ev.sources, ev.lang);
           fit();
           if (['teach', 'feedback'].includes(ev.route)) {

@@ -1,10 +1,11 @@
 ---
 title: As frações
 topic: fracciones
+order: 6
 subject: matematica
 block: Números
 grades: 4,5
-asks: Como somo frações? | O que é uma fração?
+asks: Como somo frações? | O que é uma fração? | o que é o numerador | quanto é 2/7 + 3/7 | o que é um denominador
 lang: pt
 source_title: Fracción
 source_site: Wikipedia

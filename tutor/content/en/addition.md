@@ -1,10 +1,11 @@
 ---
 title: Addition
 topic: suma
+order: 21
 subject: matematica
 block: Operations
 grades: 4
-asks: How do I add numbers with carrying? | What is addition?
+asks: How do I add numbers with carrying? | What is addition? | what is carrying | what is 27 plus 15
 lang: en
 source_title: Addition
 source_site: Wikipedia

@@ -1,10 +1,11 @@
 ---
 title: O Quênia
 topic: kenia
+order: 543
 subject: geografia
 block: Países da África
 grades: 6,7
-asks: Onde fica o Quênia? | Qual é a capital do Quênia?
+asks: Onde fica o Quênia? | Qual é a capital do Quênia? | onde fica Nairóbi | que país fica no leste da África | de onde vem o nome Quênia
 lang: pt
 source_title: Kenia
 source_site: Wikipedia

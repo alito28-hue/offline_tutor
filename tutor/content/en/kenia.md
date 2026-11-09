@@ -1,10 +1,11 @@
 ---
 title: Kenya
 topic: kenia
+order: 543
 subject: geografia
 block: Countries of Africa
 grades: 6,7
-asks: Where is Kenya? | What is the capital of Kenya?
+asks: Where is Kenya? | What is the capital of Kenya? | where is Nairobi | what country is in East Africa | where does the name Kenya come from
 lang: en
 source_title: Kenia
 source_site: Wikipedia

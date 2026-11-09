@@ -119,3 +119,5 @@ body {
 .topic:hover, .topic:focus-visible { border-color: var(--green); outline: none; }
 
 .credits-open[hidden] { display: none; }
+
+.suggestions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }

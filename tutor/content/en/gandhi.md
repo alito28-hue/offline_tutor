@@ -1,10 +1,11 @@
 ---
 title: Mahatma Gandhi
 topic: gandhi
+order: 824
 subject: historia
 block: People of the world
 grades: 6,7
-asks: Who was Gandhi? | What does Mahatma mean?
+asks: Who was Gandhi? | What does Mahatma mean? | who fought without violence | independence of India | what is civil disobedience | what is non-violence
 lang: en
 source_title: Mahatma Gandhi
 source_site: Wikipedia

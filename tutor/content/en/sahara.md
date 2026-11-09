@@ -1,10 +1,11 @@
 ---
 title: The Sahara Desert
 topic: sahara
+order: 728
 subject: geografia
 block: Mountains and landscapes
 grades: 5,6
-asks: What is the largest hot desert in the world? | Where is the Sahara?
+asks: What is the largest hot desert in the world? | Where is the Sahara? | desert in Africa | how big is the Sahara | what does Sahara mean
 lang: en
 source_title: Sahara
 source_site: Wikipedia

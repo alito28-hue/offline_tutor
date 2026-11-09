@@ -1,10 +1,11 @@
 ---
 title: Angles
 topic: angulos
+order: 43
 subject: matematica
 block: Geometry
 grades: 4,5
-asks: What is an angle? | What is a right angle?
+asks: What is an angle? | What is a right angle? | what is a degree | complementary angles
 lang: en
 source_title: Angle
 source_site: Wikipedia

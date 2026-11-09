@@ -1,10 +1,11 @@
 ---
 title: A subtração
 topic: resta
+order: 22
 subject: matematica
 block: Operações
 grades: 4
-asks: Como se faz uma subtração em colunas? | O que é subtrair?
+asks: Como se faz uma subtração em colunas? | O que é subtrair? | o que é o minuendo | quanto é 5 menos 2
 lang: pt
 source_title: Resta
 source_site: Wikipedia

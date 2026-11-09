@@ -1,10 +1,11 @@
 ---
 title: Adjectives
 topic: adjetivo
+order: 68
 subject: lengua
 block: Grammar
 grades: 4,5
-asks: What is an adjective? | Give me an example of an adjective
+asks: What is an adjective? | Give me an example of an adjective | words that say what something is like | what word describes a noun | what kind of word are green and big
 lang: en
 source_title: Adjetivo
 source_site: Wikipedia

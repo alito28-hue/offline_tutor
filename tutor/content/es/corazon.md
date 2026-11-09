@@ -1,10 +1,11 @@
 ---
 title: El corazón
 topic: corazon
+order: 185
 subject: naturales
 block: Cuerpo humano
 grades: 5
-asks: ¿Cómo funciona el corazón? | ¿Por qué late el corazón?
+asks: ¿Cómo funciona el corazón? | ¿Por qué late el corazón? | qué hace el corazón | qué es la sístole
 lang: es
 source_title: Corazón
 source_site: Wikipedia

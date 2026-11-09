@@ -1,10 +1,11 @@
 ---
 title: The Olympic Games
 topic: juegos-olimpicos
+order: 516
 subject: arte
 block: Sports
 grades: 5,6
-asks: What are the Olympic Games? | How often are the Olympic Games held?
+asks: What are the Olympic Games? | How often are the Olympic Games held? | who was Coubertin | where do the Olympics come from | how many countries take part
 lang: en
 source_title: Juegos Olímpicos
 source_site: Wikipedia

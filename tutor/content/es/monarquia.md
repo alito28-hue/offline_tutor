@@ -1,10 +1,11 @@
 ---
 title: La monarquía
 topic: monarquia
+order: 839
 subject: ciudadania
 block: Formas de gobierno
 grades: 6,7
-asks: ¿Qué es una monarquía? | ¿Cuál es la diferencia entre monarquía absoluta y parlamentaria?
+asks: ¿Qué es una monarquía? | ¿Cuál es la diferencia entre monarquía absoluta y parlamentaria? | qué es un rey | qué hace un rey | qué es un monarca | país gobernado por un rey
 lang: es
 source_title: Monarquía
 source_site: Wikipedia

@@ -1,10 +1,11 @@
 ---
 title: La suma
 topic: suma
+order: 21
 subject: matematica
 block: Operaciones
 grades: 4
-asks: ¿Cómo sumo números con llevada? | ¿Qué es sumar?
+asks: ¿Cómo sumo números con llevada? | ¿Qué es sumar? | qué es llevarse uno | cuánto es 27 más 15
 lang: es
 source_title: Adición (matemática)
 source_site: Wikipedia

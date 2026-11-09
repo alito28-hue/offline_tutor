@@ -1,10 +1,11 @@
 ---
 title: As vacinas
 topic: vacunas
+order: 198
 subject: naturales
 block: Saúde
 grades: 5,6
-asks: Como as vacinas funcionam? | Para que servem as vacinas?
+asks: Como as vacinas funcionam? | Para que servem as vacinas? | por que tomo injeção para não ficar doente | para que serve uma injeção contra uma doença | o que é se vacinar
 lang: pt
 source_title: Vacuna
 source_site: Wikipedia

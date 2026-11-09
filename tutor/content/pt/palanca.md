@@ -1,10 +1,11 @@
 ---
 title: A alavanca
 topic: palanca
+order: 477
 subject: tecnologia
 block: Máquinas
 grades: 4,5
-asks: Como funciona uma alavanca? | O que é uma alavanca?
+asks: Como funciona uma alavanca? | O que é uma alavanca? | o que é um fulcro | máquina simples com uma barra | para que serve uma alavanca
 lang: pt
 source_title: Palanca
 source_site: Wikipedia

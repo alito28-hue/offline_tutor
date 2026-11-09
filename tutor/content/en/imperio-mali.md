@@ -1,10 +1,11 @@
 ---
 title: The Mali Empire
 topic: imperio-mali
+order: 790
 subject: historia
 block: Middle Ages and kingdoms
 grades: 7
-asks: What was the Mali Empire? | Who founded the Mali Empire?
+asks: What was the Mali Empire? | Who founded the Mali Empire? | who was Sundiata Keita | who was Mansa Musa | empire of West Africa
 lang: en
 source_title: Imperio de Mali
 source_site: Wikipedia

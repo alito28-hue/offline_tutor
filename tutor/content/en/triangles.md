@@ -1,10 +1,11 @@
 ---
 title: Triangles
 topic: triangulos
+order: 44
 subject: matematica
 block: Geometry
 grades: 4,5
-asks: What types of triangles are there? | What is an equilateral triangle?
+asks: What types of triangles are there? | What is an equilateral triangle? | what do the angles of a triangle add up to | what is a right triangle
 lang: en
 source_title: Triangle
 source_site: Wikipedia

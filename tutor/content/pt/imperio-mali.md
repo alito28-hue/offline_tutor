@@ -1,10 +1,11 @@
 ---
 title: O Império do Mali
 topic: imperio-mali
+order: 790
 subject: historia
 block: Idade Média e reinos
 grades: 7
-asks: O que foi o Império do Mali? | Quem fundou o Império do Mali?
+asks: O que foi o Império do Mali? | Quem fundou o Império do Mali? | quem foi Sundiata Keita | quem foi Mansa Musa | império da África Ocidental
 lang: pt
 source_title: Imperio de Mali
 source_site: Wikipedia

@@ -1,10 +1,11 @@
 ---
 title: A chuva
 topic: lluvia
+order: 246
 subject: naturales
 block: Terra
 grades: 6
-asks: Por que chove? | O que é a chuva?
+asks: Por que chove? | O que é a chuva? | de onde vem a água que cai do céu | por que caem gotas das nuvens
 lang: pt
 source_title: Lluvia
 source_site: Wikipedia

@@ -1,10 +1,11 @@
 ---
 title: O peso e a gravidade
 topic: gravedad
+order: 221
 subject: naturales
 block: Física
 grades: 5
-asks: Por que as coisas caem no chão? | O que é a gravidade?
+asks: Por que as coisas caem no chão? | O que é a gravidade? | por que ficamos no chão | quem foi Newton
 lang: pt
 source_title: Gravedad
 source_site: Wikipedia

@@ -1,10 +1,11 @@
 ---
 title: La República Argentina
 topic: argentina
+order: 272
 subject: geografia
 block: Argentina
 grades: 4,5
-asks: ¿Cuántas provincias tiene Argentina? | ¿Cuál es la capital de Argentina?
+asks: ¿Cuántas provincias tiene Argentina? | ¿Cuál es la capital de Argentina? | cómo está formado el país | qué es Argentina | cuántas provincias hay en mi país
 lang: es
 source_title: Argentina
 source_site: Wikipedia

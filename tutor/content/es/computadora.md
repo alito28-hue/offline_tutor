@@ -1,10 +1,11 @@
 ---
 title: La computadora
 topic: computadora
+order: 489
 subject: tecnologia
 block: Comunicación
 grades: 6,7
-asks: ¿Qué es una computadora? | ¿Qué es el hardware y el software?
+asks: ¿Qué es una computadora? | ¿Qué es el hardware y el software? | qué es la CPU | partes de una computadora | para qué sirve el teclado
 lang: es
 source_title: Computadora
 source_site: Wikipedia

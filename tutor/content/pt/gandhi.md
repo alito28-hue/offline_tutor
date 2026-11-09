@@ -1,10 +1,11 @@
 ---
 title: Mahatma Gandhi
 topic: gandhi
+order: 824
 subject: historia
 block: Pessoas do mundo
 grades: 6,7
-asks: Quem foi Gandhi? | O que significa Mahatma?
+asks: Quem foi Gandhi? | O que significa Mahatma? | quem lutou sem violência | independência da Índia | o que é a desobediência civil | o que é a não violência
 lang: pt
 source_title: Mahatma Gandhi
 source_site: Wikipedia

@@ -1,10 +1,11 @@
 ---
 title: Climate
 topic: clima
+order: 245
 subject: naturales
 block: Earth
 grades: 6
-asks: What is climate? | What is the difference between climate and weather?
+asks: What is climate? | What is the difference between climate and weather? | what the weather is usually like in a place | what does climate study look at
 lang: en
 source_title: Clima
 source_site: Wikipedia

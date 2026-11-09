@@ -1,10 +1,11 @@
 ---
 title: Os mamíferos
 topic: mamiferos
+order: 133
 subject: naturales
 block: Animais
 grades: 4,5
-asks: O que é um mamífero? | Por que a baleia é um mamífero?
+asks: O que é um mamífero? | Por que a baleia é um mamífero? | animais que tomam leite | a baleia dá leite
 lang: pt
 source_title: Mammalia
 source_site: Wikipedia

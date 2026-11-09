@@ -1,10 +1,11 @@
 ---
 title: México
 topic: mexico
+order: 594
 subject: geografia
 block: Países de América
 grades: 6,7
-asks: ¿Dónde queda México? | ¿Cuál es la capital de México?
+asks: ¿Dónde queda México? | ¿Cuál es la capital de México? | con qué países limita México | cuántos estados tiene México | qué hay al sur de Estados Unidos
 lang: es
 source_title: México
 source_site: Wikipedia

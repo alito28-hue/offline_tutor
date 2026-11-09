@@ -1,10 +1,11 @@
 ---
 title: La democracia
 topic: democracia
+order: 448
 subject: ciudadania
 block: Democracia
 grades: 5,6
-asks: ¿Qué es la democracia? | ¿Qué diferencia hay entre democracia directa e indirecta?
+asks: ¿Qué es la democracia? | ¿Qué diferencia hay entre democracia directa e indirecta? | qué significa que el pueblo tiene el poder | quién manda en una democracia | de dónde viene la palabra democracia
 lang: es
 source_title: Democracia
 source_site: Wikipedia

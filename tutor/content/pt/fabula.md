@@ -1,10 +1,11 @@
 ---
 title: A fábula
 topic: fabula
+order: 97
 subject: lengua
 block: Tipos de texto
 grades: 4,5
-asks: O que é uma fábula? | O que é a moral da história?
+asks: O que é uma fábula? | O que é a moral da história? | história com animais que falam | história com um ensinamento | o que significa moral da história
 lang: pt
 source_title: Fábula
 source_site: Wikipedia

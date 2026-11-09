@@ -1,10 +1,11 @@
 ---
 title: O mate
 topic: mate
+order: 513
 subject: arte
 block: Tradições
 grades: 4,5
-asks: De que planta vem o mate? | O que é o mate?
+asks: De que planta vem o mate? | O que é o mate? | o que é a erva-mate | bebida com erva | por que o mate é amargo
 lang: pt
 source_title: Mate (infusión)
 source_site: Wikipedia

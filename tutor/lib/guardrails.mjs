@@ -11,18 +11,21 @@ const LINES = {
     care: 'Gracias por contármelo. Esto es importante y no tienes que resolverlo sin ayuda. Por favor, habla ahora con un adulto de confianza, como tu mamá, tu papá, un familiar o un docente. Ellos pueden ayudarte de verdad.',
     redirect: 'Eso no es un tema para nuestra clase, así que mejor pregúntale a un adulto de confianza. ¿Seguimos con otra pregunta de la escuela? Por ejemplo: ¿cómo calculo el área de un rectángulo?',
     unknown: 'No lo sé: eso no está en mis materiales y no quiero inventar. Puedes explorar las materias en la pantalla de inicio o preguntarme, por ejemplo: ¿cómo sumo fracciones?',
+    maybe: 'No estoy seguro de haber entendido tu pregunta. ¿Es sobre alguno de estos temas?',
     check: '¿Puedes explicarlo con tus propias palabras?',
   },
   en: {
     care: 'Thank you for telling me. This is important and you do not have to handle it alone. Please talk to a trusted adult right now, like a parent, a relative or a teacher. They can really help you.',
     redirect: 'That is not a topic for our class, so please ask a trusted adult. Shall we go back to a school question? For example: how do magnets work?',
     unknown: 'I do not know: that is not in my materials and I do not want to make things up. You can explore the subjects on the home screen or ask me, for example: how do I add fractions?',
+    maybe: 'I am not sure I understood your question. Is it about one of these topics?',
     check: 'Can you explain it in your own words?',
   },
   pt: {
     care: 'Obrigado por me contar. Isso é importante e você não precisa resolver sozinho. Por favor, fale agora com um adulto de confiança, como sua mãe, seu pai, um parente ou um professor. Eles podem ajudar de verdade.',
     redirect: 'Esse não é um assunto para a nossa aula, então é melhor perguntar a um adulto de confiança. Vamos voltar para outra pergunta da escola? Por exemplo: como calculo a área de um retângulo?',
     unknown: 'Não sei: isso não está nos meus materiais e não quero inventar. Você pode explorar as matérias na tela inicial ou me perguntar, por exemplo: como somo frações?',
+    maybe: 'Não tenho certeza de que entendi sua pergunta. É sobre algum destes temas?',
     check: 'Você consegue explicar com as suas palavras?',
   },
   sw: {
@@ -34,7 +37,7 @@ export const line = (lang, key) => LINES[lang]?.[key] ?? LINES.en[key];
 const SW = /\b(kwa nini|nini|vipi|jinsi|ninawezaje|mvua|sayari|hesabu|sehemu|tafadhali|habari|gani|inanyesha|mimea|kuongeza)\b/;
 const ES = /[¿¡ñ]|\b(por que|como|que|cual|cuantos?|cuantas?|donde|cuando|quien|el|la|los|las|un|una|de|del|y|es|son|sumo|sumar|llueve|plantas?|fracciones|hola|si|no|porque|para)\b/g;
 // Words Spanish does not use, so that a question shared by both languages, such as "como", stays Spanish.
-const PT = /[ãõç]|\b(o que|voce|nao|sao|uma|um|os|as|do|na|nas|em|qual|quais|quem|onde|quantos?|quantas?|chove|fracoes|isso|pelo|tem|foi|ao|fica|fazem|ossos|por que o|por que a|eu|ele|vem|chuva|ceu|cidades?|fico|dobro|mesmo|depois|tambem|muito)\b/g;
+const PT = /[ãõç]|\b(o que|voce|nao|sao|uma|um|os|as|do|na|nas|em|qual|quais|quem|onde|quantos?|quantas?|chove|fracoes|isso|pelo|tem|foi|ao|fica|fazem|ossos|por que o|por que a|eu|ele|vem|chuva|ceu|cidades?|fico|dobro|mesmo|depois|tambem|muito|palavra|precisamos|mais|seguidores|rede)\b/g;
 const EN = /\b(why|how|what|which|where|when|who|the|a|an|of|and|is|are|do|does|i|plants?|rain|add|fractions?|hello|yes|because|to|in)\b/g;
 
 export function detectLanguage(text) {
@@ -43,7 +46,8 @@ export function detectLanguage(text) {
   const n = normalize(text);
   const es = (n.match(ES) || []).length + (/[áéíóúüñ¿¡]/.test(raw) ? 2 : 0);
   const en = (n.match(EN) || []).length;
-  const pt = (n.match(PT) || []).length + (raw.match(/[ãõç]/g) || []).length;
+  // A lone "é" is a Portuguese verb; Spanish writes "es".
+  const pt = (n.match(PT) || []).length + (raw.match(/[ãõç]/g) || []).length + (/(^|\s)é(\s|$)/.test(raw) ? 2 : 0);
   const spanishOnly = /[¿¡ñ]|\b(el|los|las|del|una|un|quien|cuantos?|cuantas?|donde|cuando|que es|hay|y)\b/.test(n);
   const clearlyEnglish = /\b(the|why|how|what|who|which|where|when|does|is|are|and|of|from|can|i)\b/.test(n);
   if (pt > 0 && !/[¿¡ñ]/.test(raw) && !clearlyEnglish && pt >= (spanishOnly ? 2 : 1)) return 'pt';

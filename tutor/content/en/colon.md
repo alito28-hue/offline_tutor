@@ -1,10 +1,11 @@
 ---
 title: Christopher Columbus
 topic: colon
+order: 365
 subject: historia
 block: Conquest and colonial times
 grades: 4
-asks: Who was Christopher Columbus? | What happened in 1492?
+asks: Who was Christopher Columbus? | What happened in 1492? | who reached America | who discovered America | what navigator crossed the Atlantic in 1492
 lang: en
 source_title: Cristóbal Colón
 source_site: Wikipedia

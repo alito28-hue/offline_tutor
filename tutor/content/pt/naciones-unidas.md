@@ -1,10 +1,11 @@
 ---
 title: As Nações Unidas
 topic: naciones-unidas
+order: 463
 subject: ciudadania
 block: Direitos
 grades: 6
-asks: O que é a ONU? | Para que servem as Nações Unidas?
+asks: O que é a ONU? | Para que servem as Nações Unidas? | onde fica a sede da ONU | o que a ONU faz | quando a ONU foi criada
 lang: pt
 source_title: Organización de las Naciones Unidas
 source_site: Wikipedia

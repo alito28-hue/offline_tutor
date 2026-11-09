@@ -1,10 +1,11 @@
 ---
 title: A divisão de poderes
 topic: division-poderes
+order: 439
 subject: ciudadania
 block: O Estado
 grades: 5
-asks: Quais são os três poderes? | Para que serve a divisão de poderes?
+asks: Quais são os três poderes? | Para que serve a divisão de poderes? | quem foi Montesquieu | o que Montesquieu disse | poder executivo legislativo e judiciário | por que ninguém pode ter todo o poder
 lang: pt
 source_title: Separación de poderes
 source_site: Wikipedia

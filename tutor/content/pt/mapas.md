@@ -1,10 +1,11 @@
 ---
 title: Os mapas
 topic: mapas
+order: 339
 subject: geografia
 block: Mapas
 grades: 4,5
-asks: O que é um mapa? | Como se lê um mapa?
+asks: O que é um mapa? | Como se lê um mapa? | o que é a escala de um mapa | para que serve a escala | o que é a cartografia
 lang: pt
 source_title: Mapa
 source_site: Wikipedia

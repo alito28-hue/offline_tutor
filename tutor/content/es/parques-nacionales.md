@@ -1,10 +1,11 @@
 ---
 title: Los parques nacionales
 topic: parques-nacionales
+order: 317
 subject: geografia
 block: Áreas protegidas
 grades: 4,5
-asks: ¿Qué es un parque nacional? | ¿Cuál fue el primer parque nacional de Argentina?
+asks: ¿Qué es un parque nacional? | ¿Cuál fue el primer parque nacional de Argentina? | qué es el Nahuel Huapi | para qué sirven los parques nacionales | quién cuida los parques nacionales
 lang: es
 source_title: Anexo:Parques nacionales de Argentina
 source_site: Wikipedia

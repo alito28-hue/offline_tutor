@@ -1,10 +1,11 @@
 ---
 title: Os terremotos
 topic: terremotos
+order: 235
 subject: naturales
 block: Terra
 grades: 4
-asks: Por que há terremotos? | O que é um terremoto?
+asks: Por que há terremotos? | O que é um terremoto? | o que é o epicentro | por que a terra treme
 lang: pt
 source_title: Terremoto
 source_site: Wikipedia

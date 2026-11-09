@@ -1,10 +1,11 @@
 ---
 title: The Amazon rainforest
 topic: amazonia
+order: 730
 subject: geografia
 block: Mountains and landscapes
 grades: 5,6
-asks: What is the Amazon? | Which countries have Amazon rainforest?
+asks: What is the Amazon? | Which countries have Amazon rainforest? | largest rainforest in the world | what is the Amazon | biggest tropical forest
 lang: en
 source_title: Amazonia
 source_site: Wikipedia

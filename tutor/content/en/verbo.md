@@ -1,10 +1,11 @@
 ---
 title: Verbs
 topic: verbo
+order: 69
 subject: lengua
 block: Grammar
 grades: 4,5
-asks: What is a verb? | How do I find the verb in a sentence?
+asks: What is a verb? | How do I find the verb in a sentence? | words that show actions | what kind of word is run | sing and jump are actions | what word says what someone does
 lang: en
 source_title: Verbo
 source_site: Wikipedia

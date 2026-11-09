@@ -1,10 +1,11 @@
 ---
 title: O rio da Prata
 topic: rio-de-la-plata
+order: 310
 subject: geografia
 block: Relevo e água
 grades: 4,5
-asks: O que é o rio da Prata? | Quais países o rio da Prata separa?
+asks: O que é o rio da Prata? | Quais países o rio da Prata separa? | rio entre a Argentina e o Uruguai | como se forma o rio da Prata | quais rios formam o Prata
 lang: pt
 source_title: Río de la Plata
 source_site: Wikipedia

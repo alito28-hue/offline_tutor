@@ -1,10 +1,11 @@
 ---
 title: Dinosaurs
 topic: dinosaurios
+order: 141
 subject: naturales
 block: Animals
 grades: 4,5
-asks: What were dinosaurs? | Why did the dinosaurs die out?
+asks: What were dinosaurs? | Why did the dinosaurs die out? | animals from millions of years ago | when did dinosaurs live | are birds dinosaurs
 lang: en
 source_title: Dinosauria
 source_site: Wikipedia

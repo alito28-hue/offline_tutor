@@ -1,10 +1,11 @@
 ---
 title: Synonyms
 topic: sinonimos
+order: 80
 subject: lengua
 block: Vocabulary
 grades: 4,5
-asks: What is a synonym? | Give me a synonym for disaster
+asks: What is a synonym? | Give me a synonym for disaster | words with the same meaning | another word that means the same | how do I know if two words are synonyms
 lang: en
 source_title: Sinonimia (semántica)
 source_site: Wikipedia

@@ -1,10 +1,11 @@
 ---
 title: A divisão
 topic: division
+order: 24
 subject: matematica
 block: Operações
 grades: 4
-asks: Como reparto 20 maçãs entre 4 pessoas? | O que é dividir?
+asks: Como reparto 20 maçãs entre 4 pessoas? | O que é dividir? | o que é o resto | o que é o quociente | quanto é 20 dividido por 4
 lang: pt
 source_title: División (matemática)
 source_site: Wikipedia

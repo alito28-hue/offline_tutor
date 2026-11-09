@@ -1,10 +1,11 @@
 ---
 title: Sentences, subject and predicate
 topic: oracion
+order: 76
 subject: lengua
 block: Grammar
 grades: 4,5,6
-asks: What is a sentence? | How do I find the subject of a sentence?
+asks: What is a sentence? | How do I find the subject of a sentence? | parts of a sentence | what is the subject | what is the predicate
 lang: en
 source_title: Oración (gramática)
 source_site: Wikipedia

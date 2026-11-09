@@ -1,10 +1,11 @@
 ---
 title: Los dinosaurios
 topic: dinosaurios
+order: 141
 subject: naturales
 block: Animales
 grades: 4,5
-asks: ¿Qué eran los dinosaurios? | ¿Por qué se extinguieron los dinosaurios?
+asks: ¿Qué eran los dinosaurios? | ¿Por qué se extinguieron los dinosaurios? | animales de hace millones de años | cuándo vivieron los dinosaurios | las aves son dinosaurios
 lang: es
 source_title: Dinosauria
 source_site: Wikipedia

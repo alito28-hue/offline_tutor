@@ -1,10 +1,11 @@
 ---
 title: Os ângulos
 topic: angulos
+order: 43
 subject: matematica
 block: Geometria
 grades: 4,5
-asks: O que é um ângulo? | O que é um ângulo reto?
+asks: O que é um ângulo? | O que é um ângulo reto? | o que é um grau | ângulos complementares
 lang: pt
 source_title: Ángulo
 source_site: Wikipedia

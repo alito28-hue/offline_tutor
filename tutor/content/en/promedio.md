@@ -1,10 +1,11 @@
 ---
 title: The average
 topic: promedio
+order: 36
 subject: matematica
 block: Statistics
 grades: 5,6
-asks: How do I work out the average of my grades? | What is an average?
+asks: How do I work out the average of my grades? | What is an average? | how do I find the mean | what is my average with these grades | add and divide to find the mean
 lang: en
 source_title: Media aritmética
 source_site: Wikipedia

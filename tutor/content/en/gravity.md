@@ -1,10 +1,11 @@
 ---
 title: Gravity
 topic: gravedad
+order: 221
 subject: naturales
 block: Physics
 grades: 5
-asks: Why do things fall to the ground? | What is gravity?
+asks: Why do things fall to the ground? | What is gravity? | why do we stay on the ground | who was Newton
 lang: en
 source_title: Gravity
 source_site: Wikipedia

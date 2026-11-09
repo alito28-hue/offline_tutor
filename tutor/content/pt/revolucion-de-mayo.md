@@ -1,10 +1,11 @@
 ---
 title: A Revolução de Maio
 topic: revolucion-de-mayo
+order: 374
 subject: historia
 block: Independência
 grades: 5
-asks: O que aconteceu em 25 de maio de 1810? | O que foi a Revolução de Maio?
+asks: O que aconteceu em 25 de maio de 1810? | O que foi a Revolução de Maio? | o que foi a Semana de Maio | o que se lembra em 25 de maio | o que foi a Primeira Junta
 lang: pt
 source_title: Revolución de Mayo
 source_site: Wikipedia

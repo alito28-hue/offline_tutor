@@ -1,10 +1,11 @@
 ---
 title: O som
 topic: sonido
+order: 220
 subject: naturales
 block: Física
 grades: 5
-asks: Como o som viaja? | O que é o som?
+asks: Como o som viaja? | O que é o som? | por que ouvimos | o som viaja no vácuo
 lang: pt
 source_title: Sonido
 source_site: Wikipedia

@@ -1,10 +1,11 @@
 ---
 title: The cardinal points
 topic: puntos-cardinales
+order: 340
 subject: geografia
 block: Maps
 grades: 4,5
-asks: What are the cardinal points? | Where does the Sun rise?
+asks: What are the cardinal points? | Where does the Sun rise? | north south east and west | where does the Sun set | what is a compass rose
 lang: en
 source_title: Punto cardinal
 source_site: Wikipedia

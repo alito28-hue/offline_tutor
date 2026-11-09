@@ -1,10 +1,11 @@
 ---
 title: La proporcionalidad directa
 topic: proporcionalidad
+order: 32
 subject: matematica
 block: Proporcionalidad
 grades: 5,6
-asks: ¿Qué significa que dos cosas sean proporcionales? | ¿Qué es la proporcionalidad directa?
+asks: ¿Qué significa que dos cosas sean proporcionales? | ¿Qué es la proporcionalidad directa? | si una cantidad aumenta al doble la otra también | el doble de cosas cuesta el doble | qué es la constante de proporcionalidad
 lang: es
 source_title: Proporcionalidad
 source_site: Wikipedia

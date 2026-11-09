@@ -1,10 +1,11 @@
 ---
 title: Volcanoes
 topic: volcanes
+order: 234
 subject: naturales
 block: Earth
 grades: 4
-asks: How does a volcano erupt? | What is a volcano?
+asks: How does a volcano erupt? | What is a volcano? | what is lava | what is magma
 lang: en
 source_title: Volcano
 source_site: Wikipedia

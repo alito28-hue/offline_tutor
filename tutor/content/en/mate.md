@@ -1,10 +1,11 @@
 ---
 title: Mate
 topic: mate
+order: 513
 subject: arte
 block: Traditions
 grades: 4,5
-asks: What plant does mate come from? | What is mate?
+asks: What plant does mate come from? | What is mate? | what is yerba mate | drink with yerba | why is mate bitter
 lang: en
 source_title: Mate (infusión)
 source_site: Wikipedia

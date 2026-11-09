@@ -1,10 +1,11 @@
 ---
 title: A multiplicação
 topic: multiplicacion
+order: 23
 subject: matematica
 block: Operações
 grades: 4
-asks: O que é multiplicar? | Para que serve multiplicar?
+asks: O que é multiplicar? | Para que serve multiplicar? | quanto é 4 vezes 3 | o que são fatores | quanto é 7 vezes 3
 lang: pt
 source_title: Multiplicación
 source_site: Wikipedia

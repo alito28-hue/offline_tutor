@@ -2,7 +2,7 @@
 // Citations come from the passages sent to the model, never from the model's own text.
 import { checkInput, detectLanguage, isAnswerToCheck, line, OutputGuard } from './guardrails.mjs';
 import { asksOf, parseHit, sourceFor } from './content.mjs';
-import { coverage, groundPassages } from './grounding.mjs';
+import { groundPassages, wordIndex } from './grounding.mjs';
 import { EXAMPLE_TOPIC, feedbackMessages, teachMessages } from './prompts.mjs';
 
 // First filter, calibrated on real questions. Scores overlap near this value, so the model's NO_SE signal is the second filter.
@@ -14,7 +14,10 @@ const NEAR_BEST = 0.12;
 // An article has to match by what it is about, by what it says and, a little, by its exact words, which is what finds
 // names like Coubertin that meaning alone misses. Calibrated on the exam in curriculum/.
 export const ARTICLE_THRESHOLD = Number(process.env.TUTOR_ARTICLE_THRESHOLD || 0.6);
-const WORDS_WEIGHT = 0.15;
+const WORDS_WEIGHT = Number(process.env.TUTOR_WORDS_WEIGHT || 0.15);
+// Below the threshold the tutor does not teach, but it can still point to the closest articles.
+const SUGGEST_THRESHOLD = 0.5;
+const MAX_SUGGESTIONS = 3;
 const TEACH_PARAMS = { temp: 0.2, seed: 7, predict: 280 };
 const FEEDBACK_PARAMS = { temp: 0.2, seed: 7, predict: 120 };
 
@@ -24,8 +27,11 @@ const lastQuestion = text => text.trim().split('\n').reverse().find(l => l.inclu
 
 export function createTutor({ engine, files, now = () => performance.now() }) {
   let lastTurn = null;
-  const texts = new Map(files.map(f => [f.file, `${f.meta.title} ${asksOf(f).join(' ')} ${f.paragraphs.join(' ')}`]));
-  const articleText = file => texts.get(file) || '';
+  const articleWords = new Map(['es', 'en', 'pt'].map(lang => [lang, wordIndex(new Map(files.filter(f => f.file.startsWith(`${lang}/`)).map(f => [f.file, `${f.meta.title} ${asksOf(f).join(' ')} ${f.paragraphs.join(' ')}`])))]));
+  const suggestionFor = file => {
+    const f = files.find(x => x.file === file);
+    return f && { file, title: f.meta.title, ask: asksOf(f)[0] || f.meta.title };
+  };
 
   // First the article, then the passages inside it: a word that merely appears in an unrelated article is not enough.
   async function retrieve(question, lang) {
@@ -41,11 +47,12 @@ export function createTutor({ engine, files, now = () => performance.now() }) {
     for (const h of hits) if (!bestPassage.has(h.file)) bestPassage.set(h.file, h.score);
     const ranked = cards.map(c => {
       const meaning = 0.5 * c.score + 0.5 * (bestPassage.get(c.file) ?? 0);
-      return { file: c.file, score: (1 - WORDS_WEIGHT) * meaning + WORDS_WEIGHT * coverage(question, articleText(c.file)) };
+      return { file: c.file, score: (1 - WORDS_WEIGHT) * meaning + WORDS_WEIGHT * articleWords.get(lang).coverage(question, c.file) };
     }).sort((a, b) => b.score - a.score);
     const best = ranked[0]?.score ?? 0;
-    if (best < ARTICLE_THRESHOLD) return { best, passages: [] };
-    return { best, passages: hits.filter(h => h.file === ranked[0].file).slice(0, MAX_PASSAGES) };
+    const suggestions = ranked.filter(r => r.score >= SUGGEST_THRESHOLD).slice(0, MAX_SUGGESTIONS).map(r => suggestionFor(r.file)).filter(Boolean);
+    if (best < ARTICLE_THRESHOLD) return { best, passages: [], suggestions };
+    return { best, passages: hits.filter(h => h.file === ranked[0].file).slice(0, MAX_PASSAGES), suggestions };
   }
 
   // A topic chosen from the list needs no search: the child already said which article.
@@ -76,7 +83,7 @@ export function createTutor({ engine, files, now = () => performance.now() }) {
     // An answer such as "12 cm" has no language signal, so it continues in the language of the lesson.
     const following = !chosen && lastTurn && isAnswerToCheck(question);
     if (following) lang = lastTurn.lang;
-    let route, messages, passages, params, searchScore = null;
+    let route, messages, passages, params, searchScore = null, nearby = [];
     if (following) {
       route = 'feedback';
       passages = lastTurn.passages;
@@ -85,7 +92,11 @@ export function createTutor({ engine, files, now = () => performance.now() }) {
     } else {
       const found = chosen || await retrieve(question, lang);
       searchScore = found.best;
-      if (!found.passages.length) return yield* fixedReply('unknown', lang, line(lang, 'unknown'), t0, { score: found.best });
+      nearby = found.suggestions || [];
+      if (!found.passages.length) {
+        const suggestions = found.suggestions || [];
+        return yield* fixedReply('unknown', lang, line(lang, suggestions.length ? 'maybe' : 'unknown'), t0, { score: found.best, suggestions });
+      }
       route = 'teach';
       passages = found.passages;
       messages = teachMessages(lang, question, passages);
@@ -98,7 +109,7 @@ export function createTutor({ engine, files, now = () => performance.now() }) {
     let announced = false;
     const announce = () => { announced = true; return { type: 'meta', route, lang }; };
     async function* declined() {
-      if (!announced) return yield* fixedReply('unknown', lang, line(lang, 'unknown'), t0, { score: searchScore, modelSaidUnknown: true });
+      if (!announced) return yield* fixedReply('unknown', lang, line(lang, nearby.length ? 'maybe' : 'unknown'), t0, { score: searchScore, modelSaidUnknown: true, suggestions: nearby });
       lastTurn = null;
       const text = line(lang, 'unknown');
       yield { type: 'replace', text };

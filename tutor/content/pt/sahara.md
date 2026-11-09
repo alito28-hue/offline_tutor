@@ -1,10 +1,11 @@
 ---
 title: O deserto do Saara
 topic: sahara
+order: 728
 subject: geografia
 block: Relevo do mundo
 grades: 5,6
-asks: Qual é o maior deserto quente do mundo? | Onde fica o Saara?
+asks: Qual é o maior deserto quente do mundo? | Onde fica o Saara? | deserto da África | qual é o tamanho do Saara | o que significa Saara
 lang: pt
 source_title: Sahara
 source_site: Wikipedia

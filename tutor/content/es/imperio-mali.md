@@ -1,10 +1,11 @@
 ---
 title: El Imperio de Malí
 topic: imperio-mali
+order: 790
 subject: historia
 block: Edad Media y reinos
 grades: 7
-asks: ¿Qué fue el Imperio de Malí? | ¿Quién fundó el Imperio de Malí?
+asks: ¿Qué fue el Imperio de Malí? | ¿Quién fundó el Imperio de Malí? | quién fue Sundiata Keïta | quién fue Mansa Musa | imperio de África Occidental
 lang: es
 source_title: Imperio de Mali
 source_site: Wikipedia

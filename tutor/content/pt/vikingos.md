@@ -1,10 +1,11 @@
 ---
 title: Os vikings
 topic: vikingos
+order: 794
 subject: historia
 block: Idade Média e reinos
 grades: 7
-asks: Quem eram os vikings? | De onde vinham os vikings?
+asks: Quem eram os vikings? | De onde vinham os vikings? | quem atacou Lindisfarne | o que é Lindisfarne | guerreiros da Escandinávia | que língua os vikings falavam
 lang: pt
 source_title: Vikingo
 source_site: Wikipedia

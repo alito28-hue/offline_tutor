@@ -1,10 +1,11 @@
 ---
 title: Mount Everest
 topic: everest
+order: 724
 subject: geografia
 block: Mountains and landscapes
 grades: 5,6
-asks: What is the highest mountain in the world? | Where is Everest?
+asks: What is the highest mountain in the world? | Where is Everest? | how high is Everest | mountain between China and Nepal | what does Chomolungma mean
 lang: en
 source_title: Monte Everest
 source_site: Wikipedia

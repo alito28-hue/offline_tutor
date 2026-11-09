@@ -1,10 +1,11 @@
 ---
 title: Los eclipses
 topic: eclipses
+order: 268
 subject: naturales
 block: Universo
 grades: 6
-asks: ¿Qué es un eclipse? | ¿Cuál es la diferencia entre eclipse de Sol y de Luna?
+asks: ¿Qué es un eclipse? | ¿Cuál es la diferencia entre eclipse de Sol y de Luna? | por qué se tapa el Sol de día | cuando la Luna tapa al Sol | por qué se oscurece de día | qué es un eclipse de Luna
 lang: es
 source_title: Eclipse
 source_site: Wikipedia

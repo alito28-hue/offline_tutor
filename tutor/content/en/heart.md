@@ -1,10 +1,11 @@
 ---
 title: The heart
 topic: corazon
+order: 185
 subject: naturales
 block: Human body
 grades: 5
-asks: How does the heart work? | Why does the heart beat?
+asks: How does the heart work? | Why does the heart beat? | what does the heart do | what is systole
 lang: en
 source_title: Heart
 source_site: Wikipedia

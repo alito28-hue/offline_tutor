@@ -1,10 +1,11 @@
 ---
 title: Los derechos del niño
 topic: derechos-nino
+order: 457
 subject: ciudadania
 block: Derechos
 grades: 5
-asks: ¿Qué derechos tienen los chicos? | ¿Qué es la Convención sobre los Derechos del Niño?
+asks: ¿Qué derechos tienen los chicos? | ¿Qué es la Convención sobre los Derechos del Niño? | tratado que protege a los niños | qué firmó la ONU en 1989 | tengo derechos por ser chico
 lang: es
 source_title: Convención sobre los Derechos del Niño
 source_site: Wikipedia

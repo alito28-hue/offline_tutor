@@ -1,10 +1,11 @@
 ---
 title: A Declaração de Independência da Argentina
 topic: independencia-argentina
+order: 388
 subject: historia
 block: Independência
 grades: 5
-asks: O que aconteceu em 9 de julho de 1816? | Onde foi declarada a independência argentina?
+asks: O que aconteceu em 9 de julho de 1816? | Onde foi declarada a independência argentina? | o que se comemora em 9 de julho | o que foi o Congresso de Tucumán | quando a Argentina ficou independente
 lang: pt
 source_title: Declaración de independencia de la Argentina
 source_site: Wikipedia

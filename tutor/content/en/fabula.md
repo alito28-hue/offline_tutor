@@ -1,10 +1,11 @@
 ---
 title: Fables
 topic: fabula
+order: 97
 subject: lengua
 block: Types of text
 grades: 4,5
-asks: What is a fable? | What is a moral?
+asks: What is a fable? | What is a moral? | story with talking animals | story with a lesson | what does moral mean
 lang: en
 source_title: Fábula
 source_site: Wikipedia

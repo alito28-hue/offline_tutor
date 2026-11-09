@@ -1,10 +1,11 @@
 ---
 title: The Argentine Republic
 topic: argentina
+order: 272
 subject: geografia
 block: Argentina
 grades: 4,5
-asks: How many provinces does Argentina have? | What is the capital of Argentina?
+asks: How many provinces does Argentina have? | What is the capital of Argentina? | how the country is organized | what is Argentina | how many provinces are there
 lang: en
 source_title: Argentina
 source_site: Wikipedia

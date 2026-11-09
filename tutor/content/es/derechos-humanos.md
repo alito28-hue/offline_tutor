@@ -1,10 +1,11 @@
 ---
 title: Los derechos humanos
 topic: derechos-humanos
+order: 458
 subject: ciudadania
 block: Derechos
 grades: 6
-asks: ¿Qué son los derechos humanos? | ¿Quién tiene derechos humanos?
+asks: ¿Qué son los derechos humanos? | ¿Quién tiene derechos humanos? | todas las personas tienen los mismos derechos | qué es la discriminación de derechos | qué obligación tenemos con los derechos de otros
 lang: es
 source_title: Derechos humanos
 source_site: Wikipedia

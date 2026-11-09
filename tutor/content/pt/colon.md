@@ -1,10 +1,11 @@
 ---
 title: Cristóvão Colombo
 topic: colon
+order: 365
 subject: historia
 block: Conquista e colônia
 grades: 4
-asks: Quem foi Cristóvão Colombo? | O que aconteceu em 1492?
+asks: Quem foi Cristóvão Colombo? | O que aconteceu em 1492? | quem chegou à América | quem descobriu a América | que navegador cruzou o Atlântico em 1492
 lang: pt
 source_title: Cristóbal Colón
 source_site: Wikipedia

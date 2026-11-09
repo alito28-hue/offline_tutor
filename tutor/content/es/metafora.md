@@ -1,10 +1,11 @@
 ---
 title: La metáfora
 topic: metafora
+order: 110
 subject: lengua
 block: Literatura
 grades: 5,6
-asks: ¿Qué es una metáfora? | Dame un ejemplo de metáfora
+asks: ¿Qué es una metáfora? | Dame un ejemplo de metáfora | por qué dicen que unos ojos son soles | decir una cosa nombrando otra | figura literaria que compara sin usar como
 lang: es
 source_title: Metáfora
 source_site: Wikipedia

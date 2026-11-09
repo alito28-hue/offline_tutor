@@ -1,10 +1,11 @@
 ---
 title: Los sinónimos
 topic: sinonimos
+order: 80
 subject: lengua
 block: Vocabulario
 grades: 4,5
-asks: ¿Qué es un sinónimo? | Dame un sinónimo de desastre
+asks: ¿Qué es un sinónimo? | Dame un sinónimo de desastre | palabras con el mismo significado | otra palabra que signifique lo mismo | cómo sé si dos palabras son sinónimos
 lang: es
 source_title: Sinonimia (semántica)
 source_site: Wikipedia

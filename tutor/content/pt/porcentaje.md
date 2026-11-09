@@ -1,10 +1,11 @@
 ---
 title: As porcentagens
 topic: porcentaje
+order: 10
 subject: matematica
 block: Números
 grades: 6
-asks: Como calculo uma porcentagem? | Quanto é 50% de 80?
+asks: Como calculo uma porcentagem? | Quanto é 50% de 80? | o que significa por cento | quanto é 10%
 lang: pt
 source_title: Porcentaje
 source_site: Wikipedia

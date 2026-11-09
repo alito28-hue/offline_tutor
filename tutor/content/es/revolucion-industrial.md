@@ -1,10 +1,11 @@
 ---
 title: La Revolución Industrial
 topic: revolucion-industrial
+order: 422
 subject: historia
 block: Mundo
 grades: 7
-asks: ¿Qué fue la Revolución Industrial? | ¿Quién perfeccionó la máquina de vapor?
+asks: ¿Qué fue la Revolución Industrial? | ¿Quién perfeccionó la máquina de vapor? | quién fue James Watt | cuándo aparecieron las fábricas | qué cambió con la máquina de vapor
 lang: es
 source_title: Revolución Industrial
 source_site: Wikipedia

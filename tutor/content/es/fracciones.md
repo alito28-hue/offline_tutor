@@ -1,10 +1,11 @@
 ---
 title: Las fracciones
 topic: fracciones
+order: 6
 subject: matematica
 block: Números
 grades: 4,5
-asks: ¿Cómo sumo fracciones? | ¿Qué es una fracción?
+asks: ¿Cómo sumo fracciones? | ¿Qué es una fracción? | qué es el numerador | cuánto es 2/7 + 3/7 | qué es un denominador
 lang: es
 source_title: Fracción
 source_site: Wikipedia

@@ -1,10 +1,11 @@
 ---
 title: The Industrial Revolution
 topic: revolucion-industrial
+order: 422
 subject: historia
 block: World
 grades: 7
-asks: What was the Industrial Revolution? | Who improved the steam engine?
+asks: What was the Industrial Revolution? | Who improved the steam engine? | who was James Watt | when did factories appear | what changed with the steam engine
 lang: en
 source_title: Revolución Industrial
 source_site: Wikipedia

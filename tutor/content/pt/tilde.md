@@ -1,10 +1,11 @@
 ---
 title: O acento gráfico
 topic: tilde
+order: 88
 subject: lengua
 block: Ortografia
 grades: 4,5
-asks: O que é o acento gráfico? | Quando uma palavra leva acento?
+asks: O que é o acento gráfico? | Quando uma palavra leva acento? | o que é o acento em uma palavra | a marca sobre a vogal | o acento em café
 lang: pt
 source_title: Tilde
 source_site: Wikipedia

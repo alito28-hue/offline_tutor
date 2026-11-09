@@ -1,10 +1,11 @@
 ---
 title: El arcoíris
 topic: arcoiris
+order: 218
 subject: naturales
 block: Física
 grades: 5
-asks: ¿Cómo se forma un arcoíris? | ¿Cuáles son los colores del arcoíris?
+asks: ¿Cómo se forma un arcoíris? | ¿Cuáles son los colores del arcoíris? | colores en el cielo después de llover | qué es la refracción de la luz | por qué la luz se separa en colores
 lang: es
 source_title: Arcoíris
 source_site: Wikipedia

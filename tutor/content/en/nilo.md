@@ -1,10 +1,11 @@
 ---
 title: The Nile
 topic: nilo
+order: 734
 subject: geografia
 block: Rivers and lakes
 grades: 5,6
-asks: Where does the Nile River flow? | What is the longest river in the world?
+asks: Where does the Nile River flow? | What is the longest river in the world? | river of Egypt | largest river in Africa | what is the Nile delta
 lang: en
 source_title: Nilo
 source_site: Wikipedia

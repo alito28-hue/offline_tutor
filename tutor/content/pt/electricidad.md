@@ -1,10 +1,11 @@
 ---
 title: A corrente elétrica
 topic: electricidad
+order: 223
 subject: naturales
 block: Física
 grades: 6
-asks: O que é a corrente elétrica?
+asks: O que é a corrente elétrica? | o que é um condutor | o que é um isolante
 lang: pt
 source_title: Electricidad
 source_site: Wikipedia

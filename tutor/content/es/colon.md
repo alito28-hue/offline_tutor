@@ -1,10 +1,11 @@
 ---
 title: Cristóbal Colón
 topic: colon
+order: 365
 subject: historia
 block: Conquista y colonia
 grades: 4
-asks: ¿Quién fue Cristóbal Colón? | ¿Qué pasó en 1492?
+asks: ¿Quién fue Cristóbal Colón? | ¿Qué pasó en 1492? | quién llegó a América | quién descubrió América | qué navegante cruzó el Atlántico en 1492
 lang: es
 source_title: Cristóbal Colón
 source_site: Wikipedia

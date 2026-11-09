@@ -1,10 +1,11 @@
 ---
 title: Los números decimales
 topic: decimales
+order: 8
 subject: matematica
 block: Números
 grades: 4,5
-asks: ¿Qué es un número decimal?
+asks: ¿Qué es un número decimal? | qué quiere decir 0,5 | qué es 3,5
 lang: es
 source_title: Número decimal
 source_site: Wikipedia

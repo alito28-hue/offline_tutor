@@ -1,10 +1,11 @@
 ---
 title: O monte Everest
 topic: everest
+order: 724
 subject: geografia
 block: Relevo do mundo
 grades: 5,6
-asks: Qual é a montanha mais alta do mundo? | Onde fica o Everest?
+asks: Qual é a montanha mais alta do mundo? | Onde fica o Everest? | qual é a altura do Everest | montanha entre a China e o Nepal | o que significa Chomolungma
 lang: pt
 source_title: Monte Everest
 source_site: Wikipedia

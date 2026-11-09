@@ -1,10 +1,11 @@
 ---
 title: Patagonia
 topic: patagonia
+order: 299
 subject: geografia
 block: Regions
 grades: 4,5
-asks: What is Patagonia? | What is the climate of Patagonia like?
+asks: What is Patagonia? | What is the climate of Patagonia like? | what region is in the south of Argentina and Chile | who lived in Patagonia | what is in the south of Argentina
 lang: en
 source_title: Patagonia
 source_site: Wikipedia

@@ -1,10 +1,11 @@
 ---
 title: Los incas
 topic: incas
+order: 362
 subject: historia
 block: Pueblos originarios
 grades: 4
-asks: ¿Quiénes eran los incas? | ¿Qué significa Tahuantinsuyo?
+asks: ¿Quiénes eran los incas? | ¿Qué significa Tahuantinsuyo? | quiénes vivían en Cuzco | qué imperio había en los Andes | qué es el Tahuantinsuyo | imperio más grande de América antes de Colón
 lang: es
 source_title: Imperio incaico
 source_site: Wikipedia

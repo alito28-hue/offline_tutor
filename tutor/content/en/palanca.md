@@ -1,10 +1,11 @@
 ---
 title: The lever
 topic: palanca
+order: 477
 subject: tecnologia
 block: Machines
 grades: 4,5
-asks: How does a lever work? | What is a lever?
+asks: How does a lever work? | What is a lever? | what is a fulcrum | simple machine with a bar | what is a lever for
 lang: en
 source_title: Palanca
 source_site: Wikipedia

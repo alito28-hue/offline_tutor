@@ -1,10 +1,11 @@
 ---
 title: El área
 topic: area
+order: 61
 subject: matematica
 block: Medida
 grades: 5,6
-asks: ¿Cómo calculo el área de un rectángulo? | ¿Qué es el área?
+asks: ¿Cómo calculo el área de un rectángulo? | ¿Qué es el área? | cuánto ocupa una superficie | área de un triángulo
 lang: es
 source_title: Área
 source_site: Wikipedia

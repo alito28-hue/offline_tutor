@@ -1,10 +1,11 @@
 ---
 title: Nouns
 topic: sustantivo
+order: 67
 subject: lengua
 block: Grammar
 grades: 4,5
-asks: What is a noun? | Which words are nouns?
+asks: What is a noun? | Which words are nouns? | words that name things | what is a proper noun | what is a common noun
 lang: en
 source_title: Sustantivo
 source_site: Wikipedia

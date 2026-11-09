@@ -1,10 +1,11 @@
 ---
 title: The rainbow
 topic: arcoiris
+order: 218
 subject: naturales
 block: Physics
 grades: 5
-asks: How does a rainbow form? | What are the colors of the rainbow?
+asks: How does a rainbow form? | What are the colors of the rainbow? | colors in the sky after rain | what is refraction of light | why does light split into colors
 lang: en
 source_title: Arcoíris
 source_site: Wikipedia

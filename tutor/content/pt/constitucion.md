@@ -1,10 +1,11 @@
 ---
 title: A Constituição argentina
 topic: constitucion
+order: 445
 subject: ciudadania
 block: O Estado
 grades: 6
-asks: O que é a Constituição? | O que aconteceu na Argentina em 1853?
+asks: O que é a Constituição? | O que aconteceu na Argentina em 1853? | lei mais importante da Argentina | que lei rege o país | quando a Constituição foi aprovada | reforma de 1994
 lang: pt
 source_title: Constitución de la Nación Argentina
 source_site: Wikipedia

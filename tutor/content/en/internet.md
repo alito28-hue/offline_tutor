@@ -1,10 +1,11 @@
 ---
 title: The internet
 topic: internet
+order: 490
 subject: tecnologia
 block: Communication
 grades: 6,7
-asks: How does the internet work? | What is the difference between the internet and the web?
+asks: How does the internet work? | What is the difference between the internet and the web? | what is ARPANET | how did the internet begin | what is the web
 lang: en
 source_title: Internet
 source_site: Wikipedia

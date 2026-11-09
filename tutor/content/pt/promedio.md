@@ -1,10 +1,11 @@
 ---
 title: A média
 topic: promedio
+order: 36
 subject: matematica
 block: Estatística
 grades: 5,6
-asks: Como calculo a média das minhas notas? | O que é a média?
+asks: Como calculo a média das minhas notas? | O que é a média? | como calculo a média | qual é a minha média com estas notas | somar e dividir para achar a média
 lang: pt
 source_title: Media aritmética
 source_site: Wikipedia

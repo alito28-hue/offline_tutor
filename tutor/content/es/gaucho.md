@@ -1,10 +1,11 @@
 ---
 title: El gaucho
 topic: gaucho
+order: 512
 subject: arte
 block: Tradiciones
 grades: 4,5
-asks: ¿Quiénes eran los gauchos? | ¿Dónde vivían los gauchos?
+asks: ¿Quiénes eran los gauchos? | ¿Dónde vivían los gauchos? | jinete de las llanuras | qué hacían los gauchos | hombre de campo con caballo
 lang: es
 source_title: Gaucho
 source_site: Wikipedia

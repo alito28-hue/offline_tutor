@@ -1,10 +1,11 @@
 ---
 title: As cataratas do Iguaçu
 topic: iguazu
+order: 314
 subject: geografia
 block: Relevo e água
 grades: 4,5
-asks: Onde ficam as cataratas do Iguaçu? | O que é a Garganta do Diabo?
+asks: Onde ficam as cataratas do Iguaçu? | O que é a Garganta do Diabo? | quedas de água em Misiones | quantas quedas têm as cataratas | cataratas entre a Argentina e o Brasil
 lang: pt
 source_title: Cataratas del Iguazú
 source_site: Wikipedia

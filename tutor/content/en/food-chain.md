@@ -1,10 +1,11 @@
 ---
 title: Food chains
 topic: cadena-alimentaria
+order: 163
 subject: naturales
 block: Environments
 grades: 6
-asks: What is a food chain?
+asks: What is a food chain? | who eats whom | producers and consumers
 lang: en
 source_title: Food chain
 source_site: Wikipedia

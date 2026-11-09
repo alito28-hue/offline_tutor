@@ -1,10 +1,11 @@
 ---
 title: Subtraction
 topic: resta
+order: 22
 subject: matematica
 block: Operations
 grades: 4
-asks: How do I subtract in columns? | What is subtraction?
+asks: How do I subtract in columns? | What is subtraction? | what is the minuend | what is 5 minus 2
 lang: en
 source_title: Subtraction
 source_site: Wikipedia

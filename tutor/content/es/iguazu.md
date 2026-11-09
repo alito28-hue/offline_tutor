@@ -1,10 +1,11 @@
 ---
 title: Las cataratas del Iguazú
 topic: iguazu
+order: 314
 subject: geografia
 block: Relieve y agua
 grades: 4,5
-asks: ¿Dónde están las cataratas del Iguazú? | ¿Qué es la Garganta del Diablo?
+asks: ¿Dónde están las cataratas del Iguazú? | ¿Qué es la Garganta del Diablo? | saltos de agua en Misiones | cuántos saltos tienen las cataratas | cataratas entre Argentina y Brasil
 lang: es
 source_title: Cataratas del Iguazú
 source_site: Wikipedia

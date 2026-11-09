@@ -1,10 +1,11 @@
 ---
 title: El río de la Plata
 topic: rio-de-la-plata
+order: 310
 subject: geografia
 block: Relieve y agua
 grades: 4,5
-asks: ¿Qué es el río de la Plata? | ¿Qué países separa el río de la Plata?
+asks: ¿Qué es el río de la Plata? | ¿Qué países separa el río de la Plata? | río entre Argentina y Uruguay | cómo se forma el río de la Plata | qué ríos forman el Plata
 lang: es
 source_title: Río de la Plata
 source_site: Wikipedia

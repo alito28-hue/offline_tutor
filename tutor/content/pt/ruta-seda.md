@@ -1,10 +1,11 @@
 ---
 title: A Rota da Seda
 topic: ruta-seda
+order: 797
 subject: historia
 block: Idade Média e reinos
 grades: 7
-asks: O que era a Rota da Seda? | Onde começava a Rota da Seda?
+asks: O que era a Rota da Seda? | Onde começava a Rota da Seda? | como a China comerciava com a Europa | rotas de comércio da China | o que era Chang'an
 lang: pt
 source_title: Ruta de la Seda
 source_site: Wikipedia

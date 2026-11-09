@@ -1,10 +1,11 @@
 ---
 title: Vaccines
 topic: vacunas
+order: 198
 subject: naturales
 block: Health
 grades: 5,6
-asks: How do vaccines work? | What are vaccines for?
+asks: How do vaccines work? | What are vaccines for? | why do I get a shot to stop getting sick | what is a shot against a disease for | what is vaccination
 lang: en
 source_title: Vacuna
 source_site: Wikipedia

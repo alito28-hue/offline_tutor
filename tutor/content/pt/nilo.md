@@ -1,10 +1,11 @@
 ---
 title: O rio Nilo
 topic: nilo
+order: 734
 subject: geografia
 block: Rios e lagos do mundo
 grades: 5,6
-asks: Por onde passa o rio Nilo? | Qual é o rio mais longo do mundo?
+asks: Por onde passa o rio Nilo? | Qual é o rio mais longo do mundo? | rio do Egito | maior rio da África | o que é o delta do Nilo
 lang: pt
 source_title: Nilo
 source_site: Wikipedia

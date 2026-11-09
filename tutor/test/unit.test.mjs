@@ -257,3 +257,9 @@ test('the search index is only used for the content it was built from', () => {
   assert.equal(loadIndex(dir, texts, 'other'), null);
   assert.equal(loadIndex(path.join(dir, 'missing'), texts, 'model'), null);
 });
+test('a question the tutor cannot place gets the closest topics instead of a dead end', async () => {
+  const near = c => (c.startsWith('[es/lluvia.md]') ? 0.52 : 0.1);
+  const done = (await collect(createTutor({ engine: articleEngine(GOOD, near, near), files }).ask('¿Por qué caen gotas?'))).at(-1);
+  assert.equal(done.route, 'unknown');
+  assert.deepEqual(done.suggestions.map(s => s.file), ['es/lluvia.md']);
+});

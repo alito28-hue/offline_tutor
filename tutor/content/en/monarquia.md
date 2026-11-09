@@ -1,10 +1,11 @@
 ---
 title: Monarchy
 topic: monarquia
+order: 839
 subject: ciudadania
 block: Forms of government
 grades: 6,7
-asks: What is a monarchy? | What is the difference between an absolute and a parliamentary monarchy?
+asks: What is a monarchy? | What is the difference between an absolute and a parliamentary monarchy? | what is a king | what does a king do | what is a monarch | country ruled by a king
 lang: en
 source_title: Monarquía
 source_site: Wikipedia

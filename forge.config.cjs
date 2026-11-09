@@ -19,7 +19,7 @@ const packagerConfig = {
   // A list of what goes in, so that nothing else in the folder can end up in the app.
   ignore: [
     /^\/(?!(desktop|tutor|node_modules|qvac|package\.json|qvac\.config\.json|LICENSE|forge\.config\.cjs)($|\/))/,
-    /^\/tutor\/(test|\.run|demo_script\.md|README\.md)($|\/)/,
+    /^\/tutor\/(test|\.run|curriculum|demo_script\.md|README\.md)($|\/)/,
     /^\/desktop\/windows($|\/)/,
   ],
 };

@@ -1,10 +1,11 @@
 ---
 title: El voto
 topic: voto
+order: 450
 subject: ciudadania
 block: Democracia
 grades: 5,6
-asks: ¿Para qué sirve votar? | ¿Qué es el sufragio?
+asks: ¿Para qué sirve votar? | ¿Qué es el sufragio? | cómo elegimos a los representantes | quiénes no podían votar antes | para qué votan las personas
 lang: es
 source_title: Sufragio
 source_site: Wikipedia

@@ -1,10 +1,11 @@
 ---
 title: A internet
 topic: internet
+order: 490
 subject: tecnologia
 block: Comunicação
 grades: 6,7
-asks: Como funciona a internet? | Qual é a diferença entre a internet e a web?
+asks: Como funciona a internet? | Qual é a diferença entre a internet e a web? | o que é a ARPANET | como começou a internet | o que é a web
 lang: pt
 source_title: Internet
 source_site: Wikipedia

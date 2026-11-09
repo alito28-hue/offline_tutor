@@ -1,10 +1,11 @@
 ---
 title: Japón
 topic: japon
+order: 630
 subject: geografia
 block: Países de Asia
 grades: 6,7
-asks: ¿Dónde queda Japón? | ¿Cuál es la capital de Japón?
+asks: ¿Dónde queda Japón? | ¿Cuál es la capital de Japón? | qué país tiene a Tokio | islas de Japón | cuántas personas viven en Japón
 lang: es
 source_title: Japón
 source_site: Wikipedia

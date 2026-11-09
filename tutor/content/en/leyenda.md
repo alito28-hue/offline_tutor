@@ -1,10 +1,11 @@
 ---
 title: Legends
 topic: leyenda
+order: 98
 subject: lengua
 block: Types of text
 grades: 4,5
-asks: What is a legend? | How are legends passed on?
+asks: What is a legend? | How are legends passed on? | stories passed from grandparents to grandchildren | tale told from generation to generation | stories with fantastic creatures
 lang: en
 source_title: Leyenda
 source_site: Wikipedia

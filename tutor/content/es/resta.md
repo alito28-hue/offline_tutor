@@ -1,10 +1,11 @@
 ---
 title: La resta
 topic: resta
+order: 22
 subject: matematica
 block: Operaciones
 grades: 4
-asks: ¿Cómo se hace una resta en columnas? | ¿Qué es restar?
+asks: ¿Cómo se hace una resta en columnas? | ¿Qué es restar? | qué es el minuendo | cuánto es 5 menos 2
 lang: es
 source_title: Resta
 source_site: Wikipedia

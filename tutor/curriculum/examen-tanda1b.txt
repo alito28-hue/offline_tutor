@@ -1,0 +1,98 @@
+# Segunda vuelta: preguntas nuevas, escritas después de sumar formas de preguntar. idioma|tema (o FUERA)|pregunta
+es|numeros-primos|el 2 es primo
+es|promedio|como saco la nota final si tengo tres notas
+es|sustantivo|que clase de palabra es perro
+es|verbo|que palabra es comer
+es|oracion|donde esta el sujeto en los perros corren
+es|fabula|que ensenan las historias de animales
+es|arcoiris|por que hay un arco de colores
+es|vacunas|por que hay que vacunarse
+es|eclipses|por que se pone oscuro el sol un rato
+es|lluvia|por que caen gotas del cielo
+es|volcanes|por que sale fuego de la montana
+es|corazon|para que late
+es|esqueleto|cuantos huesos tengo
+es|argentina|que tipo de pais es argentina
+es|andes|cual es la cordillera mas larga
+es|iguazu|que es la garganta del diablo
+es|everest|cual es el pico mas alto del planeta
+es|nilo|que rio llega al mediterraneo por egipto
+es|amazonia|en que paises esta el amazonas
+es|japon|cuantas islas tiene japon
+es|mexico|cual es la capital de los mexicanos
+es|incas|que hablaban en el tahuantinsuyo
+es|colon|quien fue el navegante de 1492
+es|revolucion-de-mayo|por que feriado es el 25 de mayo
+es|belgrano|quien creo nuestra bandera
+es|san-martin|quien cruzo para liberar chile y peru
+es|egipto-antiguo|por que era importante el nilo para los egipcios
+es|imperio-romano|que paso con los romanos y las leyes
+es|vikingos|quienes eran los guerreros de escandinavia
+es|imperio-mali|que imperio tuvo a mansa musa
+es|revolucion-industrial|que invento hizo cambiar las fabricas
+es|mandela|quien presidio sudafrica en 1994
+es|gandhi|que significa no violencia en la india
+es|democracia|que es elegir representantes
+es|division-poderes|que hace cada poder del estado
+es|naciones-unidas|cuando se fundo la onu
+es|monarquia|que pais tiene rey como jefe de estado
+es|computadora|que es el software
+es|internet|cuando empezo la red
+es|mate|que se toma con yerba
+es|FUERA|que juego me recomendas
+es|FUERA|como consigo mas seguidores
+es|FUERA|como se hace una torta de chocolate
+es|FUERA|quien es el mejor futbolista
+es|FUERA|cuando empieza el mundial
+en|numeros-primos|is 2 a prime number
+en|sustantivo|what kind of word is dog
+en|verbo|what kind of word is eat
+en|arcoiris|why is there an arc of colors
+en|vacunas|why do we need vaccines
+en|eclipses|why does the sun go dark for a while
+en|rain|why do drops fall from the sky
+en|heart|why does my heart beat
+en|skeleton|how many bones do I have
+en|andes|what is the longest mountain range
+en|everest|what is the tallest peak on the planet
+en|amazonia|which countries have the Amazon
+en|japon|how many islands does Japan have
+en|colon|who was the 1492 navigator
+en|san-martin|who liberated Chile and Peru
+en|imperio-mali|what empire did Mansa Musa rule
+en|mandela|who led South Africa in 1994
+en|democracia|what is choosing representatives
+en|naciones-unidas|when was the UN founded
+en|computadora|what is software
+en|internet|when did the network begin
+en|FUERA|what game should I play
+en|FUERA|how do I get more followers
+en|FUERA|how do I make a chocolate cake
+en|FUERA|who is the best soccer player
+en|FUERA|when does the World Cup start
+pt|numeros-primos|o 2 é primo
+pt|sustantivo|que tipo de palavra é cachorro
+pt|verbo|que tipo de palavra é comer
+pt|arcoiris|por que aparece um arco de cores
+pt|vacunas|por que precisamos nos vacinar
+pt|eclipses|por que o sol fica escuro um pouco
+pt|lluvia|por que caem gotas do céu
+pt|corazon|por que meu coração bate
+pt|esqueleto|quantos ossos eu tenho
+pt|andes|qual é a cordilheira mais longa
+pt|everest|qual é o pico mais alto do planeta
+pt|amazonia|em quais países fica o Amazonas
+pt|japon|quantas ilhas tem o Japão
+pt|colon|quem foi o navegador de 1492
+pt|san-martin|quem libertou o Chile e o Peru
+pt|imperio-mali|qual império teve Mansa Musa
+pt|mandela|quem presidiu a África do Sul em 1994
+pt|democracia|o que é escolher representantes
+pt|naciones-unidas|quando a ONU foi fundada
+pt|computadora|o que é o software
+pt|internet|quando a rede começou
+pt|FUERA|que jogo você recomenda
+pt|FUERA|como consigo mais seguidores
+pt|FUERA|como se faz um bolo de chocolate
+pt|FUERA|quem é o melhor jogador de futebol
+pt|FUERA|quando começa a Copa do Mundo

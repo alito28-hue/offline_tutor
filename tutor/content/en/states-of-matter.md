@@ -1,10 +1,11 @@
 ---
 title: States of matter
 topic: estados-de-la-materia
+order: 204
 subject: naturales
 block: Materials
 grades: 4
-asks: What are the states of matter?
+asks: What are the states of matter? | solid liquid and gas | what is a gas
 lang: en
 source_title: State of matter
 source_site: Wikipedia

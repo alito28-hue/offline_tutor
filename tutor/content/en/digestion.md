@@ -1,10 +1,11 @@
 ---
 title: Digestion
 topic: digestion
+order: 182
 subject: naturales
 block: Human body
 grades: 5
-asks: How does digestion work? | What happens to food when we swallow it?
+asks: How does digestion work? | What happens to food when we swallow it? | what does the stomach do | where does food go
 lang: en
 source_title: Human digestive system
 source_site: Wikipedia

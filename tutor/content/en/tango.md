@@ -1,10 +1,11 @@
 ---
 title: Tango
 topic: tango
+order: 498
 subject: arte
 block: Music
 grades: 4,5
-asks: Where did tango begin? | What is tango?
+asks: Where did tango begin? | What is tango? | music of Buenos Aires | dance of the Rio de la Plata | which cities does tango come from
 lang: en
 source_title: Tango
 source_site: Wikipedia

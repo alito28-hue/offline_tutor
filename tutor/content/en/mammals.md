@@ -1,10 +1,11 @@
 ---
 title: Mammals
 topic: mamiferos
+order: 133
 subject: naturales
 block: Animals
 grades: 4,5
-asks: What is a mammal? | Why is a whale a mammal?
+asks: What is a mammal? | Why is a whale a mammal? | animals that drink milk | do whales give milk
 lang: en
 source_title: Mammal
 source_site: Wikipedia

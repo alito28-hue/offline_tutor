@@ -1,10 +1,11 @@
 ---
 title: El antiguo Egipto
 topic: egipto-antiguo
+order: 416
 subject: historia
 block: Mundo
 grades: 7
-asks: ¿Qué fue el antiguo Egipto? | ¿Dónde se desarrolló el antiguo Egipto?
+asks: ¿Qué fue el antiguo Egipto? | ¿Dónde se desarrolló el antiguo Egipto? | civilización junto al Nilo | qué era el Alto y el Bajo Egipto | cuánto duró el antiguo Egipto
 lang: es
 source_title: Antiguo Egipto
 source_site: Wikipedia

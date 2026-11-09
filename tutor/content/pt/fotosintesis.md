@@ -1,10 +1,11 @@
 ---
 title: A fotossíntese
 topic: fotosintesis
+order: 152
 subject: naturales
 block: Plantas
 grades: 4,5
-asks: Como as plantas fazem comida? | O que é a fotossíntese?
+asks: Como as plantas fazem comida? | O que é a fotossíntese? | por que as plantas precisam de sol | o que é a clorofila
 lang: pt
 source_title: Fotosíntesis
 source_site: Wikipedia

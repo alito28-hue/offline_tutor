@@ -1,10 +1,11 @@
 ---
 title: Los triángulos
 topic: triangulos
+order: 44
 subject: matematica
 block: Geometría
 grades: 4,5
-asks: ¿Qué tipos de triángulos hay? | ¿Qué es un triángulo equilátero?
+asks: ¿Qué tipos de triángulos hay? | ¿Qué es un triángulo equilátero? | cuánto suman los ángulos de un triángulo | qué es un triángulo rectángulo
 lang: es
 source_title: Triángulo
 source_site: Wikipedia

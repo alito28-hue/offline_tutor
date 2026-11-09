@@ -1,10 +1,11 @@
 ---
 title: O Japão
 topic: japon
+order: 630
 subject: geografia
 block: Países da Ásia
 grades: 6,7
-asks: Onde fica o Japão? | Qual é a capital do Japão?
+asks: Onde fica o Japão? | Qual é a capital do Japão? | que país tem Tóquio | ilhas do Japão | quantas pessoas vivem no Japão
 lang: pt
 source_title: Japón
 source_site: Wikipedia

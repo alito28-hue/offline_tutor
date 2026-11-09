@@ -1,10 +1,11 @@
 ---
 title: El océano Pacífico
 topic: oceano-pacifico
+order: 718
 subject: geografia
 block: Mares y océanos
 grades: 5,6
-asks: ¿Cuál es el océano más grande? | ¿Cuántas islas tiene el océano Pacífico?
+asks: ¿Cuál es el océano más grande? | ¿Cuántas islas tiene el océano Pacífico? | parte más profunda del mar | qué es la fosa de las Marianas | océano con más islas
 lang: es
 source_title: Océano Pacífico
 source_site: Wikipedia

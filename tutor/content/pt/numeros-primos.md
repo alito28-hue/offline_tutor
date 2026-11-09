@@ -1,10 +1,11 @@
 ---
 title: Números primos
 topic: numeros-primos
+order: 15
 subject: matematica
 block: Números
 grades: 5,6
-asks: O que é um número primo? | O 7 é primo?
+asks: O que é um número primo? | O 7 é primo? | números que só se dividem por um e por eles mesmos | como sei se um número é primo | números compostos
 lang: pt
 source_title: Número primo
 source_site: Wikipedia

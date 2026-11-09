@@ -1,10 +1,11 @@
 ---
 title: Os pontos cardeais
 topic: puntos-cardinales
+order: 340
 subject: geografia
 block: Mapas
 grades: 4,5
-asks: Quais são os pontos cardeais? | De que lado o Sol nasce?
+asks: Quais são os pontos cardeais? | De que lado o Sol nasce? | norte sul leste e oeste | onde o Sol se põe | o que é a rosa dos ventos
 lang: pt
 source_title: Punto cardinal
 source_site: Wikipedia

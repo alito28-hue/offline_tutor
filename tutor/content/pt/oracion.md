@@ -1,10 +1,11 @@
 ---
 title: A frase, sujeito e predicado
 topic: oracion
+order: 76
 subject: lengua
 block: Gramática
 grades: 4,5,6
-asks: O que é uma oração? | Como encontro o sujeito de uma frase?
+asks: O que é uma oração? | Como encontro o sujeito de uma frase? | partes de uma oração | o que é o sujeito | o que é o predicado
 lang: pt
 source_title: Oración (gramática)
 source_site: Wikipedia

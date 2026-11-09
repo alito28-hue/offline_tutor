@@ -40,6 +40,7 @@ export const asksOf = f => (f.meta.asks ? f.meta.asks.split('|').map(q => q.trim
 // The curriculum as the app shows it: one entry per article in the requested language.
 export const listTopics = (files, lang) => files
   .filter(f => f.file.startsWith(`${lang}/`) && f.meta.topic)
+  .sort((a, b) => Number(a.meta.order || 0) - Number(b.meta.order || 0))
   .map(f => ({ file: f.file, topic: f.meta.topic, title: f.meta.title, subject: f.meta.subject, block: f.meta.block || '', grades: (f.meta.grades || '').split(',').map(g => g.trim()).filter(Boolean), ask: asksOf(f)[0] || f.meta.title }));
 
 const TAG = /^\[([^\]]+)\]\s*/;

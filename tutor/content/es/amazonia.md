@@ -1,10 +1,11 @@
 ---
 title: La selva amazónica
 topic: amazonia
+order: 730
 subject: geografia
 block: Relieve del mundo
 grades: 5,6
-asks: ¿Qué es la Amazonia? | ¿Qué países tienen selva amazónica?
+asks: ¿Qué es la Amazonia? | ¿Qué países tienen selva amazónica? | selva más grande del mundo | qué es el Amazonas | bosque tropical más extenso
 lang: es
 source_title: Amazonia
 source_site: Wikipedia

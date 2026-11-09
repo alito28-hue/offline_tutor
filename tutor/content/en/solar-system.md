@@ -1,10 +1,11 @@
 ---
 title: The Solar System
 topic: sistema-solar
+order: 253
 subject: naturales
 block: Universe
 grades: 6
-asks: What are the planets of the solar system? | What is the solar system?
+asks: What are the planets of the solar system? | What is the solar system? | how many planets are there | what is the biggest planet
 lang: en
 source_title: Solar System
 source_site: Wikipedia

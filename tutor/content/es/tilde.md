@@ -1,10 +1,11 @@
 ---
 title: El acento y la tilde
 topic: tilde
+order: 88
 subject: lengua
 block: Ortografía
 grades: 4,5
-asks: ¿Qué es la tilde? | ¿Cuándo lleva tilde una palabra?
+asks: ¿Qué es la tilde? | ¿Cuándo lleva tilde una palabra? | qué es el acento en una palabra | la marca sobre la vocal | qué es la tilde diacrítica
 lang: es
 source_title: Tilde
 source_site: Wikipedia

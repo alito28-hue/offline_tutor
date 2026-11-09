@@ -1,10 +1,11 @@
 ---
 title: Os continentes
 topic: continentes
+order: 347
 subject: geografia
 block: Mundo
 grades: 6
-asks: O que é um continente? | Quantos continentes existem?
+asks: O que é um continente? | Quantos continentes existem? | a Europa e a Ásia são um continente | o que significa a palavra continente | o que é a Eurásia
 lang: pt
 source_title: Continente
 source_site: Wikipedia

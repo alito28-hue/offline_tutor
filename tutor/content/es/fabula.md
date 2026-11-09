@@ -1,10 +1,11 @@
 ---
 title: La fábula
 topic: fabula
+order: 97
 subject: lengua
 block: Tipos de texto
 grades: 4,5
-asks: ¿Qué es una fábula? | ¿Qué es una moraleja?
+asks: ¿Qué es una fábula? | ¿Qué es una moraleja? | cuento con animales que hablan | historia con una enseñanza | qué significa moraleja
 lang: es
 source_title: Fábula
 source_site: Wikipedia

@@ -1,10 +1,11 @@
 ---
 title: La cordillera de los Andes
 topic: andes
+order: 306
 subject: geografia
 block: Relieve y agua
 grades: 4,5
-asks: ¿Dónde queda la cordillera de los Andes? | ¿Cuál es la montaña más alta de América?
+asks: ¿Dónde queda la cordillera de los Andes? | ¿Cuál es la montaña más alta de América? | qué es el Aconcagua | montañas del oeste de América del Sur | cordillera más larga del mundo
 lang: es
 source_title: Cordillera de los Andes
 source_site: Wikipedia

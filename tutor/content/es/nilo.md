@@ -1,10 +1,11 @@
 ---
 title: El río Nilo
 topic: nilo
+order: 734
 subject: geografia
 block: Ríos y lagos del mundo
 grades: 5,6
-asks: ¿Por dónde pasa el río Nilo? | ¿Cuál es el río más largo del mundo?
+asks: ¿Por dónde pasa el río Nilo? | ¿Cuál es el río más largo del mundo? | río de Egipto | río más grande de África | qué es el delta del Nilo
 lang: es
 source_title: Nilo
 source_site: Wikipedia

@@ -1,10 +1,11 @@
 ---
 title: La leyenda
 topic: leyenda
+order: 98
 subject: lengua
 block: Tipos de texto
 grades: 4,5
-asks: ¿Qué es una leyenda? | ¿Cuál es la diferencia entre mito y leyenda?
+asks: ¿Qué es una leyenda? | ¿Cuál es la diferencia entre mito y leyenda? | historias que pasan de abuelos a nietos | relato que se cuenta de generación en generación | historias con criaturas fantásticas
 lang: es
 source_title: Leyenda
 source_site: Wikipedia
