@@ -1,6 +1,10 @@
 ---
 title: La lluvia
-subject: ciencias
+topic: lluvia
+subject: naturales
+block: Tierra
+grades: 6
+asks: ¿Por qué llueve? | ¿Qué es la lluvia?
 lang: es
 source_title: Lluvia
 source_site: Wikipedia

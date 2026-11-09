@@ -1,6 +1,10 @@
 ---
 title: La fotosíntesis
-subject: ciencias
+topic: fotosintesis
+subject: naturales
+block: Plantas
+grades: 4,5
+asks: ¿Cómo hacen su comida las plantas? | ¿Qué es la fotosíntesis?
 lang: es
 source_title: Fotosíntesis
 source_site: Wikipedia

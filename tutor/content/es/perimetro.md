@@ -1,6 +1,10 @@
 ---
 title: El perímetro
-subject: matemática
+topic: perimetro
+subject: matematica
+block: Medida
+grades: 4,5
+asks: ¿Cómo calculo el perímetro de un rectángulo? | ¿Cómo saco el perímetro de un cuadrado?
 lang: es
 source_title: Perímetro
 source_site: Wikipedia

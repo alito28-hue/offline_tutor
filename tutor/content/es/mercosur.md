@@ -1,0 +1,24 @@
+---
+title: El Mercosur
+topic: mercosur
+subject: geografia
+block: Mundo
+grades: 6
+asks: ¿Qué es el Mercosur? | ¿Qué países forman el Mercosur?
+lang: es
+source_title: Mercosur
+source_site: Wikipedia
+source_url: https://es.wikipedia.org/wiki/Mercosur
+source_revision: 176188480
+authors: Wikipedia contributors
+license: CC BY-SA 4.0
+license_url: https://creativecommons.org/licenses/by-sa/4.0/
+changes: Adaptado y simplificado para chicos.
+retrieved: 2026-11-09
+---
+
+El Mercosur, o Mercado Común del Sur, es un bloque económico de países de América del Sur.
+
+Se creó en 1991 con el Tratado de Asunción, firmado por Argentina, Brasil, Paraguay y Uruguay.
+
+Hoy lo integran también Bolivia y Venezuela, aunque Venezuela está suspendida desde 2016. Otros países, como Chile y Colombia, son Estados asociados.

@@ -1,6 +1,10 @@
 ---
 title: Area
-subject: math
+topic: area
+subject: matematica
+block: Measurement
+grades: 5,6
+asks: How do I work out the area of a rectangle? | What is area?
 lang: en
 source_title: Area
 source_site: Wikipedia

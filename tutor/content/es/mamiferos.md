@@ -1,6 +1,10 @@
 ---
 title: Los mamíferos
-subject: ciencias
+topic: mamiferos
+subject: naturales
+block: Animales
+grades: 4,5
+asks: ¿Qué es un mamífero? | ¿Por qué la ballena es un mamífero?
 lang: es
 source_title: Mammalia
 source_site: Wikipedia

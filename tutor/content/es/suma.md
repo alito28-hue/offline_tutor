@@ -1,6 +1,10 @@
 ---
 title: La suma
-subject: matemática
+topic: suma
+subject: matematica
+block: Operaciones
+grades: 4
+asks: ¿Cómo sumo números con llevada? | ¿Qué es sumar?
 lang: es
 source_title: Adición (matemática)
 source_site: Wikipedia

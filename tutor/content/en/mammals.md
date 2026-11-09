@@ -1,6 +1,10 @@
 ---
 title: Mammals
-subject: science
+topic: mamiferos
+subject: naturales
+block: Animals
+grades: 4,5
+asks: What is a mammal? | Why is a whale a mammal?
 lang: en
 source_title: Mammal
 source_site: Wikipedia

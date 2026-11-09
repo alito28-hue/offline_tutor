@@ -1,0 +1,24 @@
+---
+title: Mahatma Gandhi
+topic: gandhi
+subject: historia
+block: Pessoas do mundo
+grades: 6,7
+asks: Quem foi Gandhi? | O que significa Mahatma?
+lang: pt
+source_title: Mahatma Gandhi
+source_site: Wikipedia
+source_url: https://es.wikipedia.org/wiki/Mahatma_Gandhi
+source_revision: 176022416
+authors: Wikipedia contributors
+license: CC BY-SA 4.0
+license_url: https://creativecommons.org/licenses/by-sa/4.0/
+changes: Adaptado e simplificado para crianças a partir do artigo da Wikipédia em espanhol, e traduzido.
+retrieved: 2026-11-09
+---
+
+Mohandas Gandhi nasceu na Índia em 1869 e morreu em 1948. Foi o líder mais destacado do movimento de independência da Índia contra o domínio britânico.
+
+Era advogado, político e pacifista. Rabindranath Tagore lhe deu o nome de Mahatma, que significa "grande alma".
+
+Rejeitava a luta armada. Ensinava a não violência e a desobediência civil, ou seja, recusar-se pacificamente a obedecer a leis injustas.

@@ -1,6 +1,10 @@
 ---
 title: Photosynthesis
-subject: science
+topic: fotosintesis
+subject: naturales
+block: Plants
+grades: 4,5
+asks: How do plants make their food? | What is photosynthesis?
 lang: en
 source_title: Photosynthesis
 source_site: Wikipedia

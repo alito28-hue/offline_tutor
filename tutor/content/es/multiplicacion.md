@@ -1,6 +1,10 @@
 ---
 title: La multiplicación
-subject: matemática
+topic: multiplicacion
+subject: matematica
+block: Operaciones
+grades: 4
+asks: ¿Qué es multiplicar? | ¿Para qué sirve multiplicar?
 lang: es
 source_title: Multiplicación
 source_site: Wikipedia

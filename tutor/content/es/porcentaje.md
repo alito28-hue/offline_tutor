@@ -1,6 +1,10 @@
 ---
 title: El porcentaje
-subject: matemática
+topic: porcentaje
+subject: matematica
+block: Números
+grades: 6
+asks: ¿Cómo calculo un porcentaje? | ¿Cuánto es el 50% de 80?
 lang: es
 source_title: Porcentaje
 source_site: Wikipedia

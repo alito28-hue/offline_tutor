@@ -1,6 +1,10 @@
 ---
 title: Breathing
-subject: science
+topic: respiracion
+subject: naturales
+block: Human body
+grades: 5
+asks: How do we breathe?
 lang: en
 source_title: Respiratory system
 source_site: Wikipedia

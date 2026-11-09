@@ -1,6 +1,10 @@
 ---
 title: Multiplication
-subject: math
+topic: multiplicacion
+subject: matematica
+block: Operations
+grades: 4
+asks: What is multiplication? | What is multiplying for?
 lang: en
 source_title: Multiplication
 source_site: Wikipedia

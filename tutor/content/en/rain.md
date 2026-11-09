@@ -1,6 +1,10 @@
 ---
 title: Rain
-subject: science
+topic: lluvia
+subject: naturales
+block: Earth
+grades: 6
+asks: Why does it rain? | What is rain?
 lang: en
 source_title: Rain
 source_site: Wikipedia

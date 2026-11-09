@@ -1,6 +1,10 @@
 ---
 title: Los volcanes
-subject: ciencias
+topic: volcanes
+subject: naturales
+block: Tierra
+grades: 4
+asks: ¿Cómo entra en erupción un volcán? | ¿Qué es un volcán?
 lang: es
 source_title: Volcán
 source_site: Wikipedia

@@ -1,6 +1,10 @@
 ---
 title: Los estados de la materia
-subject: ciencias
+topic: estados-de-la-materia
+subject: naturales
+block: Materiales
+grades: 4
+asks: ¿Cuáles son los estados de la materia?
 lang: es
 source_title: Estado de agregación de la materia
 source_site: Wikipedia

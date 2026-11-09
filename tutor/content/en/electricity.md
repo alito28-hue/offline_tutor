@@ -1,6 +1,10 @@
 ---
 title: Electricity
-subject: science
+topic: electricidad
+subject: naturales
+block: Physics
+grades: 6
+asks: What is electric current?
 lang: en
 source_title: Electricity
 source_site: Wikipedia

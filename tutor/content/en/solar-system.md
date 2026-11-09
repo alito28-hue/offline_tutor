@@ -1,6 +1,10 @@
 ---
 title: The Solar System
-subject: science
+topic: sistema-solar
+subject: naturales
+block: Universe
+grades: 6
+asks: What are the planets of the solar system? | What is the solar system?
 lang: en
 source_title: Solar System
 source_site: Wikipedia

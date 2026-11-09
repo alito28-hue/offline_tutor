@@ -1,6 +1,10 @@
 ---
 title: The cell
-subject: science
+topic: celula
+subject: naturales
+block: Living things
+grades: 6
+asks: What is a cell?
 lang: en
 source_title: Cell
 source_site: Wikipedia

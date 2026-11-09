@@ -1,6 +1,10 @@
 ---
 title: Los imanes
-subject: ciencias
+topic: imanes
+subject: naturales
+block: Física
+grades: 4
+asks: ¿Por qué los imanes se atraen? | ¿Cómo funcionan los imanes?
 lang: es
 source_title: Imán
 source_site: Wikipedia

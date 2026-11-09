@@ -1,6 +1,10 @@
 ---
 title: La resta
-subject: matemática
+topic: resta
+subject: matematica
+block: Operaciones
+grades: 4
+asks: ¿Cómo se hace una resta en columnas? | ¿Qué es restar?
 lang: es
 source_title: Resta
 source_site: Wikipedia

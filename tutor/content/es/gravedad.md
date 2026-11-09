@@ -1,6 +1,10 @@
 ---
 title: La gravedad
-subject: ciencias
+topic: gravedad
+subject: naturales
+block: Física
+grades: 5
+asks: ¿Por qué las cosas caen al suelo? | ¿Qué es la gravedad?
 lang: es
 source_title: Gravedad
 source_site: Wikipedia

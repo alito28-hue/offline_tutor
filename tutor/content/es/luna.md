@@ -1,6 +1,10 @@
 ---
 title: La Luna
-subject: ciencias
+topic: luna
+subject: naturales
+block: Universo
+grades: 6
+asks: ¿Por qué cambia la forma de la Luna? | ¿Qué es la Luna?
 lang: es
 source_title: Luna
 source_site: Wikipedia

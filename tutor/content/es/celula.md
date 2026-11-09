@@ -1,6 +1,10 @@
 ---
 title: La célula
-subject: ciencias
+topic: celula
+subject: naturales
+block: Seres vivos
+grades: 6
+asks: ¿Qué es una célula?
 lang: es
 source_title: Célula
 source_site: Wikipedia

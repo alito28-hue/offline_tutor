@@ -1,6 +1,10 @@
 ---
 title: The water cycle
-subject: science
+topic: ciclo-del-agua
+subject: naturales
+block: Earth
+grades: 5
+asks: What is the water cycle?
 lang: en
 source_title: Water cycle
 source_site: Wikipedia

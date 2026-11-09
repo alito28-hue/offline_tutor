@@ -1,6 +1,10 @@
 ---
 title: Gravity
-subject: science
+topic: gravedad
+subject: naturales
+block: Physics
+grades: 5
+asks: Why do things fall to the ground? | What is gravity?
 lang: en
 source_title: Gravity
 source_site: Wikipedia

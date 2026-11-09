@@ -1,6 +1,10 @@
 ---
 title: Triangles
-subject: math
+topic: triangulos
+subject: matematica
+block: Geometry
+grades: 4,5
+asks: What types of triangles are there? | What is an equilateral triangle?
 lang: en
 source_title: Triangle
 source_site: Wikipedia

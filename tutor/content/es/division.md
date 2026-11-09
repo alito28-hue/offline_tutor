@@ -1,6 +1,10 @@
 ---
 title: La división
-subject: matemática
+topic: division
+subject: matematica
+block: Operaciones
+grades: 4
+asks: ¿Cómo reparto 20 manzanas entre 4 personas? | ¿Qué es dividir?
 lang: es
 source_title: División (matemática)
 source_site: Wikipedia

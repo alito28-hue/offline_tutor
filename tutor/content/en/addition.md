@@ -1,6 +1,10 @@
 ---
 title: Addition
-subject: math
+topic: suma
+subject: matematica
+block: Operations
+grades: 4
+asks: How do I add numbers with carrying? | What is addition?
 lang: en
 source_title: Addition
 source_site: Wikipedia

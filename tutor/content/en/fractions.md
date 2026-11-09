@@ -1,6 +1,10 @@
 ---
 title: Fractions
-subject: math
+topic: fracciones
+subject: matematica
+block: Numbers
+grades: 4,5
+asks: How do I add fractions? | What is a fraction?
 lang: en
 source_title: Fracción (translated from the Spanish article)
 source_site: Wikipedia

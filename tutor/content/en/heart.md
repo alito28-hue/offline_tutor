@@ -1,6 +1,10 @@
 ---
 title: The heart
-subject: science
+topic: corazon
+subject: naturales
+block: Human body
+grades: 5
+asks: How does the heart work? | Why does the heart beat?
 lang: en
 source_title: Heart
 source_site: Wikipedia

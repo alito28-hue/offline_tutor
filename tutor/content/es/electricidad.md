@@ -1,6 +1,10 @@
 ---
 title: La electricidad
-subject: ciencias
+topic: electricidad
+subject: naturales
+block: Física
+grades: 6
+asks: ¿Qué es la corriente eléctrica?
 lang: es
 source_title: Electricidad
 source_site: Wikipedia

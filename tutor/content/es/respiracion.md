@@ -1,6 +1,10 @@
 ---
 title: La respiración
-subject: ciencias
+topic: respiracion
+subject: naturales
+block: Cuerpo humano
+grades: 5
+asks: ¿Cómo respiramos?
 lang: es
 source_title: Aparato respiratorio
 source_site: Wikipedia

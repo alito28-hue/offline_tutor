@@ -1,6 +1,10 @@
 ---
 title: Las fracciones
-subject: matemática
+topic: fracciones
+subject: matematica
+block: Números
+grades: 4,5
+asks: ¿Cómo sumo fracciones? | ¿Qué es una fracción?
 lang: es
 source_title: Fracción
 source_site: Wikipedia

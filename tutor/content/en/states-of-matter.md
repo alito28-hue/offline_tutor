@@ -1,6 +1,10 @@
 ---
 title: States of matter
-subject: science
+topic: estados-de-la-materia
+subject: naturales
+block: Materials
+grades: 4
+asks: What are the states of matter?
 lang: en
 source_title: State of matter
 source_site: Wikipedia

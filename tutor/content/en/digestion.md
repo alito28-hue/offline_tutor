@@ -1,6 +1,10 @@
 ---
 title: Digestion
-subject: science
+topic: digestion
+subject: naturales
+block: Human body
+grades: 5
+asks: How does digestion work? | What happens to food when we swallow it?
 lang: en
 source_title: Human digestive system
 source_site: Wikipedia

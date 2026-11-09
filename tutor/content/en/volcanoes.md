@@ -1,6 +1,10 @@
 ---
 title: Volcanoes
-subject: science
+topic: volcanes
+subject: naturales
+block: Earth
+grades: 4
+asks: How does a volcano erupt? | What is a volcano?
 lang: en
 source_title: Volcano
 source_site: Wikipedia

@@ -1,6 +1,10 @@
 ---
 title: Los ángulos
-subject: matemática
+topic: angulos
+subject: matematica
+block: Geometría
+grades: 4,5
+asks: ¿Qué es un ángulo? | ¿Qué es un ángulo recto?
 lang: es
 source_title: Ángulo
 source_site: Wikipedia

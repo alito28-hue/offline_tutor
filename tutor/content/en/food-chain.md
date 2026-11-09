@@ -1,6 +1,10 @@
 ---
 title: Food chains
-subject: science
+topic: cadena-alimentaria
+subject: naturales
+block: Environments
+grades: 6
+asks: What is a food chain?
 lang: en
 source_title: Food chain
 source_site: Wikipedia

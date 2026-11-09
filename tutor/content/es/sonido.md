@@ -1,6 +1,10 @@
 ---
 title: El sonido
-subject: ciencias
+topic: sonido
+subject: naturales
+block: Física
+grades: 5
+asks: ¿Cómo viaja el sonido? | ¿Qué es el sonido?
 lang: es
 source_title: Sonido
 source_site: Wikipedia

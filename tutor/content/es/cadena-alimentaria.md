@@ -1,6 +1,10 @@
 ---
 title: La cadena alimentaria
-subject: ciencias
+topic: cadena-alimentaria
+subject: naturales
+block: Ambientes
+grades: 6
+asks: ¿Qué es una cadena alimentaria?
 lang: es
 source_title: Cadena trófica
 source_site: Wikipedia

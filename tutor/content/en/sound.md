@@ -1,6 +1,10 @@
 ---
 title: Sound
-subject: science
+topic: sonido
+subject: naturales
+block: Physics
+grades: 5
+asks: How does sound travel? | What is sound?
 lang: en
 source_title: Sound
 source_site: Wikipedia

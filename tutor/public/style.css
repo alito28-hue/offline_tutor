@@ -97,3 +97,25 @@ body {
   background: var(--green); color: #fff; font: inherit; font-size: 3.4rem; font-weight: 700; cursor: pointer;
 }
 .ask button:disabled { opacity: 0.45; cursor: default; }
+
+.subjects-box { width: 150rem; display: flex; flex-direction: column; gap: 1.4rem; }
+.subjects-title { margin: 0; font-size: 3rem; text-align: center; }
+.subjects { display: flex; flex-wrap: wrap; gap: 1.4rem; justify-content: center; }
+.subject { padding: 1.4rem 2.6rem; border: 0; border-radius: 99rem; background: var(--green); color: #fff; font: inherit; font-size: 2.8rem; font-weight: 700; cursor: pointer; }
+.subject:hover, .subject:focus-visible { background: #0f5f46; outline: none; }
+.browse { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 2.4rem; }
+.browse[hidden] { display: none; }
+.browse-top { flex: none; display: flex; align-items: center; gap: 2.4rem; flex-wrap: wrap; }
+.browse-top h1 { margin: 0; font-size: 6rem; letter-spacing: -0.02em; }
+.back { width: 7rem; height: 7rem; border: 0.2rem solid var(--line); border-radius: 50%; background: #fff; color: var(--ink); font: inherit; font-size: 3.6rem; cursor: pointer; }
+.grades { display: flex; flex-wrap: wrap; gap: 1rem; margin-left: auto; }
+.grade { padding: 1rem 2.2rem; border: 0.2rem solid var(--line); border-radius: 99rem; background: #fff; color: var(--ink); font: inherit; font-size: 2.6rem; font-weight: 700; cursor: pointer; }
+.grade[aria-pressed="true"] { background: var(--green); border-color: var(--green); color: #fff; }
+.topics { flex: 1; min-height: 0; overflow-y: auto; padding-right: 1rem; }
+.block { margin: 2rem 0 1.2rem; font-size: 3.2rem; color: var(--muted); }
+.block:first-child { margin-top: 0; }
+.topic-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
+.topic { padding: 1.8rem 2.2rem; border: 0.2rem solid var(--line); border-radius: 2rem; background: var(--card); color: var(--ink); font: inherit; font-size: 2.8rem; font-weight: 600; text-align: left; cursor: pointer; }
+.topic:hover, .topic:focus-visible { border-color: var(--green); outline: none; }
+
+.credits-open[hidden] { display: none; }

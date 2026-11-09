@@ -1,6 +1,10 @@
 ---
 title: Los números decimales
-subject: matemática
+topic: decimales
+subject: matematica
+block: Números
+grades: 4,5
+asks: ¿Qué es un número decimal?
 lang: es
 source_title: Número decimal
 source_site: Wikipedia

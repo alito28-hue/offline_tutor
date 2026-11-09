@@ -46,27 +46,58 @@ Write 20 to 40 words and end with exactly this question: Does it match what you 
     asked: 'YOUR QUESTION',
     answer: 'STUDENT ANSWER',
   },
+  pt: {
+    teach: `Você é um tutor gentil para crianças de 8 a 14 anos. Escreva sempre em português, com palavras simples e frases curtas.
+Use SOMENTE os dados do MATERIAL: você pode explicá-los com outras palavras, mas não acrescente dados, exemplos nem cálculos que não estejam lá. Nunca mencione o MATERIAL na resposta.
+Use exatamente este formato, sem markdown nem LaTeX:
+Uma frase que apresente o tema.
+Passo 1: duas frases completas, primeiro o dado e depois uma explicação simples.
+Passo 2: duas frases completas.
+Passo 3: duas frases completas.
+Nunca escreva um Passo 4.
+Uma última linha com UMA pergunta curta sobre o que você acabou de explicar, para ver se o aluno entendeu. A resposta deve estar nos seus passos. Pergunte algo diferente do que o aluno perguntou. Não pergunte "Você gostaria...?".
+A resposta completa deve ter entre 80 e 120 palavras. Se o MATERIAL trouxer um exemplo, use-o.
+Se o MATERIAL não responder à pergunta, escreva somente NO_SE, sem mais nada.
+/no_think`,
+    feedback: `Você é um tutor gentil para crianças de 8 a 14 anos. Escreva sempre em português, com palavras simples.
+O aluno acabou de responder à sua pergunta. NÃO diga se a resposta está certa ou errada, porque você pode se enganar.
+Não elogie. Agradeça a resposta e mostre como conferi-la, com o dado ou o método do MATERIAL. Não faça cálculos novos. Fale diretamente com o aluno e nunca mencione o MATERIAL.
+Escreva entre 20 e 40 palavras e termine exatamente com esta pergunta: Coincide com o que você pensou?
+/no_think`,
+    material: 'MATERIAL',
+    question: 'PERGUNTA DO ALUNO',
+    asked: 'SUA PERGUNTA',
+    answer: 'RESPOSTA DO ALUNO',
+  },
 };
 
-// Worked examples teach format and length better than rules alone. Their topic (shadows) must stay outside the pack,
+// Worked examples teach format and length better than rules alone. Their topic (lighthouses) must stay outside the pack,
 // because a small model sometimes copies an example: EXAMPLE_TOPIC lets the tutor catch that. A test enforces both.
-export const EXAMPLE_TOPIC = /\b(sombras?|shadows?)\b/i;
+export const EXAMPLE_TOPIC = /\b(faros?|farol|far[oó]is|lighthouses?)\b/i;
 const EXAMPLES = {
   es: [
-    ['Una sombra aparece cuando un objeto tapa la luz. La luz viaja en línea recta y no atraviesa los objetos opacos. Si la luz está baja, la sombra es más larga.', '¿Cómo se forma una sombra?',
-      `Una sombra es la zona oscura que deja un objeto cuando tapa la luz. Vamos a verlo paso a paso.
-Paso 1: Un objeto opaco tapa la luz. Por eso, detrás de tu mano aparece una zona oscura cuando la pones frente a una lámpara.
-Paso 2: La luz viaja en línea recta y no atraviesa ese objeto. Por eso, la sombra tiene una forma parecida a la del objeto.
-Paso 3: Si la luz está baja, la sombra es más larga. Por eso, al bajar la lámpara, la sombra de tu mano se estira.
-Si bajas la lámpara, ¿qué le pasa a la sombra?`],
+    ['Un faro es una torre con una luz muy fuerte, cerca del mar. La luz gira y se ve desde lejos. Así los barcos saben dónde está la costa de noche.', '¿Para qué sirve un faro?',
+      `Un faro es una torre con una luz fuerte que ayuda a los barcos. Vamos a verlo paso a paso.
+Paso 1: Un faro está cerca del mar. Por eso, los barcos pueden verlo desde el agua.
+Paso 2: Su luz gira y se ve desde lejos. Por eso, un barco que está lejos también la encuentra.
+Paso 3: De noche, la luz muestra dónde está la costa. Por eso, los barcos saben por dónde ir sin chocar.
+¿Qué hace la luz de un faro para que se vea desde lejos?`],
   ],
   en: [
-    ['A shadow appears when an object blocks the light. Light travels in a straight line and does not pass through opaque objects. When the light is low, the shadow is longer.', 'How does a shadow form?',
-      `A shadow is the dark area an object leaves when it blocks the light. Let's look at it step by step.
-Step 1: An opaque object blocks the light. That is why a dark area appears behind your hand when you hold it in front of a lamp.
-Step 2: Light travels in a straight line and does not pass through the object. That is why the shadow has a shape like the object.
-Step 3: When the light is low, the shadow is longer. That is why the shadow of your hand stretches when you lower the lamp.
-If you lower the lamp, what happens to the shadow?`],
+    ['A lighthouse is a tower with a very strong light, close to the sea. The light turns and can be seen from far away. That way, ships know where the coast is at night.', 'What is a lighthouse for?',
+      `A lighthouse is a tower with a strong light that helps ships. Let's look at it step by step.
+Step 1: A lighthouse stands close to the sea. That is why ships can see it from the water.
+Step 2: Its light turns and can be seen from far away. That is why a ship that is far away can still find it.
+Step 3: At night, the light shows where the coast is. That is why ships know where to go without crashing.
+What does the light of a lighthouse do so it can be seen from far away?`],
+  ],
+  pt: [
+    ['Um farol é uma torre com uma luz muito forte, perto do mar. A luz gira e pode ser vista de longe. Assim, os navios sabem onde fica a costa à noite.', 'Para que serve um farol?',
+      `Um farol é uma torre com uma luz forte que ajuda os navios. Vamos ver passo a passo.
+Passo 1: Um farol fica perto do mar. Por isso, os navios podem vê-lo da água.
+Passo 2: A luz dele gira e pode ser vista de longe. Por isso, um navio que está longe também consegue encontrá-la.
+Passo 3: À noite, a luz mostra onde fica a costa. Por isso, os navios sabem para onde ir sem bater.
+O que a luz de um farol faz para ser vista de longe?`],
   ],
 };
 
@@ -86,8 +117,9 @@ export function teachMessages(lang, question, passages) {
 }
 
 const FEEDBACK_EXAMPLES = {
-  es: ['Si la luz está baja, la sombra es más larga.', '¿Qué le pasa a la sombra si bajas la luz?', 'se achica', 'Gracias por responder. Para comprobarlo, recuerda esto: si la luz está baja, la sombra es más larga. ¿Coincide con lo que pensaste?'],
-  en: ['When the light is low, the shadow is longer.', 'What happens to the shadow if you lower the light?', 'it shrinks', 'Thanks for answering. To check it, remember this: when the light is low, the shadow is longer. Does it match what you thought?'],
+  es: ['La luz del faro gira y se ve desde lejos.', '¿Qué hace la luz del faro?', 'se apaga', 'Gracias por responder. Para comprobarlo, recuerda esto: la luz del faro gira y se ve desde lejos. ¿Coincide con lo que pensaste?'],
+  en: ['The light of the lighthouse turns and can be seen from far away.', 'What does the light of the lighthouse do?', 'it goes out', 'Thanks for answering. To check it, remember this: the light of the lighthouse turns and can be seen from far away. Does it match what you thought?'],
+  pt: ['A luz do farol gira e pode ser vista de longe.', 'O que a luz do farol faz?', 'ela apaga', 'Obrigado por responder. Para conferir, lembre-se disto: a luz do farol gira e pode ser vista de longe. Coincide com o que você pensou?'],
 };
 
 export function feedbackMessages(lang, askedBack, answer, passages) {

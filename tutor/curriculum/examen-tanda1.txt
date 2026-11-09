@@ -1,0 +1,210 @@
+# Preguntas nuevas de la tanda 1, distintas de las que figuran en los artículos. idioma|tema (o FUERA)|pregunta
+es|numeros-primos|el 13 solo se puede dividir por 1 y por el mismo?
+es|numeros-romanos|que numero es XX
+es|promedio|saque 7, 8 y 9 cual es mi promedio
+es|proporcionalidad|si compro el doble pago el doble por que
+es|fracciones|cuanto es 2/7 + 3/7
+es|multiplicacion|cuanto es 4 por 3
+es|division|que es el resto de una division
+es|sustantivo|mesa y perro que tipo de palabras son
+es|adjetivo|la palabra grande que es
+es|verbo|correr y saltar que son
+es|oracion|que es el predicado
+es|sinonimos|palabras que quieren decir lo mismo como se llaman
+es|silaba|cuantas silabas tiene bueno
+es|fabula|que cuento tiene animales que hablan
+es|leyenda|las historias que se cuentan de abuelos a nietos
+es|metafora|por que dicen que tus ojos son soles
+es|dinosaurios|las aves vienen de los dinosaurios?
+es|arcoiris|por que se ven colores en el cielo despues de llover
+es|sombras|por que aparece la parte oscura detras de mi cuando hay sol
+es|vacunas|por que me tienen que pinchar para no enfermarme
+es|eclipses|por que a veces se tapa el sol de dia
+es|clima|que es el clima de un lugar
+es|lluvia|de donde sale el agua que cae del cielo
+es|volcanes|que es la lava
+es|corazon|que hace el corazon
+es|esqueleto|para que sirven los huesos
+es|fotosintesis|para que necesitan sol las plantas
+es|argentina|cuantas provincias hay en mi pais
+es|patagonia|que provincias hay en el sur de argentina y chile
+es|andes|que montañas estan al oeste de sudamerica
+es|iguazu|donde hay muchos saltos de agua en misiones
+es|rio-de-la-plata|que rio esta entre argentina y uruguay
+es|parques-nacionales|para que sirve el nahuel huapi
+es|puntos-cardinales|por que lado se pone el sol
+es|mapas|para que sirve la escala
+es|mercosur|que es el tratado de asuncion
+es|continentes|europa y asia son un solo continente?
+es|oceano-pacifico|cual es la parte mas profunda del mar
+es|everest|que montaña esta entre china y nepal
+es|nilo|que rio pasa por egipto
+es|sahara|cual es el desierto de africa
+es|amazonia|cual es la selva mas grande
+es|japon|que pais tiene a tokio
+es|kenia|donde esta nairobi
+es|mexico|que paises limitan con mexico
+es|incas|quienes vivian en cuzco
+es|colon|quien llego a america en 1492
+es|revolucion-de-mayo|que paso en la semana de mayo
+es|belgrano|quien hizo la bandera
+es|san-martin|quien libero a chile
+es|azurduy|que mujer lucho por la independencia en bolivia
+es|independencia-argentina|que se festeja el 9 de julio
+es|egipto-antiguo|que civilizacion nacio junto al nilo
+es|imperio-romano|que imperio llego hasta el rin
+es|vikingos|quienes atacaron lindisfarne
+es|imperio-mali|quien fue sundiata keita
+es|ruta-seda|como comerciaba china con europa antes
+es|revolucion-industrial|quien fue james watt
+es|mandela|quien fue el primer presidente negro de sudafrica
+es|gandhi|quien lucho sin violencia por la india
+es|democracia|que significa que el pueblo tiene el poder
+es|division-poderes|que hizo montesquieu
+es|constitucion|que ley rige a la argentina
+es|voto|como eligen las personas a sus representantes
+es|derechos-nino|que tratado protege a los niños
+es|derechos-humanos|todas las personas tienen los mismos derechos?
+es|naciones-unidas|donde esta la sede de la onu
+es|monarquia|que es un rey
+es|federalismo|que diferencia hay entre gobierno nacional y provincial
+es|palanca|que es un fulcro
+es|computadora|que es la cpu
+es|internet|que es arpanet
+es|tango|de que ciudades es el tango
+es|mate|que es la yerba mate
+es|juegos-olimpicos|quien fue coubertin
+es|gaucho|quien es un jinete de las llanuras
+es|FUERA|quien gano el mundial de 1986
+es|FUERA|como se hace una pizza
+es|FUERA|quien es messi
+es|FUERA|cual es el mejor celular
+es|FUERA|como me hago famoso en tiktok
+es|FUERA|que pelicula me recomendas
+es|FUERA|cuanto cuesta una playstation
+es|FUERA|como arreglo una bicicleta
+es|FUERA|que comen los gatos
+es|FUERA|que es la fisica cuantica
+es|FUERA|quien invento el telefono
+es|FUERA|cual es la capital de francia
+es|FUERA|como se juega al ajedrez
+es|FUERA|como se hace un pastel
+es|FUERA|que es un agujero negro
+en|numeros-primos|can 13 only be divided by 1 and itself
+en|numeros-romanos|what number is XX
+en|promedio|I got 7, 8 and 9, what is my average
+en|proporcionalidad|if I buy twice as many, why do I pay twice as much
+en|fractions|what is 2/7 + 3/7
+en|multiplication|what is 4 times 3
+en|sustantivo|what kind of words are table and dog
+en|adjetivo|what kind of word is big
+en|verbo|what are run and jump
+en|fabula|what story has animals that talk
+en|metafora|why do they call her eyes suns
+en|dinosaurios|do birds come from dinosaurs
+en|arcoiris|why do we see colors in the sky after it rains
+en|sombras|why is there a dark area behind me when it is sunny
+en|vacunas|why do I get a shot so I do not get sick
+en|eclipses|why does the sun get covered during the day
+en|rain|where does the water that falls from the sky come from
+en|volcanoes|what is lava
+en|heart|what does the heart do
+en|photosynthesis|why do plants need sunlight
+en|argentina|how many provinces are in Argentina
+en|andes|what mountains are in the west of South America
+en|iguazu|where are the big waterfalls in Misiones
+en|everest|what mountain is between China and Nepal
+en|nilo|what river goes through Egypt
+en|sahara|what is the big desert in Africa
+en|amazonia|what is the biggest rainforest
+en|japon|which country has Tokyo
+en|kenia|where is Nairobi
+en|incas|who lived in Cusco
+en|colon|who reached America in 1492
+en|san-martin|who freed Chile
+en|egipto-antiguo|what civilization began by the Nile
+en|vikingos|who attacked Lindisfarne
+en|imperio-mali|who was Sundiata Keita
+en|revolucion-industrial|who was James Watt
+en|mandela|who was the first Black president of South Africa
+en|gandhi|who fought without violence for India
+en|democracia|what does it mean that the people have the power
+en|division-poderes|what did Montesquieu say about power
+en|derechos-humanos|do all people have the same rights
+en|naciones-unidas|where is the UN based
+en|monarquia|what is a king
+en|computadora|what is a CPU
+en|internet|what is ARPANET
+en|tango|which cities does tango come from
+en|gaucho|who is a rider of the plains
+en|FUERA|who won the 1986 World Cup
+en|FUERA|how do you make a pizza
+en|FUERA|who is Messi
+en|FUERA|what is the best phone
+en|FUERA|how do I get famous on TikTok
+en|FUERA|what movie should I watch
+en|FUERA|how much does a PlayStation cost
+en|FUERA|how do I fix a bike
+en|FUERA|what do cats eat
+en|FUERA|what is quantum physics
+en|FUERA|who invented the telephone
+en|FUERA|what is the capital of France
+pt|numeros-primos|o 13 só pode ser dividido por 1 e por ele mesmo?
+pt|numeros-romanos|que número é XX
+pt|promedio|tirei 7, 8 e 9, qual é a minha média
+pt|proporcionalidad|se eu compro o dobro pago o dobro por quê
+pt|fracciones|quanto é 2/7 + 3/7
+pt|multiplicacion|quanto é 4 vezes 3
+pt|sustantivo|mesa e cachorro são que tipo de palavras
+pt|adjetivo|a palavra grande é o quê
+pt|verbo|o que são correr e pular
+pt|fabula|que história tem animais que falam
+pt|metafora|por que dizem que seus olhos são sóis
+pt|dinosaurios|as aves vêm dos dinossauros?
+pt|arcoiris|por que aparecem cores no céu depois da chuva
+pt|sombras|por que aparece uma parte escura atrás de mim quando faz sol
+pt|vacunas|por que tomo injeção para não ficar doente
+pt|eclipses|por que às vezes o sol é tapado de dia
+pt|lluvia|de onde vem a água que cai do céu
+pt|volcanes|o que é a lava
+pt|corazon|o que o coração faz
+pt|fotosintesis|por que as plantas precisam de sol
+pt|argentina|quantas províncias há na Argentina
+pt|andes|que montanhas ficam no oeste da América do Sul
+pt|iguazu|onde ficam as grandes quedas de água em Misiones
+pt|everest|que montanha fica entre a China e o Nepal
+pt|nilo|que rio passa pelo Egito
+pt|sahara|qual é o grande deserto da África
+pt|amazonia|qual é a maior floresta tropical
+pt|japon|que país tem Tóquio
+pt|kenia|onde fica Nairóbi
+pt|incas|quem vivia em Cuzco
+pt|colon|quem chegou à América em 1492
+pt|san-martin|quem libertou o Chile
+pt|egipto-antiguo|que civilização nasceu junto ao Nilo
+pt|vikingos|quem atacou Lindisfarne
+pt|imperio-mali|quem foi Sundiata Keita
+pt|revolucion-industrial|quem foi James Watt
+pt|mandela|quem foi o primeiro presidente negro da África do Sul
+pt|gandhi|quem lutou sem violência pela Índia
+pt|democracia|o que significa o povo ter o poder
+pt|division-poderes|o que Montesquieu disse sobre o poder
+pt|derechos-humanos|todas as pessoas têm os mesmos direitos?
+pt|naciones-unidas|onde fica a sede da ONU
+pt|monarquia|o que é um rei
+pt|computadora|o que é a CPU
+pt|internet|o que é a ARPANET
+pt|tango|de que cidades vem o tango
+pt|gaucho|quem é um cavaleiro das planícies
+pt|FUERA|quem ganhou a Copa de 1986
+pt|FUERA|como se faz uma pizza
+pt|FUERA|quem é Messi
+pt|FUERA|qual é o melhor celular
+pt|FUERA|como fico famoso no TikTok
+pt|FUERA|que filme você recomenda
+pt|FUERA|quanto custa um PlayStation
+pt|FUERA|como conserto uma bicicleta
+pt|FUERA|o que os gatos comem
+pt|FUERA|o que é física quântica
+pt|FUERA|quem inventou o telefone
+pt|FUERA|qual é a capital da França

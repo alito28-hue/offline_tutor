@@ -1,6 +1,10 @@
 ---
 title: El sistema solar
-subject: ciencias
+topic: sistema-solar
+subject: naturales
+block: Universo
+grades: 6
+asks: ¿Cuáles son los planetas del sistema solar? | ¿Qué es el sistema solar?
 lang: es
 source_title: Sistema solar
 source_site: Wikipedia

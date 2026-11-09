@@ -1,6 +1,10 @@
 ---
 title: Division
-subject: math
+topic: division
+subject: matematica
+block: Operations
+grades: 4
+asks: How do I share 20 apples among 4 people? | What is division?
 lang: en
 source_title: Division (mathematics)
 source_site: Wikipedia

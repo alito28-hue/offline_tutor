@@ -1,6 +1,10 @@
 ---
 title: Angles
-subject: math
+topic: angulos
+subject: matematica
+block: Geometry
+grades: 4,5
+asks: What is an angle? | What is a right angle?
 lang: en
 source_title: Angle
 source_site: Wikipedia

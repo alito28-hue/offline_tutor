@@ -1,6 +1,10 @@
 ---
 title: The skeleton and bones
-subject: science
+topic: esqueleto
+subject: naturales
+block: Human body
+grades: 4
+asks: How many bones does the body have? | What is the skeleton for?
 lang: en
 source_title: Skeleton
 source_site: Wikipedia

@@ -1,6 +1,10 @@
 ---
 title: El ciclo del agua
-subject: ciencias
+topic: ciclo-del-agua
+subject: naturales
+block: Tierra
+grades: 5
+asks: ¿Qué es el ciclo del agua?
 lang: es
 source_title: Ciclo hidrológico
 source_site: Wikipedia

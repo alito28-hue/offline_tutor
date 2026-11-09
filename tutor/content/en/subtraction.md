@@ -1,6 +1,10 @@
 ---
 title: Subtraction
-subject: math
+topic: resta
+subject: matematica
+block: Operations
+grades: 4
+asks: How do I subtract in columns? | What is subtraction?
 lang: en
 source_title: Subtraction
 source_site: Wikipedia

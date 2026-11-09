@@ -1,6 +1,10 @@
 ---
 title: Magnets
-subject: science
+topic: imanes
+subject: naturales
+block: Physics
+grades: 4
+asks: Why do magnets attract each other? | How do magnets work?
 lang: en
 source_title: Magnet
 source_site: Wikipedia
