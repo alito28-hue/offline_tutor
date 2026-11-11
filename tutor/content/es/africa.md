@@ -23,4 +23,4 @@ retrieved: 2026-11-09
 
 El mar Mediterráneo la separa de Europa, y el punto más cercano es el estrecho de Gibraltar, de 14,4 kilómetros. El mar Rojo la separa de la península arábiga.
 
-Se divide en 54 países y tiene más de 1570 millones de habitantes.
+Se divide en 54 países. Allí vive el 19 % de la población mundial: en abril de 2026 se estimaban más de 1570 millones de habitantes.

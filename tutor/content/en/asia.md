@@ -19,8 +19,8 @@ changes: Adapted and simplified for children from the Spanish Wikipedia article,
 retrieved: 2026-11-09
 ---
 
-Asia is the largest and most populated continent on Earth. It has about 44.6 million square kilometers.
+Asia is the largest and most populous continent on Earth. It covers about 44.6 million square kilometers.
 
-In 2026 it has about 4,862 million people, 59% of the world population.
+59% of the world's people live there: in 2026 it is estimated to have about 4,862 million people.
 
-It was the cradle of ancient civilizations such as those of Mesopotamia, the Indus Valley and China.
+It was the cradle of ancient civilizations such as Mesopotamia, the Indus Valley and China.

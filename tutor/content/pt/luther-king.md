@@ -6,7 +6,7 @@ subject: historia
 block: Pessoas do mundo
 grades: 6,7
 asks: Quem foi Martin Luther King? | O que Martin Luther King fez?
-more: Por que Martin Luther King lutava? | Como Martin Luther King lutou?
+more: Pelo que Martin Luther King lutava? | Que prêmio Martin Luther King recebeu? | Como Martin Luther King morreu?
 lang: pt
 source_title: Martin Luther King
 source_site: Wikipedia
@@ -19,8 +19,8 @@ changes: Adaptado e simplificado para crianças a partir do artigo da Wikipédia
 retrieved: 2026-11-09
 ---
 
-Martin Luther King nasceu em Atlanta em 1929 e morreu em Memphis em 1968. Foi um ministro batista e ativista dos Estados Unidos.
+Martin Luther King nasceu em Atlanta em 1929. Foi um pastor batista e ativista dos Estados Unidos.
 
-Foi o líder mais visível do movimento pelos direitos civis dos afro-americanos a partir de 1955.
+Foi o líder mais visível do movimento pelos direitos civis dos afro-americanos, desde 1955. Trabalhou para acabar com a segregação e a discriminação racial por meios não violentos.
 
-Trabalhou para acabar com a segregação e a discriminação racial por meios não violentos.
+Por essa luta recebeu o Prêmio Nobel da Paz em 1964. Foi assassinado em Memphis em 1968.

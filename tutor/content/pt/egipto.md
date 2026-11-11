@@ -21,6 +21,6 @@ retrieved: 2026-11-09
 
 O Egito é um país do extremo nordeste da África, com uma parte na Ásia: a península do Sinai.
 
-Faz fronteira com Sudão, Líbia, Israel e Faixa de Gaza, e tem costas no mar Mediterrâneo e no mar Vermelho.
+Faz fronteira com o Sudão, a Líbia, Israel e a Faixa de Gaza, que é parte da Palestina. Tem costas no mar Mediterrâneo e no mar Vermelho.
 
 A maior parte de sua superfície é o deserto do Saara. O rio Nilo o atravessa de sul a norte e forma terras férteis, onde vive muita gente.

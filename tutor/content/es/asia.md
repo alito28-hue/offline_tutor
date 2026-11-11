@@ -21,6 +21,6 @@ retrieved: 2026-11-09
 
 Asia es el continente más grande y más poblado de la Tierra. Tiene unos 44,6 millones de kilómetros cuadrados.
 
-En 2026 tiene cerca de 4862 millones de habitantes, el 59 % de la población mundial.
+Allí vive el 59 % de la población mundial: en 2026 se estiman cerca de 4862 millones de habitantes.
 
 Fue la cuna de civilizaciones antiguas como la mesopotámica, la del valle del Indo y la china.

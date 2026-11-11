@@ -6,6 +6,7 @@ subject: historia
 block: People of the world
 grades: 6,7
 asks: Who was Nelson Mandela? | What did Mandela do against apartheid? | first Black president of South Africa | what is apartheid | who fought against apartheid
+more: How long was Mandela in prison? | What was apartheid? | When was Mandela president?
 lang: en
 source_title: Nelson Mandela
 source_site: Wikipedia
@@ -18,8 +19,8 @@ changes: Adapted and simplified for children from the Spanish Wikipedia article,
 retrieved: 2026-11-09
 ---
 
-Nelson Mandela was born in 1918 and died in 2013 in South Africa. He was a lawyer, politician and activist against apartheid.
+Nelson Mandela was born in 1918 and died in 2013 in South Africa. He was a lawyer, politician and activist against apartheid, the system that separated people by their color.
 
-He led his country from 1994 to 1999. He was the first Black president of South Africa and the first elected by the vote of the whole population.
+In 1962 he was arrested and sentenced to life in prison. He was in prison for twenty-seven years, first on Robben Island, and was freed in 1990 after international campaigns.
 
-His government worked to take apart what apartheid had left, fight racism, poverty and inequality, and promote reconciliation.
+He led his country from 1994 to 1999. He was the first Black president of South Africa and the first elected by the vote of the whole population. His government worked to take apart what apartheid had left and to promote reconciliation.

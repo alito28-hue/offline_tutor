@@ -6,6 +6,7 @@ subject: historia
 block: Edad Media y reinos
 grades: 7
 asks: ¿Quiénes eran los vikingos? | ¿De dónde venían los vikingos? | quiénes atacaron Lindisfarne | qué es Lindisfarne | guerreros de Escandinavia | qué idioma hablaban los vikingos
+more: ¿De dónde venían los vikingos? | ¿Los vikingos eran comerciantes? | ¿Qué lugares colonizaron los vikingos?
 lang: es
 source_title: Vikingo
 source_site: Wikipedia
@@ -18,8 +19,8 @@ changes: Adaptado y simplificado para chicos.
 retrieved: 2026-11-09
 ---
 
-Los vikingos eran guerreros de los pueblos nórdicos, sobre todo de Escandinavia. Fueron famosos como grandes navegantes.
+Los vikingos eran pueblos nórdicos, sobre todo de Escandinavia, famosos como grandes navegantes. Su lengua era el nórdico antiguo.
 
-Hacían incursiones y saqueos en Europa. Su lengua era el nórdico antiguo.
+Hacían incursiones y saqueos en Europa. Se hicieron conocidos con el saqueo del monasterio de Lindisfarne, en el norte de Gran Bretaña, en el año 793.
 
-Se hicieron conocidos en Europa con el saqueo del monasterio de Lindisfarne, en el norte de Gran Bretaña, en el año 793.
+También fueron comerciantes: cambiaban pieles por plata y especias árabes. Los noruegos colonizaron Islandia y Groenlandia.

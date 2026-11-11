@@ -6,6 +6,7 @@ subject: historia
 block: 19th century
 grades: 6
 asks: Where did immigrants to Argentina come from? | Who lived in Argentina when the Spanish arrived? | who came to Argentina | how many people lived there before the Spanish | where did the first people come from
+more: Where did the immigrants come from? | What was the great wave of immigration? | Who lived there before the Spanish?
 lang: en
 source_title: Inmigración en Argentina
 source_site: Wikipedia
@@ -18,8 +19,8 @@ changes: Adapted and simplified for children from the Spanish Wikipedia article,
 retrieved: 2026-11-09
 ---
 
-The first people came to the Americas from Asia thousands of years ago, according to the most accepted theories.
+When the Spanish conquerors arrived, about 400,000 people of many different cultures lived in what is now Argentina. Later the land received several waves of migrants, such as Spanish colonization.
 
-When the Spanish conquerors arrived, about 400,000 people from many different cultures lived in what is now Argentina.
+Between the late 19th century and the first half of the 20th, the great wave of immigration arrived, mostly from Europe, especially Italians and Spaniards. Arabs, Jews and other groups also came.
 
-Later the land received different waves of migrants. Spanish colonization, between the 16th and 18th centuries, was one of them.
+The Constitution of 1853 encouraged that immigration. In the 1914 census, almost 3 in every 10 people had been born in another country.

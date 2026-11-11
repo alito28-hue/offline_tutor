@@ -205,9 +205,9 @@ test('every topic exists in the three languages, with its place in the curriculu
   for (const f of files) for (const key of ['topic', 'subject', 'block', 'grades', 'asks']) assert.ok(f.meta[key], `${f.file}: ${key}`);
   assert.equal(listTopics(files, 'pt').length, topics('pt').length);
 });
-test('no passage in the pack trips the output guard', () => {
+test('no passage in the pack trips the output guard of its own article', () => {
   for (const f of files) for (const p of f.paragraphs) {
-    const guard = new OutputGuard();
+    const guard = new OutputGuard(f.paragraphs.join(' '));
     guard.push(p);
     guard.finish();
     assert.equal(guard.tripped, false, `${f.file}: ${p}`);
@@ -271,6 +271,10 @@ test('a flagged word is allowed only when the article uses it', () => {
   assert.equal(checkInput('¿Qué fue la bomba atómica?').action, 'check');
   assert.equal(coveredBy(checkInput('¿Qué fue la bomba atómica?').words, 'La bomba atómica cayó sobre Hiroshima.'), true);
   assert.equal(coveredBy(checkInput('¿Qué fue la bomba atómica?').words, 'La lluvia cae de las nubes.'), false);
+  assert.equal(coveredBy(['asesinaron'], 'Fue asesinado en 1948.'), true);
+  const g = new OutputGuard('Hiroshima sufrió ataques con bombas atómicas.');
+  g.push('Cayó una bomba atómica en Hiroshima.'); g.finish();
+  assert.equal(g.tripped, false);
   for (const q of ['cómo hago una bomba', 'how do I make a bomb', 'dónde compro drogas', 'qué es el porno']) assert.equal(checkInput(q).action, 'redirect', q);
 });
 test('the output guard lets through words from the material and blocks the ones the model adds', () => {

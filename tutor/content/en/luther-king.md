@@ -6,7 +6,7 @@ subject: historia
 block: People of the world
 grades: 6,7
 asks: Who was Martin Luther King? | What did Martin Luther King do?
-more: What did Martin Luther King fight for? | How did Martin Luther King fight?
+more: What did Martin Luther King fight for? | What prize did Martin Luther King receive? | How did Martin Luther King die?
 lang: en
 source_title: Martin Luther King
 source_site: Wikipedia
@@ -19,8 +19,8 @@ changes: Adapted and simplified for children from the Spanish Wikipedia article,
 retrieved: 2026-11-09
 ---
 
-Martin Luther King was born in Atlanta in 1929 and died in Memphis in 1968. He was a Baptist minister and activist in the United States.
+Martin Luther King was born in Atlanta in 1929. He was a Baptist minister and activist in the United States.
 
-He was the most visible leader of the civil rights movement for African Americans from 1955.
+He was the most visible leader of the civil rights movement for African Americans, from 1955. He worked to end segregation and racial discrimination through nonviolent means.
 
-He worked to end segregation and racial discrimination through non-violent means.
+For that struggle he received the Nobel Peace Prize in 1964. He was murdered in Memphis in 1968.

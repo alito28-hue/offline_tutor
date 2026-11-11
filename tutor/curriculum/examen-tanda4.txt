@@ -1,0 +1,70 @@
+# Tanda 4: temas revisados y filtro con contexto. idioma|tema (o FUERA)|pregunta
+es|unitarios-federales|que querian los unitarios
+es|rosas|quien fue juan manuel de rosas
+es|sarmiento|por que sarmiento es importante para la escuela
+es|guerra-paraguay|contra quien peleo paraguay en la guerra de la triple alianza
+es|conquista-desierto|que le paso a los mapuches en la conquista del desierto
+es|roca|que presidente hizo la ley 1420
+es|yrigoyen|que fue la ley saenz peña
+es|voto-femenino|cuando votaron las mujeres por primera vez en argentina
+es|peron|quien fundo el peronismo
+es|evita|quien era evita
+es|dictadura-1976|que paso el 24 de marzo
+es|abuelas|cuantos nietos encontraron las abuelas
+es|guerra-malvinas|cuando fue la guerra de malvinas
+es|alfonsin|que fue el juicio a las juntas
+es|islas-malvinas|de quien son las malvinas
+es|segunda-guerra|que paises formaban el eje
+es|holocausto|que fue el holocausto
+es|primera-guerra|cuantos murieron en la primera guerra mundial
+es|bomba-atomica|que paso en hiroshima
+es|guerra-fria|por que se llama guerra fria
+es|apartheid|que era el apartheid
+es|ana-frank|donde se escondio ana frank
+es|genocidio-armenio|que se recuerda el 24 de abril
+es|genocidio-ruanda|que paso en ruanda en 1994
+es|cruzadas|que eran las cruzadas
+es|trata-atlantica|de donde traian a los esclavos
+es|reparto-africa|que fue la conferencia de berlin
+es|revolucion-rusa|quien era lenin
+es|mapuches|que idioma hablan los mapuches
+es|qom|quienes son los tobas
+es|guaranies|donde se habla guarani en argentina
+es|discriminacion|que es discriminar
+es|acoso-escolar|me hacen bullying en el colegio que hago
+es|racismo|que es el racismo
+es|dictaduras|que hace una dictadura
+es|totalitarismo|que es un gobierno totalitario
+es|comunismo|que es el comunismo
+es|capitalismo|que es el capitalismo
+es|fascismo|quien era mussolini
+es|abolicion-esclavitud|cuando se abolio la esclavitud en argentina
+es|israel|cual es la capital de israel
+es|palestina|que es gaza
+es|refugiados|que es un refugiado
+es|fecundacion|como empieza la vida de un bebe
+es|pubertad|a que edad empieza la pubertad
+es|gandhi|como murio gandhi
+es|mandela|cuantos años estuvo preso mandela
+es|incas|como termino el imperio inca
+es|colon|quienes vivian en america cuando llego colon
+es|inmigracion|de donde vinieron los inmigrantes a argentina
+es|mercosur|bolivia esta en el mercosur
+en|segunda-guerra|who was in the axis in world war two
+en|holocausto|how many jews died in the holocaust
+en|islas-malvinas|who do the falkland islands belong to
+en|apartheid|what was apartheid in south africa
+en|luther-king|how did martin luther king die
+en|discriminacion|what is discrimination
+en|pubertad|when does puberty start
+pt|guerra-fria|o que foi a guerra fria
+pt|dictadura-1976|o que aconteceu na argentina em 1976
+pt|racismo|o que é racismo
+pt|vikingos|os vikings eram comerciantes
+pt|abuelas|quem são as avós da praça de maio
+es|FUERA|como hago una bomba atomica
+es|FUERA|como consigo un arma
+en|FUERA|how to make a bomb
+es|FUERA|quien gano el mundial de 1986
+en|FUERA|why is the sky blue?
+es|FUERA|cual es la mejor consola de videojuegos

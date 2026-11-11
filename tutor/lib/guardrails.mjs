@@ -12,7 +12,8 @@ const LINKS = /https?:\/\/|www\./;
 const flagged = n => [...new Set(n.match(new RegExp(UNSAFE.source, 'g')) || [])];
 // A flagged word is fine when the material uses it too: "bomba atómica" in the article about Hiroshima, "orientación
 // sexual" in the article about discrimination. What the model adds on its own is still blocked.
-const covered = (words, material) => words.every(w => new RegExp(`\\b${w}\\b`).test(material));
+// A flagged word is covered when the material uses a word of the same family (asesinado / asesinaron, bomba / bombas).
+const covered = (words, material) => words.every(w => new RegExp(`\\b${w.slice(0, 5)}`).test(material));
 
 const LINES = {
   es: {

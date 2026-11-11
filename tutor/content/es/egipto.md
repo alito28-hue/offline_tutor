@@ -21,6 +21,6 @@ retrieved: 2026-11-09
 
 Egipto es un país del extremo noreste de África, con una parte en Asia: la península del Sinaí.
 
-Limita con Sudán, Libia, Israel y la Franja de Gaza, y tiene costas en el mar Mediterráneo y el mar Rojo.
+Limita con Sudán, Libia, Israel y la Franja de Gaza, que es parte de Palestina. Tiene costas en el mar Mediterráneo y el mar Rojo.
 
 La mayor parte de su superficie es el desierto del Sahara. El río Nilo lo cruza de sur a norte y forma tierras fértiles, donde vive mucha gente.

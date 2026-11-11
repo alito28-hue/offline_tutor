@@ -19,8 +19,8 @@ changes: Adapted and simplified for children from the Spanish Wikipedia article,
 retrieved: 2026-11-09
 ---
 
-Africa is the third largest continent, after Asia and the Americas. It lies between the Atlantic and Indian oceans.
+Africa is the third largest continent, after Asia and the Americas. It lies between the Atlantic and Indian Oceans.
 
 The Mediterranean Sea separates it from Europe, and the closest point is the Strait of Gibraltar, 14.4 kilometers wide. The Red Sea separates it from the Arabian Peninsula.
 
-It is divided into 54 countries and has more than 1,570 million people.
+It is divided into 54 countries. 19% of the world's people live there: in April 2026 it was estimated to have more than 1,570 million people.

@@ -6,7 +6,7 @@ subject: historia
 block: Conquista y colonia
 grades: 4
 asks: ¿Quién fue Cristóbal Colón? | ¿Qué pasó en 1492? | quién llegó a América | quién descubrió América | qué navegante cruzó el Atlántico en 1492
-more: ¿A dónde llegó primero Colón? | ¿En qué año llegó Colón a América? | ¿Se considera a Colón el descubridor de América?
+more: ¿Dónde llegó primero Colón? | ¿Quiénes vivían en América cuando llegó Colón? | ¿Por qué se habla de descubrimiento?
 lang: es
 source_title: Cristóbal Colón
 source_site: Wikipedia
@@ -21,8 +21,8 @@ retrieved: 2026-11-09
 
 Cristóbal Colón fue un navegante al servicio de la Corona de Castilla. Encabezó el viaje de 1492 que llevó a los europeos a América.
 
-Quería llegar a Asia navegando hacia el oeste por el Atlántico, porque la Tierra es redonda. Creía que la Tierra era más chica de lo que es en realidad.
+Quería llegar a Asia navegando hacia el oeste por el Atlántico, y nunca aceptó del todo que había llegado a otro continente. Su primer desembarco fue el 12 de octubre de 1492, en la isla de Guanahani, en las actuales Bahamas.
 
-Su viaje abrió el camino a la exploración y la conquista del continente por parte de los europeos. Murió en Valladolid en 1506.
+En América ya vivían muchos pueblos desde hacía miles de años. Se habla de "descubrimiento" porque desde sus viajes hubo un vínculo permanente con Europa, y a partir de ahí potencias europeas invadieron el continente.
 
-Su primer desembarco en América fue el 12 de octubre de 1492, en la isla de Guanahani, en las actuales Bahamas.
+Como gobernador en la isla La Española, fue acusado de brutalidad: los taínos fueron repartidos entre los colonos y vendidos como esclavos. Murió en Valladolid en 1506.

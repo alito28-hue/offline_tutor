@@ -6,7 +6,7 @@ subject: geografia
 block: Países de Asia
 grades: 6,7
 asks: ¿Cuál es el país más poblado del mundo? | ¿Dónde queda la India?
-more: ¿Con qué países limita la India? | ¿Cuántos habitantes tiene la India?
+more: ¿Con qué países limita la India? | ¿Desde cuándo la India es el país más poblado?
 lang: es
 source_title: India
 source_site: Wikipedia
@@ -19,7 +19,7 @@ changes: Adaptado y simplificado para chicos.
 retrieved: 2026-11-09
 ---
 
-La India es un país de Asia del Sur. Con más de 1476 millones de habitantes, es el país más poblado del mundo desde 2023.
+La India es un país de Asia del Sur. Es el país más poblado del mundo desde 2023: en 2026 se estiman más de 1476 millones de habitantes.
 
 Es el séptimo país más extenso del planeta.
 

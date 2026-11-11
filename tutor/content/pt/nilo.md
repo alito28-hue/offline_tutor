@@ -6,6 +6,7 @@ subject: geografia
 block: Rios e lagos do mundo
 grades: 5,6
 asks: Por onde passa o rio Nilo? | Qual é o rio mais longo do mundo? | rio do Egito | maior rio da África | o que é o delta do Nilo
+more: Onde o Nilo deságua? | O Nilo é o rio mais longo do mundo?
 lang: pt
 source_title: Nilo
 source_site: Wikipedia
@@ -18,8 +19,8 @@ changes: Adaptado e simplificado para crianças a partir do artigo da Wikipédia
 retrieved: 2026-11-09
 ---
 
-O Nilo é o maior rio da África. Corre para o norte por dez países, entre eles o Sudão e o Egito, e deságua no mar Mediterrâneo.
+O Nilo é o maior rio da África. Corre para o norte através de dez países, entre eles o Sudão e o Egito, e deságua no mar Mediterrâneo.
 
-Ali forma um grande delta, onde ficam as cidades do Cairo e de Alexandria.
+Lá forma um grande delta, onde ficam as cidades do Cairo e de Alexandria. Mede 6853 quilômetros.
 
-Mede 6853 quilômetros. Durante séculos foi considerado o rio mais longo do mundo, mas algumas medições dão esse lugar ao Amazonas, e os especialistas ainda discutem isso.
+Durante séculos foi considerado o rio mais longo do mundo. Medições de 2008 dizem que o mais longo seria o Amazonas, mas nem todos os cientistas concordam.

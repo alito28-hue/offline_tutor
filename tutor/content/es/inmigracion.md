@@ -6,6 +6,7 @@ subject: historia
 block: Siglo XIX
 grades: 6
 asks: ¿De dónde vinieron los inmigrantes a Argentina? | ¿Quiénes vivían en Argentina cuando llegaron los españoles? | quiénes llegaron a Argentina | cuánta gente vivía antes de los españoles | de dónde vinieron los primeros habitantes
+more: ¿De dónde vinieron los inmigrantes? | ¿Qué fue la gran ola de inmigración? | ¿Quiénes vivían antes de los españoles?
 lang: es
 source_title: Inmigración en Argentina
 source_site: Wikipedia
@@ -18,8 +19,8 @@ changes: Adaptado y simplificado para chicos.
 retrieved: 2026-11-09
 ---
 
-Las primeras personas llegaron a América desde Asia hace miles de años, según las teorías más aceptadas.
+Cuando llegaron los conquistadores españoles, en el actual territorio argentino vivían unas 400.000 personas, de muchas culturas distintas. Después el territorio recibió distintas corrientes de migrantes, como la colonización española.
 
-Cuando llegaron los conquistadores españoles, en el actual territorio argentino vivían unas 400.000 personas, de muchas culturas distintas.
+Entre fines del siglo XIX y la primera mitad del XX llegó la gran ola de inmigración, sobre todo europea, en especial de italianos y españoles. También llegaron árabes, judíos y otros grupos.
 
-Después el territorio recibió distintas corrientes de migrantes. La colonización española, entre los siglos XVI y XVIII, fue una de ellas.
+La Constitución de 1853 fomentó esa inmigración. En el censo de 1914, casi 3 de cada 10 habitantes habían nacido en otro país.

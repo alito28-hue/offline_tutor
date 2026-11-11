@@ -6,7 +6,7 @@ subject: geografia
 block: Continentes
 grades: 5,6
 asks: Quantos países a África tem? | O que é a África?
-more: O que separa a África da Europa? | Quantos habitantes a África tem?
+more: O que separa a África da Europa? | Quantos habitantes tem a África?
 lang: pt
 source_title: África
 source_site: Wikipedia
@@ -23,4 +23,4 @@ A África é o terceiro continente mais extenso, depois da Ásia e da América. 
 
 O mar Mediterrâneo a separa da Europa, e o ponto mais próximo é o estreito de Gibraltar, de 14,4 quilômetros. O mar Vermelho a separa da península Arábica.
 
-Divide-se em 54 países e tem mais de 1570 milhões de habitantes.
+Divide-se em 54 países. Lá vive 19% da população mundial: em abril de 2026 estimavam-se mais de 1570 milhões de habitantes.

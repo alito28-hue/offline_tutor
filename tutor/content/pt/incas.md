@@ -6,6 +6,7 @@ subject: historia
 block: Povos originários
 grades: 4
 asks: Quem eram os incas? | O que significa Tahuantinsuyo? | quem vivia em Cuzco | que império havia nos Andes | o que é o Tahuantinsuyo | maior império da América antes de Colombo
+more: O que significa Tahuantinsuyo? | Como terminou o Império Inca? | Quem foi Atahualpa?
 lang: pt
 source_title: Imperio incaico
 source_site: Wikipedia
@@ -18,8 +19,8 @@ changes: Adaptado e simplificado para crianças a partir do artigo da Wikipédia
 retrieved: 2026-11-09
 ---
 
-O Império Inca foi o maior império da América antes da chegada dos europeus. Também se chamava Tahuantinsuyo, que em quíchua significa "região das quatro partes".
+O Império Inca foi o império mais extenso da América antes da chegada dos europeus. Também se chamava Tahuantinsuyo, que em quíchua significa "região das quatro partes".
 
-Surgiu nos Andes do Peru, entre os séculos XV e XVI, a partir da cidade de Cuzco.
+Surgiu nos Andes do Peru, a partir da cidade de Cusco. Em sua maior extensão abrangeu cerca de 2 milhões de quilômetros quadrados, da atual Colômbia até o Chile.
 
-Em sua maior extensão abrangeu cerca de 2 milhões de quilômetros quadrados, da atual Colômbia até o Chile.
+Seu fim começou com uma guerra civil entre Huáscar e Atahualpa, e com doenças como a varíola, trazidas pelos europeus. Em 1532, os conquistadores espanhóis de Francisco Pizarro prenderam e executaram Atahualpa. A resistência inca continuou até 1572.

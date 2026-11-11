@@ -6,6 +6,7 @@ subject: historia
 block: Século XIX
 grades: 6
 asks: De onde vieram os imigrantes para a Argentina? | Quem vivia na Argentina quando os espanhóis chegaram? | quem chegou à Argentina | quantas pessoas viviam antes dos espanhóis | de onde vieram os primeiros habitantes
+more: De onde vieram os imigrantes? | O que foi a grande onda de imigração? | Quem vivia lá antes dos espanhóis?
 lang: pt
 source_title: Inmigración en Argentina
 source_site: Wikipedia
@@ -18,8 +19,8 @@ changes: Adaptado e simplificado para crianças a partir do artigo da Wikipédia
 retrieved: 2026-11-09
 ---
 
-As primeiras pessoas chegaram à América vindas da Ásia há milhares de anos, segundo as teorias mais aceitas.
+Quando os conquistadores espanhóis chegaram, no atual território argentino viviam cerca de 400.000 pessoas, de muitas culturas diferentes. Depois o território recebeu várias correntes de migrantes, como a colonização espanhola.
 
-Quando os conquistadores espanhóis chegaram, cerca de 400 mil pessoas de muitas culturas diferentes viviam no atual território argentino.
+Entre o fim do século XIX e a primeira metade do XX chegou a grande onda de imigração, sobretudo europeia, em especial de italianos e espanhóis. Também chegaram árabes, judeus e outros grupos.
 
-Depois, o território recebeu diferentes correntes de migrantes. A colonização espanhola, entre os séculos XVI e XVIII, foi uma delas.
+A Constituição de 1853 incentivou essa imigração. No censo de 1914, quase 3 de cada 10 habitantes tinham nascido em outro país.
