@@ -3,7 +3,7 @@
 import { checkInput, coveredBy, detectLanguage, isAnswerToCheck, line, OutputGuard } from './guardrails.mjs';
 import { asksOf, moreOf, parseHit, sourceFor } from './content.mjs';
 import { groundPassages, wordIndex } from './grounding.mjs';
-import { EXAMPLE_TOPIC, feedbackMessages, teachMessages } from './prompts.mjs';
+import { checkMessages, EXAMPLE_TOPIC, feedbackMessages, saysNo, teachMessages } from './prompts.mjs';
 
 // First filter, calibrated on real questions. Scores overlap near this value, so the model's NO_SE signal is the second filter.
 export const SCORE_THRESHOLD = Number(process.env.TUTOR_SCORE_THRESHOLD || 0.5);
@@ -21,6 +21,11 @@ const MAX_SUGGESTIONS = 3;
 const MAX_FOLLOW_UPS = 3;
 const TEACH_PARAMS = { temp: 0.2, seed: 7, predict: 280 };
 const FEEDBACK_PARAMS = { temp: 0.2, seed: 7, predict: 120 };
+// A "why" question with a score below this is checked first: the material may describe the thing (the sky, a
+// rainbow) without giving the cause that was asked. Other questions skip the check, which declined too many good ones.
+const WHY = /^\W*(por ?qu[eé]|why|how come)\b/i;
+const CHECK_BELOW = Number(process.env.TUTOR_CHECK_BELOW || 0.72);
+const CHECK_PARAMS = { temp: 0, seed: 7, predict: 10 };
 
 const countWords = s => (s.match(/\S+/g) || []).length;
 const UNKNOWN = /\bNO_SE\b/;
@@ -117,6 +122,11 @@ export function createTutor({ engine, files, now = () => performance.now() }) {
       // A question with a flagged word is answered only from an article that uses that word itself.
       if (safety.action === 'check' && !coveredBy(safety.words, found.passages.map(p => p.text).join(' '))) {
         return yield* fixedReply('redirect', lang, line(lang, 'redirect'), t0);
+      }
+      if (!chosen && found.best < CHECK_BELOW && WHY.test(question)) {
+        let verdict = '';
+        for await (const token of engine.generate(checkMessages(lang, question, found.passages), CHECK_PARAMS)) verdict += token;
+        if (saysNo(lang, verdict)) return yield* fixedReply('unknown', lang, line(lang, nearby.length ? 'maybe' : 'unknown'), t0, { score: found.best, suggestions: nearby, materialSaidNo: true });
       }
       route = 'teach';
       passages = found.passages;

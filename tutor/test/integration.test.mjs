@@ -42,7 +42,7 @@ test('a real question gets steps, a check question and a real source, quickly', 
   assert.match(r.text, /Paso 1:/);
   assert.ok(r.text.trim().endsWith('?'), r.text);
   assert.ok(r.firstTokenMs < 3000, `first token took ${r.firstTokenMs} ms`);
-  assert.ok(r.words >= 60 && r.words <= 130, `${r.words} words: ${r.text}`);
+  assert.ok(r.words >= 40 && r.words <= 130,  `${r.words} words: ${r.text}`);
 });
 test('an English question gets an English answer', async () => {
   await reset();

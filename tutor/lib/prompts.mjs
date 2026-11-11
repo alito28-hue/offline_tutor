@@ -139,3 +139,28 @@ export function feedbackMessages(lang, askedBack, answer, passages) {
     { role: 'user', content: `${materialBlock(p, passages)}\n\n${p.asked}: ${askedBack}\n\n${p.answer}: ${answer}` },
   ];
 }
+
+// A yes/no check for answers whose search score is near the threshold: the material may name the same things
+// (sky, blue) without answering the question (why the sky is blue). Answering yes or no is easier for a small model
+// than declining in the middle of an explanation.
+const CHECK = {
+  es: { system: 'Lee el MATERIAL y la PREGUNTA. ¿El MATERIAL tiene la respuesta a la PREGUNTA? Responde solamente SI o NO.\n/no_think', yes: 'SI', no: 'NO',
+    examples: [['¿Para qué sirve un faro?', 'SI'], ['¿Por qué el mar es salado?', 'NO'], ['¿Qué hace la luz de un faro?', 'SI'], ['¿Por qué la noche es oscura?', 'NO']] },
+  en: { system: 'Read the MATERIAL and the QUESTION. Does the MATERIAL contain the answer to the QUESTION? Reply only YES or NO.\n/no_think', yes: 'YES', no: 'NO',
+    examples: [['What is a lighthouse for?', 'YES'], ['Why is the sea salty?', 'NO'], ['What does the light of a lighthouse do?', 'YES'], ['Why is the night dark?', 'NO']] },
+  pt: { system: 'Leia o MATERIAL e a PERGUNTA. O MATERIAL tem a resposta para a PERGUNTA? Responda somente SIM ou NAO.\n/no_think', yes: 'SIM', no: 'NAO',
+    examples: [['Para que serve um farol?', 'SIM'], ['Por que o mar é salgado?', 'NAO'], ['O que a luz de um farol faz?', 'SIM'], ['Por que a noite é escura?', 'NAO']] },
+};
+const CHECK_QUESTION = { es: 'PREGUNTA', en: 'QUESTION', pt: 'PERGUNTA' };
+
+export function checkMessages(lang, question, passages) {
+  const p = PROMPTS[lang], c = CHECK[lang];
+  const ask = (material, q) => `${materialBlock(p, material)}\n\n${CHECK_QUESTION[lang]}: ${q}`;
+  const sample = [{ text: EXAMPLES[lang][0][0] }];
+  return [
+    { role: 'system', content: c.system },
+    ...c.examples.flatMap(([q, a]) => [{ role: 'user', content: ask(sample, q) }, { role: 'assistant', content: a }]),
+    { role: 'user', content: ask(passages, question) },
+  ];
+}
+export const saysNo = (lang, text) => new RegExp(`^\\s*${CHECK[lang].no}\\b`, 'i').test(text.replace(/<think>[\s\S]*?<\/think>/g, '').normalize('NFD').replace(/[\u0300-\u036f]/g, ''));

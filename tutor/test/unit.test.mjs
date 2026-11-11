@@ -272,6 +272,8 @@ test('a flagged word is allowed only when the article uses it', () => {
   assert.equal(coveredBy(checkInput('¿Qué fue la bomba atómica?').words, 'La bomba atómica cayó sobre Hiroshima.'), true);
   assert.equal(coveredBy(checkInput('¿Qué fue la bomba atómica?').words, 'La lluvia cae de las nubes.'), false);
   assert.equal(coveredBy(['asesinaron'], 'Fue asesinado en 1948.'), true);
+  assert.equal(coveredBy(['killed'], 'He was murdered in Memphis in 1968.'), true);
+  assert.equal(coveredBy(['killed'], 'He was born in Atlanta.'), false);
   const g = new OutputGuard('Hiroshima sufrió ataques con bombas atómicas.');
   g.push('Cayó una bomba atómica en Hiroshima.'); g.finish();
   assert.equal(g.tripped, false);
