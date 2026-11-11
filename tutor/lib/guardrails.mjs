@@ -4,7 +4,15 @@ const normalize = s => s.toLowerCase().normalize('NFD').replace(/\p{M}/gu, '');
 const CARE = /\b(suicid\w*|matarme|me quiero matar|quiero morir\w*|hacerme dano|lastimarme|cortarme|kill myself|want to die|hurt myself|self.?harm|me matar|quero morrer|me machucar|me cortar|me (batem|bateram)|abusa\w* de mim|sofro bullying|me (pegan|golpean|acosan|manosean)|someone (hits|touches|touched) me|me hacen bullying|abus[oa]\w* de mi)\b/;
 const UNSAFE = /\b(maconha|cocaina|peitos|pelad[oa]s?|sexo|sexual\w*|sexy|sex|porn\w*|desnud\w*|nude\w*|naked|xxx|tetas|pene|vagina|boobs|penis|drogas?|cocaina|marihuana|porro|cocaine|weed|meth|heroin|vape|armas?|pistolas?|bombas?|explosiv\w*|guns?|weapons?|bombs?|matar|kill\w*|murder\w*|asesin\w*)\b/;
 const INJECTION = /\b(ignora\w*|olvida\w*|ignore|esqueca\w*|forget|disregard)\b.{0,30}\b(instruccion\w*|instruc\w*|regras?|reglas?|instructions?|rules?|prompt)\b|\bjailbreak\b|\bsystem prompt\b|\bdan mode\b/;
-const OUTPUT_UNSAFE = new RegExp(`${UNSAFE.source}|https?://|www\\.`);
+// Never shown, even when an article contains the word.
+const EXPLICIT = /\b(peitos|pelad[oa]s?|sexy|porn\w*|desnud\w*|nude\w*|naked|xxx|tetas|boobs|pene|penis|vagina)\b/;
+// Asking how to make or get something dangerous is never a school question.
+const HOW_TO = /\b(como (hago|hacer|fabrico|fabricar|construyo|consigo|conseguir|compro|comprar|preparo|uso|armo|faco|fazer)|donde (compro|consigo|venden)|onde (compro|consigo)|how (do i|to|can i) (make|build|get|buy|use)|where (can i|do i|to) (buy|get))\b/;
+const LINKS = /https?:\/\/|www\./;
+const flagged = n => [...new Set(n.match(new RegExp(UNSAFE.source, 'g')) || [])];
+// A flagged word is fine when the material uses it too: "bomba atómica" in the article about Hiroshima, "orientación
+// sexual" in the article about discrimination. What the model adds on its own is still blocked.
+const covered = (words, material) => words.every(w => new RegExp(`\\b${w}\\b`).test(material));
 
 const LINES = {
   es: {
@@ -57,8 +65,16 @@ export function detectLanguage(text) {
 export function checkInput(text) {
   const n = normalize(text);
   if (CARE.test(n)) return { action: 'care' };
-  if (UNSAFE.test(n) || INJECTION.test(n)) return { action: 'redirect' };
-  return { action: 'ok' };
+  if (INJECTION.test(n) || EXPLICIT.test(n)) return { action: 'redirect' };
+  const words = flagged(n);
+  if (!words.length) return { action: 'ok' };
+  if (HOW_TO.test(n)) return { action: 'redirect' };
+  // Allowed only if the article the tutor finds uses the same words.
+  return { action: 'check', words };
+}
+
+export function coveredBy(words, material) {
+  return covered(words, normalize(material));
 }
 
 // A reply that continues the tutor's check question, rather than asking something new.
@@ -77,7 +93,8 @@ const clean = raw => raw.replace(THINK_DONE, '').replace(THINK_OPEN, '').replace
 export class OutputGuard {
   static HOLD = 16;
 
-  constructor() {
+  constructor(material = '') {
+    this.material = normalize(material);
     this.raw = '';
     this.sent = 0;
     this.tripped = false;
@@ -87,7 +104,7 @@ export class OutputGuard {
     if (this.tripped) return '';
     this.raw += token;
     const visible = clean(this.raw);
-    if (OUTPUT_UNSAFE.test(normalize(visible))) { this.tripped = true; return ''; }
+    if (this.#unsafe(visible)) { this.tripped = true; return ''; }
     const safeEnd = Math.max(this.sent, visible.length - OutputGuard.HOLD);
     return this.#release(visible, safeEnd);
   }
@@ -95,8 +112,13 @@ export class OutputGuard {
   finish() {
     if (this.tripped) return '';
     const visible = clean(this.raw).trimEnd();
-    if (OUTPUT_UNSAFE.test(normalize(visible))) { this.tripped = true; return ''; }
+    if (this.#unsafe(visible)) { this.tripped = true; return ''; }
     return this.#release(visible, visible.length);
+  }
+
+  #unsafe(visible) {
+    const n = normalize(visible);
+    return LINKS.test(n) || EXPLICIT.test(n) || !covered(flagged(n), this.material);
   }
 
   #release(visible, end) {

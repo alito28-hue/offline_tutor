@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { listTopics, loadPack, parseFile, toCards, toDocuments } from '../lib/content.mjs';
 import { loadIndex, saveIndex } from '../lib/searchindex.mjs';
 import { coverage, groundPassages } from '../lib/grounding.mjs';
-import { checkInput, detectLanguage, isAnswerToCheck, OutputGuard } from '../lib/guardrails.mjs';
+import { checkInput, coveredBy, detectLanguage, isAnswerToCheck, OutputGuard } from '../lib/guardrails.mjs';
 import { EXAMPLE_TOPIC } from '../lib/prompts.mjs';
 import { createTutor } from '../lib/tutor.mjs';
 import { topMatches } from '../lib/vectors.mjs';
@@ -265,4 +265,23 @@ test('a question the tutor cannot place gets the closest topics instead of a dea
   const done = (await collect(createTutor({ engine: articleEngine(GOOD, near, near), files }).ask('¿Por qué caen gotas?'))).at(-1);
   assert.equal(done.route, 'unknown');
   assert.deepEqual(done.suggestions.map(s => s.file), ['es/lluvia.md']);
+});
+
+test('a flagged word is allowed only when the article uses it', () => {
+  assert.equal(checkInput('¿Qué fue la bomba atómica?').action, 'check');
+  assert.equal(coveredBy(checkInput('¿Qué fue la bomba atómica?').words, 'La bomba atómica cayó sobre Hiroshima.'), true);
+  assert.equal(coveredBy(checkInput('¿Qué fue la bomba atómica?').words, 'La lluvia cae de las nubes.'), false);
+  for (const q of ['cómo hago una bomba', 'how do I make a bomb', 'dónde compro drogas', 'qué es el porno']) assert.equal(checkInput(q).action, 'redirect', q);
+});
+test('the output guard lets through words from the material and blocks the ones the model adds', () => {
+  const allowed = new OutputGuard('Gandhi fue asesinado en 1948.');
+  allowed.push('Gandhi fue asesinado en 1948, después de la independencia.');
+  assert.equal(allowed.tripped, false);
+  const added = new OutputGuard('Gandhi luchó sin violencia.');
+  added.push('Gandhi luchó sin violencia y sin armas, como una bomba de paz.');
+  added.finish();
+  assert.equal(added.tripped, true);
+  const link = new OutputGuard('www.example.com');
+  link.push('Mirá www.example.com para saber más.');
+  assert.equal(link.tripped, true);
 });

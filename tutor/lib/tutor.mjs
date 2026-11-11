@@ -1,6 +1,6 @@
 // The tutor's decision flow. The model engine is injected, so tests can run it with a fake one.
 // Citations come from the passages sent to the model, never from the model's own text.
-import { checkInput, detectLanguage, isAnswerToCheck, line, OutputGuard } from './guardrails.mjs';
+import { checkInput, coveredBy, detectLanguage, isAnswerToCheck, line, OutputGuard } from './guardrails.mjs';
 import { asksOf, moreOf, parseHit, sourceFor } from './content.mjs';
 import { groundPassages, wordIndex } from './grounding.mjs';
 import { EXAMPLE_TOPIC, feedbackMessages, teachMessages } from './prompts.mjs';
@@ -114,13 +114,17 @@ export function createTutor({ engine, files, now = () => performance.now() }) {
         const suggestions = found.suggestions || [];
         return yield* fixedReply('unknown', lang, line(lang, suggestions.length ? 'maybe' : 'unknown'), t0, { score: found.best, suggestions });
       }
+      // A question with a flagged word is answered only from an article that uses that word itself.
+      if (safety.action === 'check' && !coveredBy(safety.words, found.passages.map(p => p.text).join(' '))) {
+        return yield* fixedReply('redirect', lang, line(lang, 'redirect'), t0);
+      }
       route = 'teach';
       passages = found.passages;
       messages = teachMessages(lang, question, passages);
       params = TEACH_PARAMS;
     }
 
-    const guard = new OutputGuard();
+    const guard = new OutputGuard(passages.map(p => p.text).join(' '));
     let first = null;
     let stopReason = null;
     let announced = false;
