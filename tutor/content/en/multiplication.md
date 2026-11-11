@@ -1,6 +1,11 @@
 ---
 title: Multiplication
-subject: math
+topic: multiplicacion
+order: 23
+subject: matematica
+block: Operations
+grades: 4
+asks: What is multiplication? | What is multiplying for? | what is 4 times 3 | what are factors | what is 7 times 3
 lang: en
 source_title: Multiplication
 source_site: Wikipedia

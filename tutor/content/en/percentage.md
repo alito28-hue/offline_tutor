@@ -1,6 +1,11 @@
 ---
 title: Percentages
-subject: math
+topic: porcentaje
+order: 10
+subject: matematica
+block: Numbers
+grades: 6
+asks: How do I work out a percentage? | What is 50% of 80? | what does percent mean | what is 10%
 lang: en
 source_title: Percentage
 source_site: Wikipedia

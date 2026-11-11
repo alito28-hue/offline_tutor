@@ -1,6 +1,11 @@
 ---
 title: Los imanes
-subject: ciencias
+topic: imanes
+order: 213
+subject: naturales
+block: Física
+grades: 4
+asks: ¿Por qué los imanes se atraen? | ¿Cómo funcionan los imanes? | qué es el polo norte de un imán | qué metales atrae un imán
 lang: es
 source_title: Imán
 source_site: Wikipedia

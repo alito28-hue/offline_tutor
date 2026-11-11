@@ -1,6 +1,11 @@
 ---
 title: Earthquakes
-subject: science
+topic: terremotos
+order: 235
+subject: naturales
+block: Earth
+grades: 4
+asks: Why are there earthquakes? | What is an earthquake? | what is the epicenter | why does the ground shake
 lang: en
 source_title: Earthquake
 source_site: Wikipedia

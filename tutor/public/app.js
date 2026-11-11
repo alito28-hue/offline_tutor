@@ -5,13 +5,14 @@ const els = {
   sources: $('sources'), speed: $('speed'), form: $('form'), question: $('question'), send: $('send'),
 };
 const LABELS = {
-  es: { source: 'Fuente:', sources: 'Fuentes:', speed: s => `Empezó a responder en ${s} s` },
-  en: { source: 'Source:', sources: 'Sources:', speed: s => `Started answering in ${s} s` },
+  es: { more: '¿Quieres saber más?', source: 'Fuente:', sources: 'Fuentes:', speed: s => `Empezó a responder en ${s} s` },
+  en: { more: 'Want to know more?', source: 'Source:', sources: 'Sources:', speed: s => `Started answering in ${s} s` },
+  pt: { more: 'Quer saber mais?', source: 'Fonte:', sources: 'Fontes:', speed: s => `Começou a responder em ${s} s` },
   sw: { source: 'Source:', sources: 'Sources:', speed: s => `Started answering in ${s} s` },
 };
-// The screen follows the computer's language: Spanish on a Spanish computer, English everywhere else.
+// The screen follows the computer's language, with English for everything else.
 // Answers follow the language of each question, whatever the screen shows.
-const UI_LANG = navigator.language.slice(0, 2) === 'es' ? 'es' : 'en';
+const UI_LANG = { es: 'es', pt: 'pt' }[navigator.language.slice(0, 2)] || 'en';
 const UI = {
   en: {
     welcome: 'What do you want to learn today?',
@@ -19,6 +20,8 @@ const UI = {
     placeholder: 'Type your question…', loading: 'Loading the tutor…', question: 'Your question', ask: 'Ask',
     failed: 'Something went wrong. Please try again.',
     net: { offline: 'Offline ✓', 'not-needed': 'Works without internet', 'no-calls': 'No network calls ✓', unverified: 'Checking network…', external: 'Connection detected' },
+    home: 'Home', explore: 'Explore by subject', allGrades: 'All', grade: n => `Grade ${n}`, back: 'Back',
+    subjects: { matematica: 'Math', lengua: 'Language', naturales: 'Science', geografia: 'Geography', historia: 'History', ciudadania: 'Citizenship and politics', tecnologia: 'Technology', arte: 'Arts and culture' },
   },
   es: {
     welcome: '¿Qué quieres aprender hoy?',
@@ -26,6 +29,17 @@ const UI = {
     placeholder: 'Escribe tu pregunta…', loading: 'Cargando el tutor…', question: 'Tu pregunta', ask: 'Preguntar',
     failed: 'Algo falló. Intenta de nuevo.',
     net: { offline: 'Sin conexión ✓', 'not-needed': 'Funciona sin internet', 'no-calls': 'Sin llamadas de red ✓', unverified: 'Verificando red…', external: 'Conexión detectada' },
+    home: 'Inicio', explore: 'Explorar por materia', allGrades: 'Todos', grade: n => `${n}.º grado`, back: 'Volver',
+    subjects: { matematica: 'Matemática', lengua: 'Lengua', naturales: 'Ciencias naturales', geografia: 'Geografía', historia: 'Historia', ciudadania: 'Ciudadanía y política', tecnologia: 'Tecnología', arte: 'Arte y cultura' },
+  },
+  pt: {
+    welcome: 'O que você quer aprender hoje?',
+    chips: ['Como um vulcão entra em erupção?', 'Como somo frações?', 'Como as plantas fazem comida?', 'Who was Nelson Mandela?'],
+    placeholder: 'Escreva sua pergunta…', loading: 'Carregando o tutor…', question: 'Sua pergunta', ask: 'Perguntar',
+    failed: 'Algo deu errado. Tente de novo.',
+    net: { offline: 'Sem conexão ✓', 'not-needed': 'Funciona sem internet', 'no-calls': 'Sem chamadas de rede ✓', unverified: 'Verificando a rede…', external: 'Conexão detectada' },
+    home: 'Início', explore: 'Explorar por matéria', allGrades: 'Todos', grade: n => `${n}º ano`, back: 'Voltar',
+    subjects: { matematica: 'Matemática', lengua: 'Língua', naturales: 'Ciências', geografia: 'Geografia', historia: 'História', ciudadania: 'Cidadania e política', tecnologia: 'Tecnologia', arte: 'Arte e cultura' },
   },
 }[UI_LANG];
 const NET = {
@@ -55,10 +69,11 @@ function render(text, route, streaming) {
     els.answer.append(p);
     return;
   }
-  const lines = text.replace(/\*\*|^#+\s*/gm, '').split('\n').map(l => l.trim()).filter(Boolean);
+  // The model sometimes writes all the steps on one line.
+  const lines = text.replace(/\*\*|^#+\s*/gm, '').replace(/\s+((?:Paso|Passo|Step)\s*\d+\s*[:.)-])/g, '\n$1').split('\n').map(l => l.trim()).filter(Boolean);
   let last = null;
   lines.forEach((l, i) => {
-    const step = l.match(/^(?:Paso|Step)\s*(\d+)\s*[:.)-]\s*(.*)$/i);
+    const step = l.match(/^(?:Paso|Passo|Step)\s*(\d+)\s*[:.)-]\s*(.*)$/i);
     const isLast = i === lines.length - 1;
     if (step) {
       const row = document.createElement('div');
@@ -122,6 +137,40 @@ function showSources(list, lang) {
   }
 }
 
+function showSuggestions(list) {
+  if (!list?.length) return;
+  const box = document.createElement('div');
+  box.className = 'suggestions';
+  for (const s of list) {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'topic';
+    b.textContent = s.title;
+    b.addEventListener('click', () => ask(s.ask, s.file));
+    box.append(b);
+  }
+  els.answer.append(box);
+}
+
+function showMore(list, lang) {
+  if (!list?.length) return;
+  const box = document.createElement('div');
+  box.className = 'more';
+  const label = document.createElement('span');
+  label.className = 'more-label';
+  label.textContent = (LABELS[lang] || LABELS.en).more;
+  box.append(label);
+  for (const m of list) {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'more-item';
+    b.textContent = m.topic || m.ask;
+    b.addEventListener('click', () => ask(m.ask, m.file));
+    box.append(b);
+  }
+  els.answer.append(box);
+}
+
 function setBusy(on) {
   asking = on;
   els.send.disabled = on || !ready;
@@ -129,9 +178,11 @@ function setBusy(on) {
   if (!on) els.question.focus();
 }
 
-async function ask(question) {
+async function ask(question, file = null) {
   if (asking || !ready) return;
   els.welcome.hidden = true;
+  $('browse').hidden = true;
+  $('homeOpen').hidden = false;
   els.lesson.hidden = false;
   els.asked.textContent = question;
   els.answer.replaceChildren();
@@ -142,7 +193,7 @@ async function ask(question) {
   let text = '';
   let route = 'teach';
   try {
-    const res = await fetch('/api/ask', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ question }) });
+    const res = await fetch('/api/ask', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ question, file }) });
     if (!res.ok || !res.body) throw new Error(`HTTP ${res.status}`);
     const reader = res.body.getReader();
     const decoder = new TextDecoder();
@@ -163,10 +214,12 @@ async function ask(question) {
         if (ev.type === 'error') throw new Error(ev.message);
         if (ev.type === 'done') {
           render(text, ev.route, false);
+          showSuggestions(ev.suggestions);
+          showMore(ev.more, ev.lang);
           showSources(ev.sources, ev.lang);
           fit();
           if (['teach', 'feedback'].includes(ev.route)) {
-            els.speed.textContent = (LABELS[ev.lang] || LABELS.es).speed((ev.firstTokenMs / 1000).toFixed(1).replace('.', ev.lang === 'es' ? ',' : '.'));
+            els.speed.textContent = (LABELS[ev.lang] || LABELS.es).speed((ev.firstTokenMs / 1000).toFixed(1).replace('.', ev.lang === 'en' ? '.' : ','));
           }
         }
       }
@@ -201,6 +254,15 @@ const CREDIT = {
     independent: 'It is an independent prototype, not affiliated with Tether or any school.',
     connect: 'Did someone share it with you? I\'d love to hear from you:',
   },
+  pt: {
+    feedback: 'Enviar feedback ou relatar um erro', feedbackUrl: 'https://amaratutor.org/pt/feedback/',
+    line: 'Criada por Alex Smith, com QVAC. Alguém compartilhou com você? Vamos nos conectar:', open: 'Créditos', close: 'Fechar',
+    author: 'Criada por Alex Smith.',
+    tech: 'Funciona neste equipamento, sem internet, com o QVAC da Tether e os modelos Qwen3 4B e EmbeddingGemma.',
+    library: 'Materiais: artigos da Wikipédia, de seus colaboradores, sob CC BY-SA 4.0.',
+    independent: 'É um protótipo independente, sem vínculo com a Tether nem com nenhuma escola.',
+    connect: 'Alguém compartilhou com você? Eu adoraria saber de você:',
+  },
 };
 const credit = CREDIT[UI_LANG];
 $('creditText').textContent = credit.line;
@@ -209,6 +271,90 @@ $('creditsOpen').textContent = credit.open;
 $('creditsClose').textContent = credit.close;
 for (const [id, key] of [['creditsAuthor', 'author'], ['creditsTech', 'tech'], ['creditsLibrary', 'library'], ['creditsIndependent', 'independent'], ['creditsConnect', 'connect']]) $(id).textContent = credit[key];
 $('creditsOpen').addEventListener('click', () => $('credits').showModal());
+
+// Browse the curriculum: subject, then grade, then a topic that opens as a lesson.
+const SUBJECT_ORDER = ['matematica', 'lengua', 'naturales', 'geografia', 'historia', 'ciudadania', 'tecnologia', 'arte'];
+let allTopics = [];
+let openSubject = null;
+let openGrade = null;
+
+function showHome() {
+  $('homeOpen').hidden = true;
+  $('browse').hidden = true;
+  els.lesson.hidden = true;
+  els.welcome.hidden = false;
+}
+
+function renderTopics() {
+  const list = allTopics.filter(t => t.subject === openSubject);
+  const grades = [...new Set(list.flatMap(t => t.grades))].sort();
+  const gradeBox = $('grades');
+  gradeBox.replaceChildren();
+  for (const g of [null, ...grades]) {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'grade';
+    b.textContent = g === null ? UI.allGrades : UI.grade(g);
+    b.setAttribute('aria-pressed', String(g === openGrade));
+    b.addEventListener('click', () => { openGrade = g; renderTopics(); });
+    gradeBox.append(b);
+  }
+  const box = $('topics');
+  box.replaceChildren();
+  const shown = list.filter(t => openGrade === null || t.grades.includes(openGrade));
+  for (const block of [...new Set(shown.map(t => t.block))]) {
+    const h = document.createElement('h2');
+    h.className = 'block';
+    h.textContent = block;
+    const row = document.createElement('div');
+    row.className = 'topic-row';
+    for (const t of shown.filter(x => x.block === block)) {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'topic';
+      b.textContent = t.title;
+      b.addEventListener('click', () => ask(t.ask, t.file));
+      row.append(b);
+    }
+    box.append(h, row);
+  }
+}
+
+function openBrowse(subject) {
+  openSubject = subject;
+  openGrade = null;
+  $('browseTitle').textContent = UI.subjects[subject];
+  els.welcome.hidden = true;
+  els.lesson.hidden = true;
+  $('homeOpen').hidden = false;
+  $('browse').hidden = false;
+  renderTopics();
+}
+
+async function loadTopics() {
+  try {
+    allTopics = (await (await fetch(`/api/topics?lang=${UI_LANG}`)).json()).topics;
+  } catch { return; }
+  const counts = new Map();
+  for (const t of allTopics) counts.set(t.subject, (counts.get(t.subject) || 0) + 1);
+  const box = $('subjects');
+  box.replaceChildren();
+  for (const s of SUBJECT_ORDER) {
+    if (!counts.has(s)) continue;
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'subject';
+    b.textContent = UI.subjects[s];
+    b.addEventListener('click', () => openBrowse(s));
+    box.append(b);
+  }
+}
+$('subjectsTitle').textContent = UI.explore;
+$('browseBack').setAttribute('aria-label', UI.back);
+$('browseBack').addEventListener('click', showHome);
+$('homeOpen').textContent = UI.home;
+$('homeOpen').addEventListener('click', showHome);
+loadTopics();
 
 async function refreshStatus() {
   try {

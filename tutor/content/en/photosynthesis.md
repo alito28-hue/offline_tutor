@@ -1,6 +1,11 @@
 ---
 title: Photosynthesis
-subject: science
+topic: fotosintesis
+order: 152
+subject: naturales
+block: Plants
+grades: 4,5
+asks: How do plants make their food? | What is photosynthesis? | why do plants need sunlight | what is chlorophyll
 lang: en
 source_title: Photosynthesis
 source_site: Wikipedia

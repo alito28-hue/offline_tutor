@@ -1,6 +1,11 @@
 ---
 title: Electricity
-subject: science
+topic: electricidad
+order: 223
+subject: naturales
+block: Physics
+grades: 6
+asks: What is electric current? | what is a conductor | what is an insulator
 lang: en
 source_title: Electricity
 source_site: Wikipedia

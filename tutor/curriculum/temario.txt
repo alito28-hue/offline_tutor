@@ -1,0 +1,519 @@
+# materia|bloque|grados|tema|artículo de Wikipedia. Un ! al final marca temas que necesitan revisión de una persona.
+matematica|Números|4,5|Los números naturales|Número natural
+matematica|Números|4,5|El sistema decimal y el valor posicional|Sistema de numeración decimal
+matematica|Números|6|Otros sistemas de numeración|Sistema de numeración
+matematica|Números|5,6|Los números romanos|Numeración romana
+matematica|Números|4|El cero|Cero
+matematica|Números|4,5|Las fracciones|Fracción
+matematica|Números|5,6|Fracciones equivalentes|Fracción
+matematica|Números|4,5|Los números decimales|Número decimal
+matematica|Números|6|La recta numérica|Recta numérica
+matematica|Números|6|Los porcentajes|Porcentaje
+matematica|Números|7|Los números enteros y negativos|Número entero
+matematica|Números|7|Las potencias|Potenciación
+matematica|Números|7|La raíz cuadrada|Raíz cuadrada
+matematica|Números|5,6|Números pares e impares|Números pares e impares
+matematica|Números|5,6|Los números primos|Número primo
+matematica|Divisibilidad|5,6|Múltiplos|Múltiplo
+matematica|Divisibilidad|5,6|Divisores|Divisor
+matematica|Divisibilidad|6|Criterios de divisibilidad|Divisibilidad
+matematica|Divisibilidad|6|El mínimo común múltiplo|Mínimo común múltiplo
+matematica|Divisibilidad|6|El máximo común divisor|Máximo común divisor
+matematica|Operaciones|4|La suma|Suma
+matematica|Operaciones|4|La resta|Resta
+matematica|Operaciones|4|La multiplicación|Multiplicación
+matematica|Operaciones|4|La división|División (matemática)
+matematica|Operaciones|4,5|Las tablas de multiplicar|Tabla de multiplicar
+matematica|Operaciones|5,6|La propiedad distributiva|Propiedad distributiva
+matematica|Operaciones|4,5|La propiedad conmutativa|Conmutatividad
+matematica|Operaciones|6|El orden de las operaciones|Orden de evaluación
+matematica|Operaciones|4,5,6|El redondeo y la estimación|Redondeo
+matematica|Operaciones|5,6|Suma y resta de fracciones|Fracción
+matematica|Operaciones|6|Multiplicación de fracciones|Fracción
+matematica|Proporcionalidad|5,6|La proporcionalidad directa|Proporcionalidad
+matematica|Proporcionalidad|6|La regla de tres|Regla de tres
+matematica|Proporcionalidad|6|La razón matemática|Razón (matemáticas)
+matematica|Proporcionalidad|6,7|La escala en mapas y planos|Escala (cartografía)
+matematica|Estadística|5,6|El promedio|Media aritmética
+matematica|Estadística|5,6|Los gráficos de barras|Diagrama de barras
+matematica|Estadística|6|Los gráficos circulares|Gráfica circular
+matematica|Estadística|6,7|La probabilidad|Probabilidad
+matematica|Estadística|6|Las tablas de datos|Tabla (información)
+matematica|Geometría|4,5|El punto, la recta y el plano|Geometría euclidiana
+matematica|Geometría|4,5|Rectas paralelas y perpendiculares|Paralelismo (matemática)
+matematica|Geometría|4,5|Los ángulos|Ángulo
+matematica|Geometría|4,5|Los triángulos|Triángulo
+matematica|Geometría|5|Los cuadriláteros|Cuadrilátero
+matematica|Geometría|5|El cuadrado|Cuadrado
+matematica|Geometría|5|El rectángulo|Rectángulo
+matematica|Geometría|5,6|El rombo|Rombo
+matematica|Geometría|5,6|El trapecio|Trapecio (geometría)
+matematica|Geometría|5,6|Los polígonos|Polígono
+matematica|Geometría|5,6|La circunferencia y el círculo|Circunferencia
+matematica|Geometría|6,7|El número pi|Número π
+matematica|Geometría|5,6|La simetría|Simetría
+matematica|Geometría|5,6|Los cuerpos geométricos|Poliedro
+matematica|Geometría|5,6|El cubo|Cubo
+matematica|Geometría|5,6|La pirámide|Pirámide (geometría)
+matematica|Geometría|5,6|El cilindro|Cilindro
+matematica|Geometría|5,6|La esfera|Esfera
+matematica|Medida|4,5|El metro y la longitud|Metro
+matematica|Medida|4,5|El perímetro|Perímetro
+matematica|Medida|5,6|El área|Área
+matematica|Medida|6|El volumen|Volumen
+matematica|Medida|4,5|El litro y la capacidad|Litro
+matematica|Medida|4,5|El gramo y el peso|Gramo
+matematica|Medida|4,5|El tiempo: horas, minutos y segundos|Hora
+matematica|Medida|5,6|El sistema métrico decimal|Sistema métrico decimal
+lengua|Gramática|4,5|El sustantivo|Sustantivo
+lengua|Gramática|4,5|El adjetivo|Adjetivo
+lengua|Gramática|4,5|El verbo|Verbo
+lengua|Gramática|5,6|Los tiempos verbales|Tiempo gramatical
+lengua|Gramática|5,6|El adverbio|Adverbio
+lengua|Gramática|4,5|El pronombre|Pronombre
+lengua|Gramática|5,6|La preposición|Preposición
+lengua|Gramática|5,6|La conjunción|Conjunción gramatical
+lengua|Gramática|4,5|El artículo|Artículo (gramática)
+lengua|Gramática|4,5,6|La oración, sujeto y predicado|Oración (gramática)
+lengua|Gramática|6,7|El sujeto|Sujeto (gramática)
+lengua|Gramática|6,7|El predicado|Predicado (gramática)
+lengua|Gramática|4,5|El párrafo|Párrafo
+lengua|Vocabulario|4,5|Los sinónimos|Sinonimia (semántica)
+lengua|Vocabulario|4,5|Los antónimos|Antonimia
+lengua|Vocabulario|5,6|Los prefijos|Prefijo
+lengua|Vocabulario|5,6|Los sufijos|Sufijo
+lengua|Vocabulario|4,5|Diminutivos y aumentativos|Diminutivo
+lengua|Vocabulario|5,6|Las familias de palabras|Familia léxica
+lengua|Vocabulario|6|Las palabras homófonas|Homofonía
+lengua|Ortografía|4,5|La sílaba|Sílaba
+lengua|Ortografía|4,5|El acento y la tilde|Tilde
+lengua|Ortografía|4,5|Palabras agudas, graves y esdrújulas|Acento prosódico
+lengua|Ortografía|4,5|El diptongo|Diptongo
+lengua|Ortografía|5,6|El hiato|Hiato (fonología)
+lengua|Ortografía|4,5|El punto, la coma y otros signos|Signo de puntuación
+lengua|Ortografía|4,5|La coma|Coma (puntuación)
+lengua|Ortografía|4,5|La diéresis|Diéresis
+lengua|Ortografía|4,5|Las mayúsculas|Letra mayúscula
+lengua|Tipos de texto|4,5|El cuento|Cuento
+lengua|Tipos de texto|4,5|La fábula|Fábula
+lengua|Tipos de texto|4,5|La leyenda|Leyenda
+lengua|Tipos de texto|4,5|El mito|Mito
+lengua|Tipos de texto|5,6|La novela|Novela
+lengua|Tipos de texto|4,5,6|La poesía|Poesía
+lengua|Tipos de texto|5,6|La rima|Rima
+lengua|Tipos de texto|5,6|El teatro|Teatro
+lengua|Tipos de texto|5,6|La noticia|Noticia
+lengua|Tipos de texto|5,6|La carta|Carta
+lengua|Tipos de texto|6,7|La biografía|Biografía
+lengua|Tipos de texto|5,6|La historieta|Historieta
+lengua|Tipos de texto|5,6|El diccionario|Diccionario
+lengua|Tipos de texto|5,6|La enciclopedia|Enciclopedia
+lengua|Literatura|5,6|La metáfora|Metáfora
+lengua|Literatura|5,6|La comparación o símil|Símil
+lengua|Literatura|6,7|La personificación|Personificación
+lengua|Literatura|5,6,7|El Martín Fierro|Martín Fierro
+lengua|Literatura|5,6|Horacio Quiroga|Horacio Quiroga
+lengua|Literatura|4,5|María Elena Walsh|María Elena Walsh
+lengua|Literatura|6,7|Jorge Luis Borges|Jorge Luis Borges
+lengua|Literatura|6,7|Julio Cortázar|Julio Cortázar
+lengua|Lenguas|4,5|El idioma español|Idioma español
+lengua|Lenguas|5,6|El español rioplatense y el voseo|Español rioplatense
+lengua|Lenguas|4,5|Las lenguas de Argentina|Lenguas de Argentina
+lengua|Lenguas|5,6|El guaraní|Idioma guaraní
+lengua|Lenguas|5,6|El quechua|Lenguas quechuas
+lengua|Lenguas|5,6|El mapuche|Idioma mapuche
+naturales|Seres vivos|4,5|Los seres vivos|Ser vivo
+naturales|Seres vivos|6|La célula|Célula
+naturales|Seres vivos|4|Los reinos de los seres vivos|Reino (biología)
+naturales|Seres vivos|4,5|Los animales|Animalia
+naturales|Seres vivos|4,5|Las plantas|Plantae
+naturales|Seres vivos|4,5|Los hongos|Fungi
+naturales|Seres vivos|4,5|Los microorganismos|Microorganismo
+naturales|Seres vivos|5,6|Las bacterias|Bacteria
+naturales|Seres vivos|6|Los virus|Virus
+naturales|Animales|4,5|Los mamíferos|Mammalia
+naturales|Animales|4,5|Las aves|Aves
+naturales|Animales|4,5|Los reptiles|Reptilia
+naturales|Animales|4,5|Los anfibios|Amphibia
+naturales|Animales|4,5|Los peces|Pez
+naturales|Animales|4,5|Los insectos|Insecta
+naturales|Animales|4,5|Los arácnidos|Arachnida
+naturales|Animales|4,5|Vertebrados e invertebrados|Invertebrado
+naturales|Animales|4,5|Los dinosaurios|Dinosauria
+naturales|Animales|4,5|Las abejas|Anthophila
+naturales|Animales|4,5|Las mariposas|Lepidoptera
+naturales|Animales|4,5|Las ballenas|Balaenidae
+naturales|Animales|4,5|El yaguareté|Panthera onca
+naturales|Animales|4,5|El puma|Puma concolor
+naturales|Animales|4,5|El cóndor andino|Vultur gryphus
+naturales|Animales|4,5|El guanaco|Lama guanicoe
+naturales|Animales|4,5|El carpincho|Hydrochoerus hydrochaeris
+naturales|Animales|4,5|El hornero|Furnarius rufus
+naturales|Animales|4,5|El pingüino|Spheniscidae
+naturales|Plantas|4,5|La fotosíntesis|Fotosíntesis
+naturales|Plantas|4,5|La raíz|Raíz (botánica)
+naturales|Plantas|4,5|La hoja|Hoja
+naturales|Plantas|4,5|La flor|Flor
+naturales|Plantas|4,5|El fruto|Fruto
+naturales|Plantas|4,5|La semilla|Semilla
+naturales|Plantas|4,5|La polinización|Polinización
+naturales|Plantas|4,5|El árbol|Árbol
+naturales|Plantas|4,5|El ombú|Phytolacca dioica
+naturales|Plantas|4,5|El ceibo|Erythrina crista-galli
+naturales|Ambientes|4,5|El ecosistema|Ecosistema
+naturales|Ambientes|6|La cadena alimentaria|Cadena trófica
+naturales|Ambientes|6|Productores, consumidores y descomponedores|Red trófica
+naturales|Ambientes|4,5|La adaptación de los seres vivos|Adaptación biológica
+naturales|Ambientes|4|Los ambientes aeroterrestres|Bioma
+naturales|Ambientes|5|Los ambientes acuáticos|Ecosistema acuático
+naturales|Ambientes|4,5|Los bosques|Bosque
+naturales|Ambientes|4,5|La selva|Selva
+naturales|Ambientes|4,5|El desierto|Desierto
+naturales|Ambientes|4,5|La pradera|Pradera
+naturales|Ambientes|5,6|Los humedales|Humedal
+naturales|Ambientes|5,6|La biodiversidad|Biodiversidad
+naturales|Ambientes|5,6|Las especies en peligro|Especie en peligro de extinción
+naturales|Ambientes|6,7|La evolución de los seres vivos|Evolución biológica
+naturales|Ambientes|6,7|Los fósiles|Fósil
+naturales|Cuerpo humano|4,5|El cuerpo humano|Cuerpo humano
+naturales|Cuerpo humano|4|El esqueleto|Esqueleto humano
+naturales|Cuerpo humano|4|Los huesos|Hueso
+naturales|Cuerpo humano|4|Los músculos|Músculo
+naturales|Cuerpo humano|4|Las articulaciones|Articulación (anatomía)
+naturales|Cuerpo humano|5|La digestión|Aparato digestivo
+naturales|Cuerpo humano|5|La respiración|Aparato respiratorio
+naturales|Cuerpo humano|5|La circulación de la sangre|Aparato circulatorio
+naturales|Cuerpo humano|5|El corazón|Corazón
+naturales|Cuerpo humano|5|La sangre|Sangre
+naturales|Cuerpo humano|5|La excreción y los riñones|Aparato excretor
+naturales|Cuerpo humano|6|El sistema nervioso|Sistema nervioso
+naturales|Cuerpo humano|6|El cerebro|Cerebro
+naturales|Cuerpo humano|6|Los sentidos|Sentido (percepción)
+naturales|Cuerpo humano|6|La vista|Ojo humano
+naturales|Cuerpo humano|6|El oído|Oído
+naturales|Cuerpo humano|4,5|Los dientes|Diente
+naturales|Cuerpo humano|6|La reproducción humana|Reproducción humana|!
+naturales|Cuerpo humano|6|La pubertad|Pubertad|!
+naturales|Salud|5,6|La alimentación saludable|Dieta sana
+naturales|Salud|5,6|Las vitaminas|Vitamina
+naturales|Salud|5,6|Las vacunas|Vacuna
+naturales|Salud|5,6|La higiene|Higiene
+naturales|Salud|5,6|Las proteínas|Proteína
+naturales|Materiales|4|Materiales naturales y artificiales|Material
+naturales|Materiales|4|Los minerales|Mineral
+naturales|Materiales|4|El plástico|Plástico
+naturales|Materiales|4|Los estados de la materia|Estado de agregación de la materia
+naturales|Materiales|5|Las mezclas|Mezcla
+naturales|Materiales|5|La disolución|Disolución
+naturales|Materiales|6|El aire|Aire
+naturales|Materiales|6|La combustión|Combustión
+naturales|Materiales|6|La corrosión|Corrosión
+naturales|Materiales|6,7|Los átomos|Átomo
+naturales|Materiales|6,7|El oxígeno|Oxígeno
+naturales|Materiales|6,7|El agua|Agua
+naturales|Física|4|El magnetismo y los imanes|Imán
+naturales|Física|4|La electricidad estática|Electricidad estática
+naturales|Física|4,5|Las fuerzas|Fuerza
+naturales|Física|5|La luz|Luz
+naturales|Física|5|La reflexión de la luz|Reflexión (física)
+naturales|Física|5|El arcoíris|Arcoíris
+naturales|Física|5|Las sombras|Sombra
+naturales|Física|5|El sonido|Sonido
+naturales|Física|5|El peso y la gravedad|Gravedad
+naturales|Física|5|La flotación|Flotabilidad
+naturales|Física|6|La corriente eléctrica|Corriente eléctrica
+naturales|Física|6|Los circuitos eléctricos|Circuito
+naturales|Física|6|La energía|Energía
+naturales|Física|6|Las energías renovables|Energía renovable
+naturales|Física|6|La energía solar|Energía solar
+naturales|Física|6|La energía eólica|Energía eólica
+naturales|Física|6|El calor|Calor
+naturales|Física|6|La temperatura|Temperatura
+naturales|Tierra|4|La Tierra|Tierra
+naturales|Tierra|4|La rotación de la Tierra|Rotación de la Tierra
+naturales|Tierra|4|La geósfera|Geosfera
+naturales|Tierra|4|Los volcanes|Volcán
+naturales|Tierra|4|Los terremotos|Terremoto
+naturales|Tierra|4,5|Las rocas|Roca
+naturales|Tierra|4,5|El suelo|Suelo
+naturales|Tierra|5|La hidrosfera|Hidrosfera
+naturales|Tierra|5|El ciclo del agua|Ciclo hidrológico
+naturales|Tierra|5|Las mareas|Marea
+naturales|Tierra|5|Las corrientes marinas|Corriente oceánica
+naturales|Tierra|5|Los glaciares|Glaciar
+naturales|Tierra|6|La atmósfera|Atmósfera terrestre
+naturales|Tierra|6|El tiempo atmosférico|Tiempo atmosférico
+naturales|Tierra|6|El clima|Clima
+naturales|Tierra|6|La lluvia|Lluvia
+naturales|Tierra|6|Las nubes|Nube
+naturales|Tierra|6|El viento|Viento
+naturales|Tierra|6|El rayo y el trueno|Rayo
+naturales|Tierra|6|La nieve|Nieve
+naturales|Tierra|6|El cielo azul|Cielo
+naturales|Tierra|6,7|El cambio climático|Cambio climático
+naturales|Universo|6|El sistema solar|Sistema solar
+naturales|Universo|6|El Sol|Sol
+naturales|Universo|6|La Luna|Luna
+naturales|Universo|6|Las fases de la Luna|Fase lunar
+naturales|Universo|6|Los planetas|Planeta
+naturales|Universo|6|Mercurio|Mercurio (planeta)
+naturales|Universo|6|Venus|Venus (planeta)
+naturales|Universo|6|Marte|Marte (planeta)
+naturales|Universo|6|Júpiter|Júpiter (planeta)
+naturales|Universo|6|Saturno|Saturno (planeta)
+naturales|Universo|6|Urano|Urano (planeta)
+naturales|Universo|6|Neptuno|Neptuno (planeta)
+naturales|Universo|6|Las estrellas|Estrella
+naturales|Universo|6|Las galaxias|Galaxia
+naturales|Universo|6|La Vía Láctea|Vía Láctea
+naturales|Universo|6|Los eclipses|Eclipse
+naturales|Universo|6|La traslación y las estaciones|Estación del año
+naturales|Universo|6|Los cometas|Cometa
+naturales|Universo|6|Los astronautas|Astronauta
+geografia|Argentina|4,5|La República Argentina|Argentina
+geografia|Argentina|4,5|Las provincias argentinas|Provincias de Argentina
+geografia|Argentina|4|Los municipios|Municipio
+geografia|Argentina|4,5|Buenos Aires|Buenos Aires
+geografia|Argentina|4,5|La provincia de Buenos Aires|Provincia de Buenos Aires
+geografia|Argentina|4,5|Córdoba|Provincia de Córdoba (Argentina)
+geografia|Argentina|4,5|Santa Fe|Provincia de Santa Fe
+geografia|Argentina|4,5|Mendoza|Provincia de Mendoza
+geografia|Argentina|4,5|Tucumán|Provincia de Tucumán
+geografia|Argentina|4,5|Salta|Provincia de Salta
+geografia|Argentina|4,5|Jujuy|Provincia de Jujuy
+geografia|Argentina|4,5|Misiones|Provincia de Misiones
+geografia|Argentina|4,5|Corrientes|Provincia de Corrientes
+geografia|Argentina|4,5|Entre Ríos|Provincia de Entre Ríos
+geografia|Argentina|4,5|Chaco|Provincia del Chaco
+geografia|Argentina|4,5|Formosa|Provincia de Formosa
+geografia|Argentina|4,5|Santiago del Estero|Provincia de Santiago del Estero
+geografia|Argentina|4,5|Catamarca|Provincia de Catamarca
+geografia|Argentina|4,5|La Rioja|Provincia de La Rioja (Argentina)
+geografia|Argentina|4,5|San Juan|Provincia de San Juan
+geografia|Argentina|4,5|San Luis|Provincia de San Luis
+geografia|Argentina|4,5|La Pampa|Provincia de La Pampa
+geografia|Argentina|4,5|Neuquén|Provincia del Neuquén
+geografia|Argentina|4,5|Río Negro|Provincia de Río Negro
+geografia|Argentina|4,5|Chubut|Provincia del Chubut
+geografia|Argentina|4,5|Santa Cruz|Provincia de Santa Cruz (Argentina)
+geografia|Argentina|4,5|Tierra del Fuego|Provincia de Tierra del Fuego, Antártida e Islas del Atlántico Sur
+geografia|Regiones|4,5|La Patagonia|Patagonia
+geografia|Regiones|4,5|La región pampeana|Región pampeana
+geografia|Regiones|4,5|El Noroeste argentino|Noroeste argentino
+geografia|Regiones|4,5|El Gran Chaco|Gran Chaco
+geografia|Regiones|4,5|Cuyo|Cuyo
+geografia|Regiones|4,5|El Litoral|Región del Litoral (Argentina)
+geografia|Regiones|5,6|La Antártida|Antártida
+geografia|Relieve y agua|4,5|La cordillera de los Andes|Andes
+geografia|Relieve y agua|4,5|El Aconcagua|Aconcagua
+geografia|Relieve y agua|4,5|La Pampa, la llanura|Llanura pampeana
+geografia|Relieve y agua|4,5|La Puna|Puna de Atacama
+geografia|Relieve y agua|4,5|El río de la Plata|Río de la Plata
+geografia|Relieve y agua|4,5|El río Paraná|Río Paraná
+geografia|Relieve y agua|4,5|El río Uruguay|Río Uruguay
+geografia|Relieve y agua|4,5|El mar Argentino|Mar Argentino
+geografia|Relieve y agua|4,5|Las cataratas del Iguazú|Cataratas del Iguazú
+geografia|Relieve y agua|4,5|El glaciar Perito Moreno|Glaciar Perito Moreno
+geografia|Relieve y agua|4,5|La quebrada de Humahuaca|Quebrada de Humahuaca
+geografia|Áreas protegidas|4,5|Los parques nacionales|Parques nacionales de Argentina
+geografia|Áreas protegidas|4,5|El parque nacional Iguazú|Parque nacional Iguazú
+geografia|Áreas protegidas|4,5|El parque nacional Nahuel Huapi|Parque nacional Nahuel Huapi
+geografia|Áreas protegidas|4,5|Los esteros del Iberá|Esteros del Iberá
+geografia|Áreas protegidas|4,5|La península Valdés|Península Valdés
+geografia|Ambiente y recursos|4,5|Los recursos naturales|Recurso natural
+geografia|Ambiente y recursos|4,5|La contaminación|Contaminación
+geografia|Ambiente y recursos|5,6|La deforestación|Deforestación
+geografia|Ambiente y recursos|4,5|El reciclaje|Reciclaje
+geografia|Ambiente y recursos|5,6|La minería|Minería
+geografia|Ambiente y recursos|5,6|El petróleo|Petróleo
+geografia|Producción|4,5|La agricultura|Agricultura
+geografia|Producción|4,5|La ganadería|Ganadería
+geografia|Producción|4,5|La soja|Glycine max
+geografia|Producción|5,6|La pesca|Pesca
+geografia|Producción|5,6|La industria|Industria
+geografia|Producción|5,6|El comercio|Comercio
+geografia|Población|5,6|Las ciudades|Ciudad
+geografia|Población|5,6|El campo y la ciudad|Zona rural
+geografia|Población|6|La población y los censos|Censo de población
+geografia|Población|6|Las migraciones|Migración humana
+geografia|Población|5,6|El trabajo|Trabajo (sociología)
+geografia|Mapas|4,5|Los mapas|Mapa
+geografia|Mapas|4,5|Los puntos cardinales|Punto cardinal
+geografia|Mapas|5,6|Latitud y longitud|Coordenadas geográficas
+geografia|Mapas|5,6|El ecuador y los trópicos|Ecuador terrestre
+geografia|Mapas|5,6|La brújula|Brújula
+geografia|Mundo|6|América Latina|América Latina
+geografia|Mundo|6|El Mercosur|Mercosur
+geografia|Mundo|6|América del Sur|América del Sur
+geografia|Mundo|6|Los continentes|Continente
+geografia|Mundo|6|Los océanos|Océano
+geografia|Mundo|6|Uruguay|Uruguay
+geografia|Mundo|6|Chile|Chile
+geografia|Mundo|6|Brasil|Brasil
+geografia|Mundo|6|Paraguay|Paraguay
+geografia|Mundo|6|Bolivia|Bolivia
+geografia|Mundo|6|El río Amazonas|Río Amazonas
+historia|Pueblos originarios|4|Los pueblos originarios de Argentina|Pueblos indígenas de Argentina|!
+historia|Pueblos originarios|4|Los guaraníes|Pueblo guaraní|!
+historia|Pueblos originarios|4|Los mapuches|Pueblo mapuche|!
+historia|Pueblos originarios|4|Los diaguitas|Diaguita|!
+historia|Pueblos originarios|4|Los qom|Pueblo toba|!
+historia|Pueblos originarios|4|Los wichís|Wichí|!
+historia|Pueblos originarios|4|Los tehuelches|Tehuelches|!
+historia|Pueblos originarios|4|Los incas|Imperio incaico
+historia|Pueblos originarios|4|Los mayas|Cultura maya
+historia|Pueblos originarios|4|Los aztecas|Azteca
+historia|Conquista y colonia|4|Cristóbal Colón|Cristóbal Colón
+historia|Conquista y colonia|4|La llegada de los europeos a América|Descubrimiento de América
+historia|Conquista y colonia|4|La conquista de América|Conquista de América|!
+historia|Conquista y colonia|4|Pedro de Mendoza y la fundación de Buenos Aires|Pedro de Mendoza
+historia|Conquista y colonia|4|Las misiones jesuíticas|Misiones jesuíticas guaraníes
+historia|Conquista y colonia|4|La esclavitud en América|Esclavitud en América|!
+historia|Conquista y colonia|4|El Virreinato del Río de la Plata|Virreinato del Río de la Plata
+historia|Conquista y colonia|4|Potosí|Potosí
+historia|Conquista y colonia|4|Las invasiones inglesas|Invasiones inglesas
+historia|Independencia|5|La Revolución de Mayo|Revolución de Mayo
+historia|Independencia|5|La Primera Junta|Primera Junta
+historia|Independencia|5|Mariano Moreno|Mariano Moreno
+historia|Independencia|5|Cornelio Saavedra|Cornelio Saavedra
+historia|Independencia|5|Manuel Belgrano|Manuel Belgrano
+historia|Independencia|5|La bandera argentina|Bandera de Argentina
+historia|Independencia|5|José de San Martín|José de San Martín
+historia|Independencia|5|El cruce de los Andes|Cruce de los Andes
+historia|Independencia|5|Juana Azurduy|Juana Azurduy
+historia|Independencia|5|Martín Miguel de Güemes|Martín Miguel de Güemes
+historia|Independencia|5|Simón Bolívar|Simón Bolívar
+historia|Independencia|5|La Asamblea del Año XIII|Asamblea del Año XIII
+historia|Independencia|5|El Himno Nacional Argentino|Himno Nacional Argentino
+historia|Independencia|5|El Congreso de Tucumán|Congreso de Tucumán
+historia|Independencia|5|La Declaración de Independencia|Declaración de Independencia de la Argentina
+historia|Independencia|5|El Éxodo Jujeño|Éxodo Jujeño
+historia|Siglo XIX|5|Unitarios y federales|Guerras civiles argentinas|!
+historia|Siglo XIX|5|Bernardino Rivadavia|Bernardino Rivadavia
+historia|Siglo XIX|5|Juan Manuel de Rosas|Juan Manuel de Rosas|!
+historia|Siglo XIX|5|José Gervasio Artigas|José Gervasio Artigas
+historia|Siglo XIX|5|Facundo Quiroga|Facundo Quiroga
+historia|Siglo XIX|6|La batalla de Caseros|Batalla de Caseros
+historia|Siglo XIX|6|Justo José de Urquiza|Justo José de Urquiza
+historia|Siglo XIX|6|La Constitución de 1853|Constitución de la Nación Argentina
+historia|Siglo XIX|6|Bartolomé Mitre|Bartolomé Mitre
+historia|Siglo XIX|6|Domingo Faustino Sarmiento|Domingo Faustino Sarmiento|!
+historia|Siglo XIX|6|La guerra del Paraguay|Guerra de la Triple Alianza|!
+historia|Siglo XIX|6|La Conquista del Desierto|Conquista del Desierto|!
+historia|Siglo XIX|6|Julio Argentino Roca|Julio Argentino Roca|!
+historia|Siglo XIX|6|La ley 1420 de educación|Ley N.º 1420 (Argentina)
+historia|Siglo XIX|6|La inmigración en Argentina|Inmigración en Argentina
+historia|Siglo XIX|6|El ferrocarril en Argentina|Ferrocarril en Argentina
+historia|Siglo XX|6,7|La ley Sáenz Peña|Ley Sáenz Peña
+historia|Siglo XX|6,7|Hipólito Yrigoyen|Hipólito Yrigoyen|!
+historia|Siglo XX|6,7|El voto femenino|Sufragio femenino en Argentina|!
+historia|Siglo XX|6,7|Juan Domingo Perón|Juan Domingo Perón|!
+historia|Siglo XX|6,7|Eva Perón|Eva Perón|!
+historia|Siglo XX|6,7|La última dictadura y la memoria|Proceso de Reorganización Nacional|!
+historia|Siglo XX|6,7|Las Abuelas de Plaza de Mayo|Abuelas de Plaza de Mayo|!
+historia|Siglo XX|6,7|La guerra de las Malvinas|Guerra de las Malvinas|!
+historia|Siglo XX|6,7|Raúl Alfonsín y el regreso de la democracia|Raúl Alfonsín|!
+historia|Mundo|5,6|Las Islas Malvinas|Islas Malvinas|!
+historia|Mundo|7|El antiguo Egipto|Antiguo Egipto
+historia|Mundo|7|La antigua Grecia|Antigua Grecia
+historia|Mundo|7|El Imperio romano|Imperio romano
+historia|Mundo|7|La Edad Media|Edad Media
+historia|Mundo|7|La imprenta|Imprenta
+historia|Mundo|7|La Revolución francesa|Revolución francesa
+historia|Mundo|7|La Revolución Industrial|Revolución Industrial
+historia|Mundo|7|La Primera Guerra Mundial|Primera Guerra Mundial|!
+historia|Mundo|7|La Segunda Guerra Mundial|Segunda Guerra Mundial|!
+historia|Mundo|7|El Holocausto|Holocausto|!
+historia|Mundo|7|La llegada a la Luna|Apolo 11
+historia|Personas|6,7|Bernardo Houssay|Bernardo Houssay
+historia|Personas|6,7|Luis Federico Leloir|Luis Federico Leloir
+historia|Personas|6,7|César Milstein|César Milstein
+historia|Personas|6,7|Florentino Ameghino|Florentino Ameghino
+historia|Personas|6,7|Francisco Pascasio Moreno|Francisco Pascasio Moreno
+historia|Personas|6,7|Albert Einstein|Albert Einstein
+historia|Personas|6,7|Marie Curie|Marie Curie
+ciudadania|Estado|4|La forma de gobierno de Argentina|Política de Argentina
+ciudadania|Estado|4,5|¿Qué es el Estado?|Estado
+ciudadania|Estado|4,5|¿Qué es la política?|Política|!
+ciudadania|Estado|5|La república|República
+ciudadania|Estado|5|El federalismo|Federalismo
+ciudadania|Estado|5|La división de poderes|Separación de poderes
+ciudadania|Estado|5|El Poder Ejecutivo y el presidente|Presidente de la Nación Argentina
+ciudadania|Estado|5|El Congreso|Congreso de la Nación Argentina
+ciudadania|Estado|5|La Corte Suprema|Corte Suprema de Justicia de la Nación Argentina
+ciudadania|Estado|4,5|Los gobernadores|Gobernador
+ciudadania|Estado|4,5|El intendente|Intendente
+ciudadania|Estado|6|La Constitución Nacional|Constitución de la Nación Argentina
+ciudadania|Estado|5,6|Las leyes|Ley
+ciudadania|Estado|5,6|Los impuestos|Impuesto
+ciudadania|Democracia|5,6|La democracia|Democracia
+ciudadania|Democracia|5,6|Las elecciones|Elección
+ciudadania|Democracia|5,6|El voto|Sufragio
+ciudadania|Democracia|6|Los partidos políticos|Partido político|!
+ciudadania|Democracia|5,6|La ciudadanía|Ciudadanía
+ciudadania|Democracia|5,6|Las dictaduras|Dictadura|!
+ciudadania|Democracia|5,6|Las organizaciones sociales|Organización no gubernamental
+ciudadania|Democracia|5,6|Las cooperativas|Cooperativa
+ciudadania|Derechos|4,5|Los derechos y las obligaciones|Derecho
+ciudadania|Derechos|5|Los derechos del niño|Convención sobre los Derechos del Niño
+ciudadania|Derechos|6|Los derechos humanos|Derechos humanos
+ciudadania|Derechos|6|La Declaración Universal de los Derechos Humanos|Declaración Universal de los Derechos Humanos
+ciudadania|Derechos|6|La discriminación|Discriminación|!
+ciudadania|Derechos|5,6|La igualdad|Igualdad social
+ciudadania|Derechos|5,6|La libertad de expresión|Libertad de expresión
+ciudadania|Derechos|6|Las Naciones Unidas|Organización de las Naciones Unidas
+ciudadania|Convivencia|4,5|Las normas de convivencia|Norma social
+ciudadania|Convivencia|4,5|El acoso escolar|Acoso escolar|!
+ciudadania|Convivencia|4,5|La solidaridad|Solidaridad (sociología)
+ciudadania|Convivencia|5,6|La paz|Paz
+ciudadania|Convivencia|5,6|La justicia|Justicia
+ciudadania|Convivencia|4,5|El diálogo|Diálogo
+ciudadania|Convivencia|5|La educación vial|Seguridad vial
+ciudadania|Convivencia|5,6|Las fiestas patrias argentinas|Anexo:Días festivos en Argentina
+ciudadania|Convivencia|5,6|La bandera y los símbolos patrios|Símbolos de Argentina
+ciudadania|Economía|5,6|El dinero|Dinero
+ciudadania|Economía|5,6|El ahorro|Ahorro
+ciudadania|Economía|5,6|El consumo responsable|Consumo responsable
+tecnologia|Máquinas|4,5|Las máquinas simples|Máquina simple
+tecnologia|Máquinas|4,5|La palanca|Palanca
+tecnologia|Máquinas|4,5|La rueda|Rueda
+tecnologia|Máquinas|5,6|La polea|Polea
+tecnologia|Máquinas|5,6|El motor|Motor
+tecnologia|Máquinas|6|Las herramientas|Herramienta
+tecnologia|Transporte|5,6|El avión|Avión
+tecnologia|Transporte|5,6|El tren|Tren
+tecnologia|Transporte|5,6|El barco|Barco
+tecnologia|Transporte|5,6|La bicicleta|Bicicleta
+tecnologia|Comunicación|5,6|El teléfono|Teléfono
+tecnologia|Comunicación|5,6|La radio|Radio (medio de comunicación)
+tecnologia|Comunicación|5,6|La televisión|Televisión
+tecnologia|Comunicación|6,7|La computadora|Computadora
+tecnologia|Comunicación|6,7|Internet|Internet
+tecnologia|Comunicación|6,7|La inteligencia artificial|Inteligencia artificial
+tecnologia|Comunicación|6,7|El correo electrónico|Correo electrónico
+tecnologia|Procesos|5,6|El papel y cómo se hace|Papel
+tecnologia|Procesos|5,6|El pan y cómo se hace|Pan
+tecnologia|Procesos|5,6|El vidrio|Vidrio
+tecnologia|Procesos|5,6|La electricidad en casa|Instalación eléctrica
+arte|Música|4,5|Los instrumentos musicales|Instrumento musical
+arte|Música|4,5|El tango|Tango
+arte|Música|4,5|El folklore argentino|Folclore de Argentina
+arte|Música|5,6|El chamamé|Chamamé
+arte|Música|5,6|La zamba|Zamba
+arte|Música|5,6|El charango|Charango
+arte|Música|5,6|La guitarra|Guitarra
+arte|Música|5,6|Las notas musicales|Nota musical
+arte|Artes visuales|4,5|La pintura|Pintura
+arte|Artes visuales|4,5|Los colores|Color
+arte|Artes visuales|5,6|Benito Quinquela Martín|Benito Quinquela Martín
+arte|Artes visuales|5,6|Antonio Berni|Antonio Berni
+arte|Artes visuales|5,6|Xul Solar|Xul Solar
+arte|Artes visuales|5,6|La escultura|Escultura
+arte|Artes visuales|5,6|La fotografía|Fotografía
+arte|Tradiciones|4,5|El gaucho|Gaucho
+arte|Tradiciones|4,5|El mate|Mate (infusión)
+arte|Tradiciones|4,5|El carnaval|Carnaval
+arte|Deportes|5,6|El fútbol|Fútbol
+arte|Deportes|5,6|Los Juegos Olímpicos|Juegos Olímpicos
+arte|Deportes|5,6|El pato, deporte nacional|Pato (deporte)
+arte|Música|5,6|La chacarera|Chacarera

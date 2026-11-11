@@ -1,6 +1,11 @@
 ---
 title: Rain
-subject: science
+topic: lluvia
+order: 246
+subject: naturales
+block: Earth
+grades: 6
+asks: Why does it rain? | What is rain? | where does the water that falls from the sky come from | why do drops fall from clouds
 lang: en
 source_title: Rain
 source_site: Wikipedia

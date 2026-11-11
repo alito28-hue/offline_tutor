@@ -1,6 +1,11 @@
 ---
 title: La lluvia
-subject: ciencias
+topic: lluvia
+order: 246
+subject: naturales
+block: Tierra
+grades: 6
+asks: ¿Por qué llueve? | ¿Qué es la lluvia? | de dónde viene el agua que cae del cielo | por qué caen gotas de las nubes
 lang: es
 source_title: Lluvia
 source_site: Wikipedia

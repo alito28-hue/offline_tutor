@@ -1,6 +1,11 @@
 ---
 title: La electricidad
-subject: ciencias
+topic: electricidad
+order: 223
+subject: naturales
+block: Física
+grades: 6
+asks: ¿Qué es la corriente eléctrica? | qué es un conductor | qué es un aislante
 lang: es
 source_title: Electricidad
 source_site: Wikipedia

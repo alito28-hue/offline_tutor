@@ -11,6 +11,7 @@
   <header class="top">
     <div class="brand"><span class="mark" aria-hidden="true">✏️</span>Amara</div>
     <div class="top-right">
+      <button id="homeOpen" type="button" class="credits-open" hidden>Home</button>
       <button id="creditsOpen" type="button" class="credits-open">Credits</button>
       <div id="net" class="pill pill-wait" role="status">Checking network…</div>
     </div>
@@ -24,12 +25,19 @@
       <button type="button" class="chip">How do plants make their food?</button>
       <button type="button" class="chip">¿Cómo funcionan los imanes?</button>
     </div>
-    <p id="credit" class="credit">
-      <span id="creditText"></span>
-      <a href="https://www.linkedin.com/in/alexinteractive" target="_blank" rel="noopener">LinkedIn</a> ·
-      <a href="https://amaratutor.org" target="_blank" rel="noopener">amaratutor.org</a> ·
-      <a id="creditFeedback" target="_blank" rel="noopener"></a>
-    </p>
+    <div class="subjects-box">
+      <h2 id="subjectsTitle" class="subjects-title">Explore by subject</h2>
+      <div id="subjects" class="subjects"></div>
+    </div>
+  </section>
+
+  <section id="browse" class="browse" hidden>
+    <div class="browse-top">
+      <button id="browseBack" type="button" class="back">←</button>
+      <h1 id="browseTitle"></h1>
+      <div id="grades" class="grades" role="group"></div>
+    </div>
+    <div id="topics" class="topics"></div>
   </section>
 
   <section id="lesson" class="lesson" hidden>
@@ -60,6 +68,12 @@
     <input id="question" type="text" maxlength="500" placeholder="Type your question…" aria-label="Your question" autofocus>
     <button id="send" type="submit">Ask</button>
   </form>
+  <p id="credit" class="credit">
+      <span id="creditText"></span>
+      <a href="https://www.linkedin.com/in/alexinteractive" target="_blank" rel="noopener">LinkedIn</a> ·
+      <a href="https://amaratutor.org" target="_blank" rel="noopener">amaratutor.org</a> ·
+      <a id="creditFeedback" target="_blank" rel="noopener"></a>
+  </p>
 </main>
 <script src="app.js"></script>
 </body>

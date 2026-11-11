@@ -1,0 +1,54 @@
+# Tanda 3: preguntas nuevas. idioma|tema (o FUERA)|pregunta
+es|cero|si le pongo un 0 a la derecha al 5 que numero da
+es|potencias|cuanto es 3 al cuadrado
+es|raiz-cuadrada|que numero por si mismo da 25
+es|multiplos|el 15 es multiplo de 5
+es|divisores|el 4 divide a 6
+es|mcm|cual es el menor multiplo comun de 2 y 3
+es|regla-de-tres|como hago para saber el precio de 5 si conozco el de 2
+es|circunferencia|que es el radio de un circulo
+es|cubo|cuantas aristas tiene el cubo
+es|volumen|cuanto espacio ocupa una caja
+es|pi|que es 3,14
+es|tiempos-verbales|ayer cante en que tiempo esta
+es|adverbio|la palabra aqui que tipo de palabra es
+es|antonimos|lo contrario de grande
+es|cuento|que es una narracion breve
+es|martin-fierro|quien fue jose hernandez
+es|idioma-espanol|el castellano y el espanol son lo mismo
+es|idioma-guarani|que lengua se habla en paraguay
+es|insectos|cuantas alas tienen los insectos
+es|aves|por que tienen plumas los pajaros
+es|anfibios|que le pasa a un renacuajo
+es|peces|que son las branquias
+es|hongos|que son las levaduras
+es|bacterias|las bacterias son microorganismos
+es|virus|que es el adn de un virus
+es|tierra|hace cuanto se formo la tierra
+es|estrellas|que es una constelacion
+es|cambio-climatico|que causa los cambios en el clima
+es|FUERA|como se juega al truco
+es|FUERA|que es el metaverso
+es|FUERA|como se llama el perro de mi vecino
+en|potencias|what is 3 squared
+en|multiplos|is 15 a multiple of 5
+en|cubo|how many edges does a cube have
+en|antonimos|what is the opposite of big
+en|martin-fierro|who was Jose Hernandez
+en|insectos|how many wings do insects have
+en|peces|what are gills
+en|virus|how do viruses make copies
+en|tierra|how old is our planet
+en|FUERA|how do I play poker
+en|FUERA|what is the metaverse
+pt|potencias|quanto é 3 ao quadrado
+pt|multiplos|15 é múltiplo de 5
+pt|cubo|quantas arestas tem um cubo
+pt|antonimos|qual é o contrário de grande
+pt|martin-fierro|quem foi José Hernández
+pt|insectos|quantas asas têm os insetos
+pt|peces|o que são brânquias
+pt|virus|como os vírus fazem cópias
+pt|tierra|quantos anos tem nosso planeta
+pt|FUERA|como se joga pôquer
+pt|FUERA|o que é o metaverso

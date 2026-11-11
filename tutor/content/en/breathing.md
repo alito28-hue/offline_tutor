@@ -1,6 +1,11 @@
 ---
 title: Breathing
-subject: science
+topic: respiracion
+order: 183
+subject: naturales
+block: Human body
+grades: 5
+asks: How do we breathe? | what are lungs for | what is the diaphragm
 lang: en
 source_title: Respiratory system
 source_site: Wikipedia

@@ -1,6 +1,11 @@
 ---
 title: La gravedad
-subject: ciencias
+topic: gravedad
+order: 221
+subject: naturales
+block: Física
+grades: 5
+asks: ¿Por qué las cosas caen al suelo? | ¿Qué es la gravedad? | por qué nos quedamos en el piso | quién fue Newton
 lang: es
 source_title: Gravedad
 source_site: Wikipedia

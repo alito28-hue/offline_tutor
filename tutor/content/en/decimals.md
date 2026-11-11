@@ -1,6 +1,11 @@
 ---
 title: Decimals
-subject: math
+topic: decimales
+order: 8
+subject: matematica
+block: Numbers
+grades: 4,5
+asks: What is a decimal number? | what does 0.5 mean | what is 3.5
 lang: en
 source_title: Decimal
 source_site: Wikipedia

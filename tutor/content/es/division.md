@@ -1,6 +1,11 @@
 ---
 title: La división
-subject: matemática
+topic: division
+order: 24
+subject: matematica
+block: Operaciones
+grades: 4
+asks: ¿Cómo reparto 20 manzanas entre 4 personas? | ¿Qué es dividir? | qué es el resto | qué es el cociente | cuánto es 20 dividido 4
 lang: es
 source_title: División (matemática)
 source_site: Wikipedia

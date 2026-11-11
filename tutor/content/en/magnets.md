@@ -1,6 +1,11 @@
 ---
 title: Magnets
-subject: science
+topic: imanes
+order: 213
+subject: naturales
+block: Physics
+grades: 4
+asks: Why do magnets attract each other? | How do magnets work? | what is the north pole of a magnet | what metals does a magnet attract
 lang: en
 source_title: Magnet
 source_site: Wikipedia

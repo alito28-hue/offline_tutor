@@ -1,6 +1,11 @@
 ---
 title: The Moon
-subject: science
+topic: luna
+order: 255
+subject: naturales
+block: Universe
+grades: 6
+asks: Why does the shape of the Moon change? | What is the Moon? | phases of the Moon | why are there tides
 lang: en
 source_title: Moon
 source_site: Wikipedia

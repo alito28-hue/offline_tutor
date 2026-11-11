@@ -1,6 +1,11 @@
 ---
 title: The cell
-subject: science
+topic: celula
+order: 125
+subject: naturales
+block: Living things
+grades: 6
+asks: What is a cell? | what is the nucleus | what are living things made of
 lang: en
 source_title: Cell
 source_site: Wikipedia

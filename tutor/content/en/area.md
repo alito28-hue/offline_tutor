@@ -1,6 +1,11 @@
 ---
 title: Area
-subject: math
+topic: area
+order: 61
+subject: matematica
+block: Measurement
+grades: 5,6
+asks: How do I work out the area of a rectangle? | What is area? | how much space a surface takes | area of a triangle
 lang: en
 source_title: Area
 source_site: Wikipedia

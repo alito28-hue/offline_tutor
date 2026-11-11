@@ -31,6 +31,20 @@ export function loadPack(dir) {
 export const toDocuments = files =>
   files.flatMap(f => f.paragraphs.map(p => `[${f.file}] ${f.meta.title}: ${p}`));
 
+// What search compares a question with to find the right article: its title, its place in the curriculum and how children ask about it.
+export const toCards = files =>
+  files.map(f => `[${f.file}] ${[f.meta.title, f.meta.block, ...asksOf(f)].filter(Boolean).join('. ')}`);
+
+export const asksOf = f => (f.meta.asks ? f.meta.asks.split('|').map(q => q.trim()).filter(Boolean) : []);
+
+export const moreOf = f => (f.meta.more ? f.meta.more.split('|').map(q => q.trim()).filter(Boolean) : []);
+
+// The curriculum as the app shows it: one entry per article in the requested language.
+export const listTopics = (files, lang) => files
+  .filter(f => f.file.startsWith(`${lang}/`) && f.meta.topic)
+  .sort((a, b) => Number(a.meta.order || 0) - Number(b.meta.order || 0))
+  .map(f => ({ file: f.file, topic: f.meta.topic, title: f.meta.title, subject: f.meta.subject, block: f.meta.block || '', grades: (f.meta.grades || '').split(',').map(g => g.trim()).filter(Boolean), ask: asksOf(f)[0] || f.meta.title }));
+
 const TAG = /^\[([^\]]+)\]\s*/;
 
 export function parseHit(hit) {

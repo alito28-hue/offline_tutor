@@ -1,6 +1,11 @@
 ---
 title: La cadena alimentaria
-subject: ciencias
+topic: cadena-alimentaria
+order: 163
+subject: naturales
+block: Ambientes
+grades: 6
+asks: ¿Qué es una cadena alimentaria? | quién se come a quién | productores y consumidores
 lang: es
 source_title: Cadena trófica
 source_site: Wikipedia

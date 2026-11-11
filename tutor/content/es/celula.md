@@ -1,6 +1,11 @@
 ---
 title: La célula
-subject: ciencias
+topic: celula
+order: 125
+subject: naturales
+block: Seres vivos
+grades: 6
+asks: ¿Qué es una célula? | qué es el núcleo | de qué están hechos los seres vivos
 lang: es
 source_title: Célula
 source_site: Wikipedia

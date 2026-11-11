@@ -1,6 +1,11 @@
 ---
 title: Los mamíferos
-subject: ciencias
+topic: mamiferos
+order: 133
+subject: naturales
+block: Animales
+grades: 4,5
+asks: ¿Qué es un mamífero? | ¿Por qué la ballena es un mamífero? | animales que toman leche | la ballena da leche
 lang: es
 source_title: Mammalia
 source_site: Wikipedia

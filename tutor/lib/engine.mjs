@@ -3,7 +3,8 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { cancel, close, completion, embed, loadModel } from '@qvac/sdk';
-import { topMatches } from './vectors.mjs';
+import { loadIndex } from './searchindex.mjs';
+import { topMatches, unit } from './vectors.mjs';
 
 const MODEL_DIR = process.env.TUTOR_MODEL_DIR || path.join(os.homedir(), '.qvac/models');
 const EMBED_BATCH = 16;
@@ -19,20 +20,39 @@ export function findModel(name) {
   return path.join(MODEL_DIR, file);
 }
 
-export async function createEngine(documents) {
+export const EMBED_MODEL = EMBED_NAME;
+
+export async function createEngine(documents, cards = [], indexDir = null) {
   const embedId = await loadModel({ modelSrc: findModel(EMBED_NAME), modelType: 'llamacpp-embedding', modelConfig: { ...DEVICE } });
   const llmId = await loadModel({ modelSrc: findModel(LLM_NAME), modelType: 'llamacpp-completion', modelConfig: { ctx_size: 4096, ...DEVICE } });
-  // Embedded on each start so that edits to the pack apply and old passages cannot be cited.
-  const vectors = [];
-  for (let i = 0; i < documents.length; i += EMBED_BATCH) {
-    const { embedding } = await embed({ modelId: embedId, text: documents.slice(i, i + EMBED_BATCH) });
-    vectors.push(...embedding);
+  // Use the index built ahead of time when it matches this content. If it does not, for instance during
+  // development, everything is embedded here, so that an edit applies and an old passage can never be cited.
+  const texts = [...documents, ...cards];
+  let vectors = indexDir && loadIndex(indexDir, texts, EMBED_NAME);
+  if (!vectors) {
+    vectors = [];
+    for (let i = 0; i < texts.length; i += EMBED_BATCH) {
+      const { embedding } = await embed({ modelId: embedId, text: texts.slice(i, i + EMBED_BATCH) });
+      for (const v of embedding) vectors.push(unit(v));
+    }
   }
+  const documentVectors = vectors.slice(0, documents.length);
+  const cardVectors = vectors.slice(documents.length);
+  const forLang = lang => lang ? c => c.startsWith(`[${lang}/`) : () => true;
+  // A question is embedded once, however many searches it needs.
+  let lastQuery = null;
+  let lastVector = null;
+  const embedQuery = async query => {
+    if (query !== lastQuery) { lastVector = (await embed({ modelId: embedId, text: query })).embedding; lastQuery = query; }
+    return lastVector;
+  };
 
   return {
-    async search(query, topK) {
-      const { embedding } = await embed({ modelId: embedId, text: query });
-      return topMatches(embedding, documents, vectors, topK);
+    async search(query, topK, lang) {
+      return topMatches(await embedQuery(query), documents, documentVectors, topK, forLang(lang));
+    },
+    async searchCards(query, topK, lang) {
+      return topMatches(await embedQuery(query), cards, cardVectors, topK, forLang(lang));
     },
     async *generate(history, generationParams) {
       const run = await completion({ modelId: llmId, history, stream: true, generationParams });

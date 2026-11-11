@@ -1,6 +1,11 @@
 ---
 title: The water cycle
-subject: science
+topic: ciclo-del-agua
+order: 239
+subject: naturales
+block: Earth
+grades: 5
+asks: What is the water cycle? | evaporation and condensation | where does river water go
 lang: en
 source_title: Water cycle
 source_site: Wikipedia

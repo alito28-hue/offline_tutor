@@ -1,6 +1,11 @@
 ---
 title: El ciclo del agua
-subject: ciencias
+topic: ciclo-del-agua
+order: 239
+subject: naturales
+block: Tierra
+grades: 5
+asks: ¿Qué es el ciclo del agua? | evaporación y condensación | adónde va el agua de los ríos
 lang: es
 source_title: Ciclo hidrológico
 source_site: Wikipedia

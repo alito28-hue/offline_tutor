@@ -1,6 +1,11 @@
 ---
 title: Sound
-subject: science
+topic: sonido
+order: 220
+subject: naturales
+block: Physics
+grades: 5
+asks: How does sound travel? | What is sound? | why can we hear | does sound travel in a vacuum
 lang: en
 source_title: Sound
 source_site: Wikipedia

@@ -1,6 +1,11 @@
 ---
 title: La multiplicación
-subject: matemática
+topic: multiplicacion
+order: 23
+subject: matematica
+block: Operaciones
+grades: 4
+asks: ¿Qué es multiplicar? | ¿Para qué sirve multiplicar? | cuánto es 4 por 3 | qué son los factores | cuánto es 7 por 3
 lang: es
 source_title: Multiplicación
 source_site: Wikipedia

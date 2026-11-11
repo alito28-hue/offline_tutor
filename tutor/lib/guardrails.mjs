@@ -1,23 +1,44 @@
-// Deterministic safety checks. They catch common wording in Spanish and English; they are not a guarantee.
+// Deterministic safety checks. They catch common wording in Spanish, English and Portuguese; they are not a guarantee.
 const normalize = s => s.toLowerCase().normalize('NFD').replace(/\p{M}/gu, '');
 
-const CARE = /\b(suicid\w*|matarme|me quiero matar|quiero morir\w*|hacerme dano|lastimarme|cortarme|kill myself|want to die|hurt myself|self.?harm|me (pegan|golpean|acosan|manosean)|someone (hits|touches|touched) me|me hacen bullying|abus[oa]\w* de mi)\b/;
-const UNSAFE = /\b(sexo|sexual\w*|sexy|sex|porn\w*|desnud\w*|nude\w*|naked|xxx|tetas|pene|vagina|boobs|penis|drogas?|cocaina|marihuana|porro|cocaine|weed|meth|heroin|vape|armas?|pistolas?|bombas?|explosiv\w*|guns?|weapons?|bombs?|matar|kill\w*|murder\w*|asesin\w*)\b/;
-const INJECTION = /\b(ignora\w*|olvida\w*|ignore|forget|disregard)\b.{0,30}\b(instruccion\w*|reglas?|instructions?|rules?|prompt)\b|\bjailbreak\b|\bsystem prompt\b|\bdan mode\b/;
-const OUTPUT_UNSAFE = new RegExp(`${UNSAFE.source}|https?://|www\\.`);
+const CARE = /\b(suicid\w*|matarme|me quiero matar|quiero morir\w*|hacerme dano|lastimarme|cortarme|kill myself|want to die|hurt myself|self.?harm|me matar|quero morrer|me machucar|me cortar|me (batem|bateram)|abusa\w* de mim|sofro bullying|me (pegan|golpean|acosan|manosean)|someone (hits|touches|touched) me|me hacen bullying|abus[oa]\w* de mi)\b/;
+const UNSAFE = /\b(maconha|cocaina|peitos|pelad[oa]s?|sexo|sexual\w*|sexy|sex|porn\w*|desnud\w*|nude\w*|naked|xxx|tetas|pene|vagina|boobs|penis|drogas?|cocaina|marihuana|porro|cocaine|weed|meth|heroin|vape|armas?|pistolas?|bombas?|explosiv\w*|guns?|weapons?|bombs?|matar|kill\w*|murder\w*|asesin\w*)\b/;
+const INJECTION = /\b(ignora\w*|olvida\w*|ignore|esqueca\w*|forget|disregard)\b.{0,30}\b(instruccion\w*|instruc\w*|regras?|reglas?|instructions?|rules?|prompt)\b|\bjailbreak\b|\bsystem prompt\b|\bdan mode\b/;
+// Never shown, even when an article contains the word.
+const EXPLICIT = /\b(peitos|pelad[oa]s?|sexy|porn\w*|desnud\w*|nude\w*|naked|xxx|tetas|boobs|pene|penis|vagina)\b/;
+// Asking how to make or get something dangerous is never a school question.
+const HOW_TO = /\b(como (hago|hacer|fabrico|fabricar|construyo|consigo|conseguir|compro|comprar|preparo|uso|armo|faco|fazer)|donde (compro|consigo|venden)|onde (compro|consigo)|how (do i|to|can i) (make|build|get|buy|use)|where (can i|do i|to) (buy|get))\b/;
+const LINKS = /https?:\/\/|www\./;
+const flagged = n => [...new Set(n.match(new RegExp(UNSAFE.source, 'g')) || [])];
+// A flagged word is fine when the material uses it too: "bomba atómica" in the article about Hiroshima, "orientación
+// sexual" in the article about discrimination. What the model adds on its own is still blocked.
+// A flagged word is covered when the material uses a word of the same family (asesinado / asesinaron, bomba / bombas).
+// Words that name the same thing in the three languages count as one family (killed / murdered / asesinado).
+const FAMILIES = [['kill', 'murd', 'asesi', 'assas', 'matar', 'mato', 'mata'], ['bomb', 'explo'], ['arma', 'weap', 'gun', 'pisto']];
+const stems = w => FAMILIES.find(f => f.some(s => w.startsWith(s))) || [w.slice(0, 5)];
+const covered = (words, material) => words.every(w => stems(w).some(s => new RegExp(`\\b${s}`).test(material)));
 
 const LINES = {
   es: {
     care: 'Gracias por contármelo. Esto es importante y no tienes que resolverlo sin ayuda. Por favor, habla ahora con un adulto de confianza, como tu mamá, tu papá, un familiar o un docente. Ellos pueden ayudarte de verdad.',
-    redirect: 'Eso no es un tema para nuestra clase, así que mejor pregúntale a un adulto de confianza. ¿Seguimos con matemática o ciencias? Por ejemplo: ¿cómo calculo el área de un rectángulo?',
-    unknown: 'No lo sé: eso no está en mis materiales y no quiero inventar. Puedo ayudarte con matemática y ciencias. Por ejemplo: ¿cómo sumo fracciones?',
+    redirect: 'Eso no es un tema para nuestra clase, así que mejor pregúntale a un adulto de confianza. ¿Seguimos con otra pregunta de la escuela? Por ejemplo: ¿cómo calculo el área de un rectángulo?',
+    unknown: 'No lo sé: eso no está en mis materiales y no quiero inventar. Puedes explorar las materias en la pantalla de inicio o preguntarme, por ejemplo: ¿cómo sumo fracciones?',
+    maybe: 'No estoy seguro de haber entendido tu pregunta. ¿Es sobre alguno de estos temas?',
     check: '¿Puedes explicarlo con tus propias palabras?',
   },
   en: {
     care: 'Thank you for telling me. This is important and you do not have to handle it alone. Please talk to a trusted adult right now, like a parent, a relative or a teacher. They can really help you.',
-    redirect: 'That is not a topic for our class, so please ask a trusted adult. Shall we go back to math or science? For example: how do magnets work?',
-    unknown: 'I do not know: that is not in my materials and I do not want to make things up. I can help with math and science. For example: how do I add fractions?',
+    redirect: 'That is not a topic for our class, so please ask a trusted adult. Shall we go back to a school question? For example: how do magnets work?',
+    unknown: 'I do not know: that is not in my materials and I do not want to make things up. You can explore the subjects on the home screen or ask me, for example: how do I add fractions?',
+    maybe: 'I am not sure I understood your question. Is it about one of these topics?',
     check: 'Can you explain it in your own words?',
+  },
+  pt: {
+    care: 'Obrigado por me contar. Isso é importante e você não precisa resolver sozinho. Por favor, fale agora com um adulto de confiança, como sua mãe, seu pai, um parente ou um professor. Eles podem ajudar de verdade.',
+    redirect: 'Esse não é um assunto para a nossa aula, então é melhor perguntar a um adulto de confiança. Vamos voltar para outra pergunta da escola? Por exemplo: como calculo a área de um retângulo?',
+    unknown: 'Não sei: isso não está nos meus materiais e não quero inventar. Você pode explorar as matérias na tela inicial ou me perguntar, por exemplo: como somo frações?',
+    maybe: 'Não tenho certeza de que entendi sua pergunta. É sobre algum destes temas?',
+    check: 'Você consegue explicar com as suas palavras?',
   },
   sw: {
     unsupported: 'Samahani, bado siwezi kufundisha vizuri kwa Kiswahili. Tafadhali uliza kwa Kihispania au Kiingereza.',
@@ -27,6 +48,8 @@ export const line = (lang, key) => LINES[lang]?.[key] ?? LINES.en[key];
 
 const SW = /\b(kwa nini|nini|vipi|jinsi|ninawezaje|mvua|sayari|hesabu|sehemu|tafadhali|habari|gani|inanyesha|mimea|kuongeza)\b/;
 const ES = /[¿¡ñ]|\b(por que|como|que|cual|cuantos?|cuantas?|donde|cuando|quien|el|la|los|las|un|una|de|del|y|es|son|sumo|sumar|llueve|plantas?|fracciones|hola|si|no|porque|para)\b/g;
+// Words Spanish does not use, so that a question shared by both languages, such as "como", stays Spanish.
+const PT = /[ãõç]|\b(o que|voce|nao|uma|um|os|as|do|na|nas|em|qual|quais|quem|onde|quantos?|quantas?|chove|fracoes|isso|pelo|tem|foi|ao|fica|fazem|ossos|por que o|por que a|eu|ele|vem|chuva|ceu|cidades?|fico|dobro|mesmo|depois|tambem|muito|palavra|precisamos|mais|seguidores|rede)\b/g;
 const EN = /\b(why|how|what|which|where|when|who|the|a|an|of|and|is|are|do|does|i|plants?|rain|add|fractions?|hello|yes|because|to|in)\b/g;
 
 export function detectLanguage(text) {
@@ -35,21 +58,34 @@ export function detectLanguage(text) {
   const n = normalize(text);
   const es = (n.match(ES) || []).length + (/[áéíóúüñ¿¡]/.test(raw) ? 2 : 0);
   const en = (n.match(EN) || []).length;
+  // A lone "é" is a Portuguese verb; Spanish writes "es".
+  const pt = (n.match(PT) || []).length + (raw.match(/[ãõç]/g) || []).length + (/(^|\s)é(\s|$)/.test(raw) ? 2 : 0);
+  const spanishOnly = /[¿¡ñ]|\b(el|los|las|del|una|un|quien|cuantos?|cuantas?|donde|cuando|que es|hay|y)\b/.test(n);
+  const clearlyEnglish = /\b(the|why|how|what|who|which|where|when|does|is|are|and|of|from|can|i)\b/.test(n);
+  if (pt > 0 && !/[¿¡ñ]/.test(raw) && !clearlyEnglish && pt >= (spanishOnly ? 2 : 1)) return 'pt';
   return en > es ? 'en' : 'es';
 }
 
 export function checkInput(text) {
   const n = normalize(text);
   if (CARE.test(n)) return { action: 'care' };
-  if (UNSAFE.test(n) || INJECTION.test(n)) return { action: 'redirect' };
-  return { action: 'ok' };
+  if (INJECTION.test(n) || EXPLICIT.test(n)) return { action: 'redirect' };
+  const words = flagged(n);
+  if (!words.length) return { action: 'ok' };
+  if (HOW_TO.test(n)) return { action: 'redirect' };
+  // Allowed only if the article the tutor finds uses the same words.
+  return { action: 'check', words };
+}
+
+export function coveredBy(words, material) {
+  return covered(words, normalize(material));
 }
 
 // A reply that continues the tutor's check question, rather than asking something new.
 export function isAnswerToCheck(text) {
   const n = normalize(text).trim();
   if (n.includes('?') || n.includes('¿')) return false;
-  return !/^(por que|como|que|cual|cuant\w+|donde|cuando|quien|explica\w*|why|how|what|which|where|when|who|explain|tell me)\b/.test(n);
+  return !/^(por que|como|que|o que|qual|quais|quem|onde|quando|quant\w+|cual|cuant\w+|donde|cuando|quien|explica\w*|why|how|what|which|where|when|who|explain|tell me)\b/.test(n);
 }
 
 const THINK_DONE = /<think>[\s\S]*?<\/think>/g;
@@ -61,7 +97,8 @@ const clean = raw => raw.replace(THINK_DONE, '').replace(THINK_OPEN, '').replace
 export class OutputGuard {
   static HOLD = 16;
 
-  constructor() {
+  constructor(material = '') {
+    this.material = normalize(material);
     this.raw = '';
     this.sent = 0;
     this.tripped = false;
@@ -71,7 +108,7 @@ export class OutputGuard {
     if (this.tripped) return '';
     this.raw += token;
     const visible = clean(this.raw);
-    if (OUTPUT_UNSAFE.test(normalize(visible))) { this.tripped = true; return ''; }
+    if (this.#unsafe(visible)) { this.tripped = true; return ''; }
     const safeEnd = Math.max(this.sent, visible.length - OutputGuard.HOLD);
     return this.#release(visible, safeEnd);
   }
@@ -79,8 +116,13 @@ export class OutputGuard {
   finish() {
     if (this.tripped) return '';
     const visible = clean(this.raw).trimEnd();
-    if (OUTPUT_UNSAFE.test(normalize(visible))) { this.tripped = true; return ''; }
+    if (this.#unsafe(visible)) { this.tripped = true; return ''; }
     return this.#release(visible, visible.length);
+  }
+
+  #unsafe(visible) {
+    const n = normalize(visible);
+    return LINKS.test(n) || EXPLICIT.test(n) || !covered(flagged(n), this.material);
   }
 
   #release(visible, end) {

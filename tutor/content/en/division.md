@@ -1,6 +1,11 @@
 ---
 title: Division
-subject: math
+topic: division
+order: 24
+subject: matematica
+block: Operations
+grades: 4
+asks: How do I share 20 apples among 4 people? | What is division? | what is the remainder | what is the quotient | what is 20 divided by 4
 lang: en
 source_title: Division (mathematics)
 source_site: Wikipedia

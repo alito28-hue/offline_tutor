@@ -1,6 +1,11 @@
 ---
 title: Fractions
-subject: math
+topic: fracciones
+order: 6
+subject: matematica
+block: Numbers
+grades: 4,5
+asks: How do I add fractions? | What is a fraction? | what is the numerator | what is 2/7 + 3/7 | what is a denominator
 lang: en
 source_title: Fracción (translated from the Spanish article)
 source_site: Wikipedia

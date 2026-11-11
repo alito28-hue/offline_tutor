@@ -4,7 +4,7 @@ import http from 'node:http';
 import net from 'node:net';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { loadPack, toDocuments } from './lib/content.mjs';
+import { listTopics, loadPack, toCards, toDocuments } from './lib/content.mjs';
 import { createEngine, LLM_NAME } from './lib/engine.mjs';
 import { createTutor } from './lib/tutor.mjs';
 
@@ -41,6 +41,7 @@ function netState() {
   return { state: watch.machineOnline ? 'no-calls' : 'offline', sandboxed, samples: watch.samples, machineOnline: watch.machineOnline };
 }
 
+const files = loadPack(path.join(here, 'content'));
 let tutor = null;
 let busy = false;
 let warming = Promise.resolve();
@@ -61,13 +62,15 @@ async function handleAsk(req, res) {
     body += chunk;
     if (body.length > 8192) return json(res, 413, { error: 'too large' });
   }
-  const question = String(JSON.parse(body || '{}').question || '').trim();
+  const parsed = JSON.parse(body || '{}');
+  const question = String(parsed.question || '').trim();
+  const file = files.some(f => f.file === parsed.file) ? parsed.file : null;
   if (!question) return json(res, 400, { error: 'question is required' });
   busy = true;
   await warming;
   res.writeHead(200, { 'Content-Type': 'text/event-stream', 'Cache-Control': 'no-store' });
   try {
-    for await (const event of tutor.ask(question)) {
+    for await (const event of tutor.ask(question, { file })) {
       res.write(`data: ${JSON.stringify(event)}\n\n`);
       if (event.type === 'done') log(`ask route=${event.route} lang=${event.lang} first=${event.firstTokenMs}ms total=${event.totalMs}ms words=${event.words} score=${event.score ?? '-'}`);
     }
@@ -87,6 +90,9 @@ const server = http.createServer(async (req, res) => {
     if (req.headers.host !== `${HOST}:${PORT}` && req.headers.host !== `localhost:${PORT}`) return json(res, 403, { error: 'forbidden' });
     if (req.method === 'GET' && url.pathname === '/api/status') {
       return json(res, 200, { ready: Boolean(tutor), busy, model: LLM_NAME, net: netState() });
+    }
+    if (req.method === 'GET' && url.pathname === '/api/topics') {
+      return json(res, 200, { topics: listTopics(files, url.searchParams.get('lang') || 'en') });
     }
     if (req.method === 'POST' && url.pathname === '/api/ask') {
       const origin = req.headers.origin;
@@ -113,9 +119,8 @@ const server = http.createServer(async (req, res) => {
 
 server.listen(PORT, HOST, () => log(`listening on http://${HOST}:${PORT} (sandbox ${sandboxed ? 'on' : 'off'})`));
 
-const files = loadPack(path.join(here, 'content'));
 const started = performance.now();
-const engine = await createEngine(toDocuments(files));
+const engine = await createEngine(toDocuments(files), toCards(files), path.join(here, 'content'));
 tutor = createTutor({ engine, files });
 await engine.warm();
 
